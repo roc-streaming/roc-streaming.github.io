@@ -1,0 +1,41 @@
+language: generic
+
+branches:
+  only:
+    - travis
+
+dist: xenial
+
+addons:
+  apt:
+    update: true
+    sources:
+      - sourceline: 'deb http://us.archive.ubuntu.com/ubuntu/ xenial universe'
+    packages:
+      - scons
+      - doxygen
+      - graphviz
+      - python-sphinx
+      - python-breathe
+
+script:
+  - git clone https://github.com/roc-project/roc.git
+  - scons -C roc docs
+  - cp -a roc/html www/roc
+
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  target_branch: master
+  skip_cleanup: true
+  local_dir: www
+  on:
+    branch: travis
+
+notifications:
+  webhooks:
+    urls:
+      - "https://scalar.vector.im/api/neb/services/hooks/dHJhdmlzLWNpLyU0MGdhdnYlM0FtYXRyaXgub3JnLyUyMWN3WHpNdm9kbVRWWklGVnNwWCUzQW1hdHJpeC5vcmc"
+    on_start: never
+    on_success: always
+    on_failure: always
