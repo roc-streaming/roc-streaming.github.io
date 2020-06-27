@@ -19,9 +19,9 @@ addons:
       - python-breathe
 
 script:
-  - git clone https://github.com/roc-project/roc.git
-  - scons -C roc docs
-  - cp -a roc/html www/roc
+  - git clone https://github.com/roc-streaming/roc-toolkit.git
+  - scons -C roc-toolkit docs
+  - cp -a roc-toolkit/html www/toolkit
 
 deploy:
   provider: pages
@@ -31,11 +31,3 @@ deploy:
   local_dir: www
   on:
     branch: travis
-
-notifications:
-  webhooks:
-    urls:
-      - "https://scalar.vector.im/api/neb/services/hooks/dHJhdmlzLWNpLyU0MGdhdnYlM0FtYXRyaXgub3JnLyUyMWN3WHpNdm9kbVRWWklGVnNwWCUzQW1hdHJpeC5vcmc"
-    on_start: never
-    on_success: always
-    on_failure: always
