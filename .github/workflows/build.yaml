@@ -1,0 +1,29 @@
+name: build
+on:
+  push:
+    branches:
+      - job
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install system dependencies
+        run: >
+          sudo apt-get -y install scons doxygen graphviz python3-sphinx python3-breathe
+
+      - name: Build documentation
+        run: |
+          git clone https://github.com/roc-streaming/roc-toolkit.git
+          scons -C roc-toolkit docs
+          cp -av roc-toolkit/html www/toolkit
+
+      - name: Publish web-site
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: master
+          folder: www
+          single-commit: true
