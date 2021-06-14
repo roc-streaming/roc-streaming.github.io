@@ -25,6 +25,6 @@ jobs:
       - name: Publish web-site
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          branch: master
+          branch: content
           folder: www
           single-commit: true
