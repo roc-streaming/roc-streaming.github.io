@@ -9,4 +9,4 @@ It has two branches:
 * `source` — holds static content (in `www`) and GitHub Actions job to build and publish static content;
 * `content` — holds automatically published content for GitHub pages.
 
-The job fetches and builds Roc Toolkit documentation, merges it with pre-defined static content, and deploys the result to the `master` branch, which is then used by GitHib pages to render the website.
+The job fetches and builds Roc Toolkit documentation, merges it with pre-defined static content, and deploys the result to the `content` branch, which is then used by GitHib pages to render the website.
