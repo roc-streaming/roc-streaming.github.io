@@ -14,7 +14,12 @@ jobs:
 
       - name: Install system dependencies
         run: |
-          sudo apt-get -y install scons doxygen graphviz python3-sphinx python3-breathe
+          sudo apt-get -y install scons doxygen graphviz
+
+      - name: Install sphinx
+        run: |
+          sudo pip3 install Sphinx==2.4.5
+          sudo pip3 install breathe==4.14.2
 
       - name: Build documentation
         run: |
