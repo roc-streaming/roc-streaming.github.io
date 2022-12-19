@@ -1,9 +1,11 @@
 name: build
+
 on:
-  repository_dispatch:
   push:
     branches:
       - source
+  repository_dispatch:
+  workflow_dispatch:
 
 jobs:
   ubuntu:
