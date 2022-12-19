@@ -24,7 +24,7 @@ jobs:
       - name: Build documentation
         run: |
           git clone https://github.com/roc-streaming/roc-toolkit.git
-          scons -C roc-toolkit docs
+          scons -C roc-toolkit --enable-sphinx --enable-doxygen docs
           cp -av roc-toolkit/html www/toolkit
 
       - name: Publish web-site
