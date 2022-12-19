@@ -25,7 +25,7 @@ jobs:
         run: |
           git clone https://github.com/roc-streaming/roc-toolkit.git
           scons -C roc-toolkit --enable-sphinx --enable-doxygen docs
-          cp -av roc-toolkit/html www/toolkit
+          cp -av roc-toolkit/docs/html www/toolkit
 
       - name: Publish web-site
         uses: JamesIves/github-pages-deploy-action@4.0.0
