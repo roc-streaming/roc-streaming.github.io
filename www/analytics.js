@@ -12,9 +12,9 @@ function dntEnabed() {
 
 if (!dntEnabed()) {
     document.write(' \
-<script src="https://www.googletagmanager.com/gtag/js?id=UA-93472390-2"> \
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WBSJXR3L0K"> \
 </script> \
 <script> \
-    setupGA("UA-93472390-2"); \
+    setupGA("G-WBSJXR3L0K"); \
 </script>')
 }
