@@ -20,8 +20,8 @@ jobs:
 
       - name: Install sphinx
         run: |
-          sudo pip3 install Sphinx==2.4.5
-          sudo pip3 install breathe==4.14.2
+          sudo pip3 install Sphinx==5.3.0
+          sudo pip3 install breathe==4.34.0
 
       - name: Build documentation
         run: |
