@@ -11,13 +11,13 @@ jobs:
   ubuntu:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout www
         uses: actions/checkout@v4
 
-      - name: Checkout
+      - name: Checkout toolkit
         uses: actions/checkout@v4
         with:
-          repository: roc-streaming/roc-toolkit.git
+          repository: roc-streaming/roc-toolkit
           path: roc-toolkit
 
       - name: Pull docker image
@@ -25,7 +25,8 @@ jobs:
 
       - name: Build documentation
         run: |
-          docker run --rm -t -u "${UID}" -v "$(pwd)":/opt/roc -w /opt/roc env-sphinx scons -C roc-toolkit --enable-sphinx --enable-doxygen docs
+          docker run --rm -t -u "${UID}" -v "$(pwd)":/opt/roc -w /opt/roc env-sphinx \
+              scons -C roc-toolkit --enable-sphinx --enable-doxygen docs
           cp -av roc-toolkit/docs/html www/toolkit
 
       - name: Publish web-site
