@@ -25,7 +25,7 @@ jobs:
 
       - name: Build documentation
         run: |
-          docker run --rm -t -u "${UID}" -v "$(pwd)":/opt/roc -w /opt/roc env-sphinx \
+          docker run --rm -t -u "${UID}" -v "$(pwd)":/opt/roc -w /opt/roc rocstreaming/env-sphinx \
               scons -C roc-toolkit --enable-sphinx --enable-doxygen docs
           cp -av roc-toolkit/docs/html www/toolkit
 
