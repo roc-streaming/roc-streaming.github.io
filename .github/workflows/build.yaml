@@ -15,12 +15,17 @@ jobs:
         run: docker pull rocstreaming/env-sphinx
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          repository: roc-streaming/roc-toolkit.git
+          path: roc-toolkit
 
       - name: Build documentation
         run: |
-          git clone https://github.com/roc-streaming/roc-toolkit.git
-          scripts/ci_checks/docker.sh env-sphinx scons -C roc-toolkit --enable-sphinx --enable-doxygen docs
+          docker run --rm -t -u "${UID}" -v "$(pwd)":/opt/roc -w /opt/roc env-sphinx scons -C roc-toolkit --enable-sphinx --enable-doxygen docs
           cp -av roc-toolkit/docs/html www/toolkit
 
       - name: Publish web-site
