@@ -12,22 +12,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Install system dependencies
-        run: |
-          sudo apt-get -y install scons doxygen graphviz
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          repository: roc-streaming/roc-toolkit.git
+          path: roc-toolkit
 
-      - name: Install sphinx
-        run: |
-          sudo pip3 install Sphinx==5.3.0
-          sudo pip3 install breathe==4.34.0
-          sudo pip3 install sphinxemoji==0.2.0
+      - name: Pull docker image
+        run: docker pull rocstreaming/env-sphinx
 
       - name: Build documentation
         run: |
-          git clone https://github.com/roc-streaming/roc-toolkit.git
-          scons -C roc-toolkit --enable-sphinx --enable-doxygen docs
+          docker run --rm -t -u "${UID}" -v "$(pwd)":/opt/roc -w /opt/roc env-sphinx scons -C roc-toolkit --enable-sphinx --enable-doxygen docs
           cp -av roc-toolkit/docs/html www/toolkit
 
       - name: Publish web-site
