@@ -11,9 +11,6 @@ jobs:
   ubuntu:
     runs-on: ubuntu-latest
     steps:
-      - name: Pull docker image
-        run: docker pull rocstreaming/env-sphinx
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -22,6 +19,9 @@ jobs:
         with:
           repository: roc-streaming/roc-toolkit.git
           path: roc-toolkit
+
+      - name: Pull docker image
+        run: docker pull rocstreaming/env-sphinx
 
       - name: Build documentation
         run: |
