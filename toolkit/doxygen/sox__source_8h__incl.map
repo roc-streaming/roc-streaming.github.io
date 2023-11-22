@@ -1,0 +1,57 @@
+<map id="roc_sndio/target_sox/roc_sndio/sox_source.h" name="roc_sndio/target_sox/roc_sndio/sox_source.h">
+<area shape="rect" id="node1" title="SoX source." alt="" coords="1351,5,1529,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="147,95,205,121"/>
+<area shape="rect" id="node3" href="$sample__spec_8h.html" title="Sample specifications." alt="" coords="2745,319,2932,345"/>
+<area shape="rect" id="node6" href="$stddefs_8h.html" title="Commonly used types and functions." alt="" coords="2439,991,2580,1017"/>
+<area shape="rect" id="node23" href="$noncopyable_8h.html" title="Non&#45;copyable object." alt="" coords="1460,916,1636,943"/>
+<area shape="rect" id="node30" href="$string__buffer_8h.html" title="String buffer." alt="" coords="558,543,733,569"/>
+<area shape="rect" id="node31" href="$array_8h.html" title="Dynamic array." alt="" coords="808,617,933,644"/>
+<area shape="rect" id="node32" href="$iarena_8h.html" title="Memory arena interface." alt="" coords="354,692,489,719"/>
+<area shape="rect" id="node47" href="$units_8h.html" title="Various units used in packets." alt="" coords="2483,393,2623,420"/>
+<area shape="rect" id="node48" href="$roc__sndio_2config_8h.html" title="Sink and source config." alt="" coords="2900,244,3039,271"/>
+<area shape="rect" id="node49" href="$isource_8h.html" title="Source interface." alt="" coords="1987,95,2133,121"/>
+<area shape="rect" id="node4" href="$channel__set_8h.html" title="Channel set." alt="" coords="2749,393,2928,420"/>
+<area shape="rect" id="node44" href="$time_8h.html" title="Time definitions." alt="" coords="2495,767,2617,793"/>
+<area shape="rect" id="node45" href="$sample_8h.html" title="Audio sample." alt="" coords="2259,468,2408,495"/>
+<area shape="rect" id="node5" href="$channel__defs_8h.html" title="Channel layout, order, and positions." alt="" coords="2851,543,3037,569"/>
+<area shape="rect" id="node21" href="$string__builder_8h.html" title="String builder." alt="" coords="2001,468,2183,495"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1865,1065,1951,1092"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1975,1065,2038,1092"/>
+<area shape="rect" id="node9" title=" " alt="" coords="2063,1065,2121,1092"/>
+<area shape="rect" id="node10" title=" " alt="" coords="2146,1065,2195,1092"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2219,1065,2290,1092"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2314,1065,2401,1092"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2425,1065,2495,1092"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2520,1065,2595,1092"/>
+<area shape="rect" id="node15" title=" " alt="" coords="2619,1065,2693,1092"/>
+<area shape="rect" id="node16" title=" " alt="" coords="2718,1065,2789,1092"/>
+<area shape="rect" id="node17" title=" " alt="" coords="2813,1065,2880,1092"/>
+<area shape="rect" id="node18" title=" " alt="" coords="2905,1065,2975,1092"/>
+<area shape="rect" id="node19" title=" " alt="" coords="2999,1065,3070,1092"/>
+<area shape="rect" id="node20" title=" " alt="" coords="3095,1065,3191,1092"/>
+<area shape="rect" id="node22" href="$macro__helpers_8h.html" title="Helper macros." alt="" coords="369,916,559,943"/>
+<area shape="rect" id="node24" href="$optional_8h.html" title="Optionally constructed object." alt="" coords="1971,767,2117,793"/>
+<area shape="rect" id="node25" href="$aligned__storage_8h.html" title="Aligned storage." alt="" coords="2123,841,2320,868"/>
+<area shape="rect" id="node27" href="$attributes_8h.html" title="Compiler attributes." alt="" coords="46,916,202,943"/>
+<area shape="rect" id="node29" href="$panic_8h.html" title="Panic." alt="" coords="349,841,477,868"/>
+<area shape="rect" id="node26" href="$align__ops_8h.html" title="Alignment operations." alt="" coords="2216,916,2371,943"/>
+<area shape="rect" id="node28" title=" " alt="" coords="86,991,162,1017"/>
+<area shape="rect" id="node33" href="$log_8h.html" title="Logging." alt="" coords="1421,692,1534,719"/>
+<area shape="rect" id="node34" title=" " alt="" coords="1951,916,2119,943"/>
+<area shape="rect" id="node35" title=" " alt="" coords="1025,767,1199,793"/>
+<area shape="rect" id="node36" href="$mutex_8h.html" title="Mutex." alt="" coords="1223,767,1358,793"/>
+<area shape="rect" id="node43" href="$singleton_8h.html" title="Singleton." alt="" coords="1633,767,1786,793"/>
+<area shape="rect" id="node37" title=" " alt="" coords="1123,841,1191,868"/>
+<area shape="rect" id="node38" title=" " alt="" coords="1659,841,1743,868"/>
+<area shape="rect" id="node39" href="$atomic_8h.html" title="Atomic." alt="" coords="960,841,1099,868"/>
+<area shape="rect" id="node41" href="$errno__to__str_8h.html" title="Convert errno to string." alt="" coords="1267,841,1437,868"/>
+<area shape="rect" id="node42" href="$scoped__lock_8h.html" title="RAII mutex lock." alt="" coords="1461,841,1635,868"/>
+<area shape="rect" id="node40" title=" " alt="" coords="1067,916,1224,943"/>
+<area shape="rect" id="node46" href="$pcm__format_8h.html" title="PCM format." alt="" coords="553,841,733,868"/>
+<area shape="rect" id="node50" href="$iframe__reader_8h.html" title="Frame reader interface." alt="" coords="2031,169,2223,196"/>
+<area shape="rect" id="node53" href="$idevice_8h.html" title="Device interface." alt="" coords="2425,244,2572,271"/>
+<area shape="rect" id="node51" href="$frame_8h.html" title="Audio frame." alt="" coords="2066,244,2206,271"/>
+<area shape="rect" id="node52" href="$list__node_8h.html" title="Linked list node." alt="" coords="197,767,349,793"/>
+<area shape="rect" id="node54" href="$device__state_8h.html" title="Device state." alt="" coords="2487,319,2670,345"/>
+<area shape="rect" id="node55" href="$device__type_8h.html" title="Device type." alt="" coords="2284,319,2463,345"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="roc::core::Thread" name="roc::core::Thread">
+<area shape="rect" id="node1" title="Base class for thread objects." alt="" coords="140,95,271,121"/>
+<area shape="rect" id="node3" href="$classroc_1_1ctl_1_1ControlTaskQueue.html" title="Control task queue." alt="" coords="5,169,197,196"/>
+<area shape="rect" id="node4" href="$classroc_1_1netio_1_1NetworkLoop.html" title="Network event loop thread." alt="" coords="222,169,399,196"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="119,5,292,47"/>
+</map>

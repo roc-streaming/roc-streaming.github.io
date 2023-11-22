@@ -1,0 +1,4 @@
+<map id="roc::audio::FreqEstimator" name="roc::audio::FreqEstimator">
+<area shape="rect" id="node1" title="Evaluates sender&#39;s frequency to receivers&#39;s frequency ratio." alt="" coords="18,80,203,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+</map>

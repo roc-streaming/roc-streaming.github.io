@@ -1,0 +1,28 @@
+<map id="roc_audio/latency_monitor.h" name="roc_audio/latency_monitor.h">
+<area shape="rect" id="node1" title="Latency monitor." alt="" coords="273,5,479,32"/>
+<area shape="rect" id="node2" href="$roc__pipeline_2config_8h.html" title="Pipeline config." alt="" coords="767,80,923,107"/>
+<area shape="rect" id="node18" href="$receiver__session_8h.html" title="Receiver session pipeline." alt="" coords="297,155,455,196"/>
+<area shape="rect" id="node26" href="$roc__pipeline_2metrics_8h.html" title="Pipeline metrics." alt="" coords="99,80,266,107"/>
+<area shape="rect" id="node3" href="$pipeline__loop_8h.html" title="Base class for pipelines." alt="" coords="509,512,667,553"/>
+<area shape="rect" id="node11" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="313,601,471,643"/>
+<area shape="rect" id="node14" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="827,601,976,643"/>
+<area shape="rect" id="node15" href="$receiver__endpoint_8h.html" title="Receiver endpoint pipeline." alt="" coords="313,333,471,375"/>
+<area shape="rect" id="node17" href="$receiver__source_8h.html" title="Receiver source pipeline." alt="" coords="313,512,471,553"/>
+<area shape="rect" id="node20" href="$sender__endpoint_8h.html" title="Sender endpoint pipeline." alt="" coords="984,155,1133,196"/>
+<area shape="rect" id="node21" href="$sender__session_8h.html" title="Sender session." alt="" coords="877,244,1027,285"/>
+<area shape="rect" id="node22" href="$sender__slot_8h.html" title="Sender slot." alt="" coords="877,333,1027,375"/>
+<area shape="rect" id="node23" href="$sender__sink_8h.html" title="Sender sink pipeline." alt="" coords="852,423,1001,464"/>
+<area shape="rect" id="node24" href="$transcoder__sink_8h.html" title="Transcoder sink pipeline." alt="" coords="1259,155,1434,196"/>
+<area shape="rect" id="node25" href="$transcoder__source_8h.html" title="Transcoder source pipeline." alt="" coords="633,155,807,196"/>
+<area shape="rect" id="node4" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="499,787,661,814"/>
+<area shape="rect" id="node5" href="$context_8h.html" title="Node context." alt="" coords="553,869,700,896"/>
+<area shape="rect" id="node7" href="$receiver_8h.html" title="Receiver node." alt="" coords="292,1019,441,1045"/>
+<area shape="rect" id="node6" href="$node_8h.html" title="Base class for nodes." alt="" coords="607,944,737,971"/>
+<area shape="rect" id="node8" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="465,1019,673,1045"/>
+<area shape="rect" id="node9" href="$sender_8h.html" title="Sender node." alt="" coords="698,1019,838,1045"/>
+<area shape="rect" id="node10" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="862,1019,1061,1045"/>
+<area shape="rect" id="node12" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="657,691,812,732"/>
+<area shape="rect" id="node13" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="685,780,864,821"/>
+<area shape="rect" id="node16" href="$receiver__slot_8h.html" title="Receiver slot." alt="" coords="195,423,354,464"/>
+<area shape="rect" id="node19" href="$receiver__session__group_8h.html" title="Receiver session group." alt="" coords="195,244,354,285"/>
+</map>

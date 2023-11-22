@@ -1,0 +1,5 @@
+<map id="roc::packet::DelayedReader" name="roc::packet::DelayedReader">
+<area shape="rect" id="node1" title="Delayed reader." alt="" coords="83,80,284,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1packet_1_1IReader.html" title="Packet reader interface." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="181,5,391,32"/>
+</map>

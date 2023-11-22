@@ -1,0 +1,12 @@
+<map id="roc_core/timer.h" name="roc_core/timer.h">
+<area shape="rect" id="node1" title="Thread&#45;safe timer." alt="" coords="129,5,255,32"/>
+<area shape="rect" id="node2" href="$control__task__queue_8h.html" title="Control task queue." alt="" coords="117,80,267,121"/>
+<area shape="rect" id="node3" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="5,169,184,211"/>
+<area shape="rect" id="node4" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="209,177,370,203"/>
+<area shape="rect" id="node5" href="$context_8h.html" title="Node context." alt="" coords="295,259,441,285"/>
+<area shape="rect" id="node7" href="$receiver_8h.html" title="Receiver node." alt="" coords="83,408,232,435"/>
+<area shape="rect" id="node6" href="$node_8h.html" title="Base class for nodes." alt="" coords="391,333,521,360"/>
+<area shape="rect" id="node8" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="256,408,464,435"/>
+<area shape="rect" id="node9" href="$sender_8h.html" title="Sender node." alt="" coords="489,408,629,435"/>
+<area shape="rect" id="node10" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="653,408,851,435"/>
+</map>

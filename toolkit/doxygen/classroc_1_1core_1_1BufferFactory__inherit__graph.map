@@ -1,0 +1,4 @@
+<map id="roc::core::BufferFactory&lt; T &gt;" name="roc::core::BufferFactory&lt; T &gt;">
+<area shape="rect" id="node1" title="Buffer factory. Allows to instantiate fixed&#45;size buffers." alt="" coords="5,80,216,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+</map>

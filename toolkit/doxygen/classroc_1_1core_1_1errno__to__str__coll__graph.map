@@ -1,0 +1,4 @@
+<map id="roc::core::errno_to_str" name="roc::core::errno_to_str">
+<area shape="rect" id="node1" title="Convert errno to string." alt="" coords="29,80,193,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+</map>

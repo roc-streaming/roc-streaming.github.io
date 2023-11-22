@@ -1,0 +1,10 @@
+<map id="roc::sndio::PulseaudioSink" name="roc::sndio::PulseaudioSink">
+<area shape="rect" id="node1" title="PulseAudio sink,." alt="" coords="262,319,454,345"/>
+<area shape="rect" id="node2" href="$classroc_1_1sndio_1_1ISink.html" title="Sink interface." alt="" coords="199,244,325,271"/>
+<area shape="rect" id="node3" href="$classroc_1_1sndio_1_1IDevice.html" title="Base interface for sinks and sources." alt="" coords="5,169,148,196"/>
+<area shape="rect" id="node4" href="$classroc_1_1audio_1_1IFrameWriter.html" title="Frame writer interface." alt="" coords="173,169,351,196"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1ListNode.html" title="Base class for list element." alt="" coords="191,95,333,121"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="175,5,349,47"/>
+<area shape="rect" id="node7" href="$classroc_1_1sndio_1_1PulseaudioDevice.html" title="PulseAudio device. Base class for PulseAudio source and sink." alt="" coords="363,244,572,271"/>
+<area shape="rect" id="node8" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="375,169,586,196"/>
+</map>

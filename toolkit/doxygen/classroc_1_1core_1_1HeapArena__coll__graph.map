@@ -1,0 +1,5 @@
+<map id="roc::core::HeapArena" name="roc::core::HeapArena">
+<area shape="rect" id="node1" title="Heap arena implementation." alt="" coords="86,80,245,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1IArena.html" title="Memory arena interface." alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="157,5,368,32"/>
+</map>

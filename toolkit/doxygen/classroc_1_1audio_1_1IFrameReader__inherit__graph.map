@@ -1,0 +1,19 @@
+<map id="roc::audio::IFrameReader" name="roc::audio::IFrameReader">
+<area shape="rect" id="node1" title="Frame reader interface." alt="" coords="417,223,603,250"/>
+<area shape="rect" id="node4" href="$classroc_1_1audio_1_1ChannelMapperReader.html" title="Channel mapper reader. Reads frames from nested reader and maps them to another channel mask." alt="" coords="658,5,854,47"/>
+<area shape="rect" id="node5" href="$classroc_1_1audio_1_1Depacketizer.html" title="Depacketizer." alt="" coords="667,71,845,98"/>
+<area shape="rect" id="node6" href="$classroc_1_1audio_1_1LatencyMonitor.html" title="Latency monitor." alt="" coords="659,122,853,149"/>
+<area shape="rect" id="node7" href="$classroc_1_1audio_1_1Mixer.html" title="Mixer. Mixes multiple input streams into one output stream." alt="" coords="691,173,821,199"/>
+<area shape="rect" id="node8" href="$classroc_1_1audio_1_1PoisonReader.html" title="Poisons audio frames before reading them." alt="" coords="665,223,847,250"/>
+<area shape="rect" id="node9" href="$classroc_1_1audio_1_1ProfilingReader.html" title="Profiling reader." alt="" coords="659,274,853,301"/>
+<area shape="rect" id="node10" href="$classroc_1_1audio_1_1ResamplerReader.html" title="Resampler element for reading pipeline." alt="" coords="651,325,861,351"/>
+<area shape="rect" id="node11" href="$classroc_1_1audio_1_1Watchdog.html" title="Watchdog." alt="" coords="677,375,835,402"/>
+<area shape="rect" id="node12" href="$classroc_1_1sndio_1_1ISource.html" title="Source interface." alt="" coords="685,426,827,453"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1ListNode.html" title="Base class for list element." alt="" coords="227,223,369,250"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,216,179,257"/>
+<area shape="rect" id="node13" href="$classroc_1_1pipeline_1_1ReceiverLoop.html" title="Receiver pipeline loop." alt="" coords="915,317,1114,343"/>
+<area shape="rect" id="node14" href="$classroc_1_1pipeline_1_1ReceiverSource.html" title="Receiver source pipeline." alt="" coords="909,367,1120,394"/>
+<area shape="rect" id="node15" href="$classroc_1_1pipeline_1_1TranscoderSource.html" title="Transcoder source pipeline." alt="" coords="925,419,1105,460"/>
+<area shape="rect" id="node16" href="$classroc_1_1sndio_1_1PulseaudioSource.html" title="PulseAudio source,." alt="" coords="911,485,1119,511"/>
+<area shape="rect" id="node17" href="$classroc_1_1sndio_1_1SoxSource.html" title="SoX source." alt="" coords="934,535,1095,562"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="roc::pipeline::ReceiverSlot" name="roc::pipeline::ReceiverSlot">
+<area shape="rect" id="node1" title="Receiver slot." alt="" coords="475,85,667,112"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="264,37,427,93"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1ArenaAllocation.html" title="Allocation policy for objects allocated using IArena." alt="" coords="16,56,205,83"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1ListNode.html" title="Base class for list element." alt="" coords="274,117,417,144"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="24,110,197,151"/>
+</map>

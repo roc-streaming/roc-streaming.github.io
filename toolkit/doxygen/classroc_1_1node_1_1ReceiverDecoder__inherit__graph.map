@@ -1,0 +1,6 @@
+<map id="roc::node::ReceiverDecoder" name="roc::node::ReceiverDecoder">
+<area shape="rect" id="node1" title="Receiver decoder node." alt="" coords="94,169,295,196"/>
+<area shape="rect" id="node2" href="$classroc_1_1node_1_1Node.html" title="Base class for nodes." alt="" coords="49,87,173,114"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node4" href="$classroc_1_1pipeline_1_1IPipelineTaskScheduler.html" title="Pipeline task scheduler interface. PipelineLoop uses this interface to schedule asynchronous work...." alt="" coords="197,80,363,121"/>
+</map>

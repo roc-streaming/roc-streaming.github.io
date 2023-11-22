@@ -1,0 +1,4 @@
+<map id="roc::core::MpscQueue&lt; T, OwnershipPolicy &gt;" name="roc::core::MpscQueue&lt; T, OwnershipPolicy &gt;">
+<area shape="rect" id="node1" title="Thread&#45;safe lock&#45;free node&#45;based intrusive multi&#45;producer single&#45;consumer queue." alt="" coords="23,80,199,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="roc::netio::IResolverRequestHandler" name="roc::netio::IResolverRequestHandler">
+<area shape="rect" id="node1" title="Resolver request result handler interface." alt="" coords="5,5,211,47"/>
+<area shape="rect" id="node2" href="$classroc_1_1netio_1_1NetworkLoop.html" title="Network event loop thread." alt="" coords="19,95,197,121"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="roc::sndio::ISink" name="roc::sndio::ISink">
+<area shape="rect" id="node1" title="Sink interface." alt="" coords="644,107,769,133"/>
+<area shape="rect" id="node6" href="$classroc_1_1pipeline_1_1SenderLoop.html" title="Sender pipeline loop." alt="" coords="828,5,1015,32"/>
+<area shape="rect" id="node7" href="$classroc_1_1pipeline_1_1SenderSink.html" title="Sender sink pipeline." alt="" coords="830,56,1013,83"/>
+<area shape="rect" id="node8" href="$classroc_1_1pipeline_1_1TranscoderSink.html" title="Transcoder sink pipeline." alt="" coords="817,107,1025,133"/>
+<area shape="rect" id="node9" href="$classroc_1_1sndio_1_1PulseaudioSink.html" title="PulseAudio sink,." alt="" coords="825,157,1017,184"/>
+<area shape="rect" id="node10" href="$classroc_1_1sndio_1_1SoxSink.html" title="SoX sink." alt="" coords="849,208,994,235"/>
+<area shape="rect" id="node2" href="$classroc_1_1sndio_1_1IDevice.html" title="Base interface for sinks and sources." alt="" coords="435,81,578,108"/>
+<area shape="rect" id="node3" href="$classroc_1_1audio_1_1IFrameWriter.html" title="Frame writer interface." alt="" coords="417,132,596,159"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1ListNode.html" title="Base class for list element." alt="" coords="227,132,369,159"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,125,179,166"/>
+</map>

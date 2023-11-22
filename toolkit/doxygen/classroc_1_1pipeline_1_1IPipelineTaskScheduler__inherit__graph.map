@@ -1,0 +1,7 @@
+<map id="roc::pipeline::IPipelineTaskScheduler" name="roc::pipeline::IPipelineTaskScheduler">
+<area shape="rect" id="node1" title="Pipeline task scheduler interface. PipelineLoop uses this interface to schedule asynchronous work...." alt="" coords="5,74,172,115"/>
+<area shape="rect" id="node2" href="$classroc_1_1node_1_1Receiver.html" title="Receiver node." alt="" coords="247,5,394,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1node_1_1ReceiverDecoder.html" title="Receiver decoder node." alt="" coords="220,56,421,83"/>
+<area shape="rect" id="node4" href="$classroc_1_1node_1_1Sender.html" title="Sender node." alt="" coords="253,107,388,133"/>
+<area shape="rect" id="node5" href="$classroc_1_1node_1_1SenderEncoder.html" title="Sender encoder node." alt="" coords="227,157,414,184"/>
+</map>

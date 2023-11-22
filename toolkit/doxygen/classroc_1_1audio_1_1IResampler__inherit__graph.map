@@ -1,0 +1,9 @@
+<map id="roc::audio::IResampler" name="roc::audio::IResampler">
+<area shape="rect" id="node1" title="Audio writer interface." alt="" coords="585,56,753,83"/>
+<area shape="rect" id="node5" href="$classroc_1_1audio_1_1BuiltinResampler.html" title="Built&#45;in resampler." alt="" coords="817,5,1024,32"/>
+<area shape="rect" id="node6" href="$classroc_1_1audio_1_1DecimationResampler.html" title="Decimating resampler." alt="" coords="801,56,1040,83"/>
+<area shape="rect" id="node7" href="$classroc_1_1audio_1_1SpeexResampler.html" title="Speex resampler." alt="" coords="819,107,1023,133"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="264,49,537,90"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,31,216,57"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1ArenaAllocation.html" title="Allocation policy for objects allocated using IArena." alt="" coords="16,81,205,108"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="roc::pipeline::SenderConfig" name="roc::pipeline::SenderConfig">
+<area shape="rect" id="node1" title="Sender parameters." alt="" coords="364,107,560,133"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1SampleSpec.html" title="Sample specification. Describes sample rate and channels." alt="" coords="9,5,183,32"/>
+<area shape="rect" id="node3" href="$structroc_1_1audio_1_1ProfilerConfig.html" title="Profiler Configuration Parameters. Controls profiling interval and duration of each circular buffer c..." alt="" coords="5,56,187,83"/>
+<area shape="rect" id="node4" href="$structroc_1_1pipeline_1_1TaskConfig.html" title="Task processing parameters." alt="" coords="6,107,186,133"/>
+<area shape="rect" id="node5" href="$structroc_1_1fec_1_1CodecConfig.html" title="FEC codec parameters." alt="" coords="17,157,175,184"/>
+<area shape="rect" id="node6" href="$structroc_1_1fec_1_1WriterConfig.html" title="FEC writer parameters." alt="" coords="17,208,175,235"/>
+</map>

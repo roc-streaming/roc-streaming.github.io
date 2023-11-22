@@ -1,0 +1,6 @@
+<map id="roc::netio::ResolverRequest" name="roc::netio::ResolverRequest">
+<area shape="rect" id="node1" title="Resolver request." alt="" coords="159,171,361,197"/>
+<area shape="rect" id="node2" href="$classroc_1_1address_1_1EndpointUri.html" title="Network endpoint URI." alt="" coords="18,81,203,108"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node4" href="$classroc_1_1address_1_1SocketAddr.html" title="Socket address." alt="" coords="227,81,410,108"/>
+</map>

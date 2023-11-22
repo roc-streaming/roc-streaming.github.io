@@ -1,0 +1,9 @@
+<map id="roc::core::PoolAllocation" name="roc::core::PoolAllocation">
+<area shape="rect" id="node1" title="Allocation policy for objects allocated using IPool." alt="" coords="5,111,184,138"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="236,5,459,47"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="232,71,463,112"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="240,136,455,177"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="232,201,463,243"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1Buffer.html" title="Fixed&#45;size dynamically&#45;allocated buffer." alt="" coords="511,78,673,105"/>
+<area shape="rect" id="node7" href="$classroc_1_1packet_1_1Packet.html" title="Packet." alt="" coords="521,209,663,235"/>
+</map>

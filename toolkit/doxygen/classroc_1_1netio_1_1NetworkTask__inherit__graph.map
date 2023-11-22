@@ -1,0 +1,11 @@
+<map id="roc::netio::NetworkTask" name="roc::netio::NetworkTask">
+<area shape="rect" id="node1" title="Base class for network loop tasks." alt="" coords="471,177,645,203"/>
+<area shape="rect" id="node4" href="$classroc_1_1netio_1_1NetworkLoop_1_1Tasks_1_1AddTcpClientPort.html" title="Add TCP client port." alt="" coords="719,5,903,47"/>
+<area shape="rect" id="node5" href="$classroc_1_1netio_1_1NetworkLoop_1_1Tasks_1_1AddTcpServerPort.html" title="Add TCP server port." alt="" coords="717,71,905,112"/>
+<area shape="rect" id="node6" href="$classroc_1_1netio_1_1NetworkLoop_1_1Tasks_1_1AddUdpReceiverPort.html" title="Add UDP datagram receiver port." alt="" coords="707,136,915,177"/>
+<area shape="rect" id="node7" href="$classroc_1_1netio_1_1NetworkLoop_1_1Tasks_1_1AddUdpSenderPort.html" title="Add UDP datagram sender port." alt="" coords="713,201,909,243"/>
+<area shape="rect" id="node8" href="$classroc_1_1netio_1_1NetworkLoop_1_1Tasks_1_1RemovePort.html" title="Remove port." alt="" coords="722,267,899,308"/>
+<area shape="rect" id="node9" href="$classroc_1_1netio_1_1NetworkLoop_1_1Tasks_1_1ResolveEndpointAddress.html" title="Resolve endpoint address." alt="" coords="693,332,928,373"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1MpscQueueNode.html" title="MpscQueue node." alt="" coords="227,177,423,203"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,169,179,211"/>
+</map>

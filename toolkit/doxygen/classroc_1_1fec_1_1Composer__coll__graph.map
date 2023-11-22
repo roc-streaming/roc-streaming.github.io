@@ -1,0 +1,5 @@
+<map id="roc::fec::Composer&lt; PayloadID, Type, Pos &gt;" name="roc::fec::Composer&lt; PayloadID, Type, Pos &gt;">
+<area shape="rect" id="node1" title="FECFRAME packet composer." alt="" coords="104,80,291,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1packet_1_1IComposer.html" title="Packet composer interface." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="200,5,411,32"/>
+</map>

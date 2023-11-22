@@ -1,0 +1,5 @@
+<map id="roc::sndio::SoxBackend" name="roc::sndio::SoxBackend">
+<area shape="rect" id="node1" title="SoX backend." alt="" coords="98,80,270,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1sndio_1_1IBackend.html" title="Backend interface." alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="181,5,392,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="roc::pipeline::PipelineLoop" name="roc::pipeline::PipelineLoop">
+<area shape="rect" id="node1" title="Base class for task&#45;based pipelines." alt="" coords="116,80,309,107"/>
+<area shape="rect" id="node3" href="$classroc_1_1pipeline_1_1ReceiverLoop.html" title="Receiver pipeline loop." alt="" coords="5,155,204,181"/>
+<area shape="rect" id="node4" href="$classroc_1_1pipeline_1_1SenderLoop.html" title="Sender pipeline loop." alt="" coords="229,155,415,181"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="107,5,318,32"/>
+</map>

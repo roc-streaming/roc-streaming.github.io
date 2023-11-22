@@ -1,0 +1,8 @@
+<map id="roc::node::Node" name="roc::node::Node">
+<area shape="rect" id="node1" title="Base class for nodes." alt="" coords="264,81,388,108"/>
+<area shape="rect" id="node3" href="$classroc_1_1node_1_1Receiver.html" title="Receiver node." alt="" coords="463,5,610,32"/>
+<area shape="rect" id="node4" href="$classroc_1_1node_1_1ReceiverDecoder.html" title="Receiver decoder node." alt="" coords="436,56,637,83"/>
+<area shape="rect" id="node5" href="$classroc_1_1node_1_1Sender.html" title="Sender node." alt="" coords="469,107,604,133"/>
+<area shape="rect" id="node6" href="$classroc_1_1node_1_1SenderEncoder.html" title="Sender encoder node." alt="" coords="443,157,630,184"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,81,216,108"/>
+</map>

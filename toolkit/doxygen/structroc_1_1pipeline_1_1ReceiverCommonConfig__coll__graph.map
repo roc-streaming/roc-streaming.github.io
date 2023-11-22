@@ -1,0 +1,5 @@
+<map id="roc::pipeline::ReceiverCommonConfig" name="roc::pipeline::ReceiverCommonConfig">
+<area shape="rect" id="node1" title="Receiver common parameters." alt="" coords="81,95,307,136"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1SampleSpec.html" title="Sample specification. Describes sample rate and channels." alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node3" href="$structroc_1_1audio_1_1ProfilerConfig.html" title="Profiler Configuration Parameters. Controls profiling interval and duration of each circular buffer c..." alt="" coords="205,5,386,32"/>
+</map>

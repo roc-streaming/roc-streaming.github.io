@@ -1,0 +1,4 @@
+<map id="roc::netio::UdpSenderConfig" name="roc::netio::UdpSenderConfig">
+<area shape="rect" id="node1" title="UDP sender parameters." alt="" coords="5,95,208,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1address_1_1SocketAddr.html" title="Socket address." alt="" coords="15,5,198,32"/>
+</map>

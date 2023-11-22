@@ -1,0 +1,4 @@
+<map id="roc::node::Node" name="roc::node::Node">
+<area shape="rect" id="node1" title="Base class for nodes." alt="" coords="49,80,173,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+</map>

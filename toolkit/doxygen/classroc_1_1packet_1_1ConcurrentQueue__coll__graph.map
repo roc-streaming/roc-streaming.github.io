@@ -1,0 +1,6 @@
+<map id="roc::packet::ConcurrentQueue" name="roc::packet::ConcurrentQueue">
+<area shape="rect" id="node1" title="Concurrent blocking packet queue." alt="" coords="145,80,360,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1packet_1_1IReader.html" title="Packet reader interface." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1packet_1_1IWriter.html" title="Packet writer interface." alt="" coords="180,5,325,32"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="350,5,561,32"/>
+</map>

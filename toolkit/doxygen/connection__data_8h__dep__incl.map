@@ -1,0 +1,6 @@
+<map id="roc_sdp/connection_data.h" name="roc_sdp/connection_data.h">
+<area shape="rect" id="node1" title="Connection field in a SDP." alt="" coords="107,5,253,47"/>
+<area shape="rect" id="node2" href="$media__description_8h.html" title="SDP Media Description." alt="" coords="5,95,213,121"/>
+<area shape="rect" id="node3" href="$session__description_8h.html" title="Session Description Protocol." alt="" coords="72,169,288,196"/>
+<area shape="rect" id="node4" href="$roc__sdp_2parser_8h.html" title="Parser for the Session Description Protocol." alt="" coords="116,244,244,271"/>
+</map>

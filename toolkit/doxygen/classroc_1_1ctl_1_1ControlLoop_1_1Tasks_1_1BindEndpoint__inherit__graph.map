@@ -1,0 +1,8 @@
+<map id="roc::ctl::ControlLoop::Tasks::BindEndpoint" name="roc::ctl::ControlLoop::Tasks::BindEndpoint">
+<area shape="rect" id="node1" title="Bind endpoint on local URI." alt="" coords="121,244,281,285"/>
+<area shape="rect" id="node2" href="$classroc_1_1ctl_1_1ControlTask.html" title="Base class for control tasks." alt="" coords="125,169,276,196"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1MpscQueueNode.html" title="MpscQueue node." alt="" coords="5,95,201,121"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="15,5,189,47"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1ListNode.html" title="Base class for list element." alt="" coords="227,95,369,121"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="213,5,386,47"/>
+</map>

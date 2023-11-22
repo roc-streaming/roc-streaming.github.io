@@ -1,0 +1,4 @@
+<map id="roc::audio::ResamplerMap" name="roc::audio::ResamplerMap">
+<area shape="rect" id="node1" title="Factory class for IResampler objects, according to the ResamplerBackend input." alt="" coords="15,80,207,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+</map>

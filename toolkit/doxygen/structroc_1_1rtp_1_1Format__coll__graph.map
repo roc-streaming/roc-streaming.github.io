@@ -1,0 +1,7 @@
+<map id="roc::rtp::Format" name="roc::rtp::Format">
+<area shape="rect" id="node1" title="RTP payload format." alt="" coords="337,81,460,108"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1IFrameDecoder.html" title="Audio frame decoder interface." alt="" coords="5,5,199,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1audio_1_1SampleSpec.html" title="Sample specification. Describes sample rate and channels." alt="" coords="15,56,189,83"/>
+<area shape="rect" id="node4" href="$classroc_1_1audio_1_1IFrameEncoder.html" title="Audio frame encoder interface." alt="" coords="7,107,197,133"/>
+<area shape="rect" id="node5" href="$structroc_1_1audio_1_1PcmFormat.html" title="PCM format description." alt="" coords="18,157,186,184"/>
+</map>

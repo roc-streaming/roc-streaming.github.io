@@ -1,0 +1,5 @@
+<map id="roc::audio::PcmEncoder" name="roc::audio::PcmEncoder">
+<area shape="rect" id="node1" title="PCM encoder." alt="" coords="125,80,300,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1IFrameEncoder.html" title="Audio frame encoder interface." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="221,5,431,32"/>
+</map>

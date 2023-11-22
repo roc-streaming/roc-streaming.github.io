@@ -1,0 +1,6 @@
+<map id="roc::core::SlabPoolImpl::SlotHeader" name="roc::core::SlabPoolImpl::SlotHeader">
+<area shape="rect" id="node1" title="Slot header." alt="" coords="161,171,332,212"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1SlabPoolImpl.html" title="Memory pool implementation class." alt="" coords="25,81,196,108"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node4" href="$unionroc_1_1core_1_1AlignMax.html" title="Maximum aligned data unit." alt="" coords="220,81,367,108"/>
+</map>

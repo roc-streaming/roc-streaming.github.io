@@ -1,0 +1,5 @@
+<map id="roc::fec::Parser&lt; PayloadID, Type, Pos &gt;" name="roc::fec::Parser&lt; PayloadID, Type, Pos &gt;">
+<area shape="rect" id="node1" title="FECFRAME packet parser." alt="" coords="87,80,271,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1packet_1_1IParser.html" title="Packet parser interface." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="175,5,386,32"/>
+</map>

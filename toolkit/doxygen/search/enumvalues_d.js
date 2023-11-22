@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['sdes_3880',['SDES',['../classroc_1_1rtcp_1_1Traverser_1_1Iterator.html#ae1b06ebb89164690a6490f3b19b3c9c9afb5f0cbd2cc70e35680730e05607d8e8',1,'roc::rtcp::Traverser::Iterator']]],
+  ['sdes_5fcname_3881',['SDES_CNAME',['../roc__rtcp_2headers_8h.html#a992aa446632a37ec1a25f358493ceaaaacf5646cf268be5bea08e2f1f07bd0b75',1,'roc::rtcp::header']]],
+  ['sdes_5femail_3882',['SDES_EMAIL',['../roc__rtcp_2headers_8h.html#a992aa446632a37ec1a25f358493ceaaaa8a06f106949370c6d07f658d01dfd4fa',1,'roc::rtcp::header']]],
+  ['sdes_5floc_3883',['SDES_LOC',['../roc__rtcp_2headers_8h.html#a992aa446632a37ec1a25f358493ceaaaaa293c2362def78b01a2a46e6ccac3620',1,'roc::rtcp::header']]],
+  ['sdes_5fname_3884',['SDES_NAME',['../roc__rtcp_2headers_8h.html#a992aa446632a37ec1a25f358493ceaaaaa9166fae28825524f16001b153cfb9d6',1,'roc::rtcp::header']]],
+  ['sdes_5fnote_3885',['SDES_NOTE',['../roc__rtcp_2headers_8h.html#a992aa446632a37ec1a25f358493ceaaaa4a73d863043aed3257329a8536b33d6d',1,'roc::rtcp::header']]],
+  ['sdes_5fphone_3886',['SDES_PHONE',['../roc__rtcp_2headers_8h.html#a992aa446632a37ec1a25f358493ceaaaa316f3ef4390e6b5252634d331fc6c487',1,'roc::rtcp::header']]],
+  ['sdes_5fpriv_3887',['SDES_PRIV',['../roc__rtcp_2headers_8h.html#a992aa446632a37ec1a25f358493ceaaaa8c314746ce2e0a3408d35b32c6a860d0',1,'roc::rtcp::header']]],
+  ['sdes_5ftool_3888',['SDES_TOOL',['../roc__rtcp_2headers_8h.html#a992aa446632a37ec1a25f358493ceaaaac9543868a4385b54c053c022feb83de4',1,'roc::rtcp::header']]],
+  ['slabpoolflag_5fenableguards_3889',['SlabPoolFlag_EnableGuards',['../namespaceroc_1_1core.html#a644c48df5aab7e070e1f8ed8a6a5a793aa814674d5a1246b69ba4b7fc376e2e7c',1,'roc::core']]],
+  ['sockettype_5ftcp_3890',['SocketType_Tcp',['../namespaceroc_1_1netio.html#ab7bdd43ac73503149c36d32075fa3ffaab8c11c728c39fc26f98be1fccf1c1e39',1,'roc::netio']]],
+  ['sockettype_5fudp_3891',['SocketType_Udp',['../namespaceroc_1_1netio.html#ab7bdd43ac73503149c36d32075fa3ffaae1a23eb7b4f0a38203e5a7d409b19f58',1,'roc::netio']]],
+  ['source_3892',['Source',['../namespaceroc_1_1fec.html#ae75fc8dd55031b789384c138a846802fa306b9e4d9ebaec9a3a230cfe2a5caaf0',1,'roc::fec']]],
+  ['sr_3893',['SR',['../classroc_1_1rtcp_1_1Traverser_1_1Iterator.html#ae1b06ebb89164690a6490f3b19b3c9c9a3b62f10f1c1ce87fba1b38ff7f980391',1,'roc::rtcp::Traverser::Iterator']]],
+  ['ssrc_3894',['SSRC',['../classroc_1_1rtcp_1_1ByeTraverser_1_1Iterator.html#a86b1ee144044825112cf5fe8600e633eacc677d44e6412822689af2aa0d007dd8',1,'roc::rtcp::ByeTraverser::Iterator']]],
+  ['statusnodata_3895',['StatusNoData',['../status__code_8h.html#ac0fd1405a63a1f7f643d147e02858ff3a75b55b96b201735382d886aa374160a1',1,'roc::status']]],
+  ['statusok_3896',['StatusOK',['../status__code_8h.html#ac0fd1405a63a1f7f643d147e02858ff3a15f695c795274d9ca7906afb63e087a1',1,'roc::status']]],
+  ['statusunknown_3897',['StatusUnknown',['../status__code_8h.html#ac0fd1405a63a1f7f643d147e02858ff3a1218c498537f03b642be409faa9ecc44',1,'roc::status']]],
+  ['subset_5ffull_3898',['Subset_Full',['../classroc_1_1address_1_1EndpointUri.html#a27fa53872f053ff7dced5888b16b2f2ea4819ab33d5dda9fd6d1ab327f2038c27',1,'roc::address::EndpointUri']]],
+  ['subset_5fresource_3899',['Subset_Resource',['../classroc_1_1address_1_1EndpointUri.html#a27fa53872f053ff7dced5888b16b2f2ea477668bc1b97aec86fb1c968113c6b36',1,'roc::address::EndpointUri']]]
+];

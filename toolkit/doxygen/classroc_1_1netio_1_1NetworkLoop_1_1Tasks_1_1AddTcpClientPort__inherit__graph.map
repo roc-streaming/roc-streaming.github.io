@@ -1,0 +1,6 @@
+<map id="roc::netio::NetworkLoop::Tasks::AddTcpClientPort" name="roc::netio::NetworkLoop::Tasks::AddTcpClientPort">
+<area shape="rect" id="node1" title="Add TCP client port." alt="" coords="11,244,195,285"/>
+<area shape="rect" id="node2" href="$classroc_1_1netio_1_1NetworkTask.html" title="Base class for network loop tasks." alt="" coords="16,169,191,196"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1MpscQueueNode.html" title="MpscQueue node." alt="" coords="5,95,201,121"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="17,5,190,47"/>
+</map>

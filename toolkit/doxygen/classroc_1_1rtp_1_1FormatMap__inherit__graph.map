@@ -1,0 +1,4 @@
+<map id="roc::rtp::FormatMap" name="roc::rtp::FormatMap">
+<area shape="rect" id="node1" title="RTP payload format map. Thread&#45;safe. Returned formats are immutable and can be safely used from any t..." alt="" coords="35,80,186,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="roc_pipeline/ipipeline_task_scheduler.h" name="roc_pipeline/ipipeline_task_scheduler.h">
+<area shape="rect" id="node1" title="Pipeline task scheduler interface." alt="" coords="394,5,555,47"/>
+<area shape="rect" id="node2" href="$receiver_8h.html" title="Receiver node." alt="" coords="51,601,200,628"/>
+<area shape="rect" id="node3" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="224,601,432,628"/>
+<area shape="rect" id="node4" href="$sender_8h.html" title="Sender node." alt="" coords="679,601,819,628"/>
+<area shape="rect" id="node5" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="457,601,655,628"/>
+<area shape="rect" id="node6" href="$pipeline__loop_8h.html" title="Base class for pipelines." alt="" coords="396,95,553,136"/>
+<area shape="rect" id="node7" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="398,370,559,397"/>
+<area shape="rect" id="node10" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="186,184,345,225"/>
+<area shape="rect" id="node13" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="512,184,661,225"/>
+<area shape="rect" id="node8" href="$context_8h.html" title="Node context." alt="" coords="388,452,535,479"/>
+<area shape="rect" id="node9" href="$node_8h.html" title="Base class for nodes." alt="" coords="379,527,509,553"/>
+<area shape="rect" id="node11" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="245,273,400,315"/>
+<area shape="rect" id="node12" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="195,363,373,404"/>
+</map>

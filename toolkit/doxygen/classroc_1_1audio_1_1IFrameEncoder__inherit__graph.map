@@ -1,0 +1,4 @@
+<map id="roc::audio::IFrameEncoder" name="roc::audio::IFrameEncoder">
+<area shape="rect" id="node1" title="Audio frame encoder interface." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1PcmEncoder.html" title="PCM encoder." alt="" coords="13,80,188,107"/>
+</map>

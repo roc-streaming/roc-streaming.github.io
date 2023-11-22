@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['family_5fipv4_3769',['Family_IPv4',['../namespaceroc_1_1address.html#ae1fa88f77f88ae34d9bfb016a444b1b0afdfc6e5f6fca49d7348b66e8ec773679',1,'roc::address']]],
+  ['family_5fipv6_3770',['Family_IPv6',['../namespaceroc_1_1address.html#ae1fa88f77f88ae34d9bfb016a444b1b0a2d67f174e98b0ef0f66adb1b29fcbb23',1,'roc::address']]],
+  ['family_5funknown_3771',['Family_Unknown',['../namespaceroc_1_1address.html#ae1fa88f77f88ae34d9bfb016a444b1b0aed984b6b0c2b594cd7c4317672dab68d',1,'roc::address']]],
+  ['fec_5fldpc_5fstaircase_3772',['FEC_LDPC_Staircase',['../namespaceroc_1_1packet.html#ae9b57e2e82d6995f4b96e0c483f94510a37b689fd859d2a81f7a932607821d21d',1,'roc::packet']]],
+  ['fec_5fnone_3773',['FEC_None',['../namespaceroc_1_1packet.html#ae9b57e2e82d6995f4b96e0c483f94510a9f2ba6eae022bc67676e6b8d88c64951',1,'roc::packet']]],
+  ['fec_5freedsolomon_5fm8_3774',['FEC_ReedSolomon_M8',['../namespaceroc_1_1packet.html#ae9b57e2e82d6995f4b96e0c483f94510a204b07b431290088db6e62703712f8b1',1,'roc::packet']]],
+  ['flagaudio_3775',['FlagAudio',['../classroc_1_1packet_1_1Packet.html#aa69f0eaed763f6e5e4aa707182ca58aaa88f3f90c784871820dda22927195ef6c',1,'roc::packet::Packet']]],
+  ['flagcomposed_3776',['FlagComposed',['../classroc_1_1packet_1_1Packet.html#aa69f0eaed763f6e5e4aa707182ca58aaa9a39ed1a1e4da1ae262c6404d89325d9',1,'roc::packet::Packet']]],
+  ['flagcontrol_3777',['FlagControl',['../classroc_1_1packet_1_1Packet.html#aa69f0eaed763f6e5e4aa707182ca58aaa6e5fc24fdcdfef1350136de55b42c418',1,'roc::packet::Packet']]],
+  ['flagdrops_3778',['FlagDrops',['../classroc_1_1audio_1_1Frame.html#ac2dcf278594648a3cdaf8685046180bba805b343148ce539f9a7f0c754c8d049e',1,'roc::audio::Frame']]],
+  ['flagfec_3779',['FlagFEC',['../classroc_1_1packet_1_1Packet.html#aa69f0eaed763f6e5e4aa707182ca58aaac8c9b1a28ceca815007031551ea648c2',1,'roc::packet::Packet']]],
+  ['flagincomplete_3780',['FlagIncomplete',['../classroc_1_1audio_1_1Frame.html#ac2dcf278594648a3cdaf8685046180bba94898ea56684ecb37141e07e14e9146a',1,'roc::audio::Frame']]],
+  ['flagnonblank_3781',['FlagNonblank',['../classroc_1_1audio_1_1Frame.html#ac2dcf278594648a3cdaf8685046180bba067ca0842765f7d298d8221517f20a2f',1,'roc::audio::Frame']]],
+  ['flagprepared_3782',['FlagPrepared',['../classroc_1_1packet_1_1Packet.html#aa69f0eaed763f6e5e4aa707182ca58aaa1c2296cbec7385367f01b1ffb9b4911d',1,'roc::packet::Packet']]],
+  ['flagrepair_3783',['FlagRepair',['../classroc_1_1packet_1_1Packet.html#aa69f0eaed763f6e5e4aa707182ca58aaa6c76f0b730b24b65dbae4af10e486856',1,'roc::packet::Packet']]],
+  ['flagrestored_3784',['FlagRestored',['../classroc_1_1packet_1_1Packet.html#aa69f0eaed763f6e5e4aa707182ca58aaa1ba315fc75f5bb052ed6e5c08a90c87a',1,'roc::packet::Packet']]],
+  ['flagrtcp_3785',['FlagRTCP',['../classroc_1_1packet_1_1Packet.html#aa69f0eaed763f6e5e4aa707182ca58aaa529e9f97cb575671ed19af6fbdbf7ecc',1,'roc::packet::Packet']]],
+  ['flagrtp_3786',['FlagRTP',['../classroc_1_1packet_1_1Packet.html#aa69f0eaed763f6e5e4aa707182ca58aaa76c327da5cf5076e54d666f5fbdc15db',1,'roc::packet::Packet']]],
+  ['flagudp_3787',['FlagUDP',['../classroc_1_1packet_1_1Packet.html#aa69f0eaed763f6e5e4aa707182ca58aaaa3542942976a08977cb5bf4a33764eeb',1,'roc::packet::Packet']]],
+  ['footer_3788',['Footer',['../namespaceroc_1_1fec.html#a4699934ab3654f0a9e0026adce285afbacdc6d75357ce245bb94f721952991406',1,'roc::fec']]],
+  ['freqestimatorprofile_5fgradual_3789',['FreqEstimatorProfile_Gradual',['../namespaceroc_1_1audio.html#a9fac471b6e37065d48c30f038a963ca8a01144f6b961079a0b8340fd5b9239bf2',1,'roc::audio']]],
+  ['freqestimatorprofile_5fresponsive_3790',['FreqEstimatorProfile_Responsive',['../namespaceroc_1_1audio.html#a9fac471b6e37065d48c30f038a963ca8a886abc33951b3b60f4b325e4b4119058',1,'roc::audio']]]
+];

@@ -1,0 +1,4 @@
+<map id="roc::sndio::Config" name="roc::sndio::Config">
+<area shape="rect" id="node1" title="Sink and source config." alt="" coords="25,95,160,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1SampleSpec.html" title="Sample specification. Describes sample rate and channels." alt="" coords="5,5,180,32"/>
+</map>

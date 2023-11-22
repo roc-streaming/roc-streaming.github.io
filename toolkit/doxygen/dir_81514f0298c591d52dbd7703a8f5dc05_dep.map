@@ -1,0 +1,14 @@
+<map id="roc_core" name="roc_core">
+<area shape="rect" id="node2" href="dir_dcab4321ad05803f56832be55736142e.html" title="target_android" alt="" coords="872,27,989,75"/>
+<area shape="rect" id="node7" href="dir_511363e67a12dd59e0ba590bdc7a84e9.html" title="target_posix" alt="" coords="466,123,569,171"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000008_000022.html" title="1" alt="" coords="583,134,593,149"/>
+<area shape="rect" id="node3" href="dir_32f28f6a3e774883fcfd72bc645bc70f.html" title="target_c11" alt="" coords="757,27,848,75"/>
+<area shape="rect" id="node4" href="dir_de7ba6585a8a8a91e85ce44c97a4670b.html" title="target_darwin" alt="" coords="621,27,733,75"/>
+<area shape="rect" id="node5" href="dir_dcb4b8a2371de86e7c755f28502b32d0.html" title="target_libatomic_ops" alt="" coords="438,27,597,75"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000016_000022.html" title="1" alt="" coords="521,97,530,112"/>
+<area shape="rect" id="node6" href="dir_b6fe473afa4ac0ef76b17a89dea76991.html" title="target_pc" alt="" coords="331,27,413,75"/>
+<area shape="rect" id="node8" href="dir_90bdfa781e161540cfd45be79e279f56.html" title="target_posix_ext" alt="" coords="176,27,307,75"/>
+<area shape="rect" id="node9" href="dir_8c64ac8c8d8af2e4e5f4158b2990a0a3.html" title="target_posix_pc" alt="" coords="27,27,152,75"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000010_000022.html" title="2" alt="" coords="444,118,454,132"/>
+<area shape="rect" id="clust1" href="dir_81514f0298c591d52dbd7703a8f5dc05.html" alt="" coords="16,16,1101,181"/>
+</map>

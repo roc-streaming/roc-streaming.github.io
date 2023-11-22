@@ -1,0 +1,28 @@
+<map id="roc_address/interface.h" name="roc_address/interface.h">
+<area shape="rect" id="node1" title="Interface ID." alt="" coords="853,5,1027,32"/>
+<area shape="rect" id="node2" href="$endpoint__uri_8h.html" title="Network endpoint URI." alt="" coords="575,80,737,121"/>
+<area shape="rect" id="node5" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="684,541,863,583"/>
+<area shape="rect" id="node6" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="426,549,587,575"/>
+<area shape="rect" id="node9" href="$receiver_8h.html" title="Receiver node." alt="" coords="292,780,441,807"/>
+<area shape="rect" id="node10" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="569,780,777,807"/>
+<area shape="rect" id="node11" href="$sender_8h.html" title="Sender node." alt="" coords="831,780,971,807"/>
+<area shape="rect" id="node12" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="1043,780,1242,807"/>
+<area shape="rect" id="node17" href="$protocol__map_8h.html" title="Protocol attributes map." alt="" coords="1240,80,1397,121"/>
+<area shape="rect" id="node19" href="$endpoint__helpers_8h.html" title="Validate endpoint protocols consistency." alt="" coords="1053,80,1216,121"/>
+<area shape="rect" id="node20" href="$receiver__endpoint_8h.html" title="Receiver endpoint pipeline." alt="" coords="145,80,303,121"/>
+<area shape="rect" id="node21" href="$receiver__slot_8h.html" title="Receiver slot." alt="" coords="145,169,303,211"/>
+<area shape="rect" id="node24" href="$sender__slot_8h.html" title="Sender slot." alt="" coords="1421,80,1571,121"/>
+<area shape="rect" id="node3" href="$endpoint__uri__to__str_8h.html" title="Format EndpointUri to string." alt="" coords="430,169,591,211"/>
+<area shape="rect" id="node4" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="429,452,584,493"/>
+<area shape="rect" id="node13" href="$resolver__request_8h.html" title="Resolver request." alt="" coords="616,169,827,211"/>
+<area shape="rect" id="node7" href="$context_8h.html" title="Node context." alt="" coords="573,631,720,657"/>
+<area shape="rect" id="node8" href="$node_8h.html" title="Base class for nodes." alt="" coords="683,705,813,732"/>
+<area shape="rect" id="node14" href="$iresolver__request__handler_8h.html" title="Resolver request result handler interface." alt="" coords="621,259,824,315"/>
+<area shape="rect" id="node15" href="$resolver_8h.html" title="Hostname resolver." alt="" coords="622,363,786,404"/>
+<area shape="rect" id="node16" href="$network__loop_8h.html" title="Network event loop thread." alt="" coords="609,452,799,493"/>
+<area shape="rect" id="node18" href="$roc__address_2print__supported_8h.html" title="Print supported interfaces and protocols." alt="" coords="1209,177,1428,203"/>
+<area shape="rect" id="node22" href="$receiver__source_8h.html" title="Receiver source pipeline." alt="" coords="145,266,303,307"/>
+<area shape="rect" id="node23" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="145,363,303,404"/>
+<area shape="rect" id="node25" href="$sender__sink_8h.html" title="Sender sink pipeline." alt="" coords="1257,266,1407,307"/>
+<area shape="rect" id="node26" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="1073,363,1223,404"/>
+</map>

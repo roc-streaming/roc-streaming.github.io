@@ -1,0 +1,11 @@
+<map id="roc_ctl/basic_control_endpoint.h" name="roc_ctl/basic_control_endpoint.h">
+<area shape="rect" id="node1" title="Base class for control endpoints." alt="" coords="115,5,269,47"/>
+<area shape="rect" id="node2" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="5,95,184,136"/>
+<area shape="rect" id="node3" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="209,102,370,129"/>
+<area shape="rect" id="node4" href="$context_8h.html" title="Node context." alt="" coords="295,184,441,211"/>
+<area shape="rect" id="node6" href="$receiver_8h.html" title="Receiver node." alt="" coords="83,333,232,360"/>
+<area shape="rect" id="node5" href="$node_8h.html" title="Base class for nodes." alt="" coords="391,259,521,285"/>
+<area shape="rect" id="node7" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="256,333,464,360"/>
+<area shape="rect" id="node8" href="$sender_8h.html" title="Sender node." alt="" coords="489,333,629,360"/>
+<area shape="rect" id="node9" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="653,333,851,360"/>
+</map>

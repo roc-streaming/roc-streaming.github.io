@@ -1,0 +1,6 @@
+<map id="roc::netio::NetworkLoop::Tasks::ResolveEndpointAddress" name="roc::netio::NetworkLoop::Tasks::ResolveEndpointAddress">
+<area shape="rect" id="node1" title="Resolve endpoint address." alt="" coords="5,244,240,285"/>
+<area shape="rect" id="node2" href="$classroc_1_1netio_1_1NetworkTask.html" title="Base class for network loop tasks." alt="" coords="35,169,210,196"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1MpscQueueNode.html" title="MpscQueue node." alt="" coords="25,95,221,121"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="36,5,209,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="roc::pipeline::ReceiverLoop::Tasks::CreateSlot" name="roc::pipeline::ReceiverLoop::Tasks::CreateSlot">
+<area shape="rect" id="node1" title="Create new slot." alt="" coords="5,333,204,375"/>
+<area shape="rect" id="node2" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Task.html" title="Base task class." alt="" coords="5,244,204,285"/>
+<area shape="rect" id="node3" href="$classroc_1_1pipeline_1_1PipelineTask.html" title="Base class for pipeline tasks." alt="" coords="9,169,200,196"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1MpscQueueNode.html" title="MpscQueue node." alt="" coords="7,95,203,121"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="18,5,191,47"/>
+</map>

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['xr_1833',['XR',['../classroc_1_1rtcp_1_1Traverser_1_1Iterator.html#ae1b06ebb89164690a6490f3b19b3c9c9ae537a2c23a443da3c3d2396a9477a0d1',1,'roc::rtcp::Traverser::Iterator']]],
+  ['xr_5fdlrr_1834',['XR_DLRR',['../roc__rtcp_2headers_8h.html#a2254a70fc5d2b6e4ba965e2b053f096da26dfd1ed30c0de2aadf513bad122a3e3',1,'roc::rtcp::header']]],
+  ['xr_5fduplicate_5frle_1835',['XR_DUPLICATE_RLE',['../roc__rtcp_2headers_8h.html#a2254a70fc5d2b6e4ba965e2b053f096dabb8d422a36b544bf3e52916f364caecb',1,'roc::rtcp::header']]],
+  ['xr_5floss_5frle_1836',['XR_LOSS_RLE',['../roc__rtcp_2headers_8h.html#a2254a70fc5d2b6e4ba965e2b053f096daab6d12bbe0cb86133829be2ae3f5b1e4',1,'roc::rtcp::header']]],
+  ['xr_5fpacket_5frecpt_5ftime_1837',['XR_PACKET_RECPT_TIME',['../roc__rtcp_2headers_8h.html#a2254a70fc5d2b6e4ba965e2b053f096da3238956404a009e4df253610e45731f4',1,'roc::rtcp::header']]],
+  ['xr_5frrtr_1838',['XR_RRTR',['../roc__rtcp_2headers_8h.html#a2254a70fc5d2b6e4ba965e2b053f096da1cb1d0b355d8a380add389b6162cfee7',1,'roc::rtcp::header']]],
+  ['xr_5fstat_5fsummary_1839',['XR_STAT_SUMMARY',['../roc__rtcp_2headers_8h.html#a2254a70fc5d2b6e4ba965e2b053f096da50dbe141dfe42eca3427df7b53fe03ac',1,'roc::rtcp::header']]],
+  ['xr_5ftraverser_2eh_1840',['xr_traverser.h',['../xr__traverser_8h.html',1,'']]],
+  ['xr_5fvoip_5fmetrics_1841',['XR_VOIP_METRICS',['../roc__rtcp_2headers_8h.html#a2254a70fc5d2b6e4ba965e2b053f096dab2f96d6a6f84ff719f325ff2eab1ba3e',1,'roc::rtcp::header']]],
+  ['xrblockheader_1842',['XrBlockHeader',['../classroc_1_1rtcp_1_1header_1_1XrBlockHeader.html',1,'roc::rtcp::header']]],
+  ['xrblocktype_1843',['XrBlockType',['../roc__rtcp_2headers_8h.html#a2254a70fc5d2b6e4ba965e2b053f096d',1,'roc::rtcp::header']]],
+  ['xrdlrrblock_1844',['XrDlrrBlock',['../classroc_1_1rtcp_1_1header_1_1XrDlrrBlock.html',1,'roc::rtcp::header']]],
+  ['xrdlrrsubblock_1845',['XrDlrrSubblock',['../classroc_1_1rtcp_1_1header_1_1XrDlrrSubblock.html',1,'roc::rtcp::header']]],
+  ['xrpacket_1846',['XrPacket',['../classroc_1_1rtcp_1_1header_1_1XrPacket.html',1,'roc::rtcp::header']]],
+  ['xrrrtrblock_1847',['XrRrtrBlock',['../classroc_1_1rtcp_1_1header_1_1XrRrtrBlock.html',1,'roc::rtcp::header']]],
+  ['xrtraverser_1848',['XrTraverser',['../classroc_1_1rtcp_1_1XrTraverser.html',1,'roc::rtcp::XrTraverser'],['../classroc_1_1rtcp_1_1XrTraverser.html#a99ad70565b692da30c23f7ea0e27f8ef',1,'roc::rtcp::XrTraverser::XrTraverser()']]]
+];

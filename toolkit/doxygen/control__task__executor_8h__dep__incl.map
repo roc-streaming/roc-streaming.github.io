@@ -1,0 +1,12 @@
+<map id="roc_ctl/control_task_executor.h" name="roc_ctl/control_task_executor.h">
+<area shape="rect" id="node1" title="Control task executor." alt="" coords="204,5,353,47"/>
+<area shape="rect" id="node2" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="142,191,303,218"/>
+<area shape="rect" id="node9" href="$control__task__queue_8h.html" title="Control task queue." alt="" coords="260,95,409,136"/>
+<area shape="rect" id="node3" href="$context_8h.html" title="Node context." alt="" coords="255,273,401,300"/>
+<area shape="rect" id="node5" href="$receiver_8h.html" title="Receiver node." alt="" coords="5,423,155,449"/>
+<area shape="rect" id="node4" href="$node_8h.html" title="Base class for nodes." alt="" coords="314,348,443,375"/>
+<area shape="rect" id="node6" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="179,423,387,449"/>
+<area shape="rect" id="node7" href="$sender_8h.html" title="Sender node." alt="" coords="411,423,551,449"/>
+<area shape="rect" id="node8" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="575,423,774,449"/>
+<area shape="rect" id="node10" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="328,184,507,225"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="roc_netio/target_libuv/roc_netio/tcp_connection_port.h" name="roc_netio/target_libuv/roc_netio/tcp_connection_port.h">
+<area shape="rect" id="node1" title="TCP connection." alt="" coords="195,5,383,61"/>
+<area shape="rect" id="node2" href="$network__loop_8h.html" title="Network event loop thread." alt="" coords="194,213,385,255"/>
+<area shape="rect" id="node11" href="$tcp__server__port_8h.html" title="TCP server." alt="" coords="267,109,431,165"/>
+<area shape="rect" id="node3" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="5,303,184,344"/>
+<area shape="rect" id="node4" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="209,310,370,337"/>
+<area shape="rect" id="node5" href="$context_8h.html" title="Node context." alt="" coords="335,392,481,419"/>
+<area shape="rect" id="node7" href="$receiver_8h.html" title="Receiver node." alt="" coords="84,541,233,568"/>
+<area shape="rect" id="node6" href="$node_8h.html" title="Base class for nodes." alt="" coords="393,467,522,493"/>
+<area shape="rect" id="node8" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="257,541,465,568"/>
+<area shape="rect" id="node9" href="$sender_8h.html" title="Sender node." alt="" coords="490,541,630,568"/>
+<area shape="rect" id="node10" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="654,541,853,568"/>
+</map>

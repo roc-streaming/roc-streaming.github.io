@@ -1,0 +1,19 @@
+<map id="roc_netio/target_libuv/roc_netio/iclose_handler.h" name="roc_netio/target_libuv/roc_netio/iclose_handler.h">
+<area shape="rect" id="node1" title="Close handler interface." alt="" coords="215,5,410,47"/>
+<area shape="rect" id="node2" href="$basic__port_8h.html" title="Base class for ports." alt="" coords="289,95,458,136"/>
+<area shape="rect" id="node3" href="$network__loop_8h.html" title="Network event loop thread." alt="" coords="321,392,512,433"/>
+<area shape="rect" id="node14" href="$tcp__connection__port_8h.html" title="TCP connection." alt="" coords="25,184,213,240"/>
+<area shape="rect" id="node15" href="$tcp__server__port_8h.html" title="TCP server." alt="" coords="150,288,314,344"/>
+<area shape="rect" id="node16" href="$udp__receiver__port_8h.html" title="UDP receiver." alt="" coords="605,184,780,240"/>
+<area shape="rect" id="node17" href="$udp__sender__port_8h.html" title="UDP sender." alt="" coords="804,184,970,240"/>
+<area shape="rect" id="node12" href="$network__task_8h.html" title="Network task." alt="" coords="390,191,581,233"/>
+<area shape="rect" id="node4" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="132,481,311,523"/>
+<area shape="rect" id="node5" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="336,489,497,515"/>
+<area shape="rect" id="node6" href="$context_8h.html" title="Node context." alt="" coords="462,571,608,597"/>
+<area shape="rect" id="node8" href="$receiver_8h.html" title="Receiver node." alt="" coords="211,720,360,747"/>
+<area shape="rect" id="node7" href="$node_8h.html" title="Base class for nodes." alt="" coords="520,645,649,672"/>
+<area shape="rect" id="node9" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="384,720,592,747"/>
+<area shape="rect" id="node10" href="$sender_8h.html" title="Sender node." alt="" coords="617,720,757,747"/>
+<area shape="rect" id="node11" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="781,720,980,747"/>
+<area shape="rect" id="node13" href="$inetwork__task__completer_8h.html" title="Network task completion handler." alt="" coords="390,288,573,344"/>
+</map>

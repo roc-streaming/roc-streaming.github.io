@@ -1,0 +1,11 @@
+<map id="roc::netio::NetworkLoop::Tasks::AddTcpClientPort" name="roc::netio::NetworkLoop::Tasks::AddTcpClientPort">
+<area shape="rect" id="node1" title="Add TCP client port." alt="" coords="811,129,995,171"/>
+<area shape="rect" id="node2" href="$classroc_1_1netio_1_1NetworkTask.html" title="Base class for network loop tasks." alt="" coords="587,137,761,163"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1MpscQueueNode.html" title="MpscQueue node." alt="" coords="265,13,461,39"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="24,5,197,47"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1Atomic.html" title=" " alt="" coords="292,64,435,105"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,87,216,114"/>
+<area shape="rect" id="node9" href="$classroc_1_1core_1_1Optional.html" title=" " alt="" coords="268,129,459,171"/>
+<area shape="rect" id="node7" href="$classroc_1_1netio_1_1INetworkTaskCompleter.html" title="Network task completion handler." alt="" coords="274,195,453,236"/>
+<area shape="rect" id="node8" href="$classroc_1_1core_1_1SharedPtr.html" title=" " alt="" coords="272,260,455,301"/>
+</map>

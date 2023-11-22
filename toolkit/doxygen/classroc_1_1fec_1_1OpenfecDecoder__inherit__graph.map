@@ -1,0 +1,5 @@
+<map id="roc::fec::OpenfecDecoder" name="roc::fec::OpenfecDecoder">
+<area shape="rect" id="node1" title="Decoder implementation using OpenFEC library." alt="" coords="106,80,293,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1fec_1_1IBlockDecoder.html" title="FEC block decoder interface." alt="" coords="5,5,177,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="202,5,413,32"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="roc::audio::Fanout" name="roc::audio::Fanout">
+<area shape="rect" id="node1" title="Fanout. Duplicates audio stream to multiple output writers." alt="" coords="135,244,273,271"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1IFrameWriter.html" title="Frame writer interface." alt="" coords="5,169,184,196"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1ListNode.html" title="Base class for list element." alt="" coords="23,95,166,121"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="8,5,181,47"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="208,169,419,196"/>
+</map>

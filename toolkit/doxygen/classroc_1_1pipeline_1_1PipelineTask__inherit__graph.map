@@ -1,0 +1,15 @@
+<map id="roc::pipeline::PipelineTask" name="roc::pipeline::PipelineTask">
+<area shape="rect" id="node1" title="Base class for pipeline tasks." alt="" coords="471,242,661,269"/>
+<area shape="rect" id="node4" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Task.html" title="Base task class." alt="" coords="709,136,908,177"/>
+<area shape="rect" id="node9" href="$classroc_1_1pipeline_1_1SenderLoop_1_1Task.html" title="Base task class." alt="" coords="715,332,902,373"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1MpscQueueNode.html" title="MpscQueue node." alt="" coords="227,242,423,269"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,235,179,276"/>
+<area shape="rect" id="node5" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1AddEndpoint.html" title="Create endpoint on given interface of the slot." alt="" coords="956,5,1155,47"/>
+<area shape="rect" id="node6" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1CreateSlot.html" title="Create new slot." alt="" coords="956,71,1155,112"/>
+<area shape="rect" id="node7" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1DeleteSlot.html" title="Delete existing slot." alt="" coords="956,136,1155,177"/>
+<area shape="rect" id="node8" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1QuerySlot.html" title="Query slot metrics." alt="" coords="956,201,1155,243"/>
+<area shape="rect" id="node10" href="$classroc_1_1pipeline_1_1SenderLoop_1_1Tasks_1_1AddEndpoint.html" title="Create endpoint on given interface of the slot." alt="" coords="962,267,1149,308"/>
+<area shape="rect" id="node11" href="$classroc_1_1pipeline_1_1SenderLoop_1_1Tasks_1_1CreateSlot.html" title="Create new slot." alt="" coords="962,332,1149,373"/>
+<area shape="rect" id="node12" href="$classroc_1_1pipeline_1_1SenderLoop_1_1Tasks_1_1DeleteSlot.html" title="Delete existing slot." alt="" coords="962,397,1149,439"/>
+<area shape="rect" id="node13" href="$classroc_1_1pipeline_1_1SenderLoop_1_1Tasks_1_1QuerySlot.html" title="Query slot metrics." alt="" coords="962,463,1149,504"/>
+</map>

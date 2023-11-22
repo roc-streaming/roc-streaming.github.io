@@ -1,0 +1,10 @@
+<map id="roc::packet::Packet" name="roc::packet::Packet">
+<area shape="rect" id="node1" title="Packet." alt="" coords="543,115,685,141"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="264,49,495,90"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1PoolAllocation.html" title="Allocation policy for objects allocated using IPool." alt="" coords="21,56,200,83"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1ListNode.html" title="Base class for list element." alt="" coords="308,115,451,141"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="24,107,197,149"/>
+<area shape="rect" id="node7" href="$classroc_1_1core_1_1MpscQueueNode.html" title="MpscQueue node." alt="" coords="281,172,477,199"/>
+<area shape="rect" id="node8" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="24,173,197,214"/>
+</map>

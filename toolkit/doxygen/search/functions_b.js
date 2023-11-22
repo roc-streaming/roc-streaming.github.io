@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['last_5fchannel_2954',['last_channel',['../classroc_1_1audio_1_1ChannelSet.html#a1763146a6fd94a93be55ceb83f477fe9',1,'roc::audio::ChannelSet']]],
+  ['last_5fmedia_5fdescription_2955',['last_media_description',['../classroc_1_1sdp_1_1SessionDescription.html#a0d8e7e6f7d1204adb22791c67930a7df',1,'roc::sdp::SessionDescription']]],
+  ['last_5frr_2956',['last_rr',['../classroc_1_1rtcp_1_1header_1_1XrDlrrSubblock.html#acd28d4f0dab19e5d00144491e4ec4462',1,'roc::rtcp::header::XrDlrrSubblock']]],
+  ['last_5fseqnum_2957',['last_seqnum',['../classroc_1_1rtcp_1_1header_1_1ReceptionReportBlock.html#a78a328a346204898f4cb132c690f0f10',1,'roc::rtcp::header::ReceptionReportBlock']]],
+  ['last_5fsr_2958',['last_sr',['../classroc_1_1rtcp_1_1header_1_1ReceptionReportBlock.html#a2cf01cb818184848bafb144e598ef67a',1,'roc::rtcp::header::ReceptionReportBlock']]],
+  ['latency_2959',['latency',['../classroc_1_1pipeline_1_1ReceiverSource.html#a56b0f47345de62e2d0edd7379b62a77b',1,'roc::pipeline::ReceiverSource::latency()'],['../classroc_1_1pipeline_1_1SenderSink.html#a44f0ad00fd0e9f5e6e9afed9938e4c95',1,'roc::pipeline::SenderSink::latency()'],['../classroc_1_1pipeline_1_1TranscoderSink.html#a8a520adbf6c2022c6f2021bbb29bf67c',1,'roc::pipeline::TranscoderSink::latency()'],['../classroc_1_1pipeline_1_1TranscoderSource.html#a7c91e46ebbe9f0a355d71755046f1c38',1,'roc::pipeline::TranscoderSource::latency()'],['../classroc_1_1sndio_1_1IDevice.html#a800805931cb57260dbce6c652b58acc2',1,'roc::sndio::IDevice::latency()'],['../classroc_1_1sndio_1_1PulseaudioDevice.html#a6c23b5fc92a88f93595121d33800efec',1,'roc::sndio::PulseaudioDevice::latency()'],['../classroc_1_1sndio_1_1PulseaudioSink.html#a1eccb599301f13f7202586c915763214',1,'roc::sndio::PulseaudioSink::latency()'],['../classroc_1_1sndio_1_1PulseaudioSource.html#a335c58adcb47dfe78ab7e0ff74ac39c8',1,'roc::sndio::PulseaudioSource::latency()'],['../classroc_1_1sndio_1_1SoxSink.html#ad8300b90241bead29aed62834a61633b',1,'roc::sndio::SoxSink::latency()'],['../classroc_1_1sndio_1_1SoxSource.html#a76ed3bc6bfcef421ded868a5cc8ccb15',1,'roc::sndio::SoxSource::latency()']]],
+  ['latencymonitor_2960',['LatencyMonitor',['../classroc_1_1audio_1_1LatencyMonitor.html#acf4f78e9010e220cc044af5a0882953d',1,'roc::audio::LatencyMonitor']]],
+  ['latest_2961',['latest',['../classroc_1_1packet_1_1SortedQueue.html#a248107eb9f66bb23b2c57cae2dc85d13',1,'roc::packet::SortedQueue']]],
+  ['layout_2962',['layout',['../classroc_1_1audio_1_1ChannelSet.html#aa761acabe27b24d1970248b7d2635ee8',1,'roc::audio::ChannelSet']]],
+  ['len_2963',['len',['../classroc_1_1core_1_1StringBuffer.html#a0d4d91f9e8e4fa1af441b2c5ac9044d2',1,'roc::core::StringBuffer']]],
+  ['len_5fbytes_2964',['len_bytes',['../classroc_1_1rtcp_1_1header_1_1PacketHeader.html#ad7d02aeb3011df720d8cf7b7229670c9',1,'roc::rtcp::header::PacketHeader::len_bytes()'],['../classroc_1_1rtcp_1_1header_1_1XrBlockHeader.html#aa6f90bc1598d0262e4dac70cf41a851d',1,'roc::rtcp::header::XrBlockHeader::len_bytes()']]],
+  ['len_5fwords_2965',['len_words',['../classroc_1_1rtcp_1_1header_1_1PacketHeader.html#a2fdbcea25fab78db956feef77207a16e',1,'roc::rtcp::header::PacketHeader::len_words()'],['../classroc_1_1rtcp_1_1header_1_1XrBlockHeader.html#a142c9fcc3a94dca9abec190ae0acf78a',1,'roc::rtcp::header::XrBlockHeader::len_words()']]],
+  ['list_2966',['List',['../classroc_1_1core_1_1List.html#a84ba811e3a53e129b916d8e53ccbca8d',1,'roc::core::List']]],
+  ['list_5fnode_5fdata_2967',['list_node_data',['../classroc_1_1core_1_1ListNode.html#a3eed3af6c9408ae273d519cd4b45c0d7',1,'roc::core::ListNode']]],
+  ['load_5facquire_2968',['load_acquire',['../classroc_1_1core_1_1AtomicOps.html#aa54303b54274abbc8f5bcff3a8942d4f',1,'roc::core::AtomicOps']]],
+  ['load_5frelaxed_2969',['load_relaxed',['../classroc_1_1core_1_1AtomicOps.html#a8bde90e11271af081629ca879fdb6a6c',1,'roc::core::AtomicOps']]],
+  ['load_5fseq_5fcst_2970',['load_seq_cst',['../classroc_1_1core_1_1AtomicOps.html#af0f95e3351ff87ab9b7ef857e0275468',1,'roc::core::AtomicOps']]],
+  ['local_5faddress_2971',['local_address',['../classroc_1_1netio_1_1IConn.html#a4f5220bef2bca5dbc85a7d7346a7bd96',1,'roc::netio::IConn::local_address()'],['../classroc_1_1netio_1_1TcpConnectionPort.html#a4658fbab3d1dc475715d861e21783c14',1,'roc::netio::TcpConnectionPort::local_address()']]],
+  ['lock_2972',['lock',['../classroc_1_1core_1_1Mutex.html#ae0a5597712753dfdf960b2dac6975023',1,'roc::core::Mutex']]]
+];

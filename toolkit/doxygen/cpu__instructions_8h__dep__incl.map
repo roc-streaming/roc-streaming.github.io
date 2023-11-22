@@ -1,0 +1,24 @@
+<map id="roc_core/target_posix/roc_core/cpu_instructions.h" name="roc_core/target_posix/roc_core/cpu_instructions.h">
+<area shape="rect" id="node1" title="CPU&#45;specific instructions." alt="" coords="274,5,476,47"/>
+<area shape="rect" id="node2" href="$seqlock_8h.html" title="Seqlock." alt="" coords="304,95,446,121"/>
+<area shape="rect" id="node3" href="$timer_8h.html" title="Thread&#45;safe timer." alt="" coords="228,184,354,211"/>
+<area shape="rect" id="node13" href="$control__task_8h.html" title="Control task." alt="" coords="378,184,540,211"/>
+<area shape="rect" id="node17" href="$tcp__connection__port_8h.html" title="TCP connection." alt="" coords="16,169,204,225"/>
+<area shape="rect" id="node20" href="$pipeline__loop_8h.html" title="Base class for pipelines." alt="" coords="711,177,868,218"/>
+<area shape="rect" id="node4" href="$control__task__queue_8h.html" title="Control task queue." alt="" coords="320,377,470,419"/>
+<area shape="rect" id="node5" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="306,467,484,508"/>
+<area shape="rect" id="node6" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="525,474,686,501"/>
+<area shape="rect" id="node7" href="$context_8h.html" title="Node context." alt="" coords="532,556,679,583"/>
+<area shape="rect" id="node9" href="$receiver_8h.html" title="Receiver node." alt="" coords="731,705,880,732"/>
+<area shape="rect" id="node8" href="$node_8h.html" title="Base class for nodes." alt="" coords="582,631,712,657"/>
+<area shape="rect" id="node10" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="904,705,1112,732"/>
+<area shape="rect" id="node11" href="$sender_8h.html" title="Sender node." alt="" coords="566,705,706,732"/>
+<area shape="rect" id="node12" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="344,705,542,732"/>
+<area shape="rect" id="node14" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="544,377,699,419"/>
+<area shape="rect" id="node15" href="$control__task__executor_8h.html" title="Control task executor." alt="" coords="496,281,646,322"/>
+<area shape="rect" id="node16" href="$icontrol__task__completer_8h.html" title="Control task completion handler." alt="" coords="268,281,421,322"/>
+<area shape="rect" id="node18" href="$network__loop_8h.html" title="Network event loop thread." alt="" coords="105,377,296,419"/>
+<area shape="rect" id="node19" href="$tcp__server__port_8h.html" title="TCP server." alt="" coords="28,273,192,329"/>
+<area shape="rect" id="node21" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="945,281,1104,322"/>
+<area shape="rect" id="node22" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="771,281,920,322"/>
+</map>

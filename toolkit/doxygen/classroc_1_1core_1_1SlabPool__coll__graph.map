@@ -1,0 +1,5 @@
+<map id="roc::core::SlabPool&lt; T, EmbeddedCapacity &gt;" name="roc::core::SlabPool&lt; T, EmbeddedCapacity &gt;">
+<area shape="rect" id="node1" title="Memory pool." alt="" coords="61,80,255,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1IPool.html" title="Memory pool interface." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="147,5,358,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="roc::core::Atomic&lt; T * &gt;" name="roc::core::Atomic&lt; T * &gt;">
+<area shape="rect" id="node1" title="Atomic pointer. Provides sequential consistency. For a fine&#45;grained memory order control,..." alt="" coords="39,80,182,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+</map>

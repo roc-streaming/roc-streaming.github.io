@@ -1,0 +1,9 @@
+<map id="roc::pipeline::TranscoderSink" name="roc::pipeline::TranscoderSink">
+<area shape="rect" id="node1" title="Transcoder sink pipeline." alt="" coords="161,319,369,345"/>
+<area shape="rect" id="node2" href="$classroc_1_1sndio_1_1ISink.html" title="Sink interface." alt="" coords="106,244,231,271"/>
+<area shape="rect" id="node3" href="$classroc_1_1sndio_1_1IDevice.html" title="Base interface for sinks and sources." alt="" coords="5,169,148,196"/>
+<area shape="rect" id="node4" href="$classroc_1_1audio_1_1IFrameWriter.html" title="Frame writer interface." alt="" coords="173,169,351,196"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1ListNode.html" title="Base class for list element." alt="" coords="191,95,333,121"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="175,5,349,47"/>
+<area shape="rect" id="node7" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="255,244,466,271"/>
+</map>

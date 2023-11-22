@@ -1,0 +1,4 @@
+<map id="roc::netio::TcpClientConfig" name="roc::netio::TcpClientConfig">
+<area shape="rect" id="node1" title="TCP connection parameters." alt="" coords="5,95,196,121"/>
+<area shape="rect" id="node2" href="$structroc_1_1netio_1_1TcpConnectionConfig.html" title="TCP connection parameters." alt="" coords="8,5,193,47"/>
+</map>

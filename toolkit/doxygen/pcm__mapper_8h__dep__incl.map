@@ -1,0 +1,5 @@
+<map id="roc_audio/pcm_mapper.h" name="roc_audio/pcm_mapper.h">
+<area shape="rect" id="node1" title="PCM format mapper." alt="" coords="111,5,297,32"/>
+<area shape="rect" id="node2" href="$pcm__decoder_8h.html" title="PCM decoder." alt="" coords="5,80,192,107"/>
+<area shape="rect" id="node3" href="$pcm__encoder_8h.html" title="PCM encoder." alt="" coords="216,80,403,107"/>
+</map>

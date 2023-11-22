@@ -1,0 +1,4 @@
+<map id="roc::pipeline::ReceiverSessionMetrics" name="roc::pipeline::ReceiverSessionMetrics">
+<area shape="rect" id="node1" title="Metrics of receiver session (connection from sender)." alt="" coords="5,109,223,151"/>
+<area shape="rect" id="node2" href="$structroc_1_1audio_1_1LatencyMonitorMetrics.html" title="Metrics of latency monitor." alt="" coords="17,5,211,47"/>
+</map>

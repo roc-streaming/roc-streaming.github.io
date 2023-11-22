@@ -1,0 +1,6 @@
+<map id="roc::core::Buffer&lt; T &gt;" name="roc::core::Buffer&lt; T &gt;">
+<area shape="rect" id="node1" title="Fixed&#45;size dynamically&#45;allocated buffer." alt="" coords="139,169,301,196"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="105,80,335,121"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1PoolAllocation.html" title="Allocation policy for objects allocated using IPool." alt="" coords="240,5,419,32"/>
+</map>

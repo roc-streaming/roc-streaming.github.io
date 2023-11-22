@@ -1,0 +1,5 @@
+<map id="roc::rtp::TimestampExtractor" name="roc::rtp::TimestampExtractor">
+<area shape="rect" id="node1" title="Remembers a recent pair of capture timestamp and rtp ts." alt="" coords="75,80,284,107"/>
+<area shape="rect" id="node2" href="$classroc_1_1packet_1_1IWriter.html" title="Packet writer interface." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="175,5,386,32"/>
+</map>
