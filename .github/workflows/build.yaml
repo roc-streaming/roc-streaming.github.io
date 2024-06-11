@@ -14,20 +14,28 @@ jobs:
       - name: Checkout www
         uses: actions/checkout@v4
 
-      - name: Checkout toolkit
+      - name: Checkout roc-toolkit
         uses: actions/checkout@v4
         with:
           repository: roc-streaming/roc-toolkit
           path: roc-toolkit
 
-      - name: Pull docker image
-        run: docker pull rocstreaming/env-sphinx
+      - name: Checkout rocd
+        uses: actions/checkout@v4
+        with:
+          repository: roc-streaming/rocd
+          path: rocd
 
-      - name: Build documentation
+      - name: Build roc-toolkit documentation
         run: |
           docker run --rm -t -u "${UID}" -v "$(pwd)":/opt/roc -w /opt/roc rocstreaming/env-sphinx \
               scons -C roc-toolkit --enable-sphinx --enable-doxygen docs
           cp -av roc-toolkit/docs/html www/toolkit
+
+      - name: Build rocd documentation
+        run: |
+          make -C rocd html
+          cp -av rocd/docs/html www/daemon
 
       - name: Publish web-site
         uses: JamesIves/github-pages-deploy-action@4.0.0
