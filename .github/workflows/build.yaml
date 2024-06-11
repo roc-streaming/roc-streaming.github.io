@@ -34,8 +34,7 @@ jobs:
 
       - name: Build rocd documentation
         run: |
-          make -C rocd html
-          cp -av rocd/docs/html www/daemon
+          cp -av rocd/docs www/daemon
 
       - name: Publish web-site
         uses: JamesIves/github-pages-deploy-action@4.0.0
