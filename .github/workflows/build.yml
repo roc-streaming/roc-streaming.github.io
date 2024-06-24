@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  ubuntu:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout www
@@ -33,10 +33,11 @@ jobs:
 
       - name: Build rocd documentation
         run: |
-          cp -av rocd/docs www/daemon
+          make -C rocd html
+          cp -av rocd/docs/html www/daemon
 
       - name: Publish web-site
-        uses: JamesIves/github-pages-deploy-action@4.0.0
+        uses: JamesIves/github-pages-deploy-action@v4.6.1
         with:
           branch: content
           folder: www
