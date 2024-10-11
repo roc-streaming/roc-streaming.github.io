@@ -26,6 +26,13 @@ jobs:
           repository: roc-streaming/rocd
           path: rocd
 
+      - name: Checkout roc-droid
+        uses: actions/checkout@v4
+        with:
+          repository: roc-streaming/roc-droid
+          path: roc-droid
+          ref: flutter
+
       - name: Build roc-toolkit documentation
         run: |
           ./roc-toolkit/scripts/make_doc.sh
@@ -35,6 +42,11 @@ jobs:
         run: |
           make -C rocd html
           cp -av rocd/docs/html www/daemon
+
+      - name: Build roc-droid documentation
+        run: |
+          ./roc-droid/script/generate_docs.py
+          cp -av roc-droid/site www/droid
 
       - name: Publish web-site
         uses: JamesIves/github-pages-deploy-action@v4.6.1
