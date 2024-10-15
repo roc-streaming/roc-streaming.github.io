@@ -1,0 +1,32 @@
+<map id="roc_packet/ntp.h" name="roc_packet/ntp.h">
+<area shape="rect" id="node1" title="Utitilies for NTP timestamp." alt="" coords="616,5,746,32"/>
+<area shape="rect" id="node2" href="$roc__rtcp_2headers_8h.html" title="RTCP headers." alt="" coords="516,155,659,181"/>
+<area shape="rect" id="node26" href="$reporter_8h.html" title="RTCP reporter." alt="" coords="678,311,820,338"/>
+<area shape="rect" id="node30" href="$roc__rtcp_2ntp_8h.html" title="RTCP&#45;specific NTP helpers." alt="" coords="532,80,643,107"/>
+<area shape="rect" id="node3" href="$receiver__session__router_8h.html" title="Receiver session router." alt="" coords="844,304,1003,345"/>
+<area shape="rect" id="node17" href="$builder_8h.html" title="RTCP packet builder." alt="" coords="310,311,444,338"/>
+<area shape="rect" id="node23" href="$bye__traverser_8h.html" title="RTCP interface structures." alt="" coords="225,229,404,256"/>
+<area shape="rect" id="node24" href="$traverser_8h.html" title="RTCP packet traverser." alt="" coords="198,393,346,420"/>
+<area shape="rect" id="node25" href="$cname_8h.html" title="CNAME utilities." alt="" coords="724,229,859,256"/>
+<area shape="rect" id="node27" href="$sdes_8h.html" title="SDES elements." alt="" coords="478,229,598,256"/>
+<area shape="rect" id="node28" href="$sdes__traverser_8h.html" title="Sdes enums." alt="" coords="468,311,654,338"/>
+<area shape="rect" id="node29" href="$xr__traverser_8h.html" title="XR Traverser." alt="" coords="33,229,201,256"/>
+<area shape="rect" id="node4" href="$receiver__session__group_8h.html" title="Receiver session group." alt="" coords="819,543,978,584"/>
+<area shape="rect" id="node5" href="$receiver__slot_8h.html" title="Receiver slot." alt="" coords="819,632,978,673"/>
+<area shape="rect" id="node6" href="$receiver__source_8h.html" title="Receiver source pipeline." alt="" coords="819,721,978,763"/>
+<area shape="rect" id="node7" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="819,811,978,852"/>
+<area shape="rect" id="node8" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="605,900,760,941"/>
+<area shape="rect" id="node13" href="$receiver_8h.html" title="Receiver node." alt="" coords="921,1228,1070,1255"/>
+<area shape="rect" id="node14" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="689,1228,897,1255"/>
+<area shape="rect" id="node9" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="496,989,674,1031"/>
+<area shape="rect" id="node10" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="699,997,860,1023"/>
+<area shape="rect" id="node11" href="$context_8h.html" title="Node context." alt="" coords="640,1079,786,1105"/>
+<area shape="rect" id="node12" href="$node_8h.html" title="Base class for nodes." alt="" coords="626,1153,755,1180"/>
+<area shape="rect" id="node15" href="$sender_8h.html" title="Sender node." alt="" coords="302,1228,442,1255"/>
+<area shape="rect" id="node16" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="466,1228,664,1255"/>
+<area shape="rect" id="node18" href="$communicator_8h.html" title="RTCP communicator." alt="" coords="367,468,550,495"/>
+<area shape="rect" id="node19" href="$sender__session_8h.html" title="Sender session." alt="" coords="384,543,533,584"/>
+<area shape="rect" id="node20" href="$sender__slot_8h.html" title="Sender slot." alt="" coords="384,632,533,673"/>
+<area shape="rect" id="node21" href="$sender__sink_8h.html" title="Sender sink pipeline." alt="" coords="384,721,533,763"/>
+<area shape="rect" id="node22" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="384,811,533,852"/>
+</map>

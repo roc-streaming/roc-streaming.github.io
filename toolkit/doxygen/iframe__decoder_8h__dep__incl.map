@@ -1,0 +1,34 @@
+<map id="roc_audio/iframe_decoder.h" name="roc_audio/iframe_decoder.h">
+<area shape="rect" id="node1" title="Audio frame decoder interface." alt="" coords="1784,5,1987,32"/>
+<area shape="rect" id="node2" href="$depacketizer_8h.html" title="Depacketizer." alt="" coords="1794,155,1977,181"/>
+<area shape="rect" id="node4" href="$receiver__session_8h.html" title="Receiver session pipeline." alt="" coords="1543,304,1702,345"/>
+<area shape="rect" id="node19" href="$pcm__decoder_8h.html" title="PCM decoder." alt="" coords="2084,80,2271,107"/>
+<area shape="rect" id="node20" href="$encoding_8h.html" title="RTP encoding." alt="" coords="1579,80,1722,107"/>
+<area shape="rect" id="node29" href="$filter_8h.html" title="RTP filter." alt="" coords="1481,155,1593,181"/>
+<area shape="rect" id="node3" href="$latency__monitor_8h.html" title="Latency monitor." alt="" coords="1751,229,1958,256"/>
+<area shape="rect" id="node5" href="$receiver__session__group_8h.html" title="Receiver session group." alt="" coords="1474,483,1633,524"/>
+<area shape="rect" id="node18" href="$receiver__session__router_8h.html" title="Receiver session router." alt="" coords="1553,393,1711,435"/>
+<area shape="rect" id="node6" href="$receiver__slot_8h.html" title="Receiver slot." alt="" coords="1327,572,1486,613"/>
+<area shape="rect" id="node7" href="$receiver__source_8h.html" title="Receiver source pipeline." alt="" coords="1125,661,1283,703"/>
+<area shape="rect" id="node8" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="878,751,1037,792"/>
+<area shape="rect" id="node9" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="664,840,819,881"/>
+<area shape="rect" id="node14" href="$receiver_8h.html" title="Receiver node." alt="" coords="660,1168,809,1195"/>
+<area shape="rect" id="node15" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="5,1168,213,1195"/>
+<area shape="rect" id="node10" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="555,929,733,971"/>
+<area shape="rect" id="node11" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="758,937,919,963"/>
+<area shape="rect" id="node12" href="$context_8h.html" title="Node context." alt="" coords="291,1019,437,1045"/>
+<area shape="rect" id="node13" href="$node_8h.html" title="Base class for nodes." alt="" coords="299,1093,429,1120"/>
+<area shape="rect" id="node16" href="$sender_8h.html" title="Sender node." alt="" coords="238,1168,378,1195"/>
+<area shape="rect" id="node17" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="402,1168,601,1195"/>
+<area shape="rect" id="node21" href="$encoding__map_8h.html" title="RTP encoding map." alt="" coords="1199,155,1377,181"/>
+<area shape="rect" id="node27" href="$link__meter_8h.html" title="RTP link meter." alt="" coords="1575,229,1727,256"/>
+<area shape="rect" id="node22" href="$receiver__endpoint_8h.html" title="Receiver endpoint pipeline." alt="" coords="1233,393,1391,435"/>
+<area shape="rect" id="node23" href="$sender__session_8h.html" title="Sender session." alt="" coords="349,304,499,345"/>
+<area shape="rect" id="node25" href="$sender__sink_8h.html" title="Sender sink pipeline." alt="" coords="451,483,600,524"/>
+<area shape="rect" id="node28" href="$roc__rtp_2parser_8h.html" title="RTP packet parser." alt="" coords="1276,229,1399,256"/>
+<area shape="rect" id="node24" href="$sender__slot_8h.html" title="Sender slot." alt="" coords="451,393,600,435"/>
+<area shape="rect" id="node26" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="443,751,592,792"/>
+<area shape="rect" id="node30" href="$roc__pipeline_2config_8h.html" title="Pipeline config." alt="" coords="883,229,1039,256"/>
+<area shape="rect" id="node31" href="$transcoder__sink_8h.html" title="Transcoder sink pipeline." alt="" coords="675,304,850,345"/>
+<area shape="rect" id="node32" href="$transcoder__source_8h.html" title="Transcoder source pipeline." alt="" coords="874,304,1049,345"/>
+</map>

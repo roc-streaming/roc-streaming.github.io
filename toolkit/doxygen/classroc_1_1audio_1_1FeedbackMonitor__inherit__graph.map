@@ -1,0 +1,7 @@
+<map id="roc::audio::FeedbackMonitor" name="roc::audio::FeedbackMonitor">
+<area shape="rect" id="node1" title="Feedback monitor." alt="" coords="91,273,298,300"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1IFrameWriter.html" title="Frame writer interface." alt="" coords="5,191,184,218"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1ListNode.html" title="Base class for List element." alt="" coords="23,95,166,136"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="8,5,181,47"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="208,184,381,225"/>
+</map>

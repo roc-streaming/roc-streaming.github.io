@@ -1,0 +1,4 @@
+<map id="roc::core::RingQueue&lt; T, EmbeddedCapacity &gt;" name="roc::core::RingQueue&lt; T, EmbeddedCapacity &gt;">
+<area shape="rect" id="node1" title="Queue on continuous memory buffer." alt="" coords="5,95,200,136"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="16,5,189,47"/>
+</map>

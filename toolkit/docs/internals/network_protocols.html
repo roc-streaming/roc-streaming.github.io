@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Network protocols &#8212; Roc Toolkit 0.4.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/roc.css?v=37117d08" />
+    <script src="../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/analytics.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Audio backends" href="audio_backends.html" />
+    <link rel="prev" title="Frequency estimator and resampler" href="fe_resampler.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="audio_backends.html" title="Audio backends"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="fe_resampler.html" title="Frequency estimator and resampler"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../internals.html" accesskey="U">Internals</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Network protocols</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="network-protocols">
+<h1>Network protocols<a class="headerlink" href="#network-protocols" title="Link to this heading">¶</a></h1>
+<p>Roc uses several network protocols for exchanging data between sender and receiver.</p>
+<p>Roc avoids inventing new protocols and relies on existing open standards, to take advantage of their careful design and potential interoperability with other software. Roc implements from scratch most protocols (but not codecs). Sometimes there is just no suitable and reusable open implementation. Often the protocol logic must be tightly integrated into the pipeline and it would be hard to employ a stand-alone implementation.</p>
+<p>Although Roc is designed to support arbitrary protocols, and most of the code is generic, so far all supported protocols are RTP-based. RTP by itself is very basic but also very extensible. To employ RTP, one needs to select an RTP profile and, if necessary, some RTP extensions.</p>
+<p>As a basis, Roc uses RTP Audio/Video Profile (AVPF) which specifies how to stream audio and video using RTP.</p>
+<p>It also employs FEC Framework (FECFRAME), which specifies how to incorporate various FEC schemes into RTP. Using FECFRAME may prevent interoperability with third-party RTP implementations that don’t support it. If you need compatibility with such applications, you can disable FEC.</p>
+<p>Roc also employs various RTCP extensions to exchange non-media reports between sender and receiver. Usually this doesn’t break interoperability with implementations that don’t support extensions, however some features may not work with such implementations (e.g. sender-side latency tuning).</p>
+<p>Here is the full list of the network protocols implemented by Roc:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 60.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>RFC</strong></p></th>
+<th class="head"><p><strong>Name</strong></p></th>
+<th class="head"><p><strong>Comment</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://tools.ietf.org/html/rfc3550">RFC 3550</a></p></td>
+<td><p><cite>RTP: A Transport Protocol for Real-Time Applications</cite></p></td>
+<td><p>Basic RTP and RTCP</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://tools.ietf.org/html/rfc3551">RFC 3551</a></p></td>
+<td><p><cite>RTP Profile for Audio and Video Conferences with Minimal Control</cite></p></td>
+<td><p>RTP AVPF (Audio/Video Profile)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://tools.ietf.org/html/rfc3611">RFC 3611</a></p></td>
+<td><p><cite>RTP Control Protocol Extended Reports</cite></p></td>
+<td><div class="line-block">
+<div class="line">RTCP XR</div>
+<div class="line">(supported blocks: DLRR, RRTR)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://tools.ietf.org/html/rfc6776">RFC 6776</a></p></td>
+<td><p><cite>Measurement Identity and Information Reporting Using a Source Description (SDES) Item and an RTCP Extended Report (XR) Block</cite></p></td>
+<td><p>RTCP XR Measurement Information Block</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://tools.ietf.org/html/rfc6843">RFC 6843</a></p></td>
+<td><p><cite>RTP Control Protocol (RTCP) Extended Report (XR) Block for Delay Metric Reporting</cite></p></td>
+<td><p>RTCP XR Delay Metrics Block</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://tools.ietf.org/html/rfc6363">RFC 6363</a></p></td>
+<td><p><cite>Forward Error Correction (FEC) Framework</cite></p></td>
+<td><p>FECFRAME</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://tools.ietf.org/html/rfc6865">RFC 6865</a></p></td>
+<td><p><cite>Simple Reed-Solomon Forward Error Correction (FEC) Scheme for FECFRAME</cite></p></td>
+<td><p>Reed-Solomon FEC Scheme</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://tools.ietf.org/html/rfc6816">RFC 6816</a></p></td>
+<td><p><cite>Simple Low-Density Parity Check (LDPC) Staircase Forward Error Correction (FEC) Scheme for FECFRAME</cite></p></td>
+<td><p>LDPC-Staircase FEC Scheme</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo80.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about_project.html">About project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manuals.html">Manuals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../portability.html">Portability</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../internals.html">Internals</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_structure.html">Code structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Threads and queues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipelines.html">Media pipelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packets_frames.html">Packets and frames</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timestamps.html">Timestamps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fec.html">Forward Erasure Correction codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fe_resampler.html">Frequency estimator and resampler</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Network protocols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="audio_backends.html">Audio backends</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="audio_backends.html" title="Audio backends"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="fe_resampler.html" title="Frequency estimator and resampler"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../internals.html" >Internals</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Network protocols</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Roc Streaming authors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

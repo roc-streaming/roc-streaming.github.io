@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Roadmap &#8212; Roc Toolkit 0.4.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/roc.css?v=37117d08" />
+    <script src="../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/analytics.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contribution guidelines" href="contribution_guidelines.html" />
+    <link rel="prev" title="Release history" href="history.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="contribution_guidelines.html" title="Contribution guidelines"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="history.html" title="Release history"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../development.html" accesskey="U">Development</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Roadmap</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="roadmap">
+<h1>Roadmap<a class="headerlink" href="#roadmap" title="Link to this heading">¶</a></h1>
+<section id="basic-features">
+<h2>Basic features<a class="headerlink" href="#basic-features" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>☑️ Real-time streaming with guaranteed latency</p></li>
+<li><p>☑️ Latency tuning and clock drift compensation driven by receiver</p></li>
+<li><p>☑️ Latency tuning and clock drift compensation driven by sender</p></li>
+<li><p>☑️ Packet loss recovery using FEC</p></li>
+<li><p>☑️ Session multiplexing</p></li>
+<li><p>☑️ Stream breakage detection</p></li>
+<li><p>☑️ Multiple slots on sender and receiver</p></li>
+<li><p>⬜ Configurable network encoding</p></li>
+<li><p>☑️ Automatic channel and rate conversions</p></li>
+<li><p>⬜ Automatic encoding conversions</p></li>
+<li><p>☑️ Metrics reporting</p></li>
+<li><p>⬜ State reporting</p></li>
+</ul>
+</section>
+<section id="advanced-features">
+<h2>Advanced features<a class="headerlink" href="#advanced-features" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>⬜ End-to-end latency estimation</p></li>
+<li><p>⬜ Dynamic latency adjustment (requires RTCP)</p></li>
+<li><p>⬜ Dynamic adjustment of FEC block size (requires RTCP)</p></li>
+<li><p>⬜ Dynamic adjustment of FEC code rate (requires RTCP and XRs from <a class="reference external" href="https://tools.ietf.org/html/rfc5725">RFC 5725</a>)</p></li>
+<li><p>⬜ Dynamic audio bitrate adjustment</p></li>
+<li><p>⬜ Dynamic payload type switch</p></li>
+<li><p>⬜ Encryption support (SRTP and DTLS)</p></li>
+<li><p>⬜ QoS support</p></li>
+<li><p>⬜ Packet loss concealment (PLC)</p></li>
+<li><p>⬜ Lip sync support</p></li>
+<li><p>☑️ Multicast support</p></li>
+<li><p>⬜ Multi-room support (synchronized playback)</p></li>
+<li><p>⬜ Surround sound</p></li>
+<li><p>⬜ Congestion control</p></li>
+<li><p>⬜ Retransmission (probably <a class="reference external" href="https://tools.ietf.org/html/rfc4588">RFC 4588</a> and <a class="reference external" href="https://tools.ietf.org/html/rfc4585">RFC 4585</a>)</p></li>
+<li><p>⬜ Video support</p></li>
+<li><p>⬜ Hardware acceleration (maybe OpenMAX)</p></li>
+</ul>
+</section>
+<section id="extensibility">
+<h2>Extensibility<a class="headerlink" href="#extensibility" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>☑️ Provide custom logger</p></li>
+<li><p>⬜ Provide custom allocator</p></li>
+<li><p>☑️ Register custom payload types</p></li>
+<li><p>⬜ Register custom codecs</p></li>
+<li><p>⬜ Register custom PLC</p></li>
+<li><p>⬜ Register custom mixer</p></li>
+</ul>
+</section>
+<section id="protocols">
+<h2>Protocols<a class="headerlink" href="#protocols" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>☑️ RTP/AVPF</p></li>
+<li><p>☑️ FECFRAME (Reed-Solomon and LDPC-Staircase FEC codes based on <a class="reference external" href="http://openfec.org/">OpenFEC</a>)</p></li>
+<li><p>☑️ RTCP</p></li>
+<li><p>☑️ RTCP XR (extended reports)</p></li>
+<li><p>⬜ SDP</p></li>
+<li><p>⬜ RTSP</p></li>
+<li><p>⬜ SRTP</p></li>
+<li><p>⬜ DTLS</p></li>
+</ul>
+</section>
+<section id="codecs">
+<h2>Codecs<a class="headerlink" href="#codecs" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>☑️ PCM</p></li>
+<li><p>⬜ FLAC</p></li>
+<li><p>⬜ Vorbis</p></li>
+<li><p>⬜ Opus</p></li>
+<li><p>☑️ Reed-Solomon FEC</p></li>
+<li><p>☑️ LDPC-Staircase FEC</p></li>
+<li><p>⬜ RaptorQ FEC</p></li>
+<li><p>⬜ Convolutional FEC</p></li>
+</ul>
+</section>
+<section id="audio-backends">
+<h2>Audio backends<a class="headerlink" href="#audio-backends" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>☑️ PulseAudio</p></li>
+<li><p>⬜ PipeWire</p></li>
+<li><p>⬜ ALSA</p></li>
+<li><p>⬜ JACK</p></li>
+<li><p>⬜ CoreAudio (macOS and iOS)</p></li>
+<li><p>⬜ Oboe (Android)</p></li>
+<li><p>⬜ WASAPI (Windows)</p></li>
+<li><p>☑️ SoX (universal)</p></li>
+<li><p>⬜ FFmpeg</p></li>
+<li><p>☑️ libsndfile</p></li>
+<li><p>☑️ WAV</p></li>
+</ul>
+</section>
+<section id="api">
+<h2>API<a class="headerlink" href="#api" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>☑️ Single-stream transport API (roc_sender / roc_receiver)</p></li>
+<li><p>⬜ Multi-stream transport API (roc_transceiver)</p></li>
+<li><p>☑️ Codec API (roc_sender_encoder / roc_receiver_decoder)</p></li>
+<li><p>⬜ Discovery API (roc_publisher / roc_explorer)</p></li>
+</ul>
+</section>
+<section id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>☑️ Sender (roc-send)</p></li>
+<li><p>☑️ Receiver (roc-recv)</p></li>
+<li><p>☑️ Loopback (roc-copy)</p></li>
+<li><p>⬜ Daemon (rocd)</p></li>
+</ul>
+</section>
+<section id="integrations">
+<h2>Integrations<a class="headerlink" href="#integrations" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>☑️ Roc-based transport for PulseAudio (roc-pulse)</p></li>
+<li><p>☑️ Roc-based transport for PipeWire (roc-source, roc-sink)</p></li>
+<li><p>☑️ Virtual audio device for macOS (roc-vad)</p></li>
+<li><p>⬜ Virtual audio device for Windows</p></li>
+</ul>
+</section>
+<section id="bindings">
+<h2>Bindings<a class="headerlink" href="#bindings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>☑️ Java (roc-java)</p></li>
+<li><p>☑️ Go (roc-go)</p></li>
+<li><p>⬜ Rust</p></li>
+</ul>
+</section>
+<section id="portability">
+<h2>Portability<a class="headerlink" href="#portability" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>☑️ Linux</p></li>
+<li><p>☑️ GNU/Hurd</p></li>
+<li><p>☑️ Other *nix systems</p></li>
+<li><p>☑️ macOS</p></li>
+<li><p>☑️ Android</p></li>
+<li><p>⬜ iOS</p></li>
+<li><p>⬜ Windows</p></li>
+<li><p>⬜ Zephyr</p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo80.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about_project.html">About project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manuals.html">Manuals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../portability.html">Portability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Internals</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../development.html">Development</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="history.html">Release history</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Roadmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribution_guidelines.html">Contribution guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coding_guidelines.html">Coding guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow.html">Development workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maintainer_notes.html">Maintainer notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="continuous_integration.html">Continuous integration</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="contribution_guidelines.html" title="Contribution guidelines"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="history.html" title="Release history"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../development.html" >Development</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Roadmap</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Roc Streaming authors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

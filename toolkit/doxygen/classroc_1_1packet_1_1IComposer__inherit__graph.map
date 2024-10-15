@@ -1,0 +1,6 @@
+<map id="roc::packet::IComposer" name="roc::packet::IComposer">
+<area shape="rect" id="node1" title="Packet composer interface." alt="" coords="205,5,376,32"/>
+<area shape="rect" id="node2" href="$classroc_1_1fec_1_1Composer.html" title="FECFRAME packet composer." alt="" coords="5,80,192,121"/>
+<area shape="rect" id="node3" href="$classroc_1_1rtcp_1_1Composer.html" title="RTCP packet composer." alt="" coords="216,87,365,114"/>
+<area shape="rect" id="node4" href="$classroc_1_1rtp_1_1Composer.html" title="RTP packet composer." alt="" coords="390,87,533,114"/>
+</map>

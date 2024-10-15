@@ -1,0 +1,34 @@
+<map id="roc_audio/iresampler.h" name="roc_audio/iresampler.h">
+<area shape="rect" id="node1" title="Audio resampler interface." alt="" coords="671,5,842,32"/>
+<area shape="rect" id="node2" href="$builtin__resampler_8h.html" title="Built&#45;in resampler." alt="" coords="5,87,220,114"/>
+<area shape="rect" id="node3" href="$decimation__resampler_8h.html" title="Decimating resampler." alt="" coords="245,80,407,121"/>
+<area shape="rect" id="node4" href="$resampler__map_8h.html" title="Resampler map." alt="" coords="431,80,586,121"/>
+<area shape="rect" id="node5" href="$resampler__reader_8h.html" title="Resampler." alt="" coords="1161,169,1315,211"/>
+<area shape="rect" id="node7" href="$receiver__session_8h.html" title="Receiver session pipeline." alt="" coords="1159,333,1317,375"/>
+<area shape="rect" id="node22" href="$transcoder__source_8h.html" title="Transcoder source pipeline." alt="" coords="1341,333,1516,375"/>
+<area shape="rect" id="node23" href="$resampler__writer_8h.html" title="Resampler." alt="" coords="737,80,891,121"/>
+<area shape="rect" id="node28" href="$sender__session_8h.html" title="Sender session." alt="" coords="627,333,777,375"/>
+<area shape="rect" id="node31" href="$transcoder__sink_8h.html" title="Transcoder sink pipeline." alt="" coords="428,333,603,375"/>
+<area shape="rect" id="node32" href="$speex__resampler_8h.html" title="Speex resampler." alt="" coords="1454,80,1670,121"/>
+<area shape="rect" id="node6" href="$latency__monitor_8h.html" title="Latency monitor." alt="" coords="1071,259,1277,285"/>
+<area shape="rect" id="node8" href="$receiver__session__group_8h.html" title="Receiver session group." alt="" coords="1239,512,1397,553"/>
+<area shape="rect" id="node21" href="$receiver__session__router_8h.html" title="Receiver session router." alt="" coords="1289,423,1448,464"/>
+<area shape="rect" id="node9" href="$receiver__slot_8h.html" title="Receiver slot." alt="" coords="1055,601,1213,643"/>
+<area shape="rect" id="node10" href="$receiver__source_8h.html" title="Receiver source pipeline." alt="" coords="1004,691,1163,732"/>
+<area shape="rect" id="node11" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="1169,780,1328,821"/>
+<area shape="rect" id="node12" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="947,869,1102,911"/>
+<area shape="rect" id="node17" href="$receiver_8h.html" title="Receiver node." alt="" coords="1073,1197,1222,1224"/>
+<area shape="rect" id="node18" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="1246,1197,1454,1224"/>
+<area shape="rect" id="node13" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="1033,959,1211,1000"/>
+<area shape="rect" id="node14" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="847,966,1008,993"/>
+<area shape="rect" id="node15" href="$context_8h.html" title="Node context." alt="" coords="897,1048,1043,1075"/>
+<area shape="rect" id="node16" href="$node_8h.html" title="Base class for nodes." alt="" coords="948,1123,1077,1149"/>
+<area shape="rect" id="node19" href="$sender_8h.html" title="Sender node." alt="" coords="687,1197,827,1224"/>
+<area shape="rect" id="node20" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="851,1197,1049,1224"/>
+<area shape="rect" id="node24" href="$feedback__monitor_8h.html" title="Feedback monitor." alt="" coords="787,169,937,211"/>
+<area shape="rect" id="node25" href="$roc__pipeline_2config_8h.html" title="Pipeline config." alt="" coords="839,259,995,285"/>
+<area shape="rect" id="node26" href="$receiver__endpoint_8h.html" title="Receiver endpoint pipeline." alt="" coords="1004,423,1163,464"/>
+<area shape="rect" id="node27" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="734,780,883,821"/>
+<area shape="rect" id="node29" href="$sender__slot_8h.html" title="Sender slot." alt="" coords="678,423,827,464"/>
+<area shape="rect" id="node30" href="$sender__sink_8h.html" title="Sender sink pipeline." alt="" coords="729,512,878,553"/>
+</map>

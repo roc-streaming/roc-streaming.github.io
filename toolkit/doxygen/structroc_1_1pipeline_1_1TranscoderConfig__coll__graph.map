@@ -1,0 +1,6 @@
+<map id="roc::pipeline::TranscoderConfig" name="roc::pipeline::TranscoderConfig">
+<area shape="rect" id="node1" title="Converter parameters." alt="" coords="217,109,397,151"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1SampleSpec.html" title="Sample specification. Describes sample rate and channels." alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node3" href="$structroc_1_1audio_1_1ResamplerConfig.html" title="Resampler config." alt="" coords="205,5,410,32"/>
+<area shape="rect" id="node4" href="$structroc_1_1audio_1_1ProfilerConfig.html" title="Profiler Configuration Parameters. Controls profiling interval and duration of each circular buffer c..." alt="" coords="434,5,615,32"/>
+</map>

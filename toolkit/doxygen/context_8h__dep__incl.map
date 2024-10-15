@@ -1,0 +1,8 @@
+<map id="roc_node/context.h" name="roc_node/context.h">
+<area shape="rect" id="node1" title="Node context." alt="" coords="308,5,455,32"/>
+<area shape="rect" id="node2" href="$node_8h.html" title="Base class for nodes." alt="" coords="317,80,446,107"/>
+<area shape="rect" id="node3" href="$receiver_8h.html" title="Receiver node." alt="" coords="5,155,155,181"/>
+<area shape="rect" id="node4" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="179,155,387,181"/>
+<area shape="rect" id="node5" href="$sender_8h.html" title="Sender node." alt="" coords="411,155,551,181"/>
+<area shape="rect" id="node6" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="575,155,774,181"/>
+</map>

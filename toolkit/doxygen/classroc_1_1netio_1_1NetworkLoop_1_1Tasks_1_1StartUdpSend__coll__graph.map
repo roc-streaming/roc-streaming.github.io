@@ -1,0 +1,11 @@
+<map id="roc::netio::NetworkLoop::Tasks::StartUdpSend" name="roc::netio::NetworkLoop::Tasks::StartUdpSend">
+<area shape="rect" id="node1" title="Start sending on UDP port." alt="" coords="820,136,997,177"/>
+<area shape="rect" id="node2" href="$classroc_1_1netio_1_1NetworkTask.html" title="Base class for network loop tasks." alt="" coords="596,143,771,170"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1MpscQueueNode.html" title="Base class for MpscQueue element." alt="" coords="275,5,471,47"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,5,225,47"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1Atomic.html" title=" " alt="" coords="301,71,444,112"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="29,87,202,128"/>
+<area shape="rect" id="node9" href="$classroc_1_1core_1_1Optional.html" title=" " alt="" coords="277,136,468,177"/>
+<area shape="rect" id="node7" href="$classroc_1_1netio_1_1INetworkTaskCompleter.html" title="Network task completion handler." alt="" coords="283,201,462,243"/>
+<area shape="rect" id="node8" href="$classroc_1_1core_1_1SharedPtr.html" title=" " alt="" coords="281,267,464,308"/>
+</map>

@@ -1,0 +1,33 @@
+<map id="roc_core/mpsc_queue_impl.h" name="roc_core/mpsc_queue_impl.h">
+<area shape="rect" id="node1" title="Multi&#45;producer single&#45;consumer queue internal implementation." alt="" coords="502,5,665,47"/>
+<area shape="rect" id="node2" href="$mpsc__queue_8h.html" title="Multi&#45;producer single&#45;consumer queue." alt="" coords="496,95,671,121"/>
+<area shape="rect" id="node3" href="$control__task__queue_8h.html" title="Control task queue." alt="" coords="894,884,1043,925"/>
+<area shape="rect" id="node12" href="$network__loop_8h.html" title="Network event loop thread." alt="" coords="500,884,691,925"/>
+<area shape="rect" id="node13" href="$udp__port_8h.html" title="UDP port." alt="" coords="5,169,169,211"/>
+<area shape="rect" id="node14" href="$concurrent__queue_8h.html" title="Concurrent blocking packet queue." alt="" coords="1222,1137,1387,1179"/>
+<area shape="rect" id="node15" href="$pipeline__loop_8h.html" title="Base class for pipelines." alt="" coords="882,169,1039,211"/>
+<area shape="rect" id="node17" href="$receiver__endpoint_8h.html" title="Receiver endpoint pipeline." alt="" coords="988,437,1147,479"/>
+<area shape="rect" id="node31" href="$sender__endpoint_8h.html" title="Sender endpoint pipeline." alt="" coords="295,259,445,300"/>
+<area shape="rect" id="node4" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="681,973,859,1015"/>
+<area shape="rect" id="node5" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="884,981,1045,1007"/>
+<area shape="rect" id="node6" href="$context_8h.html" title="Node context." alt="" coords="781,1063,927,1089"/>
+<area shape="rect" id="node8" href="$receiver_8h.html" title="Receiver node." alt="" coords="907,1227,1057,1253"/>
+<area shape="rect" id="node7" href="$node_8h.html" title="Base class for nodes." alt="" coords="789,1145,919,1171"/>
+<area shape="rect" id="node9" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="1081,1227,1289,1253"/>
+<area shape="rect" id="node10" href="$sender_8h.html" title="Sender node." alt="" coords="521,1227,661,1253"/>
+<area shape="rect" id="node11" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="685,1227,884,1253"/>
+<area shape="rect" id="node16" href="$roc__pipeline_2config_8h.html" title="Pipeline config." alt="" coords="883,266,1039,293"/>
+<area shape="rect" id="node21" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="1105,795,1264,836"/>
+<area shape="rect" id="node25" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="455,705,605,747"/>
+<area shape="rect" id="node20" href="$receiver__source_8h.html" title="Receiver source pipeline." alt="" coords="1105,705,1264,747"/>
+<area shape="rect" id="node23" href="$receiver__session_8h.html" title="Receiver session pipeline." alt="" coords="1223,348,1381,389"/>
+<area shape="rect" id="node26" href="$sender__session_8h.html" title="Sender session." alt="" coords="346,348,495,389"/>
+<area shape="rect" id="node27" href="$sender__slot_8h.html" title="Sender slot." alt="" coords="321,437,470,479"/>
+<area shape="rect" id="node28" href="$sender__sink_8h.html" title="Sender sink pipeline." alt="" coords="346,527,495,568"/>
+<area shape="rect" id="node29" href="$transcoder__sink_8h.html" title="Transcoder sink pipeline." alt="" coords="773,348,948,389"/>
+<area shape="rect" id="node30" href="$transcoder__source_8h.html" title="Transcoder source pipeline." alt="" coords="972,348,1147,389"/>
+<area shape="rect" id="node18" href="$receiver__session__group_8h.html" title="Receiver session group." alt="" coords="1131,527,1289,568"/>
+<area shape="rect" id="node19" href="$receiver__slot_8h.html" title="Receiver slot." alt="" coords="1105,616,1264,657"/>
+<area shape="rect" id="node22" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="715,884,870,925"/>
+<area shape="rect" id="node24" href="$receiver__session__router_8h.html" title="Receiver session router." alt="" coords="1223,437,1381,479"/>
+</map>

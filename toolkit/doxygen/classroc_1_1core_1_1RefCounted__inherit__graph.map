@@ -1,0 +1,5 @@
+<map id="roc::core::RefCounted&lt; T, AllocationPolicy &gt;" name="roc::core::RefCounted&lt; T, AllocationPolicy &gt;">
+<area shape="rect" id="node1" title="Base class for object with reference counter." alt="" coords="172,95,344,136"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,5,284,47"/>
+<area shape="rect" id="node3" title=" " alt="" coords="308,13,435,39"/>
+</map>

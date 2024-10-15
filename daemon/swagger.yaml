@@ -1,0 +1,340 @@
+definitions:
+  Address:
+    properties:
+      audio_control:
+        type: string
+      audio_repair:
+        type: string
+      audio_source:
+        type: string
+    type: object
+  Device:
+    properties:
+      device_uid:
+        type: string
+      display_name:
+        type: string
+      driver:
+        $ref: '#/definitions/DeviceDriver'
+      from_address:
+        items:
+          $ref: '#/definitions/Address'
+        type: array
+      hardware_device:
+        type: boolean
+      muted:
+        type: boolean
+      status:
+        $ref: '#/definitions/DeviceStatus'
+      stream_device:
+        type: boolean
+      system_name:
+        type: string
+      to_address:
+        items:
+          $ref: '#/definitions/Address'
+        type: array
+      type:
+        $ref: '#/definitions/DeviceType'
+    type: object
+  DeviceDriver:
+    enum:
+    - pipewire
+    - pulseaudio
+    type: string
+    x-enum-varnames:
+    - DriverPipewire
+    - DriverPulseaudio
+  DeviceStatus:
+    enum:
+    - disabled
+    - enabled
+    - unavailable
+    type: string
+    x-enum-varnames:
+    - StatusDisabled
+    - StatusEnabled
+    - StatusUnavailable
+  DeviceType:
+    enum:
+    - sink
+    - source
+    type: string
+    x-enum-varnames:
+    - Sink
+    - Source
+  EventType:
+    enum:
+    - device_added
+    - device_removed
+    - device_updated
+    type: string
+    x-enum-varnames:
+    - EventDeviceAdded
+    - EventDeviceRemoved
+    - EventDeviceUpdated
+  Stream:
+    properties:
+      device_uid:
+        type: string
+      type:
+        $ref: '#/definitions/EventType'
+    type: object
+  StreamType:
+    enum:
+    - send
+    - recv
+    type: string
+    x-enum-varnames:
+    - SendStream
+    - RecvStream
+info:
+  contact: {}
+  description: Real-time audio streaming daemon.
+  license:
+    name: MPL-2.0
+    url: http://mozilla.org/MPL/2.0/
+  title: rocd
+  version: 0.0.1
+paths:
+  /devices:
+    get:
+      operationId: listDevices
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/Device'
+            type: array
+      summary: Show all devices
+      tags:
+      - Devices
+  /devices/{device_uid}:
+    get:
+      operationId: getDevice
+      parameters:
+      - description: Device UID
+        in: path
+        name: device_uid
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Device'
+      summary: Show device
+      tags:
+      - Devices
+    put:
+      operationId: updateDevice
+      parameters:
+      - description: Device UID
+        in: path
+        name: device_uid
+        required: true
+        type: string
+      - description: Device JSON
+        in: body
+        name: device
+        required: true
+        schema:
+          $ref: '#/definitions/Device'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Device'
+      summary: Update device
+      tags:
+      - Devices
+  /events:
+    get:
+      operationId: listenEvents
+      produces:
+      - text/event-stream
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Stream'
+      summary: Listen events
+      tags:
+      - Monitoring
+  /stream_devices:
+    get:
+      operationId: listStreamDevices
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/Device'
+            type: array
+      summary: Show all stream devices
+      tags:
+      - Stream devices
+    post:
+      operationId: createStreamDevice
+      parameters:
+      - description: Device JSON
+        in: body
+        name: device
+        required: true
+        schema:
+          $ref: '#/definitions/Device'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Device'
+      summary: Create stream device
+      tags:
+      - Stream devices
+  /stream_devices/{device_uid}:
+    delete:
+      operationId: deleteStreamDevice
+      parameters:
+      - description: Device UID
+        in: path
+        name: device_uid
+        required: true
+        type: string
+      responses:
+        "204":
+          description: No Content
+      summary: Delete stream device
+      tags:
+      - Stream devices
+    get:
+      operationId: getStreamDevice
+      parameters:
+      - description: Device UID
+        in: path
+        name: device_uid
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Device'
+      summary: Show stream device
+      tags:
+      - Stream devices
+    put:
+      operationId: updateStreamDevice
+      parameters:
+      - description: Device UID
+        in: path
+        name: device_uid
+        required: true
+        type: string
+      - description: Device JSON
+        in: body
+        name: device
+        required: true
+        schema:
+          $ref: '#/definitions/Device'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Device'
+      summary: Update stream device
+      tags:
+      - Stream devices
+  /streams:
+    get:
+      operationId: listStreams
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/Stream'
+            type: array
+      summary: Show all streams
+      tags:
+      - Streams
+    post:
+      operationId: createStream
+      parameters:
+      - description: Stream JSON
+        in: body
+        name: stream
+        required: true
+        schema:
+          $ref: '#/definitions/Stream'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Stream'
+      summary: Create stream
+      tags:
+      - Streams
+  /streams/{stream_uid}:
+    delete:
+      operationId: deleteStream
+      parameters:
+      - description: Stream UID
+        in: path
+        name: stream_uid
+        required: true
+        type: string
+      responses:
+        "204":
+          description: No Content
+      summary: Delete stream
+      tags:
+      - Streams
+    get:
+      operationId: getStream
+      parameters:
+      - description: Stream UID
+        in: path
+        name: stream_uid
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Stream'
+      summary: Show stream
+      tags:
+      - Streams
+    put:
+      operationId: updateStream
+      parameters:
+      - description: Stream UID
+        in: path
+        name: stream_uid
+        required: true
+        type: string
+      - description: Stream JSON
+        in: body
+        name: stream
+        required: true
+        schema:
+          $ref: '#/definitions/Stream'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Stream'
+      summary: Update stream
+      tags:
+      - Streams
+swagger: "2.0"
+tags:
+- description: Device API
+  name: Devices
+- description: Stream API
+  name: Streams
+- description: Stream device API
+  name: Stream devices
+- description: Monitoring API
+  name: Monitoring

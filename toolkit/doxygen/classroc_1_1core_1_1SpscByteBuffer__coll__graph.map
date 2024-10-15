@@ -1,0 +1,4 @@
+<map id="roc::core::SpscByteBuffer" name="roc::core::SpscByteBuffer">
+<area shape="rect" id="node1" title="Thread&#45;safe lock&#45;free single&#45;producer single&#45;consumer circular buffer of byte chunks." alt="" coords="5,95,191,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="11,5,185,47"/>
+</map>

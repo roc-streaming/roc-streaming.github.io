@@ -1,0 +1,13 @@
+<map id="roc::pipeline::SenderSinkConfig" name="roc::pipeline::SenderSinkConfig">
+<area shape="rect" id="node1" title="Parameters of sender sink and sender session." alt="" coords="599,217,781,258"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1SampleSpec.html" title="Sample specification. Describes sample rate and channels." alt="" coords="231,5,406,32"/>
+<area shape="rect" id="node3" href="$structroc_1_1audio_1_1ResamplerConfig.html" title="Resampler config." alt="" coords="216,56,421,83"/>
+<area shape="rect" id="node4" href="$structroc_1_1audio_1_1ProfilerConfig.html" title="Profiler Configuration Parameters. Controls profiling interval and duration of each circular buffer c..." alt="" coords="228,107,409,133"/>
+<area shape="rect" id="node5" href="$structroc_1_1pipeline_1_1PipelineLoopConfig.html" title="Pipeline loop task processing parameters." alt="" coords="222,158,415,199"/>
+<area shape="rect" id="node6" href="$structroc_1_1rtcp_1_1Config.html" title="RTCP config." alt="" coords="257,224,381,251"/>
+<area shape="rect" id="node7" href="$structroc_1_1rtcp_1_1RttConfig.html" title="Round&#45;trip time metrics." alt="" coords="5,224,148,251"/>
+<area shape="rect" id="node8" href="$structroc_1_1fec_1_1CodecConfig.html" title="FEC codec parameters." alt="" coords="239,275,398,301"/>
+<area shape="rect" id="node9" href="$structroc_1_1audio_1_1FeedbackConfig.html" title="Feedback monitor configuration." alt="" coords="220,325,417,352"/>
+<area shape="rect" id="node10" href="$structroc_1_1audio_1_1LatencyConfig.html" title="Latency settings." alt="" coords="225,376,412,403"/>
+<area shape="rect" id="node11" href="$structroc_1_1fec_1_1WriterConfig.html" title="FEC writer parameters." alt="" coords="239,427,398,453"/>
+</map>

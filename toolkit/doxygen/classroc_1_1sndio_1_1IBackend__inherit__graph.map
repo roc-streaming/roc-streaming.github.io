@@ -1,0 +1,7 @@
+<map id="roc::sndio::IBackend" name="roc::sndio::IBackend">
+<area shape="rect" id="node1" title="Backend interface." alt="" coords="5,81,157,108"/>
+<area shape="rect" id="node2" href="$classroc_1_1sndio_1_1PulseaudioBackend.html" title="Pulseaudio backend." alt="" coords="205,5,424,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1sndio_1_1SndfileBackend.html" title="Sndfile backend." alt="" coords="219,56,411,83"/>
+<area shape="rect" id="node4" href="$classroc_1_1sndio_1_1SoxBackend.html" title="SoX backend." alt="" coords="229,107,401,133"/>
+<area shape="rect" id="node5" href="$classroc_1_1sndio_1_1WavBackend.html" title="WAV backend." alt="" coords="227,157,403,184"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="roc::packet::ILinkMeter" name="roc::packet::ILinkMeter">
+<area shape="rect" id="node1" title="Link meter interface." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$classroc_1_1rtp_1_1LinkMeter.html" title="RTP link meter." alt="" coords="20,80,161,107"/>
+</map>

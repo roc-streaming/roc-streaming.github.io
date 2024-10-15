@@ -1,0 +1,7 @@
+<map id="roc::rtp::LinkMeter" name="roc::rtp::LinkMeter">
+<area shape="rect" id="node1" title="RTP link meter." alt="" coords="227,81,368,108"/>
+<area shape="rect" id="node2" href="$classroc_1_1packet_1_1ILinkMeter.html" title="Link meter interface." alt="" coords="7,5,177,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1packet_1_1IWriter.html" title="Packet writer interface." alt="" coords="19,56,165,83"/>
+<area shape="rect" id="node4" href="$classroc_1_1packet_1_1IReader.html" title="Packet reader interface." alt="" coords="17,107,167,133"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,158,179,199"/>
+</map>

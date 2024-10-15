@@ -1,0 +1,514 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Real-time audio streaming daemon.",
+        "title": "rocd",
+        "contact": {},
+        "license": {
+            "name": "MPL-2.0",
+            "url": "http://mozilla.org/MPL/2.0/"
+        },
+        "version": "0.0.1"
+    },
+    "paths": {
+        "/devices": {
+            "get": {
+                "tags": [
+                    "Devices"
+                ],
+                "summary": "Show all devices",
+                "operationId": "listDevices",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Device"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/devices/{device_uid}": {
+            "get": {
+                "tags": [
+                    "Devices"
+                ],
+                "summary": "Show device",
+                "operationId": "getDevice",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Device UID",
+                        "name": "device_uid",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Device"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Devices"
+                ],
+                "summary": "Update device",
+                "operationId": "updateDevice",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Device UID",
+                        "name": "device_uid",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Device JSON",
+                        "name": "device",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Device"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Device"
+                        }
+                    }
+                }
+            }
+        },
+        "/events": {
+            "get": {
+                "produces": [
+                    "text/event-stream"
+                ],
+                "tags": [
+                    "Monitoring"
+                ],
+                "summary": "Listen events",
+                "operationId": "listenEvents",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Stream"
+                        }
+                    }
+                }
+            }
+        },
+        "/stream_devices": {
+            "get": {
+                "tags": [
+                    "Stream devices"
+                ],
+                "summary": "Show all stream devices",
+                "operationId": "listStreamDevices",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Device"
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Stream devices"
+                ],
+                "summary": "Create stream device",
+                "operationId": "createStreamDevice",
+                "parameters": [
+                    {
+                        "description": "Device JSON",
+                        "name": "device",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Device"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Device"
+                        }
+                    }
+                }
+            }
+        },
+        "/stream_devices/{device_uid}": {
+            "get": {
+                "tags": [
+                    "Stream devices"
+                ],
+                "summary": "Show stream device",
+                "operationId": "getStreamDevice",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Device UID",
+                        "name": "device_uid",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Device"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Stream devices"
+                ],
+                "summary": "Update stream device",
+                "operationId": "updateStreamDevice",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Device UID",
+                        "name": "device_uid",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Device JSON",
+                        "name": "device",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Device"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Device"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Stream devices"
+                ],
+                "summary": "Delete stream device",
+                "operationId": "deleteStreamDevice",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Device UID",
+                        "name": "device_uid",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    }
+                }
+            }
+        },
+        "/streams": {
+            "get": {
+                "tags": [
+                    "Streams"
+                ],
+                "summary": "Show all streams",
+                "operationId": "listStreams",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Stream"
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Streams"
+                ],
+                "summary": "Create stream",
+                "operationId": "createStream",
+                "parameters": [
+                    {
+                        "description": "Stream JSON",
+                        "name": "stream",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Stream"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Stream"
+                        }
+                    }
+                }
+            }
+        },
+        "/streams/{stream_uid}": {
+            "get": {
+                "tags": [
+                    "Streams"
+                ],
+                "summary": "Show stream",
+                "operationId": "getStream",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Stream UID",
+                        "name": "stream_uid",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Stream"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Streams"
+                ],
+                "summary": "Update stream",
+                "operationId": "updateStream",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Stream UID",
+                        "name": "stream_uid",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Stream JSON",
+                        "name": "stream",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Stream"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Stream"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Streams"
+                ],
+                "summary": "Delete stream",
+                "operationId": "deleteStream",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Stream UID",
+                        "name": "stream_uid",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Address": {
+            "type": "object",
+            "properties": {
+                "audio_control": {
+                    "type": "string"
+                },
+                "audio_repair": {
+                    "type": "string"
+                },
+                "audio_source": {
+                    "type": "string"
+                }
+            }
+        },
+        "Device": {
+            "type": "object",
+            "properties": {
+                "device_uid": {
+                    "type": "string"
+                },
+                "display_name": {
+                    "type": "string"
+                },
+                "driver": {
+                    "$ref": "#/definitions/DeviceDriver"
+                },
+                "from_address": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Address"
+                    }
+                },
+                "hardware_device": {
+                    "type": "boolean"
+                },
+                "muted": {
+                    "type": "boolean"
+                },
+                "status": {
+                    "$ref": "#/definitions/DeviceStatus"
+                },
+                "stream_device": {
+                    "type": "boolean"
+                },
+                "system_name": {
+                    "type": "string"
+                },
+                "to_address": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Address"
+                    }
+                },
+                "type": {
+                    "$ref": "#/definitions/DeviceType"
+                }
+            }
+        },
+        "DeviceDriver": {
+            "type": "string",
+            "enum": [
+                "pipewire",
+                "pulseaudio"
+            ],
+            "x-enum-varnames": [
+                "DriverPipewire",
+                "DriverPulseaudio"
+            ]
+        },
+        "DeviceStatus": {
+            "type": "string",
+            "enum": [
+                "disabled",
+                "enabled",
+                "unavailable"
+            ],
+            "x-enum-varnames": [
+                "StatusDisabled",
+                "StatusEnabled",
+                "StatusUnavailable"
+            ]
+        },
+        "DeviceType": {
+            "type": "string",
+            "enum": [
+                "sink",
+                "source"
+            ],
+            "x-enum-varnames": [
+                "Sink",
+                "Source"
+            ]
+        },
+        "EventType": {
+            "type": "string",
+            "enum": [
+                "device_added",
+                "device_removed",
+                "device_updated"
+            ],
+            "x-enum-varnames": [
+                "EventDeviceAdded",
+                "EventDeviceRemoved",
+                "EventDeviceUpdated"
+            ]
+        },
+        "Stream": {
+            "type": "object",
+            "properties": {
+                "device_uid": {
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/definitions/EventType"
+                }
+            }
+        },
+        "StreamType": {
+            "type": "string",
+            "enum": [
+                "send",
+                "recv"
+            ],
+            "x-enum-varnames": [
+                "SendStream",
+                "RecvStream"
+            ]
+        }
+    },
+    "tags": [
+        {
+            "description": "Device API",
+            "name": "Devices"
+        },
+        {
+            "description": "Stream API",
+            "name": "Streams"
+        },
+        {
+            "description": "Stream device API",
+            "name": "Stream devices"
+        },
+        {
+            "description": "Monitoring API",
+            "name": "Monitoring"
+        }
+    ]
+}

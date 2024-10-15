@@ -1,0 +1,16 @@
+<map id="roc::pipeline::ReceiverSourceConfig" name="roc::pipeline::ReceiverSourceConfig">
+<area shape="rect" id="node1" title="Parameters of receiver session." alt="" coords="996,125,1207,166"/>
+<area shape="rect" id="node2" href="$structroc_1_1pipeline_1_1PipelineLoopConfig.html" title="Pipeline loop task processing parameters." alt="" coords="625,59,818,101"/>
+<area shape="rect" id="node3" href="$structroc_1_1pipeline_1_1ReceiverSessionConfig.html" title="Parameters of receiver session." alt="" coords="613,125,830,166"/>
+<area shape="rect" id="node4" href="$structroc_1_1audio_1_1ResamplerConfig.html" title="Resampler config." alt="" coords="216,5,421,32"/>
+<area shape="rect" id="node5" href="$structroc_1_1audio_1_1WatchdogConfig.html" title="Watchdog parameters." alt="" coords="219,56,418,83"/>
+<area shape="rect" id="node6" href="$structroc_1_1fec_1_1CodecConfig.html" title="FEC codec parameters." alt="" coords="239,107,398,133"/>
+<area shape="rect" id="node7" href="$structroc_1_1audio_1_1LatencyConfig.html" title="Latency settings." alt="" coords="225,157,412,184"/>
+<area shape="rect" id="node8" href="$structroc_1_1fec_1_1ReaderConfig.html" title="FEC reader parameters." alt="" coords="236,208,401,235"/>
+<area shape="rect" id="node9" href="$structroc_1_1pipeline_1_1ReceiverCommonConfig.html" title="Parameters common for all receiver sessions." alt="" coords="608,302,835,343"/>
+<area shape="rect" id="node10" href="$classroc_1_1audio_1_1SampleSpec.html" title="Sample specification. Describes sample rate and channels." alt="" coords="231,259,406,285"/>
+<area shape="rect" id="node11" href="$structroc_1_1rtp_1_1FilterConfig.html" title="RTP filter parameters." alt="" coords="243,309,394,336"/>
+<area shape="rect" id="node12" href="$structroc_1_1audio_1_1ProfilerConfig.html" title="Profiler Configuration Parameters. Controls profiling interval and duration of each circular buffer c..." alt="" coords="228,360,409,387"/>
+<area shape="rect" id="node13" href="$structroc_1_1rtcp_1_1Config.html" title="RTCP config." alt="" coords="257,411,381,437"/>
+<area shape="rect" id="node14" href="$structroc_1_1rtcp_1_1RttConfig.html" title="Round&#45;trip time metrics." alt="" coords="5,411,148,437"/>
+</map>

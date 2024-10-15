@@ -1,0 +1,15 @@
+<map id="roc::pipeline::PipelineTask" name="roc::pipeline::PipelineTask">
+<area shape="rect" id="node1" title="Base class for pipeline tasks." alt="" coords="517,242,708,269"/>
+<area shape="rect" id="node4" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Task.html" title="Base task class." alt="" coords="756,136,955,177"/>
+<area shape="rect" id="node9" href="$classroc_1_1pipeline_1_1SenderLoop_1_1Task.html" title="Base task class." alt="" coords="762,332,949,373"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1MpscQueueNode.html" title="Base class for MpscQueue element." alt="" coords="273,235,469,276"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,235,225,276"/>
+<area shape="rect" id="node5" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1AddEndpoint.html" title="Create endpoint on given interface of the slot." alt="" coords="1003,5,1201,47"/>
+<area shape="rect" id="node6" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1CreateSlot.html" title="Create new slot." alt="" coords="1003,71,1201,112"/>
+<area shape="rect" id="node7" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1DeleteSlot.html" title="Delete existing slot." alt="" coords="1003,136,1201,177"/>
+<area shape="rect" id="node8" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1QuerySlot.html" title="Query slot metrics." alt="" coords="1003,201,1201,243"/>
+<area shape="rect" id="node10" href="$classroc_1_1pipeline_1_1SenderLoop_1_1Tasks_1_1AddEndpoint.html" title="Create endpoint on given interface of the slot." alt="" coords="1009,267,1195,308"/>
+<area shape="rect" id="node11" href="$classroc_1_1pipeline_1_1SenderLoop_1_1Tasks_1_1CreateSlot.html" title="Create new slot." alt="" coords="1009,332,1195,373"/>
+<area shape="rect" id="node12" href="$classroc_1_1pipeline_1_1SenderLoop_1_1Tasks_1_1DeleteSlot.html" title="Delete existing slot." alt="" coords="1009,397,1195,439"/>
+<area shape="rect" id="node13" href="$classroc_1_1pipeline_1_1SenderLoop_1_1Tasks_1_1QuerySlot.html" title="Query slot metrics." alt="" coords="1009,463,1195,504"/>
+</map>

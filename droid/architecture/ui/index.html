@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>User interface - Roc Droid documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "User interface";
+        var mkdocs_page_input_path = "architecture/ui.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Roc Droid documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Architecture</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">User interface</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#widget-types">Widget types</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#widget-tree">Widget tree</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../model/">Model</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../agent/">Agent</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Building</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../building/build_project/">Build project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../building/windows_setup/">Windows setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../building/macos_linux_setup/">macOS and Linux setup</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/automation/">Automation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/android_development/">Android development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../development/release_management/">Release management</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Roc Droid documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Architecture</li>
+      <li class="breadcrumb-item active">User interface</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/roc-streaming/roc-droid/edit/main/docs/architecture/ui.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="user-interface">User interface</h1>
+<h2 id="widget-types">Widget types</h2>
+<p><img alt="" src="../../diagrams/widget_types.png" /></p>
+<p>Widgets can be categorized into the following types:</p>
+<ul>
+<li>
+<p><strong>Content Layer</strong></p>
+<p>Widgets at this level define the application's structure (layout) and the binding of the content (models) to the representation (components from the representation layer). These widgets actively interact with the model layer using the Observer pattern.</p>
+<p>Sublevels:</p>
+<ul>
+<li>
+<p><code>Screen</code>: This widget corresponds to the entire screen.</p>
+</li>
+<li>
+<p><code>Page</code>: This widget represents a page within the screen. Switching between pages is done via the lower tab bar or AppBar.</p>
+</li>
+<li>
+<p><code>Fragment</code>: This widget represents a smaller fragment of the UI, such as a separate block or item in a list.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Representation Layer</strong></p>
+<p>Widgets at this level, known as components, are the building blocks of the UI. A component defines its appearance and user interaction but is not tied to specific content (model).</p>
+<p>Sublevels:</p>
+<ul>
+<li>
+<p><code>roc Component</code>: Custom components that can implement application-specific styles or interface elements.</p>
+</li>
+<li>
+<p><code>Flutter Component</code>: Standard components from the Flutter SDK.</p>
+</li>
+</ul>
+<p>Fragment vs. Component</p>
+<p>It's important to understand the difference between a fragment and a component:</p>
+<ul>
+<li>
+<p><code>Fragment</code>: Responsible for communication with specific data (models or defined data). However, it is not responsible for a specific representation; this task is delegated to the components.</p>
+</li>
+<li>
+<p><code>Component</code>: Not tied to specific data—it receives data from above and does not interact with models. It is responsible for implementing a specific representation, such as styles and responses to clicks.</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> In our code, custom component classes are prefixed with <code>roc</code> to distinguish them from standard components or created as private widgets inside of a parent classes starting with <code>_</code> and without <code>roc</code>. Other types of widgets do not have a special prefix.</p>
+<p><strong>Note:</strong> In some frameworks, an entity similar to a fragment is called a <code>widget</code>. We use the term <code>fragment</code> for clarity (like in Android SDK).</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="widget-tree">Widget tree</h2>
+<p><img alt="" src="../../diagrams/widget_tree.png" /></p>
+<p>The UI diagram of the Rock Droid application client illustrates a tree of widgets that form the visual presentation for the user.</p>
+<p>Designations:</p>
+<ul>
+<li>
+<p><strong>Purple:</strong> Root class of the UI application (<code>Content Layer</code>)</p>
+</li>
+<li>
+<p>roc-droid classes:</p>
+<ul>
+<li><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/app_root.dart">AppRoot</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Red:</strong> Screen-level widgets (<code>Content Layer</code>)</p>
+</li>
+<li>
+<p>roc-droid classes:</p>
+<ul>
+<li><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/main_screen.dart">MainScreen</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Orange:</strong> Page-level widgets (<code>Content Layer</code>)</p>
+</li>
+<li>
+<p>roc-droid classes:</p>
+<ul>
+<li>
+<p><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/pages/receiver_page.dart">ReceiverPage</a></p>
+</li>
+<li>
+<p><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/pages/sender_page.dart">SenderPage</a></p>
+</li>
+<li>
+<p><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/pages/about_page.dart">AboutPage</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Yellow:</strong> Fragment-level widgets (<code>Content Layer</code>)</p>
+</li>
+<li>
+<p>roc-droid classes:</p>
+<ul>
+<li><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/fragments/roc_bottom_navigation_bar.dart">RocBottomNavigationBar</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Gray:</strong> Native Flutter <code>Widget</code> class (<code>Representation Layer</code>)</p>
+</li>
+<li>
+<p><strong>Blue:</strong> Custom Roc <code>Widget</code> class (<code>Representation Layer</code>)</p>
+<ul>
+<li>
+<p>Location: <code>/lib/src/ui/components</code></p>
+</li>
+<li>
+<p>Functionality:</p>
+</li>
+<li>
+<p>Representing Widgets that provide certain data to the user.</p>
+<ul>
+<li>
+<p><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/components/roc_chip.dart">RocChip</a></p>
+</li>
+<li>
+<p><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/components/roc_text_row.dart">RocTextRow</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Representing Widgets that provide the user with the ability to enter certain data.</p>
+<ul>
+<li>
+<p><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/components/roc_dropdown_button.dart">RocDropdownButton</a></p>
+</li>
+<li>
+<p><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/components/roc_stateful_button.dart">RocStatefulButton</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Representing Widgets that control specific view representations.</p>
+<ul>
+<li>
+<p><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/components/roc_page_view.dart">RocPageView</a></p>
+</li>
+<li>
+<p><a href="https://github.com/roc-streaming/roc-droid/tree/main/lib/src/ui/components/roc_scroll_view.dart">RocScrollView</a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../overview/" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../model/" class="btn btn-neutral float-right" title="Model">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright (c) Roc Streaming authors.</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/roc-streaming/roc-droid" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../overview/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../model/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="roc_core/string_list.h" name="roc_core/string_list.h">
+<area shape="rect" id="node1" title="Dynamic list of strings." alt="" coords="212,5,369,32"/>
+<area shape="rect" id="node2" href="$protocol__map_8h.html" title="Protocol attributes map." alt="" coords="5,80,163,121"/>
+<area shape="rect" id="node3" href="$media__description_8h.html" title="SDP Media Description." alt="" coords="187,87,395,114"/>
+<area shape="rect" id="node6" href="$backend__dispatcher_8h.html" title="Backend dispatcher." alt="" coords="419,87,647,114"/>
+<area shape="rect" id="node4" href="$session__description_8h.html" title="Session Description Protocol." alt="" coords="183,169,399,196"/>
+<area shape="rect" id="node5" href="$roc__sdp_2parser_8h.html" title="Parser for the Session Description Protocol." alt="" coords="227,244,355,271"/>
+<area shape="rect" id="node7" href="$roc__sndio_2print__supported_8h.html" title="Print supported schemes and formats." alt="" coords="432,169,635,196"/>
+</map>

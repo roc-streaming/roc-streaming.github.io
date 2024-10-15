@@ -1,0 +1,6 @@
+<map id="roc::core::IArena" name="roc::core::IArena">
+<area shape="rect" id="node1" title="Memory arena interface." alt="" coords="211,5,339,32"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1HeapArena.html" title="Heap arena implementation." alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1LimitedArena.html" title="Decorator around IArena to make it memory limited." alt="" coords="189,80,362,107"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NoopArenaImpl.html" title="Arena implementation that just fails all allocations. Can be used with containers that have embedded ..." alt="" coords="386,80,573,107"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="roc::ctl::ControlLoop::Tasks::PipelineProcessing" name="roc::ctl::ControlLoop::Tasks::PipelineProcessing">
+<area shape="rect" id="node1" title="Process pending pipeline tasks on control thread." alt="" coords="716,39,912,80"/>
+<area shape="rect" id="node2" href="$classroc_1_1ctl_1_1ControlTask.html" title="Base class for control tasks." alt="" coords="517,46,668,73"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1MpscQueueNode.html" title="Base class for MpscQueue element." alt="" coords="273,5,469,47"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,5,225,47"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1ListNode.html" title="Base class for List element." alt="" coords="300,71,443,112"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="29,71,202,112"/>
+</map>

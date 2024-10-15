@@ -1,0 +1,8 @@
+<map id="roc::pipeline::ReceiverCommonConfig" name="roc::pipeline::ReceiverCommonConfig">
+<area shape="rect" id="node1" title="Parameters common for all receiver sessions." alt="" coords="584,74,811,115"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1SampleSpec.html" title="Sample specification. Describes sample rate and channels." alt="" coords="219,5,394,32"/>
+<area shape="rect" id="node3" href="$structroc_1_1rtp_1_1FilterConfig.html" title="RTP filter parameters." alt="" coords="231,56,382,83"/>
+<area shape="rect" id="node4" href="$structroc_1_1audio_1_1ProfilerConfig.html" title="Profiler Configuration Parameters. Controls profiling interval and duration of each circular buffer c..." alt="" coords="216,107,397,133"/>
+<area shape="rect" id="node5" href="$structroc_1_1rtcp_1_1Config.html" title="RTCP config." alt="" coords="245,157,369,184"/>
+<area shape="rect" id="node6" href="$structroc_1_1rtcp_1_1RttConfig.html" title="Round&#45;trip time metrics." alt="" coords="5,157,148,184"/>
+</map>

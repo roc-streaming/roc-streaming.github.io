@@ -1,0 +1,10 @@
+<map id="roc_sndio/ibackend.h" name="roc_sndio/ibackend.h">
+<area shape="rect" id="node1" title="Backend interface." alt="" coords="469,5,628,32"/>
+<area shape="rect" id="node2" href="$backend__dispatcher_8h.html" title="Backend dispatcher." alt="" coords="5,87,233,114"/>
+<area shape="rect" id="node4" href="$backend__map_8h.html" title="Backend map." alt="" coords="628,169,819,196"/>
+<area shape="rect" id="node5" href="$pulseaudio__backend_8h.html" title="Pulseaudio backend." alt="" coords="308,80,544,121"/>
+<area shape="rect" id="node6" href="$sndfile__backend_8h.html" title="SndFile backend." alt="" coords="569,80,777,121"/>
+<area shape="rect" id="node7" href="$sox__backend_8h.html" title="SoX backend." alt="" coords="801,80,989,121"/>
+<area shape="rect" id="node8" href="$wav__backend_8h.html" title="WAV backend." alt="" coords="1013,87,1201,114"/>
+<area shape="rect" id="node3" href="$roc__sndio_2print__supported_8h.html" title="Print supported schemes and formats." alt="" coords="18,169,221,196"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="roc::rtcp::IParticipant" name="roc::rtcp::IParticipant">
+<area shape="rect" id="node1" title="RTCP participant." alt="" coords="153,5,309,32"/>
+<area shape="rect" id="node2" href="$classroc_1_1pipeline_1_1ReceiverSessionGroup.html" title="Receiver session group." alt="" coords="5,80,223,121"/>
+<area shape="rect" id="node3" href="$classroc_1_1pipeline_1_1SenderSession.html" title="Sender session sub&#45;pipeline." alt="" coords="247,87,453,114"/>
+</map>

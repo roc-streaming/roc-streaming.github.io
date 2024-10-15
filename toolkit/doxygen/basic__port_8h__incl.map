@@ -1,0 +1,53 @@
+<map id="roc_netio/target_libuv/roc_netio/basic_port.h" name="roc_netio/target_libuv/roc_netio/basic_port.h">
+<area shape="rect" id="node1" title="Base class for ports." alt="" coords="2649,5,2818,47"/>
+<area shape="rect" id="node2" href="$socket__addr_8h.html" title="Socket address." alt="" coords="295,497,441,539"/>
+<area shape="rect" id="node23" href="$iarena_8h.html" title="Memory arena interface." alt="" coords="637,423,771,449"/>
+<area shape="rect" id="node26" href="$list__node_8h.html" title="Linked list node." alt="" coords="2776,423,2928,449"/>
+<area shape="rect" id="node28" href="$ref__counted_8h.html" title="Base class for object with reference counter." alt="" coords="2496,259,2667,285"/>
+<area shape="rect" id="node35" href="$string__builder_8h.html" title="String builder." alt="" coords="2252,102,2433,129"/>
+<area shape="rect" id="node50" href="$iclose__handler_8h.html" title="Close handler interface." alt="" coords="2822,102,3013,129"/>
+<area shape="rect" id="node51" href="$operation__status_8h.html" title="Asynchronous operation status." alt="" coords="3037,95,3185,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,587,101,613"/>
+<area shape="rect" id="node4" title=" " alt="" coords="126,587,229,613"/>
+<area shape="rect" id="node5" href="$addr__family_8h.html" title="Address family." alt="" coords="253,587,445,613"/>
+<area shape="rect" id="node6" href="$attributes_8h.html" title="Compiler attributes." alt="" coords="658,587,814,613"/>
+<area shape="rect" id="node8" href="$stddefs_8h.html" title="Commonly used types and functions." alt="" coords="1036,661,1177,688"/>
+<area shape="rect" id="node7" title=" " alt="" coords="698,661,774,688"/>
+<area shape="rect" id="node9" title=" " alt="" coords="464,736,549,763"/>
+<area shape="rect" id="node10" title=" " alt="" coords="574,736,637,763"/>
+<area shape="rect" id="node11" title=" " alt="" coords="661,736,720,763"/>
+<area shape="rect" id="node12" title=" " alt="" coords="745,736,794,763"/>
+<area shape="rect" id="node13" title=" " alt="" coords="818,736,889,763"/>
+<area shape="rect" id="node14" title=" " alt="" coords="913,736,999,763"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1023,736,1094,763"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1119,736,1193,763"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1217,736,1292,763"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1317,736,1387,763"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1412,736,1479,763"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1503,736,1574,763"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1598,736,1669,763"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1693,736,1789,763"/>
+<area shape="rect" id="node24" href="$panic_8h.html" title="Panic." alt="" coords="1481,505,1609,531"/>
+<area shape="rect" id="node25" href="$macro__helpers_8h.html" title="Helper macros." alt="" coords="2788,587,2977,613"/>
+<area shape="rect" id="node27" href="$noncopyable_8h.html" title="Non&#45;copyable object." alt="" coords="2172,587,2348,613"/>
+<area shape="rect" id="node29" href="$allocation__policy_8h.html" title="Allocation policies." alt="" coords="2151,333,2297,375"/>
+<area shape="rect" id="node31" href="$ref__counted__impl_8h.html" title="Implementation class for reference counter." alt="" coords="2525,333,2683,375"/>
+<area shape="rect" id="node30" href="$ipool_8h.html" title="Memory pool interface." alt="" coords="2172,423,2297,449"/>
+<area shape="rect" id="node32" href="$atomic_8h.html" title="Atomic." alt="" coords="2524,505,2663,531"/>
+<area shape="rect" id="node33" title=" " alt="" coords="1169,587,1337,613"/>
+<area shape="rect" id="node34" title=" " alt="" coords="2399,587,2556,613"/>
+<area shape="rect" id="node36" href="$optional_8h.html" title="Optionally constructed object." alt="" coords="1524,423,1671,449"/>
+<area shape="rect" id="node39" href="$string__buffer_8h.html" title="String buffer." alt="" coords="1247,184,1422,211"/>
+<area shape="rect" id="node37" href="$aligned__storage_8h.html" title="Aligned storage." alt="" coords="847,505,1044,531"/>
+<area shape="rect" id="node38" href="$align__ops_8h.html" title="Alignment operations." alt="" coords="889,587,1044,613"/>
+<area shape="rect" id="node40" href="$array_8h.html" title="Dynamic array." alt="" coords="979,259,1104,285"/>
+<area shape="rect" id="node41" href="$log_8h.html" title="Logging." alt="" coords="1117,341,1230,367"/>
+<area shape="rect" id="node42" title=" " alt="" coords="999,423,1174,449"/>
+<area shape="rect" id="node43" href="$mutex_8h.html" title="Mutex." alt="" coords="1847,423,1982,449"/>
+<area shape="rect" id="node48" href="$singleton_8h.html" title="Singleton." alt="" coords="1346,423,1499,449"/>
+<area shape="rect" id="node49" href="$time_8h.html" title="Time definitions." alt="" coords="1199,423,1321,449"/>
+<area shape="rect" id="node44" title=" " alt="" coords="1685,505,1753,531"/>
+<area shape="rect" id="node45" title=" " alt="" coords="1322,505,1406,531"/>
+<area shape="rect" id="node46" href="$errno__to__str_8h.html" title="Convert errno to string." alt="" coords="2025,505,2196,531"/>
+<area shape="rect" id="node47" href="$scoped__lock_8h.html" title="RAII mutex lock." alt="" coords="1777,505,1951,531"/>
+</map>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Features &#8212; Roc Toolkit 0.4.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/roc.css?v=37117d08" />
+    <script src="../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/analytics.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Publications" href="publications.html" />
+    <link rel="prev" title="Overview" href="overview.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="publications.html" title="Publications"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="Overview"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../about_project.html" accesskey="U">About project</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Features</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="features">
+<h1>Features<a class="headerlink" href="#features" title="Link to this heading">¶</a></h1>
+<section id="high-level-features">
+<h2>High-level features<a class="headerlink" href="#high-level-features" title="Link to this heading">¶</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../internals/fec.html"><span class="doc">Forward Erasure Correction codes</span></a>, <a class="reference internal" href="../internals/fe_resampler.html"><span class="doc">Frequency estimator and resampler</span></a></p>
+</div>
+<ul class="simple">
+<li><p>streaming CD-quality audio using RTP</p></li>
+<li><p>maintaining pre-configured fixed or bounded latency</p></li>
+<li><p>restoring lost packets using Forward Erasure Correction codes</p>
+<ul>
+<li><p>communicating redundant packets using FECFRAME</p></li>
+<li><p>encoding and decoding using OpenFEC</p></li>
+</ul>
+</li>
+<li><p>resampling</p>
+<ul>
+<li><p>converting between the sender and receiver clock domains to compensate clock drift</p></li>
+<li><p>converting between the network and input/output sample rates</p></li>
+<li><p>configurable resampler backends and profiles for different CPU and quality requirements</p></li>
+</ul>
+</li>
+<li><p>multiplexing</p>
+<ul>
+<li><p>mixing simultaneous streams from multiple senders on the receiver</p></li>
+<li><p>binding receiver to multiple ports with different protocols</p></li>
+<li><p>connecting sender to multiple receivers with different protocols</p></li>
+</ul>
+</li>
+<li><p>support for unicast, multicast, and broadcast</p></li>
+<li><p>interleaving packets to increase chances of successful loss recovery</p></li>
+<li><p>session watchdog</p>
+<ul>
+<li><p>detecting session shutdown and removing the session</p></li>
+<li><p>detecting playback problems and restarting the session</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="protocols-and-encodings">
+<h2>Protocols and encodings<a class="headerlink" href="#protocols-and-encodings" title="Link to this heading">¶</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../internals/network_protocols.html"><span class="doc">Network protocols</span></a></p>
+</div>
+<ul class="simple">
+<li><p>RTP</p>
+<ul>
+<li><p>RTP AVPF L16 encoding (lossless 44100Hz PCM 16-bit stereo or mono)</p></li>
+</ul>
+</li>
+<li><p>RTCP</p></li>
+<li><p>RTCP XR</p></li>
+<li><p>FECFRAME</p>
+<ul>
+<li><p>Reed-Solomon (m=8) FEC scheme (lower latency, lower rates)</p></li>
+<li><p>LDPC-Staircase FEC scheme (higher latency, higher rates)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="api-and-tools">
+<h2>API and tools<a class="headerlink" href="#api-and-tools" title="Link to this heading">¶</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../api.html"><span class="doc">API</span></a>, <a class="reference internal" href="../tools/command_line_tools.html"><span class="doc">Command-line tools</span></a>, <a class="reference internal" href="../tools/sound_server_modules.html"><span class="doc">Sound server modules</span></a>, <a class="reference internal" href="../tools/applications.html"><span class="doc">Applications</span></a></p>
+</div>
+<ul class="simple">
+<li><p>transport API</p>
+<ul>
+<li><p>roc_sender — send audio stream to receiver</p></li>
+<li><p>roc_receiver — receive and mix audio streams from senders</p></li>
+</ul>
+</li>
+<li><p>codec API</p>
+<ul>
+<li><p>roc_sender_encoder — encode audio stream into packets</p></li>
+<li><p>roc_receiver_decoder — decode audio stream from packets</p></li>
+</ul>
+</li>
+<li><p>command-line tools</p>
+<ul>
+<li><p>roc-send — read audio stream from audio device or file and send to receiver</p></li>
+<li><p>roc-recv — receive and mix audio streams from senders and write to audio device or file</p></li>
+<li><p>roc-copy — copy audio between local audio devices or files</p></li>
+</ul>
+</li>
+<li><p>PipeWire modules</p>
+<ul>
+<li><p>roc-sink — send audio stream written to the sink to receiver</p></li>
+<li><p>roc-source — receive and mix audio streams from senders and write to the connected apps</p></li>
+</ul>
+</li>
+<li><p>PulseAudio modules</p>
+<ul>
+<li><p>module-roc-sink — send audio stream written to the sink to receiver</p></li>
+<li><p>module-roc-sink-input — receive and mix audio streams from senders and write to the connected sink</p></li>
+</ul>
+</li>
+<li><p>macOS virtual device</p>
+<ul>
+<li><p>roc-vad — streaming audio device with CLI and gRPC interface</p></li>
+</ul>
+</li>
+<li><p>mobile apps</p>
+<ul>
+<li><p>Roc Droid – Android app that connects your phone to other Roc senders and receivers</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="bindings">
+<h2>Bindings<a class="headerlink" href="#bindings" title="Link to this heading">¶</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../api/bindings.html"><span class="doc">Bindings</span></a></p>
+</div>
+<ul class="simple">
+<li><p>supported languages:</p>
+<ul>
+<li><p>C (or C++)</p></li>
+<li><p>Go</p></li>
+<li><p>Java</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="portability">
+<h2>Portability<a class="headerlink" href="#portability" title="Link to this heading">¶</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../portability/supported_platforms.html"><span class="doc">Supported platforms</span></a>, <a class="reference internal" href="../portability/tested_devices.html"><span class="doc">Tested devices</span></a></p>
+</div>
+<ul class="simple">
+<li><p>supported operating systems</p>
+<ul>
+<li><p>GNU/Linux</p></li>
+<li><p>macOS</p></li>
+<li><p>Android</p></li>
+</ul>
+</li>
+<li><p>tested hardware architectures</p>
+<ul>
+<li><p>x86_64</p></li>
+<li><p>i686</p></li>
+<li><p>ARM</p></li>
+<li><p>MIPS</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo80.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../about_project.html">About project</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publications.html">Publications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="licensing.html">Licensing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contacts.html">Contacts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="authors.html">Authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sponsors.html">Sponsors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manuals.html">Manuals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../portability.html">Portability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="publications.html" title="Publications"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="Overview"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../about_project.html" >About project</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Features</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Roc Streaming authors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

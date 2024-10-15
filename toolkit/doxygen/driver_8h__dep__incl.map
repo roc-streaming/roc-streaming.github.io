@@ -1,0 +1,13 @@
+<map id="roc_sndio/driver.h" name="roc_sndio/driver.h">
+<area shape="rect" id="node1" title="Driver types." alt="" coords="1169,5,1307,32"/>
+<area shape="rect" id="node2" href="$backend__dispatcher_8h.html" title="Backend dispatcher." alt="" coords="5,177,233,203"/>
+<area shape="rect" id="node4" href="$backend__map_8h.html" title="Backend map." alt="" coords="833,259,1024,285"/>
+<area shape="rect" id="node5" href="$ibackend_8h.html" title="Backend interface." alt="" coords="717,87,876,114"/>
+<area shape="rect" id="node10" href="$sox__sink_8h.html" title="SoX sink." alt="" coords="1276,80,1437,121"/>
+<area shape="rect" id="node11" href="$sox__source_8h.html" title="SoX source." alt="" coords="1461,80,1639,121"/>
+<area shape="rect" id="node3" href="$roc__sndio_2print__supported_8h.html" title="Print supported schemes and formats." alt="" coords="18,259,221,285"/>
+<area shape="rect" id="node6" href="$pulseaudio__backend_8h.html" title="Pulseaudio backend." alt="" coords="965,169,1201,211"/>
+<area shape="rect" id="node7" href="$sndfile__backend_8h.html" title="SndFile backend." alt="" coords="470,169,678,211"/>
+<area shape="rect" id="node8" href="$sox__backend_8h.html" title="SoX backend." alt="" coords="703,169,891,211"/>
+<area shape="rect" id="node9" href="$wav__backend_8h.html" title="WAV backend." alt="" coords="257,177,445,203"/>
+</map>

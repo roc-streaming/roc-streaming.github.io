@@ -1,0 +1,4 @@
+<map id="roc::audio::ChannelMapTable" name="roc::audio::ChannelMapTable">
+<area shape="rect" id="node1" title="Defines multiplication matrix for two channel masks." alt="" coords="5,95,215,121"/>
+<area shape="rect" id="node2" href="$structroc_1_1audio_1_1ChannelMapRule.html" title="Defines multiplication coefficient for a pair of channels." alt="" coords="8,5,212,32"/>
+</map>

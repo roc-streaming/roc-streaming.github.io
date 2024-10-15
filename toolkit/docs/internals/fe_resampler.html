@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Frequency estimator and resampler &#8212; Roc Toolkit 0.4.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/roc.css?v=37117d08" />
+    <script src="../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/analytics.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Network protocols" href="network_protocols.html" />
+    <link rel="prev" title="Forward Erasure Correction codes" href="fec.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="network_protocols.html" title="Network protocols"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="fec.html" title="Forward Erasure Correction codes"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../internals.html" accesskey="U">Internals</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Frequency estimator and resampler</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="frequency-estimator-and-resampler">
+<h1>Frequency estimator and resampler<a class="headerlink" href="#frequency-estimator-and-resampler" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="table-of-contents">
+<p class="topic-title">Table of contents:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#problem" id="id3">Problem</a></p></li>
+<li><p><a class="reference internal" href="#solution" id="id4">Solution</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id5">Frequency estimator</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id6">Resampler</a></p></li>
+<li><p><a class="reference internal" href="#built-in-resampler-backend" id="id7">Built-in resampler backend</a></p></li>
+<li><p><a class="reference internal" href="#speex-based-resampler-backends" id="id8">Speex-based resampler backends</a></p></li>
+</ul>
+</nav>
+<section id="problem">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Problem</a><a class="headerlink" href="#problem" title="Link to this heading">¶</a></h2>
+<p>If you are going to roll your own media cast software you’ll face few non-obvious pitfalls. This page provides a description of these obstacles and measures Roc took to avoid them.</p>
+<p>Frequency generators are not created equal. 44100 Hz generated on different sound cards (even if the cards are similar) slightly differ in a few tens of Hertz. This gives us the difference in speed of samples transfer that leads to buffer overruns and underruns.</p>
+<p>Let’s imagine an experiment. Assume two hosts, the first one sends sound via the network to the second one. The first host generates samples with 44090 Hz (every 22.681 us) and the second one transfers received samples to sound card with 44110 Hz (22.671 us). First one is slower in 10 ns for every sample. Every second incoming queue of the receiver diminishes for 0.441 ms of sound. Sooner or later it would dry up and the user would hear scratches. Likewise, if the sender is a bit faster than the receiver, the user would feel a delay between the picture on the screen and sound if she or he is watching a video. Both situations are not acceptable and Roc is designed to avoid them.</p>
+<p>Here is the result of a real experiment. Sender and receiver were running on two computers in one LAN. The sample rate was 44100 Hz and the initial queue size was 10000 samples. The receiver soundcard turned out to be a bit faster than the sender soundcard. After about 60 minutes playback the delay between receiver and sender reached 10000 samples and the playback had broken. This means that every hour the receiver timer outruns the sender timer by approximately 200 milliseconds and the clock difference is about 0.0055%.</p>
+<img alt="Running without resampler" class="align-center" src="../_images/clock_difference.png" />
+<p>We must mention that samples come in packets and incoming queue consists of the received packets. However, it doesn’t change anything and we still have to care about underruns and overruns.</p>
+</section>
+<section id="solution">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Solution</a><a class="headerlink" href="#solution" title="Link to this heading">¶</a></h2>
+<p>So Roc needs to adjust somehow receiver’s frequency to the sender’s frequency. In order to do so, Roc converts the sample rate of input samples on the receiver’s side with factor equals to sender_frequency / receiver_frequency.</p>
+<p>This task is broken into three parts:</p>
+<ol class="arabic simple">
+<li><p>measure current latency - the <a class="reference external" href="https://roc-streaming.org/toolkit/doxygen/classroc_1_1audio_1_1LatencyMonitor.html">latency monitor</a>;</p></li>
+<li><p>acquire frequencies factor - the <a class="reference external" href="https://roc-streaming.org/toolkit/doxygen/classroc_1_1audio_1_1FreqEstimator.html">frequency estimator</a>;</p></li>
+<li><p>adjust the frequency - the <a class="reference external" href="https://roc-streaming.org/toolkit/doxygen/classroc_1_1audio_1_1ResamplerReader.html">resampler</a>.</p></li>
+</ol>
+<p>Frequency estimator is on duty of reporting more or less credible frequencies factor to the resampler. Resampler is continuously taking input samples and producing output samples a slightly faster or slower depending on its setting.</p>
+<p>From the top view latency monitor talks to frequency estimator the current latency. Frequency estimator talks to resampler how this host is faster or slower than sender and resampler compensates for this bias in speeds. Resampler adjusts the playback rate to compensate for the difference.</p>
+<p>Here is the overall picture:</p>
+<img alt="Frequency estimator and resampler" class="align-center" src="../_images/fe_resampler.png" />
+</section>
+<section id="id1">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Frequency estimator</a><a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>The receiver has to accumulate some amount of samples before starting playing them to eliminate scratches caused by network jitter. So the incoming packet queue consists of the preserved packets that have not been requested to be played yet. Before receiver starts playing it accumulates a few packets in that queue.</p>
+<p>The frequency estimator is fed with the actual length of the incoming queue measured in samples. Soon the incoming queue begins to grow or diminish according to frequencies ratio. Frequency estimator detects that changes in queue length and tunes its output so the resampler begins to read samples at a higher/slower rate from the incoming queue.</p>
+<p>This is a chain of consequences:</p>
+<ul class="simple">
+<li><p>the more the incoming queue length differs from its starting value;</p></li>
+<li><p>the more frequency estimator output differs from 1.0;</p></li>
+<li><p>the resampler reads faster or slower from the incoming queue;</p></li>
+<li><p>the length of the incoming queue decreases its grow/diminish.</p></li>
+</ul>
+<p>Frequency estimator calculates its output using a <a class="reference external" href="https://en.wikipedia.org/wiki/PID_controller">PI-controller</a>. The proportional component counteracts the deviation of the queue length observable at the moment. The integral component counteracts the steady clock difference between the sender and the receiver observable over time.</p>
+<p>Frequency estimator directly affects sound quality. It must operate very smoothly, so it uses two <a class="reference external" href="https://en.wikipedia.org/wiki/Downsampling_(signal_processing)">decimators</a> to downsample its input value by 100 times. The internal PI-controller is also very inertial.</p>
+</section>
+<section id="id2">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Resampler</a><a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<p>Resampler is used for two purposes:</p>
+<ul class="simple">
+<li><p>to compensate for the frequency difference between the sender and receiver, as described above;</p></li>
+<li><p>to convert the network sample rate to the soundcard sample rate, e.g. 44100 to 48000.</p></li>
+</ul>
+<p>To achieve this, the scaling factor passed to resampler is actually a product of two ratios:</p>
+<ul class="simple">
+<li><p>dynamic ratio computed by frequency estimator;</p></li>
+<li><p>static ratio computed from the network and soundcard sample rates.</p></li>
+</ul>
+<p>There are several resampler backends available, each offering their own trade-offs and suitable for different situations.</p>
+</section>
+<section id="built-in-resampler-backend">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Built-in resampler backend</a><a class="headerlink" href="#built-in-resampler-backend" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">BUILTIN</span></code> resampler backend offers good quality and scaling precision, at the cost of rather high CPU usage, especially on high-quality profile.</p>
+<p>The implementation is based on Bandlimited Interpolation <a class="reference external" href="https://ccrma.stanford.edu/~jos/resample/resample.pdf">described in this paper</a>. It’s pretty hard to compete with this paper in clarity so if you’re fond of DSP and such kind of things we’ll refer to this paper for the algorithm details and describe the rest technical stuff here.</p>
+<p>Internally, resampler operates a moving <em>window</em>. An output sample is a function of all samples in the window. The window is implemented on top of three <em>frames</em>, stored in a circular buffer. Resampler reads samples from the pipeline frame-by-frame. When the window moves outside the middle frame boundaries, the circular buffer is rotated and the next frame is requested from the pipeline.</p>
+<p>For the purpose of optimization, resampler performs internal computations using fixed-point numbers and uses a pre-calculated table for the <a class="reference external" href="https://en.wikipedia.org/wiki/Sinc_function">sinc</a> function.</p>
+<p>Resampler is configured with two parameters:</p>
+<ul class="simple">
+<li><p>window size, determining the resampling quality and CPU consumption, which depends linearly from this parameter</p></li>
+<li><p>sinc table precision, determining the resampling quality and memory consumption, which also depends linearly from this parameter</p></li>
+</ul>
+<p>In order to hide these details from the user, there are three predefined profiles (“low”, “medium”, “high”), offering different compromises between the quality and resource consumption.</p>
+</section>
+<section id="speex-based-resampler-backends">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Speex-based resampler backends</a><a class="headerlink" href="#speex-based-resampler-backends" title="Link to this heading">¶</a></h2>
+<p>In addition to <code class="docutils literal notranslate"><span class="pre">BUILTIN</span></code> backend, two more backends are available:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">SPEEX</span></code> - Implements resampling using <a class="reference external" href="https://gitlab.xiph.org/xiph/speexdsp">SpeexDSP</a> library.</p>
+<p>Compared to <code class="docutils literal notranslate"><span class="pre">BUILTIN</span></code> backend, it is very fast and works well even on cheap CPUs. It offers good quality as well. However, it follows scaling factor with noticeably lower precision. Frequency estimator is able to compensate it, but it causes latency oscillations which makes this backend less suitable for very low latencies or when synchronization error should be very small.</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SPEEXDEC</span></code> - Combines SpeexDSP for static ratio and decimation for dynamic ratio.</p>
+<p>This backend also uses SpeexDSP, but only to convert between network and sound card rates (static part of scaling factor, e.g. from 44100 to 48000). If these rates are equal, SpeexDSP is not used at all.</p>
+<p>To compensate clock drift (dynamic part of scaling factor), this backend applies simple decimation/expansion on top of SpeexDSP, i.e. it just drops or duplicates samples. Typical decimation rate needed to compensate clock drift is below 0.5ms/second (20 samples/second on 48000 Hz), which gives tolerable quality despite usage of decimation.</p>
+<p>The quality of <code class="docutils literal notranslate"><span class="pre">SPEEXDEC</span></code> backend is lower than with <code class="docutils literal notranslate"><span class="pre">SPEEX</span></code>, however the scaling precision is better (though still no so good as with <code class="docutils literal notranslate"><span class="pre">BUILTIN</span></code> backend). When network and sound card rates are same, <code class="docutils literal notranslate"><span class="pre">SPEEXDEC</span></code> efficiently becomes fasted possible backend, working almost as fast as <code class="docutils literal notranslate"><span class="pre">memcpy()</span></code>. When base rates differ, <code class="docutils literal notranslate"><span class="pre">SPEEXDEC</span></code> is still faster than <code class="docutils literal notranslate"><span class="pre">SPEEX</span></code>, because changing scaling on fly is not cheap with SpeexDSP.</p>
+</li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo80.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about_project.html">About project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manuals.html">Manuals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../portability.html">Portability</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../internals.html">Internals</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="code_structure.html">Code structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="threads.html">Threads and queues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipelines.html">Media pipelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packets_frames.html">Packets and frames</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timestamps.html">Timestamps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fec.html">Forward Erasure Correction codes</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Frequency estimator and resampler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network_protocols.html">Network protocols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="audio_backends.html">Audio backends</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="network_protocols.html" title="Network protocols"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="fec.html" title="Forward Erasure Correction codes"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../internals.html" >Internals</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Frequency estimator and resampler</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Roc Streaming authors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+<map id="roc::core::CsvDumper" name="roc::core::CsvDumper">
+<area shape="rect" id="node1" title="Asynchronous CSV dumper. Writes entries to CSV file from background thread. Recommended to be used fr..." alt="" coords="11,169,173,196"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1Thread.html" title="Base class for thread objects." alt="" coords="27,95,157,121"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,5,179,47"/>
+</map>

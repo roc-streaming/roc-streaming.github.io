@@ -1,0 +1,8 @@
+<map id="roc::netio::NetworkLoop" name="roc::netio::NetworkLoop">
+<area shape="rect" id="node1" title="Network event loop thread." alt="" coords="485,85,663,112"/>
+<area shape="rect" id="node2" href="$classroc_1_1netio_1_1ITerminateHandler.html" title="Termination handler interface." alt="" coords="227,5,437,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1netio_1_1ICloseHandler.html" title="Close handler interface." alt="" coords="241,56,423,83"/>
+<area shape="rect" id="node4" href="$classroc_1_1netio_1_1IResolverRequestHandler.html" title="Resolver request result handler interface." alt="" coords="229,107,435,149"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1Thread.html" title="Base class for thread objects." alt="" coords="267,173,397,200"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,166,179,207"/>
+</map>

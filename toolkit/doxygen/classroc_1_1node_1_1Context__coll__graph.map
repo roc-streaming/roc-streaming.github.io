@@ -1,0 +1,6 @@
+<map id="roc::node::Context" name="roc::node::Context">
+<area shape="rect" id="node1" title="Node context." alt="" coords="127,184,268,211"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="67,95,327,136"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,179,47"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1ManualAllocation.html" title="Allocation policy for objects that does not have automatic deallocation." alt="" coords="203,13,402,39"/>
+</map>

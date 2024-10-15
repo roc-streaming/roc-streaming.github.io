@@ -1,0 +1,10 @@
+<map id="roc::netio::TcpConnectionPort" name="roc::netio::TcpConnectionPort">
+<area shape="rect" id="node1" title="TCP connection port." alt="" coords="751,125,961,151"/>
+<area shape="rect" id="node2" href="$classroc_1_1netio_1_1BasicPort.html" title="Base class for ports." alt="" coords="551,99,703,126"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="243,60,503,101"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="13,5,187,47"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1ArenaAllocation.html" title="Allocation policy for objects allocated using IArena." alt="" coords="5,71,195,98"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1ListNode.html" title="Base class for List element." alt="" coords="301,125,444,167"/>
+<area shape="rect" id="node7" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="13,125,187,167"/>
+<area shape="rect" id="node8" href="$classroc_1_1netio_1_1IConn.html" title="Connection interface." alt="" coords="563,150,691,177"/>
+</map>

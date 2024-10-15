@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SCons options &#8212; Roc Toolkit 0.4.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/roc.css?v=37117d08" />
+    <script src="../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/analytics.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="User cookbook" href="user_cookbook.html" />
+    <link rel="prev" title="Dependencies" href="dependencies.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="user_cookbook.html" title="User cookbook"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dependencies.html" title="Dependencies"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../building.html" accesskey="U">Building</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">SCons options</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="scons-options">
+<h1>SCons options<a class="headerlink" href="#scons-options" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="table-of-contents">
+<p class="topic-title">Table of contents:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#usage" id="id1">Usage</a></p></li>
+<li><p><a class="reference internal" href="#build-results" id="id2">Build results</a></p></li>
+<li><p><a class="reference internal" href="#options" id="id3">Options</a></p></li>
+<li><p><a class="reference internal" href="#variables" id="id4">Variables</a></p></li>
+<li><p><a class="reference internal" href="#targets" id="id5">Targets</a></p></li>
+</ul>
+</nav>
+<section id="usage">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Usage</a><a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ scons --help
+$ scons [options] [variable1=value1 variable2=value2 ...] [target1 target2 ...]
+</pre></div>
+</div>
+</section>
+<section id="build-results">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Build results</a><a class="headerlink" href="#build-results" title="Link to this heading">¶</a></h2>
+<p>Build results are installed into the following directories:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">./bin/&lt;host&gt;</span></code></dt><dd><p>Roc tools, libraries, and PulseAudio modules</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">./build/3rdparty/&lt;host&gt;/rpath</span></code></dt><dd><p>automatically built 3rd-party shared libraries</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">./docs/man</span></code></dt><dd><p>generated manual pages</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">./docs/html</span></code></dt><dd><p>generated HTML documentation</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="options">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Options</a><a class="headerlink" href="#options" title="Link to this heading">¶</a></h2>
+<dl class="option-list">
+<dt><kbd><span class="option">-Q</span></kbd></dt>
+<dd><p>compact colored output</p>
+</dd>
+<dt><kbd><span class="option">-c</span></kbd></dt>
+<dd><p>remove build results</p>
+</dd>
+<dt><kbd><span class="option">-n</span></kbd></dt>
+<dd><p>dry run</p>
+</dd>
+<dt><kbd><span class="option">-j <var>N</var></span>, <span class="option">--jobs=<var>N</var></span></kbd></dt>
+<dd><p>allow N parallel jobs at once</p>
+</dd>
+<dt><kbd><span class="option">--prefix=<var>PREFIX</var></span></kbd></dt>
+<dd><p>installation prefix, ‘/usr’ by default</p>
+</dd>
+<dt><kbd><span class="option">--bindir=<var>BINDIR</var></span></kbd></dt>
+<dd><p>path to the binary installation directory (where to install Roc command-line tools), ‘&lt;prefix&gt;/bin’ by default</p>
+</dd>
+<dt><kbd><span class="option">--libdir=<var>LIBDIR</var></span></kbd></dt>
+<dd><p>path to the library installation directory (where to install Roc library), auto-detected by default</p>
+</dd>
+<dt><kbd><span class="option">--incdir=<var>INCDIR</var></span></kbd></dt>
+<dd><p>path to the headers installation directory (where to install Roc headers), ‘&lt;prefix&gt;/include’ by default</p>
+</dd>
+<dt><kbd><span class="option">--mandir=<var>MANDIR</var></span></kbd></dt>
+<dd><p>path to the manuals installation directory (where to install Roc manual pages), ‘&lt;prefix&gt;/share/man/man1’ by default</p>
+</dd>
+<dt><kbd><span class="option">--build=<var>BUILD</var></span></kbd></dt>
+<dd><p>system name where Roc is being compiled, e.g. ‘x86_64-pc-linux-gnu’, auto-detected by default</p>
+</dd>
+<dt><kbd><span class="option">--host=<var>HOST</var></span></kbd></dt>
+<dd><p>system name where Roc will run, e.g. ‘arm-linux-gnueabihf’, auto-detected by default</p>
+</dd>
+<dt><kbd><span class="option">--platform=<var>PLATFORM</var></span></kbd></dt>
+<dd><p>platform name where Roc will run, supported values: empty (detect from host), ‘linux’, ‘unix’, ‘darwin’, ‘android’</p>
+</dd>
+<dt><kbd><span class="option">--compiler=<var>COMPILER</var></span></kbd></dt>
+<dd><p>compiler name and optional version, e.g. ‘gcc-4.9’, supported names: empty (detect what available), ‘clang’, ‘gcc’, ‘cc’</p>
+</dd>
+<dt><kbd><span class="option">--compiler-launcher=<var>COMPILER_LAUNCHER</var></span></kbd></dt>
+<dd><p>optional launching tool for c and c++ compilers, e.g. ‘ccache’</p>
+</dd>
+<dt><kbd><span class="option">--sanitizers=<var>SANITIZERS</var></span></kbd></dt>
+<dd><p>list of gcc/clang sanitizers, supported names: empty (no sanitizers), ‘all’, ‘undefined’, ‘address’</p>
+</dd>
+<dt><kbd><span class="option">--enable-debug</span></kbd></dt>
+<dd><p>enable debug build for Roc</p>
+</dd>
+<dt><kbd><span class="option">--enable-debug-3rdparty</span></kbd></dt>
+<dd><p>enable debug build for 3rdparty libraries</p>
+</dd>
+<dt><kbd><span class="option">--enable-werror</span></kbd></dt>
+<dd><p>treat warnings as errors</p>
+</dd>
+<dt><kbd><span class="option">--enable-static</span></kbd></dt>
+<dd><p>enable building static library</p>
+</dd>
+<dt><kbd><span class="option">--disable-shared</span></kbd></dt>
+<dd><p>disable building shared library</p>
+</dd>
+<dt><kbd><span class="option">--disable-tools</span></kbd></dt>
+<dd><p>disable tools building</p>
+</dd>
+<dt><kbd><span class="option">--enable-tests</span></kbd></dt>
+<dd><p>enable tests building and running (requires CppUTest)</p>
+</dd>
+<dt><kbd><span class="option">--enable-benchmarks</span></kbd></dt>
+<dd><p>enable bechmarks building and running (requires Google Benchmark)</p>
+</dd>
+<dt><kbd><span class="option">--enable-examples</span></kbd></dt>
+<dd><p>enable examples building</p>
+</dd>
+<dt><kbd><span class="option">--enable-doxygen</span></kbd></dt>
+<dd><p>enable Doxygen documentation generation</p>
+</dd>
+<dt><kbd><span class="option">--enable-sphinx</span></kbd></dt>
+<dd><p>enable Sphinx documentation generation</p>
+</dd>
+<dt><kbd><span class="option">--disable-c11</span></kbd></dt>
+<dd><p>disable C11 support</p>
+</dd>
+<dt><kbd><span class="option">--disable-soversion</span></kbd></dt>
+<dd><p>don’t write version into the shared library and don’t create version symlinks</p>
+</dd>
+<dt><kbd><span class="option">--disable-openfec</span></kbd></dt>
+<dd><p>disable OpenFEC support required for FEC codes</p>
+</dd>
+<dt><kbd><span class="option">--disable-speexdsp</span></kbd></dt>
+<dd><p>disable SpeexDSP support for resampling</p>
+</dd>
+<dt><kbd><span class="option">--disable-sox</span></kbd></dt>
+<dd><p>disable SoX support in tools</p>
+</dd>
+<dt><kbd><span class="option">--disable-openssl</span></kbd></dt>
+<dd><p>disable OpenSSL support required for DTLS and SRTP</p>
+</dd>
+<dt><kbd><span class="option">--disable-libunwind</span></kbd></dt>
+<dd><p>disable libunwind support required for printing backtrace</p>
+</dd>
+<dt><kbd><span class="option">--disable-alsa</span></kbd></dt>
+<dd><p>disable ALSA support in tools</p>
+</dd>
+<dt><kbd><span class="option">--disable-pulseaudio</span></kbd></dt>
+<dd><p>disable PulseAudio support in tools</p>
+</dd>
+<dt><kbd><span class="option">--with-openfec-includes=<var>WITH_OPENFEC_INCLUDES</var></span></kbd></dt>
+<dd><p>path to the directory with OpenFEC headers (it should contain lib_common and lib_stable subdirectories)</p>
+</dd>
+<dt><kbd><span class="option">--with-includes=<var>WITH_INCLUDES</var></span></kbd></dt>
+<dd><p>additional include search path, may be used multiple times</p>
+</dd>
+<dt><kbd><span class="option">--with-libraries=<var>WITH_LIBRARIES</var></span></kbd></dt>
+<dd><p>additional library search path, may be used multiple times</p>
+</dd>
+<dt><kbd><span class="option">--macos-platform=<var>MACOS_PLATFORM</var></span></kbd></dt>
+<dd><p>macOS target platform, e.g. 10.12, (default is current OS version)</p>
+</dd>
+<dt><kbd><span class="option">--macos-arch=<var>MACOS_ARCH</var></span></kbd></dt>
+<dd><p>macOS target architecture(s), comma-separated list, supported values: ‘all’, ‘x86_64’, ‘arm64’ (default is current OS arch, pass multiple values or ‘all’ for univeral binaries)</p>
+</dd>
+<dt><kbd><span class="option">--build-3rdparty=<var>BUILD_3RDPARTY</var></span></kbd></dt>
+<dd><p>download and build specified 3rdparty libraries, comma-separated list of library names and optional versions, e.g. ‘libuv:1.4.2,openfec’</p>
+</dd>
+<dt><kbd><span class="option">--override-targets=<var>OVERRIDE_TARGETS</var></span></kbd></dt>
+<dd><p>override targets to use, pass a comma-separated list of target names, e.g. ‘pc,posix,posix_ext,gnu,libuv,openfec,…’</p>
+</dd>
+</dl>
+</section>
+<section id="variables">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Variables</a><a class="headerlink" href="#variables" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>CPPFLAGS</p></li>
+<li><p>CXXFLAGS</p></li>
+<li><p>CFLAGS</p></li>
+<li><p>LDFLAGS</p></li>
+<li><p>STRIPFLAGS</p></li>
+<li><p>CXX</p></li>
+<li><p>CC</p></li>
+<li><p>CXXLD</p></li>
+<li><p>CCLD or LD</p></li>
+<li><p>AR</p></li>
+<li><p>RANLIB</p></li>
+<li><p>STRIP</p></li>
+<li><p>OBJCOPY</p></li>
+<li><p>INSTALL_NAME_TOOL</p></li>
+<li><p>RAGEL</p></li>
+<li><p>GENGETOPT</p></li>
+<li><p>DOXYGEN</p></li>
+<li><p>SPHINX_BUILD</p></li>
+<li><p>BREATHE_APIDOC</p></li>
+<li><p>PKG_CONFIG</p></li>
+<li><p>PKG_CONFIG_PATH</p></li>
+<li><p>CONFIG_GUESS</p></li>
+<li><p>CLANG_FORMAT</p></li>
+<li><p>DESTDIR</p></li>
+</ul>
+</section>
+<section id="targets">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Targets</a><a class="headerlink" href="#targets" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt><cite>omitted</cite></dt><dd><p>build everything</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">test</span></code></dt><dd><p>build everything and run tests</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">bench</span></code></dt><dd><p>build everything and run benchmarks</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">clean</span></code></dt><dd><p>full clean, including build results, downloaded third-parties, generated documentation, and scons database</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">cleanbuild</span></code></dt><dd><p>remove only build results</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">cleandocs</span></code></dt><dd><p>remove only generated documentation</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">install</span></code></dt><dd><p>install build results into the system</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">uninstall</span></code></dt><dd><p>remove build results from the system</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">fmt</span></code></dt><dd><p>format source code (requires clang-format)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">docs</span></code></dt><dd><p>build website (includes <code class="docutils literal notranslate"><span class="pre">doxygen</span></code> and <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> targets)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">doxygen</span></code></dt><dd><p>build doxygen documentation (requires doxygen and graphviz)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">sphinx</span></code></dt><dd><p>build sphinx documentation (requires doxygen, sphinx-build, and breathe-apidoc)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">{module}</span></code></dt><dd><p>build specific module, e.g. <code class="docutils literal notranslate"><span class="pre">roc_pipeline</span></code></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">test/{module}</span></code></dt><dd><p>run tests for specific module, e.g. <code class="docutils literal notranslate"><span class="pre">test/roc_pipeline</span></code></p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">bench/{module}</span></code></dt><dd><p>run benchmarks for specific module, e.g. <code class="docutils literal notranslate"><span class="pre">bench/roc_pipeline</span></code></p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo80.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about_project.html">About project</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../building.html">Building</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="dependencies.html">Dependencies</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">SCons options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_cookbook.html">User cookbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer_cookbook.html">Developer cookbook</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manuals.html">Manuals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../portability.html">Portability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="user_cookbook.html" title="User cookbook"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dependencies.html" title="Dependencies"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../building.html" >Building</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">SCons options</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Roc Streaming authors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

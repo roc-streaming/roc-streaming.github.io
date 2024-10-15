@@ -1,0 +1,22 @@
+<map id="roc_sndio/isource.h" name="roc_sndio/isource.h">
+<area shape="rect" id="node1" title="Source interface." alt="" coords="961,5,1108,32"/>
+<area shape="rect" id="node2" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="339,169,498,211"/>
+<area shape="rect" id="node12" href="$receiver__source_8h.html" title="Receiver source pipeline." alt="" coords="281,80,439,121"/>
+<area shape="rect" id="node13" href="$transcoder__source_8h.html" title="Transcoder source pipeline." alt="" coords="515,80,690,121"/>
+<area shape="rect" id="node14" href="$backend__dispatcher_8h.html" title="Backend dispatcher." alt="" coords="714,87,942,114"/>
+<area shape="rect" id="node16" href="$pump_8h.html" title="Pump." alt="" coords="966,87,1103,114"/>
+<area shape="rect" id="node17" href="$pulseaudio__device_8h.html" title="PulseAudio device." alt="" coords="1127,80,1353,121"/>
+<area shape="rect" id="node18" href="$sndfile__source_8h.html" title="Sndfile source." alt="" coords="1377,80,1575,121"/>
+<area shape="rect" id="node19" href="$sox__source_8h.html" title="SoX source." alt="" coords="1599,80,1777,121"/>
+<area shape="rect" id="node20" href="$wav__source_8h.html" title="WAV source." alt="" coords="1801,87,1978,114"/>
+<area shape="rect" id="node3" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="341,259,496,300"/>
+<area shape="rect" id="node8" href="$receiver_8h.html" title="Receiver node." alt="" coords="624,587,773,613"/>
+<area shape="rect" id="node9" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="5,587,213,613"/>
+<area shape="rect" id="node4" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="232,348,411,389"/>
+<area shape="rect" id="node5" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="435,355,597,382"/>
+<area shape="rect" id="node6" href="$context_8h.html" title="Node context." alt="" coords="388,437,535,464"/>
+<area shape="rect" id="node7" href="$node_8h.html" title="Base class for nodes." alt="" coords="346,512,475,539"/>
+<area shape="rect" id="node10" href="$sender_8h.html" title="Sender node." alt="" coords="238,587,378,613"/>
+<area shape="rect" id="node11" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="402,587,601,613"/>
+<area shape="rect" id="node15" href="$roc__sndio_2print__supported_8h.html" title="Print supported schemes and formats." alt="" coords="727,177,929,203"/>
+</map>

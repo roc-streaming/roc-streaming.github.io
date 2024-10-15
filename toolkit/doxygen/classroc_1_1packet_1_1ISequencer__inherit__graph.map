@@ -1,0 +1,4 @@
+<map id="roc::packet::ISequencer" name="roc::packet::ISequencer">
+<area shape="rect" id="node1" title="Packet sequencer. Fills protocol&#45;specific packet headers to form a continous sequence...." alt="" coords="5,5,179,32"/>
+<area shape="rect" id="node2" href="$classroc_1_1rtp_1_1Sequencer.html" title="RTP packet sequencer." alt="" coords="20,80,164,107"/>
+</map>

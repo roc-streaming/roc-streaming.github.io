@@ -1,0 +1,20 @@
+<map id="roc::pipeline::ReceiverLoop::Tasks::CreateSlot" name="roc::pipeline::ReceiverLoop::Tasks::CreateSlot">
+<area shape="rect" id="node1" title="Create new slot." alt="" coords="1225,191,1424,232"/>
+<area shape="rect" id="node2" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Task.html" title="Base task class." alt="" coords="977,191,1176,232"/>
+<area shape="rect" id="node3" href="$classroc_1_1pipeline_1_1PipelineTask.html" title="Base class for pipeline tasks." alt="" coords="595,21,785,47"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1MpscQueueNode.html" title="Base class for MpscQueue element." alt="" coords="275,7,471,48"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,5,225,47"/>
+<area shape="rect" id="node6" href="$structroc_1_1pipeline_1_1ReceiverSlotMetrics.html" title="Receiver&#45;side metrics of the whole slot." alt="" coords="594,75,786,116"/>
+<area shape="rect" id="node7" href="$classroc_1_1pipeline_1_1ReceiverSlot.html" title="Receiver slot." alt="" coords="594,141,786,167"/>
+<area shape="rect" id="node8" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="291,106,454,162"/>
+<area shape="rect" id="node9" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="29,71,202,112"/>
+<area shape="rect" id="node10" href="$classroc_1_1core_1_1ArenaAllocation.html" title="Allocation policy for objects allocated using IArena." alt="" coords="21,137,210,163"/>
+<area shape="rect" id="node11" href="$classroc_1_1core_1_1ListNode.html" title="Base class for List element." alt="" coords="301,187,444,228"/>
+<area shape="rect" id="node12" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="29,188,202,229"/>
+<area shape="rect" id="node13" href="$classroc_1_1packet_1_1IWriter.html" title="Packet writer interface." alt="" coords="617,194,763,221"/>
+<area shape="rect" id="node14" href="$structroc_1_1pipeline_1_1ReceiverParticipantMetrics.html" title="Receiver&#45;side metrics specific to one participant (remote sender)." alt="" coords="572,245,808,287"/>
+<area shape="rect" id="node15" href="$structroc_1_1audio_1_1LatencyMetrics.html" title="Latency&#45;related metrics." alt="" coords="276,253,469,279"/>
+<area shape="rect" id="node16" href="$structroc_1_1packet_1_1LinkMetrics.html" title="Link metrics." alt="" coords="285,303,461,330"/>
+<area shape="rect" id="node17" href="$structroc_1_1pipeline_1_1ReceiverSlotConfig.html" title="Parameters of receiver slot." alt="" coords="594,311,786,352"/>
+<area shape="rect" id="node18" href="$classroc_1_1address_1_1SocketAddr.html" title="Socket address." alt="" coords="599,377,781,403"/>
+</map>

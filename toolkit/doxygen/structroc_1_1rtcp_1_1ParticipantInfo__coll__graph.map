@@ -1,0 +1,4 @@
+<map id="roc::rtcp::ParticipantInfo" name="roc::rtcp::ParticipantInfo">
+<area shape="rect" id="node1" title="Participant info." alt="" coords="8,95,185,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1address_1_1SocketAddr.html" title="Socket address." alt="" coords="5,5,188,32"/>
+</map>

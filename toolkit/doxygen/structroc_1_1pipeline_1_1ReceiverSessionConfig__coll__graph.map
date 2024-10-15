@@ -1,0 +1,8 @@
+<map id="roc::pipeline::ReceiverSessionConfig" name="roc::pipeline::ReceiverSessionConfig">
+<area shape="rect" id="node1" title="Parameters of receiver session." alt="" coords="343,99,560,141"/>
+<area shape="rect" id="node2" href="$structroc_1_1audio_1_1ResamplerConfig.html" title="Resampler config." alt="" coords="5,5,211,32"/>
+<area shape="rect" id="node3" href="$structroc_1_1audio_1_1WatchdogConfig.html" title="Watchdog parameters." alt="" coords="9,56,207,83"/>
+<area shape="rect" id="node4" href="$structroc_1_1fec_1_1CodecConfig.html" title="FEC codec parameters." alt="" coords="29,107,187,133"/>
+<area shape="rect" id="node5" href="$structroc_1_1audio_1_1LatencyConfig.html" title="Latency settings." alt="" coords="15,157,201,184"/>
+<area shape="rect" id="node6" href="$structroc_1_1fec_1_1ReaderConfig.html" title="FEC reader parameters." alt="" coords="25,208,191,235"/>
+</map>

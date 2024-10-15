@@ -1,0 +1,8 @@
+<map id="roc::ctl::BasicControlEndpoint" name="roc::ctl::BasicControlEndpoint">
+<area shape="rect" id="node1" title="Base class for control endpoints." alt="" coords="471,101,684,127"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="243,49,423,105"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="13,5,187,47"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1ArenaAllocation.html" title="Allocation policy for objects allocated using IArena." alt="" coords="5,71,195,98"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1ListNode.html" title="Base class for List element." alt="" coords="261,129,404,171"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="13,129,187,171"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="roc::pipeline::SenderEndpoint" name="roc::pipeline::SenderEndpoint">
+<area shape="rect" id="node1" title="Sender endpoint sub&#45;pipeline." alt="" coords="78,95,290,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,179,47"/>
+<area shape="rect" id="node3" href="$classroc_1_1packet_1_1IWriter.html" title="Packet writer interface." alt="" coords="203,13,349,39"/>
+</map>

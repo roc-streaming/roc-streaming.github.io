@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['roc_5farray_5fsize_4812',['ROC_ARRAY_SIZE',['../macro__helpers_8h.html#a63bb3fdc2dfa3d6271ee5ea12db2e9aa',1,'macro_helpers.h']]],
+  ['roc_5fattr_5fexport_4813',['ROC_ATTR_EXPORT',['../attributes_8h.html#a863afa97e86a22cb4aa4783a353067cd',1,'attributes.h']]],
+  ['roc_5fattr_5fno_5fsanitize_5fub_4814',['ROC_ATTR_NO_SANITIZE_UB',['../attributes_8h.html#a009530a2f2b3e37cff29ae32d7d376c5',1,'attributes.h']]],
+  ['roc_5fattr_5fnodiscard_4815',['ROC_ATTR_NODISCARD',['../attributes_8h.html#ab05960bfb28f57c187bdf684eac5544f',1,'attributes.h']]],
+  ['roc_5fattr_5fnoreturn_4816',['ROC_ATTR_NORETURN',['../attributes_8h.html#a62743681c4e87202d59d92691f601984',1,'attributes.h']]],
+  ['roc_5fattr_5fpacked_5fbegin_4817',['ROC_ATTR_PACKED_BEGIN',['../attributes_8h.html#a836a61b36e48dd1ce862ba99606ab58e',1,'attributes.h']]],
+  ['roc_5fattr_5fpacked_5fend_4818',['ROC_ATTR_PACKED_END',['../attributes_8h.html#abf32d7b7e32f6e185e6bdc2f393540bc',1,'attributes.h']]],
+  ['roc_5fattr_5fprintf_4819',['ROC_ATTR_PRINTF',['../attributes_8h.html#a7ab5e73fbfd50c38633c44d93f0c31d4',1,'attributes.h']]],
+  ['roc_5fattr_5funreachable_5freturn_4820',['ROC_ATTR_UNREACHABLE_RETURN',['../attributes_8h.html#a74f5d7c7b1b3b0c7672fb2a7607f6f01',1,'attributes.h']]],
+  ['roc_5fattr_5funused_4821',['ROC_ATTR_UNUSED',['../attributes_8h.html#a2466fb9a6e80b47f65aea12e223414a1',1,'attributes.h']]],
+  ['roc_5fcontainer_5fof_4822',['ROC_CONTAINER_OF',['../macro__helpers_8h.html#a557832d0cac7be20cf9b93c71fa2f9bb',1,'macro_helpers.h']]],
+  ['roc_5flog_4823',['roc_log',['../log_8h.html#aecc17044c0456172b9202bb5d32e6a38',1,'log.h']]],
+  ['roc_5fmax_4824',['ROC_MAX',['../macro__helpers_8h.html#a05bbb1b6c84dae16e40d9d52beae12b7',1,'macro_helpers.h']]],
+  ['roc_5fmax_5fof_4825',['ROC_MAX_OF',['../macro__helpers_8h.html#abbde07238ba432f2d123ebdf283755b0',1,'macro_helpers.h']]],
+  ['roc_5fmin_4826',['ROC_MIN',['../macro__helpers_8h.html#a13c4f8166ae10a309e242a8ccf7e0064',1,'macro_helpers.h']]],
+  ['roc_5fmin_5fof_4827',['ROC_MIN_OF',['../macro__helpers_8h.html#a614daf6bf522244a1fb63da08ed1e33c',1,'macro_helpers.h']]],
+  ['roc_5fpanic_4828',['roc_panic',['../panic_8h.html#adf11cbe4b31455b723cefba00601f8cf',1,'panic.h']]],
+  ['roc_5fpanic_5fif_4829',['roc_panic_if',['../panic_8h.html#aaeab8a4f207b5f14ea341fb83cd0fd89',1,'panic.h']]],
+  ['roc_5fpanic_5fif_5fmsg_4830',['roc_panic_if_msg',['../panic_8h.html#a923c8a44267562b6104969928d570a15',1,'panic.h']]],
+  ['roc_5fpanic_5fif_5fnot_4831',['roc_panic_if_not',['../panic_8h.html#a28bcca7c170ff1a3eaa9704627c7a8f1',1,'panic.h']]],
+  ['roc_5fstringize_4832',['ROC_STRINGIZE',['../macro__helpers_8h.html#a3f3f439c7ef880947621ec9dd98159b2',1,'macro_helpers.h']]],
+  ['roc_5fstringize_5f_4833',['ROC_STRINGIZE_',['../macro__helpers_8h.html#ade98dee94c8dee0e50e24f726670865c',1,'macro_helpers.h']]]
+];

@@ -1,0 +1,35 @@
+<map id="roc_packet/icomposer.h" name="roc_packet/icomposer.h">
+<area shape="rect" id="node1" title="Packet composer interface." alt="" coords="1067,5,1241,32"/>
+<area shape="rect" id="node2" href="$packetizer_8h.html" title="Packetizer." alt="" coords="703,80,869,107"/>
+<area shape="rect" id="node27" href="$roc__fec_2composer_8h.html" title="FECFRAME packet composer." alt="" coords="1319,80,1467,107"/>
+<area shape="rect" id="node28" href="$writer_8h.html" title="FEC writer." alt="" coords="842,162,965,189"/>
+<area shape="rect" id="node29" href="$shipper_8h.html" title="Prepare and ship outgoing packets." alt="" coords="1395,162,1550,189"/>
+<area shape="rect" id="node30" href="$sender__endpoint_8h.html" title="Sender endpoint pipeline." alt="" coords="982,244,1131,285"/>
+<area shape="rect" id="node31" href="$communicator_8h.html" title="RTCP communicator." alt="" coords="1156,251,1339,278"/>
+<area shape="rect" id="node32" href="$roc__rtcp_2composer_8h.html" title="RTCP packet composer." alt="" coords="1217,162,1371,189"/>
+<area shape="rect" id="node33" href="$roc__rtp_2composer_8h.html" title="RTP packet composer." alt="" coords="945,80,1091,107"/>
+<area shape="rect" id="node3" href="$feedback__monitor_8h.html" title="Feedback monitor." alt="" coords="618,155,767,196"/>
+<area shape="rect" id="node22" href="$sender__session_8h.html" title="Sender session." alt="" coords="982,333,1131,375"/>
+<area shape="rect" id="node4" href="$roc__pipeline_2config_8h.html" title="Pipeline config." alt="" coords="435,251,591,278"/>
+<area shape="rect" id="node5" href="$receiver__endpoint_8h.html" title="Receiver endpoint pipeline." alt="" coords="1359,423,1517,464"/>
+<area shape="rect" id="node8" href="$receiver__source_8h.html" title="Receiver source pipeline." alt="" coords="856,691,1015,732"/>
+<area shape="rect" id="node9" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="521,780,680,821"/>
+<area shape="rect" id="node19" href="$receiver__session_8h.html" title="Receiver session pipeline." alt="" coords="748,333,907,375"/>
+<area shape="rect" id="node21" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="86,780,235,821"/>
+<area shape="rect" id="node23" href="$sender__slot_8h.html" title="Sender slot." alt="" coords="982,423,1131,464"/>
+<area shape="rect" id="node24" href="$sender__sink_8h.html" title="Sender sink pipeline." alt="" coords="629,512,778,553"/>
+<area shape="rect" id="node25" href="$transcoder__sink_8h.html" title="Transcoder sink pipeline." alt="" coords="351,333,525,375"/>
+<area shape="rect" id="node26" href="$transcoder__source_8h.html" title="Transcoder source pipeline." alt="" coords="549,333,724,375"/>
+<area shape="rect" id="node6" href="$receiver__session__group_8h.html" title="Receiver session group." alt="" coords="1191,512,1349,553"/>
+<area shape="rect" id="node7" href="$receiver__slot_8h.html" title="Receiver slot." alt="" coords="1191,601,1349,643"/>
+<area shape="rect" id="node10" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="307,869,462,911"/>
+<area shape="rect" id="node15" href="$receiver_8h.html" title="Receiver node." alt="" coords="625,1197,774,1224"/>
+<area shape="rect" id="node16" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="393,1197,601,1224"/>
+<area shape="rect" id="node11" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="198,959,377,1000"/>
+<area shape="rect" id="node12" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="401,966,563,993"/>
+<area shape="rect" id="node13" href="$context_8h.html" title="Node context." alt="" coords="345,1048,491,1075"/>
+<area shape="rect" id="node14" href="$node_8h.html" title="Base class for nodes." alt="" coords="329,1123,459,1149"/>
+<area shape="rect" id="node17" href="$sender_8h.html" title="Sender node." alt="" coords="5,1197,145,1224"/>
+<area shape="rect" id="node18" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="169,1197,368,1224"/>
+<area shape="rect" id="node20" href="$receiver__session__router_8h.html" title="Receiver session router." alt="" coords="748,423,907,464"/>
+</map>

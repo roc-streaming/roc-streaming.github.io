@@ -1,0 +1,7 @@
+<map id="roc::core::Thread" name="roc::core::Thread">
+<area shape="rect" id="node1" title="Base class for thread objects." alt="" coords="223,95,353,121"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1CsvDumper.html" title="Asynchronous CSV dumper. Writes entries to CSV file from background thread. Recommended to be used fr..." alt="" coords="5,169,168,196"/>
+<area shape="rect" id="node4" href="$classroc_1_1ctl_1_1ControlTaskQueue.html" title="Control task queue." alt="" coords="192,169,384,196"/>
+<area shape="rect" id="node5" href="$classroc_1_1netio_1_1NetworkLoop.html" title="Network event loop thread." alt="" coords="409,169,586,196"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="201,5,375,47"/>
+</map>

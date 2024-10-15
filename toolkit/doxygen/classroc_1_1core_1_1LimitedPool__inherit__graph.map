@@ -1,0 +1,5 @@
+<map id="roc::core::LimitedPool" name="roc::core::LimitedPool">
+<area shape="rect" id="node1" title="Decorator around IPool to make it memory limited." alt="" coords="96,95,259,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,5,179,47"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1IPool.html" title="Memory pool interface." alt="" coords="203,13,322,39"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="roc::sndio::IDevice" name="roc::sndio::IDevice">
+<area shape="rect" id="node1" title="Base interface for sinks and sources." alt="" coords="5,339,148,365"/>
+<area shape="rect" id="node2" href="$classroc_1_1sndio_1_1ISink.html" title="Sink interface." alt="" coords="204,183,329,209"/>
+<area shape="rect" id="node10" href="$classroc_1_1sndio_1_1ISource.html" title="Source interface." alt="" coords="196,440,337,467"/>
+<area shape="rect" id="node3" href="$classroc_1_1pipeline_1_1SenderLoop.html" title="Sender pipeline loop." alt="" coords="397,5,584,32"/>
+<area shape="rect" id="node4" href="$classroc_1_1pipeline_1_1SenderSink.html" title="Sender sink pipeline." alt="" coords="399,56,582,83"/>
+<area shape="rect" id="node5" href="$classroc_1_1pipeline_1_1TranscoderSink.html" title="Transcoder sink pipeline." alt="" coords="387,107,595,133"/>
+<area shape="rect" id="node6" href="$classroc_1_1sndio_1_1PulseaudioDevice.html" title="PulseAudio device. Can be either source or sink depending on constructor parameter." alt="" coords="386,309,595,336"/>
+<area shape="rect" id="node7" href="$classroc_1_1sndio_1_1SndfileSink.html" title="Sndfile sink." alt="" coords="408,157,573,184"/>
+<area shape="rect" id="node8" href="$classroc_1_1sndio_1_1SoxSink.html" title="SoX sink." alt="" coords="418,208,563,235"/>
+<area shape="rect" id="node9" href="$classroc_1_1sndio_1_1WavSink.html" title="WAV sink." alt="" coords="416,259,565,285"/>
+<area shape="rect" id="node11" href="$classroc_1_1pipeline_1_1ReceiverLoop.html" title="Receiver pipeline loop." alt="" coords="391,360,590,387"/>
+<area shape="rect" id="node12" href="$classroc_1_1pipeline_1_1ReceiverSource.html" title="Receiver source pipeline." alt="" coords="385,411,596,437"/>
+<area shape="rect" id="node13" href="$classroc_1_1pipeline_1_1TranscoderSource.html" title="Transcoder source pipeline." alt="" coords="401,462,581,503"/>
+<area shape="rect" id="node14" href="$classroc_1_1sndio_1_1SndfileSource.html" title="Sndfile source." alt="" coords="400,528,581,555"/>
+<area shape="rect" id="node15" href="$classroc_1_1sndio_1_1SoxSource.html" title="SoX source." alt="" coords="410,579,571,605"/>
+<area shape="rect" id="node16" href="$classroc_1_1sndio_1_1WavSource.html" title="WAV source." alt="" coords="408,629,573,656"/>
+</map>

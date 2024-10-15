@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Release management - Roc Droid documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Release management";
+        var mkdocs_page_input_path = "development/release_management.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Roc Droid documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Architecture</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../architecture/overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../architecture/ui/">User interface</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../architecture/model/">Model</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../architecture/agent/">Agent</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Building</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../building/build_project/">Build project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../building/windows_setup/">Windows setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../building/macos_linux_setup/">macOS and Linux setup</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../automation/">Automation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../android_development/">Android development</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Release management</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#publishing-release">Publishing release</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#project-version">Project version</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#signing-apk">Signing APK</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Roc Droid documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Development</li>
+      <li class="breadcrumb-item active">Release management</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/roc-streaming/roc-droid/edit/main/docs/development/release_management.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="release-management">Release management</h1>
+<h2 id="publishing-release">Publishing release</h2>
+<p>To release a new version of the app, use <code>version_ctl.py</code> script.</p>
+<ol>
+<li>
+<p>Update manifests, create git tag, and push it to GitHub:</p>
+<pre><code>python3 ./script/version_ctl.py make_release --push origin 1.2.3
+</code></pre>
+<p>(You also can omit <code>--push</code> to limit script to local changes only, and then push manually).</p>
+</li>
+<li>
+<p>Wait until "release" job on GitHub CI completes and creates GitHub release draft.</p>
+<p>The draft will have release binaries attached, including a signed APK for Android.</p>
+</li>
+<li>
+<p>Go to release draft, edit description, and publish it.</p>
+</li>
+</ol>
+<h2 id="project-version">Project version</h2>
+<p>Project version is defined by a git tag and two files:</p>
+<ul>
+<li><code>pubspec.yaml</code> - flutter configuration</li>
+<li><code>AndroidManifest.xml</code> - android-specific configuration</li>
+</ul>
+<p>When publishing release, all three versions (git, flutter, android) must be set to the same value.</p>
+<p>When CI builds a release, it runs <code>version_ctl.py check_release</code> to verify that the versions are consistent. When you run <code>version_ctl.py make_release</code> command as described above, it automatically applies all needed changes before making a tag.</p>
+<p>You can also update pubspec and manifest locally without making a release using this command:</p>
+<pre><code>python3 ./script/version_ctl.py update_version 1.2.3
+</code></pre>
+<h2 id="signing-apk">Signing APK</h2>
+<p>Keystore with certificates was generated using this command:</p>
+<pre><code>keytool -genkey -v -keystore roc-droid.jks -alias apk -keyalg RSA -keysize 2048 -validity 10000
+</code></pre>
+<p>Then it was encoded to base64:</p>
+<pre><code>base64 roc-droid.jks
+</code></pre>
+<p>Then the following secrets were added to the repo:</p>
+<ul>
+<li><code>SIGNING_STORE_BASE64</code> - base64-encoded keystore (<code>roc-droid.jks</code>)</li>
+<li><code>SIGNING_STORE_PASSWORD</code> - keystore password</li>
+<li><code>SIGNING_KEY_ALIAS</code> - key alias (<code>apk</code>)</li>
+<li><code>SIGNING_KEY_PASSWORD</code> - key password (same as keystore password)</li>
+</ul>
+<p>GitHub actions decode <code>SIGNING_STORE_BASE64</code> into a temporary <code>.jks</code> file and set <code>SIGNING_*</code> environment variables with the name of the file and credentials.</p>
+<p>Then the following command is run:</p>
+<pre><code>doit build:apk variant=release
+</code></pre>
+<p>It reads credentials from the environment variables and signs release APK using them.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../android_development/" class="btn btn-neutral float-left" title="Android development"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright (c) Roc Streaming authors.</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/roc-streaming/roc-droid" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../android_development/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

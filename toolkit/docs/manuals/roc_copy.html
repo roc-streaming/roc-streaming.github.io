@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>roc-copy &#8212; Roc Toolkit 0.4.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/roc.css?v=37117d08" />
+    <script src="../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/analytics.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Portability" href="../portability.html" />
+    <link rel="prev" title="roc-recv" href="roc_recv.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../portability.html" title="Portability"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="roc_recv.html" title="roc-recv"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../manuals.html" accesskey="U">Manuals</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">roc-copy</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="roc-copy">
+<h1>roc-copy<a class="headerlink" href="#roc-copy" title="Link to this heading">¶</a></h1>
+<section id="synopsis">
+<h2>SYNOPSIS<a class="headerlink" href="#synopsis" title="Link to this heading">¶</a></h2>
+<p><strong>roc-copy</strong> <em>OPTIONS</em></p>
+</section>
+<section id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="Link to this heading">¶</a></h2>
+<p>Read audio stream from a file, transform it, and and write it to a another file.</p>
+<section id="options">
+<h3>Options<a class="headerlink" href="#options" title="Link to this heading">¶</a></h3>
+<dl class="option-list">
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>Print help and exit</p>
+</dd>
+<dt><kbd><span class="option">-V</span>, <span class="option">--version</span></kbd></dt>
+<dd><p>Print version and exit</p>
+</dd>
+<dt><kbd><span class="option">-v</span>, <span class="option">--verbose</span></kbd></dt>
+<dd><p>Increase verbosity level (may be used multiple times)</p>
+</dd>
+<dt><kbd><span class="option">-L</span>, <span class="option">--list-supported</span></kbd></dt>
+<dd><p>list supported schemes and formats</p>
+</dd>
+<dt><kbd><span class="option">-i</span>, <span class="option">--input=<var>FILE_URI</var></span></kbd></dt>
+<dd><p>Input file URI</p>
+</dd>
+<dt><kbd><span class="option">-o</span>, <span class="option">--output=<var>FILE_URI</var></span></kbd></dt>
+<dd><p>Output file URI</p>
+</dd>
+<dt><kbd><span class="option">--input-format=<var>FILE_FORMAT</var></span></kbd></dt>
+<dd><p>Force input file format</p>
+</dd>
+<dt><kbd><span class="option">--output-format=<var>FILE_FORMAT</var></span></kbd></dt>
+<dd><p>Force output file format</p>
+</dd>
+<dt><kbd><span class="option">--frame-len=<var>TIME</var></span></kbd></dt>
+<dd><p>Duration of the internal frames, TIME units</p>
+</dd>
+<dt><kbd><span class="option">-r</span>, <span class="option">--rate=<var>INT</var></span></kbd></dt>
+<dd><p>Output sample rate, Hz</p>
+</dd>
+<dt><kbd><span class="option">--resampler-backend=<var>ENUM</var></span></kbd></dt>
+<dd><p>Resampler backend  (possible values=”default”, “builtin”, “speex”, “speexdec” default=`default’)</p>
+</dd>
+<dt><kbd><span class="option">--resampler-profile=<var>ENUM</var></span></kbd></dt>
+<dd><p>Resampler profile  (possible values=”low”, “medium”, “high” default=`medium’)</p>
+</dd>
+<dt><kbd><span class="option">--profiling</span></kbd></dt>
+<dd><p>Enable self profiling  (default=off)</p>
+</dd>
+<dt><kbd><span class="option">--color=<var>ENUM</var></span></kbd></dt>
+<dd><p>Set colored logging mode for stderr output (possible values=”auto”, “always”, “never” default=`auto’)</p>
+</dd>
+</dl>
+</section>
+<section id="file-uri">
+<h3>File URI<a class="headerlink" href="#file-uri" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">--input</span></code> and <code class="docutils literal notranslate"><span class="pre">--output</span></code> options require a file URI in one of the following forms:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">file:///ABS/PATH</span></code> – absolute file path</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file://localhost/ABS/PATH</span></code> – absolute file path (alternative form; only “localhost” host is supported)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:/ABS/PATH</span></code> – absolute file path (alternative form)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:REL/PATH</span></code> – relative file path</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file://-</span></code> – stdout</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:-</span></code> – stdout (alternative form)</p></li>
+</ul>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">file:///home/user/test.wav</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file://localhost/home/user/test.wav</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:/home/user/test.wav</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:./test.wav</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:-</span></code></p></li>
+</ul>
+<p>The list of supported file formats can be retrieved using <code class="docutils literal notranslate"><span class="pre">--list-supported</span></code> option.</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">--output</span></code> is omitted, the conversion results are discarded.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">--input-format</span></code> and <code class="docutils literal notranslate"><span class="pre">--output-format</span></code> options can be used to force the file format. If the option is omitted, the file format is auto-detected. This option is always required for stdin or stdout.</p>
+<p>The path component of the provided URI is <a class="reference external" href="https://en.wikipedia.org/wiki/Percent-encoding">percent-decoded</a>. For convenience, unencoded characters are allowed as well, except that <code class="docutils literal notranslate"><span class="pre">%</span></code> should be always encoded as <code class="docutils literal notranslate"><span class="pre">%25</span></code>.</p>
+<p>For example, the file named <code class="docutils literal notranslate"><span class="pre">/foo/bar%/[baz]</span></code> may be specified using either of the following URIs: <code class="docutils literal notranslate"><span class="pre">file:///foo%2Fbar%25%2F%5Bbaz%5D</span></code> and <code class="docutils literal notranslate"><span class="pre">file:///foo/bar%25/[baz]</span></code>.</p>
+</section>
+<section id="time-units">
+<h3>Time units<a class="headerlink" href="#time-units" title="Link to this heading">¶</a></h3>
+<dl class="simple">
+<dt><em>TIME</em> should have one of the following forms:</dt><dd><p>123ns; 1.23us; 1.23ms; 1.23s; 1.23m; 1.23h;</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="examples">
+<h2>EXAMPLES<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
+<p>Convert sample rate to 48k:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-copy -vv --rate=48000 -i file:input.wav -o file:output.wav
+</pre></div>
+</div>
+<p>Drop output results (useful for benchmarking):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-copy -vv --rate=48000 -i file:input.wav
+</pre></div>
+</div>
+<p>Input from stdin, output to stdout:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-copy -vv --input-format=wav -i file:- \
+    --output-format=wav -o file:- &gt;./output.wav &lt;./input.wav
+</pre></div>
+</div>
+</section>
+<section id="environment-variables">
+<h2>ENVIRONMENT VARIABLES<a class="headerlink" href="#environment-variables" title="Link to this heading">¶</a></h2>
+<p>The following environment variables are supported:</p>
+<dl class="simple">
+<dt>NO_COLOR</dt><dd><p>By default, terminal coloring is automatically detected. This environment variable can be set to a non-empty string to disable terminal coloring. It has lower precedence than <code class="docutils literal notranslate"><span class="pre">--color</span></code> option.</p>
+</dd>
+<dt>FORCE_COLOR</dt><dd><p>By default, terminal coloring is automatically detected. This environment variable can be set to a positive integer to enable/force terminal coloring. It has lower precedence than  <code class="docutils literal notranslate"><span class="pre">NO_COLOR</span></code> variable and <code class="docutils literal notranslate"><span class="pre">--color</span></code> option.</p>
+</dd>
+</dl>
+</section>
+<section id="see-also">
+<h2>SEE ALSO<a class="headerlink" href="#see-also" title="Link to this heading">¶</a></h2>
+<p><em class="manpage">roc-recv(1)</em>, <em class="manpage">roc-send(1)</em>, the Roc web site at <a class="reference external" href="https://roc-streaming.org/">https://roc-streaming.org/</a></p>
+</section>
+<section id="bugs">
+<h2>BUGS<a class="headerlink" href="#bugs" title="Link to this heading">¶</a></h2>
+<p>Please report any bugs found via GitHub (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/">https://github.com/roc-streaming/roc-toolkit/</a>).</p>
+</section>
+<section id="authors">
+<h2>AUTHORS<a class="headerlink" href="#authors" title="Link to this heading">¶</a></h2>
+<p>See authors page on the website for a list of maintainers and contributors (<a class="reference external" href="https://roc-streaming.org/toolkit/docs/about_project/authors.html">https://roc-streaming.org/toolkit/docs/about_project/authors.html</a>).</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo80.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about_project.html">About project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../manuals.html">Manuals</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="roc_send.html">roc-send</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roc_recv.html">roc-recv</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">roc-copy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../portability.html">Portability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../portability.html" title="Portability"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="roc_recv.html" title="roc-recv"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../manuals.html" >Manuals</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">roc-copy</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Roc Streaming authors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

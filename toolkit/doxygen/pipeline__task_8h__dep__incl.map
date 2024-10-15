@@ -1,0 +1,28 @@
+<map id="roc_pipeline/pipeline_task.h" name="roc_pipeline/pipeline_task.h">
+<area shape="rect" id="node1" title="Base class for pipeline tasks." alt="" coords="695,5,852,47"/>
+<area shape="rect" id="node2" href="$ipipeline__task__completer_8h.html" title="Pipeline task completion handler." alt="" coords="753,95,914,136"/>
+<area shape="rect" id="node3" href="$pipeline__loop_8h.html" title="Base class for pipelines." alt="" coords="695,184,852,225"/>
+<area shape="rect" id="node4" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="547,981,709,1007"/>
+<area shape="rect" id="node11" href="$roc__pipeline_2config_8h.html" title="Pipeline config." alt="" coords="354,273,510,300"/>
+<area shape="rect" id="node16" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="667,795,826,836"/>
+<area shape="rect" id="node21" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="131,705,280,747"/>
+<area shape="rect" id="node5" href="$context_8h.html" title="Node context." alt="" coords="487,1063,633,1089"/>
+<area shape="rect" id="node7" href="$receiver_8h.html" title="Receiver node." alt="" coords="764,1212,913,1239"/>
+<area shape="rect" id="node6" href="$node_8h.html" title="Base class for nodes." alt="" coords="469,1137,598,1164"/>
+<area shape="rect" id="node8" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="532,1212,740,1239"/>
+<area shape="rect" id="node9" href="$sender_8h.html" title="Sender node." alt="" coords="145,1212,285,1239"/>
+<area shape="rect" id="node10" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="309,1212,507,1239"/>
+<area shape="rect" id="node12" href="$receiver__endpoint_8h.html" title="Receiver endpoint pipeline." alt="" coords="770,437,929,479"/>
+<area shape="rect" id="node15" href="$receiver__source_8h.html" title="Receiver source pipeline." alt="" coords="661,705,819,747"/>
+<area shape="rect" id="node19" href="$receiver__session_8h.html" title="Receiver session pipeline." alt="" coords="470,348,629,389"/>
+<area shape="rect" id="node22" href="$sender__session_8h.html" title="Sender session." alt="" coords="144,348,293,389"/>
+<area shape="rect" id="node23" href="$sender__slot_8h.html" title="Sender slot." alt="" coords="144,437,293,479"/>
+<area shape="rect" id="node24" href="$sender__sink_8h.html" title="Sender sink pipeline." alt="" coords="131,527,280,568"/>
+<area shape="rect" id="node25" href="$transcoder__sink_8h.html" title="Transcoder sink pipeline." alt="" coords="653,348,827,389"/>
+<area shape="rect" id="node26" href="$transcoder__source_8h.html" title="Transcoder source pipeline." alt="" coords="851,348,1026,389"/>
+<area shape="rect" id="node13" href="$receiver__session__group_8h.html" title="Receiver session group." alt="" coords="591,527,750,568"/>
+<area shape="rect" id="node14" href="$receiver__slot_8h.html" title="Receiver slot." alt="" coords="653,616,811,657"/>
+<area shape="rect" id="node17" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="483,884,637,925"/>
+<area shape="rect" id="node18" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="344,973,523,1015"/>
+<area shape="rect" id="node20" href="$receiver__session__router_8h.html" title="Receiver session router." alt="" coords="587,437,746,479"/>
+</map>

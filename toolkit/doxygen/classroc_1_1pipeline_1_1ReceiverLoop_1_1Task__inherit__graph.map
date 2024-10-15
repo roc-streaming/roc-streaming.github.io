@@ -1,0 +1,10 @@
+<map id="roc::pipeline::ReceiverLoop::Task" name="roc::pipeline::ReceiverLoop::Task">
+<area shape="rect" id="node1" title="Base task class." alt="" coords="756,104,955,145"/>
+<area shape="rect" id="node5" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1AddEndpoint.html" title="Create endpoint on given interface of the slot." alt="" coords="1003,5,1201,47"/>
+<area shape="rect" id="node6" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1CreateSlot.html" title="Create new slot." alt="" coords="1003,71,1201,112"/>
+<area shape="rect" id="node7" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1DeleteSlot.html" title="Delete existing slot." alt="" coords="1003,136,1201,177"/>
+<area shape="rect" id="node8" href="$classroc_1_1pipeline_1_1ReceiverLoop_1_1Tasks_1_1QuerySlot.html" title="Query slot metrics." alt="" coords="1003,201,1201,243"/>
+<area shape="rect" id="node2" href="$classroc_1_1pipeline_1_1PipelineTask.html" title="Base class for pipeline tasks." alt="" coords="517,111,708,138"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1MpscQueueNode.html" title="Base class for MpscQueue element." alt="" coords="273,104,469,145"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="5,104,225,145"/>
+</map>

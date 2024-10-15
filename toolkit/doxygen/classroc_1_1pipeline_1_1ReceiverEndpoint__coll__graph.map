@@ -1,0 +1,9 @@
+<map id="roc::pipeline::ReceiverEndpoint" name="roc::pipeline::ReceiverEndpoint">
+<area shape="rect" id="node1" title="Receiver endpoint sub&#45;pipeline." alt="" coords="477,137,701,163"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1RefCounted.html" title=" " alt="" coords="243,49,429,105"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="13,5,187,47"/>
+<area shape="rect" id="node4" href="$classroc_1_1core_1_1ArenaAllocation.html" title="Allocation policy for objects allocated using IArena." alt="" coords="5,71,195,98"/>
+<area shape="rect" id="node5" href="$classroc_1_1core_1_1ListNode.html" title="Base class for List element." alt="" coords="265,129,407,171"/>
+<area shape="rect" id="node6" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="13,129,187,171"/>
+<area shape="rect" id="node7" href="$classroc_1_1packet_1_1IWriter.html" title="Packet writer interface." alt="" coords="263,195,409,222"/>
+</map>

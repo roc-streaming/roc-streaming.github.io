@@ -1,0 +1,10 @@
+<map id="roc::pipeline::ReceiverLoop" name="roc::pipeline::ReceiverLoop">
+<area shape="rect" id="node1" title="Receiver pipeline loop." alt="" coords="99,348,297,375"/>
+<area shape="rect" id="node2" href="$classroc_1_1pipeline_1_1PipelineLoop.html" title="Base class for task&#45;based pipelines." alt="" coords="5,273,199,300"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="15,184,189,225"/>
+<area shape="rect" id="node4" href="$classroc_1_1sndio_1_1ISource.html" title="Source interface." alt="" coords="223,273,365,300"/>
+<area shape="rect" id="node5" href="$classroc_1_1sndio_1_1IDevice.html" title="Base interface for sinks and sources." alt="" coords="217,191,360,218"/>
+<area shape="rect" id="node6" href="$classroc_1_1audio_1_1IFrameReader.html" title="Frame reader interface." alt="" coords="384,191,569,218"/>
+<area shape="rect" id="node7" href="$classroc_1_1core_1_1ListNode.html" title="Base class for List element." alt="" coords="405,95,548,136"/>
+<area shape="rect" id="node8" href="$classroc_1_1core_1_1NonCopyable.html" title=" " alt="" coords="390,5,563,47"/>
+</map>

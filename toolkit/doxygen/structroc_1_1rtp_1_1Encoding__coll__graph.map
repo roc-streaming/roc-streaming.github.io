@@ -1,0 +1,6 @@
+<map id="roc::rtp::Encoding" name="roc::rtp::Encoding">
+<area shape="rect" id="node1" title="RTP encoding." alt="" coords="243,95,377,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1audio_1_1IFrameDecoder.html" title="Audio frame decoder interface." alt="" coords="5,5,199,32"/>
+<area shape="rect" id="node3" href="$classroc_1_1audio_1_1SampleSpec.html" title="Sample specification. Describes sample rate and channels." alt="" coords="223,5,397,32"/>
+<area shape="rect" id="node4" href="$classroc_1_1audio_1_1IFrameEncoder.html" title="Audio frame encoder interface." alt="" coords="421,5,612,32"/>
+</map>

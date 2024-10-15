@@ -1,0 +1,6 @@
+<map id="roc_address/io_uri.h" name="roc_address/io_uri.h">
+<area shape="rect" id="node1" title="Audio file or device URI." alt="" coords="103,5,255,32"/>
+<area shape="rect" id="node2" href="$io__uri__to__str_8h.html" title="Format IoUri to string." alt="" coords="5,80,145,121"/>
+<area shape="rect" id="node3" href="$backend__dispatcher_8h.html" title="Backend dispatcher." alt="" coords="169,87,397,114"/>
+<area shape="rect" id="node4" href="$roc__sndio_2print__supported_8h.html" title="Print supported schemes and formats." alt="" coords="182,169,385,196"/>
+</map>

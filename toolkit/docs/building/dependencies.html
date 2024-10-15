@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dependencies &#8212; Roc Toolkit 0.4.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/roc.css?v=37117d08" />
+    <script src="../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/analytics.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SCons options" href="scons_options.html" />
+    <link rel="prev" title="Building" href="../building.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="scons_options.html" title="SCons options"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../building.html" title="Building"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../building.html" accesskey="U">Building</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Dependencies</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="dependencies">
+<h1>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading">¶</a></h1>
+<section id="build-dependencies">
+<h2>Build dependencies<a class="headerlink" href="#build-dependencies" title="Link to this heading">¶</a></h2>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>dependency</strong></p></td>
+<td><p><strong>comment</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>gcc &gt;= 4.1 or clang &gt;= 3.4</p></td>
+<td><p>required</p></td>
+</tr>
+<tr class="row-odd"><td><p>python &gt;= 2.6</p></td>
+<td><p>required</p></td>
+</tr>
+<tr class="row-even"><td><p>scons</p></td>
+<td><p>required</p></td>
+</tr>
+<tr class="row-odd"><td><p>ragel</p></td>
+<td><p>required</p></td>
+</tr>
+<tr class="row-even"><td><p>gengetopt</p></td>
+<td><p>required, unless you disable building command-line tools</p></td>
+</tr>
+<tr class="row-odd"><td><p>pkg-config</p></td>
+<td><p>optional, auto-detected, used for better discovery of system libraries</p></td>
+</tr>
+<tr class="row-even"><td><p>config.guess</p></td>
+<td><div class="line-block">
+<div class="line">optional, auto-detected, used for better identification of system type</div>
+<div class="line">(may be provided by autotools, automake, or libtool)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="line-block">
+<div class="line">libtool, intltool, autoconf, automake</div>
+<div class="line">make, cmake, meson, ninja</div>
+</div>
+</td>
+<td><div class="line-block">
+<div class="line">optional, used to build dependencies automatically</div>
+<div class="line">when <code class="docutils literal notranslate"><span class="pre">--build-3rdparty</span></code> option is given</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vendored-dependencies">
+<h2>Vendored dependencies<a class="headerlink" href="#vendored-dependencies" title="Link to this heading">¶</a></h2>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>dependency</strong></p></td>
+<td><p><strong>version</strong></p></td>
+<td><p><strong>license</strong></p></td>
+<td><p><strong>comment</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/mackron/dr_libs/blob/master/dr_wav.h/">dr_wav</a></p></td>
+<td><p>0.13.14</p></td>
+<td><p>MIT-0</p></td>
+<td><p>single-header library</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://nemequ.github.io/hedley/">hedley</a></p></td>
+<td><p>15</p></td>
+<td><p>CC0</p></td>
+<td><p>single-header library</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="runtime-dependencies">
+<h2>Runtime dependencies<a class="headerlink" href="#runtime-dependencies" title="Link to this heading">¶</a></h2>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>dependency</strong></p></td>
+<td><p><strong>version</strong></p></td>
+<td><p><strong>license</strong></p></td>
+<td><p><strong>comment</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/ivmai/libatomic_ops/">libatomic_ops</a></p></td>
+<td><p>&gt;= 7.6.0</p></td>
+<td><p>MIT</p></td>
+<td><p>only required on pre-C11 compilers</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.nongnu.org/libunwind/">libunwind</a></p></td>
+<td><p>&gt;= 1.2.1</p></td>
+<td><p>X11</p></td>
+<td><p>optional, used to print backtraces</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://libuv.org">libuv</a></p></td>
+<td><p>&gt;= 1.5.0 (recommended &gt;= 1.35.0)</p></td>
+<td><p>MIT</p></td>
+<td><p>required</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://openfec.org">OpenFEC</a></p></td>
+<td><p>&gt;= 1.4.2 (recommended to use <a class="reference external" href="https://github.com/roc-streaming/openfec">our fork</a>)</p></td>
+<td><p>CeCCIL-C / CeCCIL</p></td>
+<td><p>optional, used for FECFRAME support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.openssl.org/">OpenSSL</a></p></td>
+<td><p>&gt;= 1.1.1</p></td>
+<td><p>Apache</p></td>
+<td><p>optional, used for SRTP and DTLS support and CSPRNG</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.freedesktop.org/wiki/Software/PulseAudio/">PulseAudio</a></p></td>
+<td><p>&gt;= 5.0</p></td>
+<td><p>LGPL</p></td>
+<td><p>optional, used for PulseAudio I/O</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://sox.sourceforge.net">SoX</a></p></td>
+<td><p>&gt;= 14.4.0</p></td>
+<td><p>LGPL</p></td>
+<td><p>optional, used for audio I/O</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://libsndfile.github.io/libsndfile/">libsndfile</a></p></td>
+<td><p>&gt;= 1.0.26</p></td>
+<td><p>LGPL</p></td>
+<td><p>optional, used for audio I/O</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/xiph/speexdsp">SpeexDSP</a></p></td>
+<td><p>&gt;= 1.2beta3</p></td>
+<td><p>BSD</p></td>
+<td><p>optional, used for fast resampling</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For OpenFEC, it’s highly recommended to use <a class="reference external" href="https://github.com/roc-streaming/openfec">our fork</a> or manually apply patches from it. The fork is automatically used when using <code class="docutils literal notranslate"><span class="pre">--build-3rdparty=openfec</span></code> option. It contains several critical fixes that are not available in the upstream.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>libuv versions before 1.5.0 may have problems on 64-bit ARMs.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>SpeexDSP (libspeexdsp) below 1.2rc3 was part of Speex (libspeex) package.</p>
+</div>
+</section>
+<section id="development-dependencies">
+<h2>Development dependencies<a class="headerlink" href="#development-dependencies" title="Link to this heading">¶</a></h2>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>dependency</strong></p></td>
+<td><p><strong>comment</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="http://cpputest.github.io">CppUTest</a> &gt;= 4.0</p></td>
+<td><p>needed to build tests</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/google/benchmark">Google Benchmark</a> &gt;= 1.5.5</p></td>
+<td><p>needed to build benchmarks</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://clang.llvm.org/docs/ClangFormat.html">clang-format</a> &gt;= 10</p></td>
+<td><p>needed to format code with <code class="docutils literal notranslate"><span class="pre">scons</span> <span class="pre">fmt</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.doxygen.nl/">doxygen</a> &gt;= 1.6, <a class="reference external" href="https://graphviz.gitlab.io/">graphviz</a></p></td>
+<td><p>needed to build doxygen and sphinx documentation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.sphinx-doc.org/">sphinx</a> &gt;= 5, <a class="reference external" href="https://github.com/michaeljones/breathe">breathe</a></p></td>
+<td><p>needed to build sphinx documentation</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Different versions of clang-format may format the code differently, thus we restrict the range of allowed versions. If you use another version, CI checks may fail.</p>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo80.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about_project.html">About project</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../building.html">Building</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scons_options.html">SCons options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_cookbook.html">User cookbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer_cookbook.html">Developer cookbook</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manuals.html">Manuals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../portability.html">Portability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="scons_options.html" title="SCons options"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../building.html" title="Building"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../building.html" >Building</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Dependencies</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Roc Streaming authors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

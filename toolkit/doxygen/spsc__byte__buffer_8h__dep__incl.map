@@ -1,0 +1,5 @@
+<map id="roc_core/spsc_byte_buffer.h" name="roc_core/spsc_byte_buffer.h">
+<area shape="rect" id="node1" title="Single&#45;producer single&#45;consumer circular buffer of byte chunks." alt="" coords="17,5,164,47"/>
+<area shape="rect" id="node2" href="$spsc__ring__buffer_8h.html" title="Single&#45;producer single&#45;consumer circular buffer of copyable objects." alt="" coords="19,95,162,136"/>
+<area shape="rect" id="node3" href="$csv__dumper_8h.html" title="Asynchronous CSV dumper." alt="" coords="5,184,176,211"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="roc::pipeline::SenderSession" name="roc::pipeline::SenderSession">
+<area shape="rect" id="node1" title="Sender session sub&#45;pipeline." alt="" coords="84,95,289,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,179,47"/>
+<area shape="rect" id="node3" href="$classroc_1_1rtcp_1_1IParticipant.html" title="RTCP participant." alt="" coords="203,13,359,39"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="roc::core::ScopedLock&lt; Mutex &gt;" name="roc::core::ScopedLock&lt; Mutex &gt;">
+<area shape="rect" id="node1" title="RAII mutex lock." alt="" coords="11,95,173,136"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="5,5,179,47"/>
+</map>

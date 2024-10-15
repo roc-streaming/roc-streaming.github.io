@@ -1,0 +1,5 @@
+<map id="roc::core::NoopArenaImpl" name="roc::core::NoopArenaImpl">
+<area shape="rect" id="node1" title="Arena implementation that just fails all allocations. Can be used with containers that have embedded ..." alt="" coords="63,95,249,121"/>
+<area shape="rect" id="node2" href="$classroc_1_1core_1_1IArena.html" title="Memory arena interface." alt="" coords="5,13,133,39"/>
+<area shape="rect" id="node3" href="$classroc_1_1core_1_1NonCopyable.html" title="Base class for non&#45;copyable objects." alt="" coords="157,5,331,47"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="roc_audio" name="roc_audio">
+<area shape="rect" id="node3" href="dir_62f2d305dad689b0a970560a470782f3.html" title="roc_status" alt="" coords="5,219,95,267"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000001_000047.html" title="1" alt="" coords="57,194,66,209"/>
+<area shape="rect" id="node4" href="dir_81514f0298c591d52dbd7703a8f5dc05.html" title="roc_core" alt="" coords="133,219,210,267"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000001_000007.html" title="115" alt="" coords="127,192,153,207"/>
+<area shape="rect" id="node5" href="dir_b37d48860184c0982dafa43dbf3bf002.html" title="roc_packet" alt="" coords="125,123,217,171"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000001_000037.html" title="29" alt="" coords="134,96,151,110"/>
+<area shape="rect" id="node2" href="dir_d342c5eb6dd1c153dc5f0b114eacf919.html" title="target_speexdsp" alt="" coords="171,27,302,75"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000005_000007.html" title="5" alt="" coords="211,203,220,218"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000005_000037.html" title="1" alt="" coords="200,105,209,120"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000037_000001.html" title="1" alt="" coords="129,87,138,102"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000037_000047.html" title="2" alt="" coords="95,207,104,222"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000037_000007.html" title="52" alt="" coords="171,193,188,208"/>
+<area shape="rect" id="clust1" href="dir_0e3e23087e2fde78e6bc891311050c8d.html" alt="" coords="51,16,313,85"/>
+</map>

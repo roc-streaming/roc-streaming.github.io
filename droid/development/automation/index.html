@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Automation - Roc Droid documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Automation";
+        var mkdocs_page_input_path = "development/automation.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Roc Droid documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Architecture</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../architecture/overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../architecture/ui/">User interface</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../architecture/model/">Model</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../architecture/agent/">Agent</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Building</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../building/build_project/">Build project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../building/windows_setup/">Windows setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../building/macos_linux_setup/">macOS and Linux setup</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Development</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Automation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#run-linters">Run linters</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#run-tests">Run tests</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#build-and-clean">Build and clean</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#launch-app">Launch app</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#generate-code">Generate code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#generate-resources">Generate resources</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#format-code">Format code</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../testing/">Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../android_development/">Android development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../release_management/">Release management</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Roc Droid documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Development</li>
+      <li class="breadcrumb-item active">Automation</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/roc-streaming/roc-droid/edit/main/docs/development/automation.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="automation">Automation</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Commands below need Python3 and <a href="https://pydoit.org/">doit</a> automation tool. Targets are defined in <code>dodo.py</code> file.</p>
+<p>All commands are called from the root directory (using terminal).</p>
+<h2 id="run-linters">Run linters</h2>
+<p>Run all code checks (dart analyzer, kotlin linter, etc):</p>
+<pre><code>doit lint
+</code></pre>
+<p>Run individual checks:</p>
+<pre><code>doit lint:dart
+doit lint:kotlin
+</code></pre>
+<h2 id="run-tests">Run tests</h2>
+<p>Run tests on desktop:</p>
+<pre><code>doit test
+</code></pre>
+<h2 id="build-and-clean">Build and clean</h2>
+<p>Build for all platforms:</p>
+<pre><code>doit build [variant=debug|release]
+</code></pre>
+<p>Build Android APK:</p>
+<pre><code>doit build:apk [variant=debug|release]
+</code></pre>
+<p>Clean build artifacts:</p>
+<pre><code>doit wipe
+</code></pre>
+<h2 id="launch-app">Launch app</h2>
+<p>Build and launch application:</p>
+<pre><code>doit launch [variant=debug|release]
+</code></pre>
+<h2 id="generate-code">Generate code</h2>
+<p>Code generation is based on <code>build_runner</code> package.</p>
+<p>Run all code generators:</p>
+<pre><code>doit gen
+</code></pre>
+<p>Run individual steps:</p>
+<pre><code>doit gen:model [watch=true|false]
+doit gen:agent
+</code></pre>
+<p><code>watch</code> parameter runs code generator in watch mode, when it monitors source files updates and automatically regenerates code when needed.</p>
+<p>Generated files have <code>*.g.dart</code> or <code>.g.kt</code> extension and must no be modified by hand.</p>
+<p><code>model</code> package uses <code>mobx_codegen</code> to generate reactive model classes. <code>agent</code> package uses <code>pigeon</code> to generate android platform channels bridge.</p>
+<h2 id="generate-resources">Generate resources</h2>
+<p>Icons and splash screen are generated using <code>flutter_launcher_icons</code> and <code>flutter_native_splash</code> packages. You can find configuration in <code>pubspec.yaml</code> and source assets in <code>assets</code> directory.</p>
+<p>Regenerate icons:</p>
+<pre><code>doit gen:icons
+</code></pre>
+<p>Regenerate splash screen:</p>
+<pre><code>doit gen:splash
+</code></pre>
+<p>The list of transitive dependencies and their licenses is generated using <code>flutter_oss_licenses</code> package and <a href="https://github.com/jk1/Gradle-License-Report">Gradle-License-Report</a> plugin, and then composed into a single json file <code>metadata/dependencies.json</code> using <code>script/generate_dependencies.py</code> script.</p>
+<p>Regenerate dependencies:</p>
+<pre><code>doit gen:deps
+</code></pre>
+<h2 id="format-code">Format code</h2>
+<p>Run all code formatters:</p>
+<pre><code>doit fmt
+</code></pre>
+<p>Run individual steps:</p>
+<pre><code>doit fmt:dart
+doit fmt:kotlin
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../building/macos_linux_setup/" class="btn btn-neutral float-left" title="macOS and Linux setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../testing/" class="btn btn-neutral float-right" title="Testing">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright (c) Roc Streaming authors.</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/roc-streaming/roc-droid" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../building/macos_linux_setup/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../testing/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Changelog &#8212; Roc Toolkit 0.4.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/roc.css?v=37117d08" />
+    <script src="../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/analytics.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Release history" href="history.html" />
+    <link rel="prev" title="Development" href="../development.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="history.html" title="Release history"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../development.html" title="Development"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../development.html" accesskey="U">Development</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Changelog</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="releases">
+<p class="topic-title">Releases:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#version-0-4-0-jun-14-2024" id="id59">Version 0.4.0 (Jun 14, 2024)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-3-0-nov-22-2023" id="id60">Version 0.3.0 (Nov 22, 2023)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-2-6-nov-05-2023" id="id61">Version 0.2.6 (Nov 05, 2023)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-2-5-jul-28-2023" id="id62">Version 0.2.5 (Jul 28, 2023)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-2-4-may-13-2023" id="id63">Version 0.2.4 (May 13, 2023)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-2-3-mar-09-2023" id="id64">Version 0.2.3 (Mar 09, 2023)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-2-2-feb-27-2023" id="id65">Version 0.2.2 (Feb 27, 2023)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-2-1-dec-26-2022" id="id66">Version 0.2.1 (Dec 26, 2022)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-2-0-dec-19-2022" id="id67">Version 0.2.0 (Dec 19, 2022)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-1-5-apr-05-2020" id="id68">Version 0.1.5 (Apr 05, 2020)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-1-4-feb-06-2020" id="id69">Version 0.1.4 (Feb 06, 2020)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-1-3-oct-21-2019" id="id70">Version 0.1.3 (Oct 21, 2019)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-1-2-aug-14-2019" id="id71">Version 0.1.2 (Aug 14, 2019)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-1-1-jun-18-2019" id="id72">Version 0.1.1 (Jun 18, 2019)</a></p></li>
+<li><p><a class="reference internal" href="#version-0-1-0-may-28-2019" id="id73">Version 0.1.0 (May 28, 2019)</a></p></li>
+</ul>
+</nav>
+<section id="version-0-4-0-jun-14-2024">
+<span id="v0-4-0"></span><h2><a class="toc-backref" href="#id59" role="doc-backlink">Version 0.4.0 (Jun 14, 2024)</a><a class="headerlink" href="#version-0-4-0-jun-14-2024" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.4.0">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/16">github milestone</a></p>
+</div>
+<section id="features">
+<h3>Features<a class="headerlink" href="#features" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>finish RTCP &amp; XR support (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/14">gh-14</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/674">gh-674</a>)</p>
+<ul>
+<li><p>handle all reports from RFC 3550 and some XR reports</p></li>
+<li><p>implement 2-way RTCP reports exchange</p></li>
+<li><p>route packets to sessions according to SSRC and CNAME</p></li>
+<li><p>support RTT calculation based on RTCP XR packets</p></li>
+<li><p>improve packet validation</p></li>
+<li><p>support packet padding</p></li>
+<li><p>support RTCP multicast</p></li>
+</ul>
+</li>
+<li><p>support latency tuning and clock drift compensation on sender instead of receiver (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/675">gh-675</a>)</p></li>
+<li><p>implement backend for WAV files without external dependencies, useful in contrained environments (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/576">gh-576</a>)</p></li>
+<li><p>implement libsndfile backend for audio files (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/246">gh-246</a>)</p></li>
+</ul>
+</section>
+<section id="c-api">
+<h3>C API<a class="headerlink" href="#c-api" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>rework latency configuration, introduce concept of latency tuner, available on both sender and receiver (by default enabled on receiver and disabled on sender)</p>
+<ul>
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">roc_clock_sync_backend</span></code> with <code class="docutils literal notranslate"><span class="pre">roc_latency_tuner_backend</span></code></p></li>
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">roc_clock_sync_profile</span></code> with <code class="docutils literal notranslate"><span class="pre">roc_latency_tuner_profile</span></code></p></li>
+</ul>
+</li>
+<li><p>rework metrics API (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/681">gh-681</a>)</p>
+<ul>
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">roc_session_metrics</span></code> with <code class="docutils literal notranslate"><span class="pre">roc_connection_metrics</span></code></p></li>
+<li><p>rework <code class="docutils literal notranslate"><span class="pre">roc_sender_metrics</span></code> and <code class="docutils literal notranslate"><span class="pre">roc_receiver_metrics</span></code>; connection metrics are now available on both sender and receiver</p></li>
+<li><p>functions for querying metrics (<code class="docutils literal notranslate"><span class="pre">roc_sender_query()</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_receiver_query()</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_sender_encoder_query()</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_receiver_decoder_query()</span></code>) are reworked and simplified</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">niq_latency</span></code> is removed from API</p></li>
+</ul>
+</li>
+<li><p>support 2-way control packet exchange in codecs API (<code class="docutils literal notranslate"><span class="pre">roc_sender_encoder</span></code> and <code class="docutils literal notranslate"><span class="pre">roc_receiver_decoder</span></code>)</p>
+<ul>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">roc_sender_encoder_push()</span></code> to <code class="docutils literal notranslate"><span class="pre">roc_sender_encoder_push_frame()</span></code></p></li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">roc_sender_encoder_pop()</span></code> to <code class="docutils literal notranslate"><span class="pre">roc_sender_encoder_pop_packet()</span></code></p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_sender_encoder_push_feedback_packet()</span></code></p></li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">roc_receiver_decoder_push()</span></code> to <code class="docutils literal notranslate"><span class="pre">roc_receiver_decoder_push_packet()</span></code></p></li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">roc_receiver_decoder_pop()</span></code> to <code class="docutils literal notranslate"><span class="pre">roc_receiver_decoder_pop_frame()</span></code></p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_receiver_decoder_pop_feedback_packet()</span></code></p></li>
+</ul>
+</li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">roc_version_get()</span></code> to <code class="docutils literal notranslate"><span class="pre">roc_version_load()</span></code></p></li>
+</ul>
+</section>
+<section id="command-line-tools">
+<h3>Command-line tools<a class="headerlink" href="#command-line-tools" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>rework latency configuration:</p>
+<ul>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">--sess-latency</span></code> to <code class="docutils literal notranslate"><span class="pre">--target-latency</span></code></p></li>
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">--clock-backend</span></code> with <code class="docutils literal notranslate"><span class="pre">--latency-backend</span></code></p></li>
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">--clock-profile</span></code> with <code class="docutils literal notranslate"><span class="pre">--latency-profile</span></code></p></li>
+</ul>
+</li>
+<li><p>rename options:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">--packet-length</span></code> to <code class="docutils literal notranslate"><span class="pre">--packet-len</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--packet-limit</span></code> to <code class="docutils literal notranslate"><span class="pre">--max-packet-size</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--frame-length</span></code> to <code class="docutils literal notranslate"><span class="pre">--frame-len</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--frame-limit</span></code> to <code class="docutils literal notranslate"><span class="pre">--max-frame-size</span></code></p></li>
+</ul>
+</li>
+<li><p>support floats for sizes and durations (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/654">gh-654</a>)</p></li>
+<li><p>support <code class="docutils literal notranslate"><span class="pre">NO_COLOR</span></code> and <code class="docutils literal notranslate"><span class="pre">FORCE_COLOR</span></code> environment variables (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/564">gh-564</a>)</p></li>
+</ul>
+</section>
+<section id="bug-fixes">
+<h3>Bug fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix routing of FEC packets in encoder/decoder API (<code class="docutils literal notranslate"><span class="pre">roc_sender_encoder</span></code> and <code class="docutils literal notranslate"><span class="pre">roc_receiver_decoder</span></code>)</p></li>
+<li><p>fix segfault when roc-send input device omitted (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/728">gh-728</a>)</p></li>
+<li><p>fix work when <code class="docutils literal notranslate"><span class="pre">no_playback_timeout</span></code> is lower than <code class="docutils literal notranslate"><span class="pre">target_latency</span></code> (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/657">gh-657</a>)</p></li>
+<li><p>fix “unexpected already cancelled task” panic</p></li>
+<li><p>properly handle allocation errors in <code class="docutils literal notranslate"><span class="pre">HeapArena</span></code></p></li>
+</ul>
+</section>
+<section id="portability">
+<h3>Portability<a class="headerlink" href="#portability" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add Ubuntu 24.04 to CI (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/634">gh-634</a>)</p></li>
+<li><p>add macOS 14 (arm64) to CI</p></li>
+<li><p>add OpenWrt with uCLibc and musl (MIPS32) to CI</p></li>
+<li><p>fix build on Debian GNU/Hurd</p></li>
+<li><p>improve handling of unknown unix-like platforms in scons</p></li>
+</ul>
+</section>
+<section id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>new optional dependency: libsndfile, used in CLI tools (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/246">gh-246</a>)</p></li>
+</ul>
+</section>
+<section id="internals">
+<h3>Internals<a class="headerlink" href="#internals" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>support frame of different format in different parts of pipeline (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/547">gh-547</a>)</p></li>
+<li><p>continue work on configurable encoding (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/608">gh-608</a>)</p></li>
+<li><p>continue work on surround sound support (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/86">gh-86</a>)</p></li>
+<li><p>start work on configurable limits (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/issues/610">gh-610</a>)</p></li>
+<li><p>improvements and refactoring in <code class="docutils literal notranslate"><span class="pre">roc_core</span></code></p></li>
+</ul>
+</section>
+<section id="build-system">
+<h3>Build system<a class="headerlink" href="#build-system" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix <code class="docutils literal notranslate"><span class="pre">--build-3rdparty</span></code> on macOS 14</p></li>
+<li><p>fix static library on macOS (<code class="docutils literal notranslate"><span class="pre">libroc.a</span></code>); ensure that all object files have unique names</p></li>
+<li><p>fix macos linker warnings about <code class="docutils literal notranslate"><span class="pre">-lc++</span></code></p></li>
+<li><p>fix build with macports installed; don’t implicitly use brew if pkg-config is not from brew</p></li>
+<li><p>fix openssl search</p></li>
+<li><p>workaround for brew + pkg-config + openssl error on macOS</p></li>
+<li><p>fix building old pulseaudio on clang 17</p></li>
+</ul>
+</section>
+<section id="tests">
+<h3>Tests<a class="headerlink" href="#tests" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>improve tests for capture timestamps (CTS)</p></li>
+<li><p>improve RTCP tests (in <code class="docutils literal notranslate"><span class="pre">roc_rtcp</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_pipeline</span></code>, and <code class="docutils literal notranslate"><span class="pre">public_api</span></code>)</p></li>
+<li><p>improve pipeline tests</p></li>
+<li><p>add tests for metrics</p></li>
+</ul>
+</section>
+<section id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>document audio backends</p></li>
+<li><p>document sponsored work</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-3-0-nov-22-2023">
+<span id="v0-3-0"></span><h2><a class="toc-backref" href="#id60" role="doc-backlink">Version 0.3.0 (Nov 22, 2023)</a><a class="headerlink" href="#version-0-3-0-nov-22-2023" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.3.0">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/13">github milestone</a></p>
+</div>
+<section id="id2">
+<h3>Features<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>support lower latencies, up to 7ms in our tests</p></li>
+<li><p>add new clock synchronization profile (<code class="docutils literal notranslate"><span class="pre">responsive</span></code>) suitable for lower latencies</p></li>
+<li><p>major improvements in C API (network-less API, metrics API, many small improvements)</p></li>
+<li><p>more flexible packet encoding configuration (currently available only via C API):</p>
+<ul>
+<li><p>more channel layouts: mono, stereo, multitrack (up to 1024 channels)</p></li>
+<li><p>custom smaple rate</p></li>
+</ul>
+</li>
+<li><p>improve scaling precision of <code class="docutils literal notranslate"><span class="pre">speex</span></code> resampler</p></li>
+<li><p>implement new <code class="docutils literal notranslate"><span class="pre">speexdec</span></code> resampler, combining SpeexDSP for base rate conversion and decimation for clock drift compensation, which has better scaling precision than <code class="docutils literal notranslate"><span class="pre">speex</span></code> and is very cheap when base rates are equal</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>C API<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>implement new encoder / decoder API (<code class="docutils literal notranslate"><span class="pre">roc_sender_encoder</span></code> and <code class="docutils literal notranslate"><span class="pre">roc_receiver_decoder</span></code>), which is network-less version of sender / receiver API (encoder produces packets, decoder consumes packets, and user is responsible for delivering packets)</p></li>
+<li><p>implement initial metrics API:</p>
+<ul>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_session_metrics</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_receiver_metrics</span></code>, and <code class="docutils literal notranslate"><span class="pre">roc_sender_metrics</span></code> structs (currently they support <code class="docutils literal notranslate"><span class="pre">niq_latency</span></code> and <code class="docutils literal notranslate"><span class="pre">e2e_latency</span></code>)</p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_sender_query()</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_receiver_query()</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_sender_encoder_query()</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_receiver_decoder_query()</span></code> to query metrics</p></li>
+</ul>
+</li>
+<li><p>improvements in slot support:</p>
+<ul>
+<li><p>support deleting slots on fly using <code class="docutils literal notranslate"><span class="pre">roc_sender_unlink()</span></code> and <code class="docutils literal notranslate"><span class="pre">roc_receiver_unlink()</span></code></p></li>
+<li><p>refine error handling rules: if error happens during slot configuration, slot is marked broken and excluded from pipeline, but needs manual removal by user</p></li>
+<li><p>slot identifiers are now arbitrary <code class="docutils literal notranslate"><span class="pre">long</span> <span class="pre">long</span></code> numbers (not necessary continuous)</p></li>
+</ul>
+</li>
+<li><p>simplify receiver configuration:</p>
+<ul>
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">max_latency_overrun</span></code> + <code class="docutils literal notranslate"><span class="pre">max_latency_underrun</span></code> with one parameter <code class="docutils literal notranslate"><span class="pre">latency_tolerance</span></code></p></li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">broken_playback_timeout</span></code> to <code class="docutils literal notranslate"><span class="pre">choppy_playback_timeout</span></code></p></li>
+<li><p>remove <code class="docutils literal notranslate"><span class="pre">breakage_detection_window</span></code> (automatically derive it from <code class="docutils literal notranslate"><span class="pre">choppy_playback_timeout</span></code>)</p></li>
+</ul>
+</li>
+<li><p>simplify interface configuration:</p>
+<ul>
+<li><p>introduce <code class="docutils literal notranslate"><span class="pre">roc_interface_config</span></code> struct, which holds all per-interface options</p></li>
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">roc_sender_set_outgoing_address()</span></code> and <code class="docutils literal notranslate"><span class="pre">roc_sender_set_reuseaddr()</span></code> with <code class="docutils literal notranslate"><span class="pre">roc_sender_configure()</span></code> (which uses <code class="docutils literal notranslate"><span class="pre">roc_interface_config</span></code>)</p></li>
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">roc_receiver_set_multicast_group()</span></code> and <code class="docutils literal notranslate"><span class="pre">roc_receiver_set_reuseaddr()</span></code> with <code class="docutils literal notranslate"><span class="pre">roc_receiver_configure()</span></code> (which uses <code class="docutils literal notranslate"><span class="pre">roc_interface_config</span></code>)</p></li>
+</ul>
+</li>
+<li><p>rework encoding configuration:</p>
+<ul>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">roc_frame_encoding</span></code> enum to <code class="docutils literal notranslate"><span class="pre">roc_format</span></code> (in API, “encoding” now means format + rate + channels, which is now true for both frame encoding and packet encoding)</p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_media_encoding</span></code> struct which defines format + rate + channels</p></li>
+<li><p>use <code class="docutils literal notranslate"><span class="pre">roc_media_encoding</span></code> instead of <code class="docutils literal notranslate"><span class="pre">frame_encoding</span></code> + <code class="docutils literal notranslate"><span class="pre">frame_sample_rate</span></code> + <code class="docutils literal notranslate"><span class="pre">frame_channels</span></code> in <code class="docutils literal notranslate"><span class="pre">roc_sender_config</span></code> and <code class="docutils literal notranslate"><span class="pre">roc_receiver_config</span></code></p></li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">roc_channel_set</span></code> to <code class="docutils literal notranslate"><span class="pre">roc_channel_layout</span></code></p></li>
+<li><p>remove <code class="docutils literal notranslate"><span class="pre">packet_sample_rate</span></code> and <code class="docutils literal notranslate"><span class="pre">packet_channels</span></code> (these parameters are now derived from <code class="docutils literal notranslate"><span class="pre">packet_encoding</span></code>)</p></li>
+<li><p>if <code class="docutils literal notranslate"><span class="pre">packet_encoding</span></code> is not set, automatically choose one that matches <code class="docutils literal notranslate"><span class="pre">frame_encoding</span></code> (among built-in and registered packet encodings)</p></li>
+</ul>
+</li>
+<li><p>support channel layouts:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">ROC_CHANNEL_LAYOUT_MONO</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ROC_CHANNEL_LAYOUT_STEREO</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ROC_CHANNEL_LAYOUT_MULTITRACK</span></code> - up to 1024 channels without special meaning</p></li>
+</ul>
+</li>
+<li><p>support packet encodings:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">ROC_PACKET_ENCODING_AVP_L16_MONO</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ROC_PACKET_ENCODING_AVP_L16_STEREO</span></code></p></li>
+</ul>
+</li>
+<li><p>support registering custom packet encodings using <code class="docutils literal notranslate"><span class="pre">roc_context_register_encoding()</span></code></p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_clock_sync_backend</span></code> parameter, with two values:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">ROC_CLOCK_SYNC_BACKEND_DISABLE</span></code> - do not adjust receiver clock</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ROC_CLOCK_SYNC_BACKEND_NIQ</span></code> - adjust receiver clock based on network incoming queue size (current behavior)</p></li>
+</ul>
+</li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_clock_sync_profile</span></code> parameter with three values:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">ROC_CLOCK_SYNC_PROFILE_GRADUAL</span></code> - adjust clock smoothly (old behavior, good for high jitter and high latency)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ROC_CLOCK_SYNC_PROFILE_RESPONSIVE</span></code> - adjust clock smoothly (good for low jitter and low latency)
+<code class="docutils literal notranslate"><span class="pre">ROC_CLOCK_SYNC_PROFILE_DEFAULT</span></code> - select profile automatically based on <code class="docutils literal notranslate"><span class="pre">target_latency</span></code></p></li>
+</ul>
+</li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">ROC_CLOCK_EXTERNAL</span></code> / <code class="docutils literal notranslate"><span class="pre">ROC_CLOCK_INTERNAL</span></code> to <code class="docutils literal notranslate"><span class="pre">ROC_CLOCK_SOURCE_EXTERNAL</span></code> / <code class="docutils literal notranslate"><span class="pre">ROC_CLOCK_SOURCE_INTERNAL</span></code></p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">ROC_RESAMPLER_BACKEND_SPEEXDEC</span></code> backend</p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">ROC_VERSION</span></code> and <code class="docutils literal notranslate"><span class="pre">ROC_VERSION_CODE()</span></code></p></li>
+</ul>
+</section>
+<section id="id4">
+<h3>Command-line tools<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">--min-latency</span></code> + <code class="docutils literal notranslate"><span class="pre">--max-latency</span></code> with <code class="docutils literal notranslate"><span class="pre">--latency-tolerance</span></code></p></li>
+<li><p>remove <code class="docutils literal notranslate"><span class="pre">--no-resampling</span></code> (use <code class="docutils literal notranslate"><span class="pre">--clock-backend=disable</span></code> instead)</p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">--clock-backend</span></code> and <code class="docutils literal notranslate"><span class="pre">--clock-profile</span></code></p></li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">--np-timeout</span></code> to <code class="docutils literal notranslate"><span class="pre">--no-play-timeout</span></code></p></li>
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">--bp-timeout</span></code> + <code class="docutils literal notranslate"><span class="pre">--bp-window</span></code> with <code class="docutils literal notranslate"><span class="pre">--choppy-play-timeout</span></code></p></li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">--beeping</span></code> to <code class="docutils literal notranslate"><span class="pre">--beep</span></code></p></li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">roc-conv</span></code> tool to <code class="docutils literal notranslate"><span class="pre">roc-copy</span></code></p></li>
+<li><p>list supported endpoint schemes in <code class="docutils literal notranslate"><span class="pre">--print-supported</span></code></p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>Bug fixes<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix NTP 2036 year problem</p></li>
+<li><p>fix latency reported in logs</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>Internals<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>change default packet length from <code class="docutils literal notranslate"><span class="pre">7ms</span></code> to <code class="docutils literal notranslate"><span class="pre">2.5ms</span></code></p></li>
+<li><p>get rid of hard-coded frame length in pipeline components (now they work with any requested frame length), which allows to handle latencies lower than default frame length</p></li>
+<li><p>support capture timestamps (CTS) in packets and frames (based on RTCP + NTP) and forward them through the pipeline, needed for end-to-end latency calculation</p></li>
+<li><p>start work on calculation of end-to-end latency (overall delay from sender to receiver, including I/O and network)</p></li>
+<li><p>start work for automatic mapping between different channel layouts and orders (including mono, stereo, surround, and multitrack layouts)</p></li>
+<li><p>start work for reporting and forwarding error codes through the pipeline</p></li>
+<li><p>implement fast lock-free PRNG</p></li>
+<li><p>optimize task processing: process pipeline tasks in-place when they’re scheduled from I/O thread, to avoid unnecessary delays</p></li>
+<li><p>improve memory protection:</p>
+<ul>
+<li><p>always employ memory poisoning in arenas and pools</p></li>
+<li><p>implement buffer overflow protection using canary guards in arenas and pools</p></li>
+<li><p>implement ownership checks in arenas and pools</p></li>
+</ul>
+</li>
+<li><p>module <code class="docutils literal notranslate"><span class="pre">roc_peer</span></code> renamed to <code class="docutils literal notranslate"><span class="pre">roc_node</span></code> (because it now has non-peer nodes)</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>Build system<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add <code class="docutils literal notranslate"><span class="pre">--compiler-launcher</span></code> scons option (may be used for <code class="docutils literal notranslate"><span class="pre">ccache</span></code>)</p></li>
+<li><p>correctly handle <code class="docutils literal notranslate"><span class="pre">--enable-debug-3rdparty</span></code> for all dependencies</p></li>
+</ul>
+</section>
+<section id="id8">
+<h3>Documentation<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>improve C API doxygen comments</p></li>
+<li><p>fix pulseaudio C API examples</p></li>
+<li><p>numerous improvements and updates in sphinx documentation</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-2-6-nov-05-2023">
+<span id="v0-2-6"></span><h2><a class="toc-backref" href="#id61" role="doc-backlink">Version 0.2.6 (Nov 05, 2023)</a><a class="headerlink" href="#version-0-2-6-nov-05-2023" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.2.6">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/15">github milestone</a></p>
+</div>
+<section id="packaging">
+<h3>Packaging<a class="headerlink" href="#packaging" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>build debian packages on debian:bullseye</p></li>
+<li><p>in debian packages, statically link all dependencies except <code class="docutils literal notranslate"><span class="pre">libc</span></code>, <code class="docutils literal notranslate"><span class="pre">libasound</span></code>, <code class="docutils literal notranslate"><span class="pre">libpulse</span></code></p></li>
+<li><p>ensure that packages are installable on debian:oldstable, debian:stable, ubuntu:20.04, ubuntu:22.04, ubuntu:latest</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-2-5-jul-28-2023">
+<span id="v0-2-5"></span><h2><a class="toc-backref" href="#id62" role="doc-backlink">Version 0.2.5 (Jul 28, 2023)</a><a class="headerlink" href="#version-0-2-5-jul-28-2023" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.2.5">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/14">github milestone</a></p>
+</div>
+<section id="id9">
+<h3>Bug fixes<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix byte order conversion</p></li>
+</ul>
+</section>
+<section id="id10">
+<h3>Build system<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix compiler type detection when compiler is specified via <code class="docutils literal notranslate"><span class="pre">CC</span></code> or <code class="docutils literal notranslate"><span class="pre">CXX</span></code> variable</p></li>
+<li><p>export symbols of dependencies built by <code class="docutils literal notranslate"><span class="pre">--build-3rdparty</span></code> when building static library (<code class="docutils literal notranslate"><span class="pre">libroc.a</span></code>), to avoid linker errors when using it</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-2-4-may-13-2023">
+<span id="v0-2-4"></span><h2><a class="toc-backref" href="#id63" role="doc-backlink">Version 0.2.4 (May 13, 2023)</a><a class="headerlink" href="#version-0-2-4-may-13-2023" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.2.4">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/12">github milestone</a></p>
+</div>
+<section id="id11">
+<h3>C API<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>always set <code class="docutils literal notranslate"><span class="pre">file</span></code> and <code class="docutils literal notranslate"><span class="pre">line</span></code> in <code class="docutils literal notranslate"><span class="pre">roc_log_message</span></code></p></li>
+</ul>
+</section>
+<section id="id12">
+<h3>Command-line tools<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>support PulseAudio sources in <code class="docutils literal notranslate"><span class="pre">roc-send</span></code></p></li>
+<li><p>support <code class="docutils literal notranslate"><span class="pre">--io-latency</span></code> option in <code class="docutils literal notranslate"><span class="pre">roc-send</span></code></p></li>
+</ul>
+</section>
+<section id="id13">
+<h3>Bug fixes<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix potential race</p></li>
+<li><p>fix byte order detection on Android</p></li>
+<li><p>do not write to log from shared library destructor</p></li>
+<li><p>stop using user-provided log handler after entering shared library destructor</p></li>
+</ul>
+</section>
+<section id="id14">
+<h3>Internals<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>improve logging</p></li>
+<li><p>refactor scons scripts</p></li>
+</ul>
+</section>
+<section id="id15">
+<h3>Build system<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix <code class="docutils literal notranslate"><span class="pre">--build-3rdparty=sox</span></code> when <code class="docutils literal notranslate"><span class="pre">sndio</span></code> is installed</p></li>
+<li><p>fix <code class="docutils literal notranslate"><span class="pre">--build-3rdparty=google-benchmark</span></code> when there is <code class="docutils literal notranslate"><span class="pre">python3</span></code>, but no <code class="docutils literal notranslate"><span class="pre">python</span></code> in PATH</p></li>
+<li><p>fix OpenSSL platform detection in <code class="docutils literal notranslate"><span class="pre">--build-3rdparty=openssl</span></code> when not cross-compiling</p></li>
+<li><p>set Android API level to <code class="docutils literal notranslate"><span class="pre">21</span></code></p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">--macos-platform</span></code> and <code class="docutils literal notranslate"><span class="pre">--macos-arch</span></code> scons options</p></li>
+<li><p>by default, set <code class="docutils literal notranslate"><span class="pre">--macos-platform</span></code> to current OS, to avoid linker warnings about incompatible macOS deployment targets</p></li>
+<li><p>support building macOS universal binaries by providing multiple values for <code class="docutils literal notranslate"><span class="pre">--macos-arch</span></code></p></li>
+<li><p>propagate Android platform, macOS platform, and macOS architectures to <code class="docutils literal notranslate"><span class="pre">--build--3rdparty</span></code></p></li>
+<li><p>unexport all symbols except <code class="docutils literal notranslate"><span class="pre">roc_*</span></code> from <code class="docutils literal notranslate"><span class="pre">libroc.so</span></code> and <code class="docutils literal notranslate"><span class="pre">libroc.a</span></code> on Linux, and <code class="docutils literal notranslate"><span class="pre">libroc.dylib</span></code> on macOS</p></li>
+<li><p>resolve <code class="docutils literal notranslate"><span class="pre">pkg-config</span></code> absolute path</p></li>
+</ul>
+</section>
+<section id="id16">
+<h3>Documentation<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>minor updates</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-2-3-mar-09-2023">
+<span id="v0-2-3"></span><h2><a class="toc-backref" href="#id64" role="doc-backlink">Version 0.2.3 (Mar 09, 2023)</a><a class="headerlink" href="#version-0-2-3-mar-09-2023" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.2.3">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/11">github milestone</a></p>
+</div>
+<section id="id17">
+<h3>C API<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_receiver_set_reuseaddr</span></code> and <code class="docutils literal notranslate"><span class="pre">roc_sender_set_reuseaddr</span></code></p></li>
+</ul>
+</section>
+<section id="id18">
+<h3>Command-line tools<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add <code class="docutils literal notranslate"><span class="pre">--reuseaddr</span></code> to <code class="docutils literal notranslate"><span class="pre">roc-recv</span></code> and <code class="docutils literal notranslate"><span class="pre">roc-send</span></code></p></li>
+</ul>
+</section>
+<section id="id19">
+<h3>Bug fixes<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix formatting of endpoint URI with zero port</p></li>
+<li><p>fix usage of multicast with RTCP in <code class="docutils literal notranslate"><span class="pre">roc-recv</span></code></p></li>
+</ul>
+</section>
+<section id="id20">
+<h3>Build system<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add new dependency OpenSSL</p></li>
+<li><p>fix work with SCons 4.5</p></li>
+<li><p>exclude sox and libpulse from .pc file for libroc</p></li>
+</ul>
+</section>
+<section id="id21">
+<h3>Packaging<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add debian packages and publish them on github</p></li>
+<li><p>add rpm packages spec</p></li>
+</ul>
+</section>
+<section id="id22">
+<h3>Documentation<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>minor updates</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-2-2-feb-27-2023">
+<span id="v0-2-2"></span><h2><a class="toc-backref" href="#id65" role="doc-backlink">Version 0.2.2 (Feb 27, 2023)</a><a class="headerlink" href="#version-0-2-2-feb-27-2023" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.2.2">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/9">github milestone</a></p>
+</div>
+<section id="id23">
+<h3>C API<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">roc_get_version</span></code> to <code class="docutils literal notranslate"><span class="pre">roc_version_get</span></code></p></li>
+</ul>
+</section>
+<section id="id24">
+<h3>Bug fixes<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix crash in <code class="docutils literal notranslate"><span class="pre">roc_log_set_handler</span></code> when argument is NULL</p></li>
+</ul>
+</section>
+<section id="id25">
+<h3>Build system<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix build on recent Android NDK</p></li>
+<li><p>install <code class="docutils literal notranslate"><span class="pre">.pc</span></code> file to <code class="docutils literal notranslate"><span class="pre">&lt;libdir&gt;/pkgconfig</span></code> instead of <code class="docutils literal notranslate"><span class="pre">PKG_CONFIG_PATH</span></code></p></li>
+<li><p>add support for <code class="docutils literal notranslate"><span class="pre">DESTDIR</span></code></p></li>
+<li><p>strip symbols in release build</p></li>
+</ul>
+</section>
+<section id="id26">
+<h3>Documentation<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>minor updates</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-2-1-dec-26-2022">
+<span id="v0-2-1"></span><h2><a class="toc-backref" href="#id66" role="doc-backlink">Version 0.2.1 (Dec 26, 2022)</a><a class="headerlink" href="#version-0-2-1-dec-26-2022" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.2.1">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/10">github milestone</a></p>
+</div>
+<section id="id27">
+<h3>Build system<a class="headerlink" href="#id27" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>install to <code class="docutils literal notranslate"><span class="pre">/usr</span></code> by default (except macOS)</p></li>
+</ul>
+</section>
+<section id="id28">
+<h3>Documentation<a class="headerlink" href="#id28" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>minor updates</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-2-0-dec-19-2022">
+<span id="v0-2-0"></span><h2><a class="toc-backref" href="#id67" role="doc-backlink">Version 0.2.0 (Dec 19, 2022)</a><a class="headerlink" href="#version-0-2-0-dec-19-2022" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.2.0">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/2">github milestone</a></p>
+</div>
+<section id="id29">
+<h3>Features<a class="headerlink" href="#id29" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>support multicast</p></li>
+<li><p>support broadcast</p></li>
+<li><p>support speex resampler and make it default</p></li>
+<li><p>support slots (connect sender to multiple receivers and vice versa)</p></li>
+<li><p>initial support for RTCP</p></li>
+</ul>
+</section>
+<section id="id30">
+<h3>C API<a class="headerlink" href="#id30" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>return error codes from <code class="docutils literal notranslate"><span class="pre">roc_context_open</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_receiver_open</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_sender_open</span></code></p></li>
+<li><p>introduce <code class="docutils literal notranslate"><span class="pre">roc_endpoint</span></code> to identify endpoints using URI</p></li>
+<li><p>rename <code class="docutils literal notranslate"><span class="pre">roc_fec_code</span></code> to <code class="docutils literal notranslate"><span class="pre">roc_fec_encoding</span></code></p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_resampler_backend</span></code></p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_clock_source</span></code></p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_version</span></code> and friends</p></li>
+</ul>
+</section>
+<section id="id31">
+<h3>Command-line tools<a class="headerlink" href="#id31" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>use URIs to identify audio devices and endpoints</p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">--backup</span></code> option to <code class="docutils literal notranslate"><span class="pre">roc-recv</span></code></p></li>
+<li><p>replace <code class="docutils literal notranslate"><span class="pre">--frame-size</span></code> with <code class="docutils literal notranslate"><span class="pre">--frame-length</span></code> and <code class="docutils literal notranslate"><span class="pre">--frame-limit</span></code></p></li>
+<li><p>remove <code class="docutils literal notranslate"><span class="pre">--resampler-interp</span></code> and <code class="docutils literal notranslate"><span class="pre">--resampler-window</span></code></p></li>
+</ul>
+</section>
+<section id="id32">
+<h3>Bug fixes<a class="headerlink" href="#id32" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix race in PRNG</p></li>
+<li><p>fix race in mutex and semaphore on macOS</p></li>
+<li><p>fix potential deadlock in network code</p></li>
+</ul>
+</section>
+<section id="id33">
+<h3>Portability<a class="headerlink" href="#id33" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Linux / aarch64 build fixes</p></li>
+<li><p>Android build fixes</p></li>
+<li><p>macOS build fixes</p></li>
+<li><p>FreeBSD build fixes</p></li>
+<li><p>support generic Unix target</p></li>
+<li><p>continuous integration for more Linux distros</p></li>
+<li><p>continuous integration for Android</p></li>
+<li><p>testing on Raspberry Pi 4</p></li>
+</ul>
+</section>
+<section id="id34">
+<h3>Internals<a class="headerlink" href="#id34" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_peer</span></code> module</p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">roc_ctl</span></code> module</p></li>
+<li><p>support for asynchronous tasks in <code class="docutils literal notranslate"><span class="pre">roc_pipeline</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_netio</span></code>, <code class="docutils literal notranslate"><span class="pre">roc_ctl</span></code></p></li>
+<li><p>lock-free task queues</p></li>
+<li><p>optimizations to avoid unnecessary context switches</p></li>
+<li><p>improvements in memory pools</p></li>
+<li><p>improvements in logger</p></li>
+<li><p>self-profiling</p></li>
+<li><p>start work on SDP support</p></li>
+<li><p>preparations for RTSP support</p></li>
+<li><p>rework project structure</p></li>
+<li><p>lots of small improvements</p></li>
+</ul>
+</section>
+<section id="id35">
+<h3>Build system<a class="headerlink" href="#id35" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add <code class="docutils literal notranslate"><span class="pre">--enable-static</span></code> and <code class="docutils literal notranslate"><span class="pre">--disable-shared</span></code></p></li>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">--disable-soversion</span></code> option</p></li>
+<li><p>compatibility with recent SCons versions</p></li>
+<li><p>compatibility with different Python versions</p></li>
+<li><p>improve toolchain detection</p></li>
+<li><p>generate <code class="docutils literal notranslate"><span class="pre">.pc</span></code> file for pkg-config</p></li>
+<li><p>fix build with recent PulseAudio</p></li>
+<li><p>fix build with recent libunwind</p></li>
+<li><p>fixes for building third-parties</p></li>
+</ul>
+</section>
+<section id="id36">
+<h3>Tests<a class="headerlink" href="#id36" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add benchmarks</p></li>
+<li><p>lots of small updates</p></li>
+</ul>
+</section>
+<section id="id37">
+<h3>Documentation<a class="headerlink" href="#id37" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>document Android bulding and testing</p></li>
+<li><p>lots of small updates</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-1-5-apr-05-2020">
+<span id="v0-1-5"></span><h2><a class="toc-backref" href="#id68" role="doc-backlink">Version 0.1.5 (Apr 05, 2020)</a><a class="headerlink" href="#version-0-1-5-apr-05-2020" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.1.5">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/7">github milestone</a></p>
+</div>
+<section id="id38">
+<h3>Portability<a class="headerlink" href="#id38" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix building on Manjaro Linux</p></li>
+<li><p>fix building on Yocto Linux</p></li>
+<li><p>add openSUSE to continuous integration and user cookbook</p></li>
+<li><p>drop Xcode 7.3 from continuous integration, add Xcode 11.3</p></li>
+</ul>
+</section>
+<section id="id39">
+<h3>Build system<a class="headerlink" href="#id39" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>correctly handle arguments in environment variables like CXX/CC/LD/etc (for Yocto Linux)</p></li>
+<li><p>correctly handle spaces in environment variables (for Yocto Linux)</p></li>
+<li><p>fix environment overrides checks</p></li>
+<li><p>fix building of the host tools when cross-compiling</p></li>
+<li><p>fix warnings on Clang 11</p></li>
+<li><p>fix sphinx invocation</p></li>
+<li><p>explicitly disable Orc when building PulseAudio using –build-3rdparty</p></li>
+<li><p>explicitly enable -pthread or -lpthread for libsndfile (for Manjaro Linux)</p></li>
+<li><p>user CMake instead of autotools when building libuv for Android using <code class="docutils literal notranslate"><span class="pre">--build-3rdparty</span></code></p></li>
+<li><p>switch to libuv 1.35.0 by default in <code class="docutils literal notranslate"><span class="pre">--build-3rdparty</span></code></p></li>
+<li><p>check for unknown names in <code class="docutils literal notranslate"><span class="pre">--build-3rdparty</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-1-4-feb-06-2020">
+<span id="v0-1-4"></span><h2><a class="toc-backref" href="#id69" role="doc-backlink">Version 0.1.4 (Feb 06, 2020)</a><a class="headerlink" href="#version-0-1-4-feb-06-2020" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.1.4">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/6">github milestone</a></p>
+</div>
+<section id="id40">
+<h3>Internals<a class="headerlink" href="#id40" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix logging</p></li>
+</ul>
+</section>
+<section id="id41">
+<h3>Build system<a class="headerlink" href="#id41" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>make <code class="docutils literal notranslate"><span class="pre">/usr/local</span></code> prefix default everywhere except Linux</p></li>
+<li><p>make default compiler consistent with CXX var</p></li>
+<li><p>fix handling of RAGEL, GENGETOPT, DOXYGEN, SPHINX_BUILD, and BREATHE_APIDOC vars</p></li>
+<li><p>fix SoX download URL (again)</p></li>
+<li><p>fix CPU count calculation</p></li>
+</ul>
+</section>
+<section id="id42">
+<h3>Documentation<a class="headerlink" href="#id42" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>update PulseAudio version numbers in “User cookbook”</p></li>
+<li><p>update CONTRIBUTING and “Coding guidelines”</p></li>
+<li><p>update maintainers and contributors list</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-1-3-oct-21-2019">
+<span id="v0-1-3"></span><h2><a class="toc-backref" href="#id70" role="doc-backlink">Version 0.1.3 (Oct 21, 2019)</a><a class="headerlink" href="#version-0-1-3-oct-21-2019" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.1.3">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/5">github milestone</a></p>
+</div>
+<section id="id43">
+<h3>Command-line tools<a class="headerlink" href="#id43" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add <code class="docutils literal notranslate"><span class="pre">--list-drivers</span></code> option</p></li>
+<li><p>add git commit hash to version info</p></li>
+</ul>
+</section>
+<section id="id44">
+<h3>Internals<a class="headerlink" href="#id44" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>print backtrace on Linux and macOS using libunwind instead of glibc backtrace module</p></li>
+<li><p>print backtrace on Android using bionic backtrace module</p></li>
+<li><p>colored logging</p></li>
+</ul>
+</section>
+<section id="id45">
+<h3>Build system<a class="headerlink" href="#id45" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>add libunwind optional dependency (enabled by default)</p></li>
+<li><p>add ragel required dependency</p></li>
+<li><p>rename “uv” to “libuv” in <code class="docutils literal notranslate"><span class="pre">--build-3rdparty</span></code></p></li>
+<li><p>don’t hide symbols in debug builds</p></li>
+<li><p>strip symbols in release builds</p></li>
+<li><p>fix building on recent Python versions</p></li>
+<li><p>fix SoX download URL</p></li>
+<li><p>fix PulseAudio version parsing</p></li>
+<li><p>automatically apply memfd patch when building PulseAudio</p></li>
+<li><p>automatically fix libasound includes when building PulseAudio</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-1-2-aug-14-2019">
+<span id="v0-1-2"></span><h2><a class="toc-backref" href="#id71" role="doc-backlink">Version 0.1.2 (Aug 14, 2019)</a><a class="headerlink" href="#version-0-1-2-aug-14-2019" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.1.2">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/4">github milestone</a></p>
+</div>
+<section id="id46">
+<h3>Bug fixes<a class="headerlink" href="#id46" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix handling of inconsistent port protocols / FEC schemes</p></li>
+<li><p>fix IPv6 support</p></li>
+<li><p>fix incorrect usage of SO_REUSEADDR</p></li>
+<li><p>fix panic on bind error</p></li>
+<li><p>fix race in port removing code</p></li>
+<li><p>fix packet flushing mechanism</p></li>
+<li><p>fix backtrace printing on release builds</p></li>
+</ul>
+</section>
+<section id="id47">
+<h3>Portability<a class="headerlink" href="#id47" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix building on musl libc</p></li>
+<li><p>continuous integration for Alpine Linux</p></li>
+</ul>
+</section>
+<section id="id48">
+<h3>Internals<a class="headerlink" href="#id48" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>rework audio codecs interfaces (preparations for Opus and read-aheads support)</p></li>
+<li><p>minor refactoring in FEC support</p></li>
+<li><p>improve logging</p></li>
+</ul>
+</section>
+<section id="id49">
+<h3>Build system<a class="headerlink" href="#id49" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>allow to configure installation directories</p></li>
+<li><p>auto-detect system library directory and PulseAudio module directory</p></li>
+</ul>
+</section>
+<section id="id50">
+<h3>Documentation<a class="headerlink" href="#id50" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>extend “Forward Erasure Correction codes” page</p></li>
+<li><p>add new pages: “Usage”, “Publications”, “Licensing”, “Contacts”, “Authors”</p></li>
+<li><p>replace “Guidelines” page with “Contribution Guidelines”, “Coding guidelines”, and “Version control”</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-1-1-jun-18-2019">
+<span id="v0-1-1"></span><h2><a class="toc-backref" href="#id72" role="doc-backlink">Version 0.1.1 (Jun 18, 2019)</a><a class="headerlink" href="#version-0-1-1-jun-18-2019" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.1.1">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/3">github milestone</a></p>
+</div>
+<section id="id51">
+<h3>Bug fixes<a class="headerlink" href="#id51" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix memory corruption in OpenFEC / LDPC-Staircase (fix available in our fork)</p></li>
+<li><p>fix false positives in stream breakage detection</p></li>
+</ul>
+</section>
+<section id="id52">
+<h3>Portability<a class="headerlink" href="#id52" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>start working on Android port; Roc PulseAudio modules are now available in Termux unstable repo</p></li>
+<li><p>continuous integration for Android / arm64 (minimal build)</p></li>
+<li><p>docker image for aarch64-linux-android toolchain</p></li>
+</ul>
+</section>
+<section id="id53">
+<h3>Build system<a class="headerlink" href="#id53" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix multiple build issues on macOS</p></li>
+<li><p>fix multiple build issues with cross-compilation and Android build</p></li>
+<li><p>fix issues with building third-parties</p></li>
+<li><p>fix issues with compilation db generation</p></li>
+<li><p>set library soname/install_name and install proper symlinks</p></li>
+<li><p>improve configuration options</p></li>
+<li><p>improve system type detection and system tools search</p></li>
+<li><p>improve scripts portability</p></li>
+<li><p>better handling of build environment variables</p></li>
+</ul>
+</section>
+<section id="id54">
+<h3>Tests<a class="headerlink" href="#id54" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>fix resampler AWGN tests</p></li>
+<li><p>add travis job to run tests under valgrind</p></li>
+</ul>
+</section>
+</section>
+<section id="version-0-1-0-may-28-2019">
+<span id="v0-1-0"></span><h2><a class="toc-backref" href="#id73" role="doc-backlink">Version 0.1.0 (May 28, 2019)</a><a class="headerlink" href="#version-0-1-0-may-28-2019" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/releases/tag/v0.1.0">github release</a>, <a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/milestone/1">github milestone</a></p>
+</div>
+<section id="id55">
+<h3>Features<a class="headerlink" href="#id55" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>streaming CD-quality audio using RTP (PCM 16-bit stereo)</p></li>
+<li><p>maintaining pre-configured target latency</p></li>
+<li><p>restoring lost packets using FECFRAME with Reed-Solomon and LDPC-Staircase FEC schemes</p></li>
+<li><p>converting between the sender and receiver clock domains using resampler</p></li>
+<li><p>converting between the network and input/output sample rates</p></li>
+<li><p>configurable resampler profiles for different CPU and quality requirements</p></li>
+<li><p>mixing simultaneous streams from multiple senders on the receiver</p></li>
+<li><p>binding receiver to multiple ports with different protocols</p></li>
+<li><p>interleaving packets to increase the chances of successful loss recovery</p></li>
+<li><p>detecting and restarting broken streams</p></li>
+</ul>
+</section>
+<section id="id56">
+<h3>C API<a class="headerlink" href="#id56" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>initial version of transport API (roc_sender, roc_receiver)</p></li>
+</ul>
+</section>
+<section id="id57">
+<h3>Command-line tools<a class="headerlink" href="#id57" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>initial version of command-line tools (roc-send, roc-recv, roc-conv)</p></li>
+</ul>
+</section>
+<section id="id58">
+<h3>Portability<a class="headerlink" href="#id58" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>GNU/Linux support</p></li>
+<li><p>macOS support</p></li>
+<li><p>continuous integration for Ubuntu, Debian, Fedora, CentOS, Arch Linux, macOS</p></li>
+<li><p>continuous integration for x86_64, ARMv6, ARMv7, ARMv8</p></li>
+<li><p>toolchain docker images for arm-bcm2708hardfp-linux-gnueabi, arm-linux-gnueabihf, aarch64-linux-gnu</p></li>
+<li><p>testing on Raspberry Pi 3 Model B, Raspberry Pi Zero W, Orange Pi Lite 2</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo80.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about_project.html">About project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manuals.html">Manuals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../portability.html">Portability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Internals</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../development.html">Development</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Changelog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="history.html">Release history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contribution_guidelines.html">Contribution guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coding_guidelines.html">Coding guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow.html">Development workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maintainer_notes.html">Maintainer notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="continuous_integration.html">Continuous integration</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="history.html" title="Release history"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../development.html" title="Development"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../development.html" >Development</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Changelog</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Roc Streaming authors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

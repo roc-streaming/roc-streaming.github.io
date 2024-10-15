@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['reason_4750',['REASON',['../classroc_1_1rtcp_1_1ByeTraverser_1_1Iterator.html#a86b1ee144044825112cf5fe8600e633eafe4cc9a409e841a8810d56763a058f9f',1,'roc::rtcp::ByeTraverser::Iterator']]],
+  ['repair_4751',['Repair',['../namespaceroc_1_1fec.html#ae75fc8dd55031b789384c138a846802fa8cb13d620358d92c6f19331a99914920',1,'roc::fec']]],
+  ['report_5fback_4752',['Report_Back',['../namespaceroc_1_1rtcp.html#afb352d443930c5a338165bee0fc7308caf4550b24a75d0682a6156061db1c0b8e',1,'roc::rtcp']]],
+  ['report_5ftoaddress_4753',['Report_ToAddress',['../namespaceroc_1_1rtcp.html#afb352d443930c5a338165bee0fc7308ca8f72f4d3d7d621d569930000e3db5d84',1,'roc::rtcp']]],
+  ['resamplerbackend_5fbuiltin_4754',['ResamplerBackend_Builtin',['../namespaceroc_1_1audio.html#a220f1042f94b704dde24c73e8bb5cddea6fa3bc9d169a69d13205ed2d57ec5681',1,'roc::audio']]],
+  ['resamplerbackend_5fdefault_4755',['ResamplerBackend_Default',['../namespaceroc_1_1audio.html#a220f1042f94b704dde24c73e8bb5cddeaac3ef740df00b42633ca7021cf8c56e8',1,'roc::audio']]],
+  ['resamplerbackend_5fspeex_4756',['ResamplerBackend_Speex',['../namespaceroc_1_1audio.html#a220f1042f94b704dde24c73e8bb5cddeac034d350973fb91ac0cdedfd1c3e6f70',1,'roc::audio']]],
+  ['resamplerbackend_5fspeexdec_4757',['ResamplerBackend_SpeexDec',['../namespaceroc_1_1audio.html#a220f1042f94b704dde24c73e8bb5cddea6c91e1cc2ced3fb6c75efb568efce2eb',1,'roc::audio']]],
+  ['resamplerprofile_5fhigh_4758',['ResamplerProfile_High',['../namespaceroc_1_1audio.html#aac9424872ab17080aa18e3d3e55edc22ad3e3fdfae65517af13e964a8855bed3e',1,'roc::audio']]],
+  ['resamplerprofile_5flow_4759',['ResamplerProfile_Low',['../namespaceroc_1_1audio.html#aac9424872ab17080aa18e3d3e55edc22a766333b870f3187a6c2cc4680269d80d',1,'roc::audio']]],
+  ['resamplerprofile_5fmedium_4760',['ResamplerProfile_Medium',['../namespaceroc_1_1audio.html#aac9424872ab17080aa18e3d3e55edc22ad4a8c9aa56be889cd3aee2f7d7458a26',1,'roc::audio']]],
+  ['rr_4761',['RR',['../classroc_1_1rtcp_1_1Traverser_1_1Iterator.html#ae1b06ebb89164690a6490f3b19b3c9c9a4c5ecc8d636b49df81dadd5bc9c563cd',1,'roc::rtcp::Traverser::Iterator']]],
+  ['rrtr_5fblock_4762',['RRTR_BLOCK',['../classroc_1_1rtcp_1_1XrTraverser_1_1Iterator.html#aaecb1ce55975b2e6589b0379beee1f5ca72047dfde3460aee7cecaeb9fc92094f',1,'roc::rtcp::XrTraverser::Iterator']]],
+  ['rtcp_5fapp_4763',['RTCP_APP',['../roc__rtcp_2headers_8h.html#aaa7af291cfcf4ac5ade4fb072cfce676a5b2f1c1b4789241fb28d79399231abf3',1,'roc::rtcp::header']]],
+  ['rtcp_5fbye_4764',['RTCP_BYE',['../roc__rtcp_2headers_8h.html#aaa7af291cfcf4ac5ade4fb072cfce676ad0cb67d74d8458a85d5ade381923f999',1,'roc::rtcp::header']]],
+  ['rtcp_5frr_4765',['RTCP_RR',['../roc__rtcp_2headers_8h.html#aaa7af291cfcf4ac5ade4fb072cfce676a864e031c37b54ad52cc866c467f09d07',1,'roc::rtcp::header']]],
+  ['rtcp_5fsdes_4766',['RTCP_SDES',['../roc__rtcp_2headers_8h.html#aaa7af291cfcf4ac5ade4fb072cfce676a78a8f63a63e473bb3e08626368860b60',1,'roc::rtcp::header']]],
+  ['rtcp_5fsr_4767',['RTCP_SR',['../roc__rtcp_2headers_8h.html#aaa7af291cfcf4ac5ade4fb072cfce676a5d4b6a573e83dd7e5f46555a14d92923',1,'roc::rtcp::header']]],
+  ['rtcp_5fxr_4768',['RTCP_XR',['../roc__rtcp_2headers_8h.html#aaa7af291cfcf4ac5ade4fb072cfce676acd70026c1e30f2ee9cd30a971888553f',1,'roc::rtcp::header']]]
+];

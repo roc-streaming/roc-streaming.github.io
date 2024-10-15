@@ -1,0 +1,38 @@
+<map id="roc_audio/frame_factory.h" name="roc_audio/frame_factory.h">
+<area shape="rect" id="node1" title="Frame factory." alt="" coords="951,5,1141,32"/>
+<area shape="rect" id="node2" href="$builtin__resampler_8h.html" title="Built&#45;in resampler." alt="" coords="5,87,220,114"/>
+<area shape="rect" id="node3" href="$channel__mapper__reader_8h.html" title="Channel mapper reader." alt="" coords="717,259,914,300"/>
+<area shape="rect" id="node4" href="$receiver__session_8h.html" title="Receiver session pipeline." alt="" coords="611,348,769,389"/>
+<area shape="rect" id="node5" href="$receiver__session__group_8h.html" title="Receiver session group." alt="" coords="560,527,719,568"/>
+<area shape="rect" id="node6" href="$receiver__slot_8h.html" title="Receiver slot." alt="" coords="507,616,665,657"/>
+<area shape="rect" id="node7" href="$receiver__source_8h.html" title="Receiver source pipeline." alt="" coords="507,705,665,747"/>
+<area shape="rect" id="node19" href="$transcoder__source_8h.html" title="Transcoder source pipeline." alt="" coords="793,348,968,389"/>
+<area shape="rect" id="node20" href="$channel__mapper__writer_8h.html" title="Channel mapper writer." alt="" coords="1514,259,1711,300"/>
+<area shape="rect" id="node21" href="$sender__session_8h.html" title="Sender session." alt="" coords="1402,348,1551,389"/>
+<area shape="rect" id="node22" href="$sender__slot_8h.html" title="Sender slot." alt="" coords="1381,437,1530,479"/>
+<area shape="rect" id="node23" href="$sender__sink_8h.html" title="Sender sink pipeline." alt="" coords="1145,527,1294,568"/>
+<area shape="rect" id="node25" href="$transcoder__sink_8h.html" title="Transcoder sink pipeline." alt="" coords="1607,348,1781,389"/>
+<area shape="rect" id="node26" href="$decimation__resampler_8h.html" title="Decimating resampler." alt="" coords="1887,80,2050,121"/>
+<area shape="rect" id="node27" href="$mixer_8h.html" title="Mixer." alt="" coords="347,445,484,471"/>
+<area shape="rect" id="node28" href="$pcm__mapper__reader_8h.html" title="Pcm mapper reader." alt="" coords="96,616,271,657"/>
+<area shape="rect" id="node29" href="$pcm__mapper__writer_8h.html" title="Pcm mapper writer." alt="" coords="1040,169,1215,211"/>
+<area shape="rect" id="node30" href="$resampler__map_8h.html" title="Resampler map." alt="" coords="2074,80,2229,121"/>
+<area shape="rect" id="node31" href="$resampler__writer_8h.html" title="Resampler." alt="" coords="1261,80,1415,121"/>
+<area shape="rect" id="node35" href="$speex__resampler_8h.html" title="Speex resampler." alt="" coords="2253,80,2469,121"/>
+<area shape="rect" id="node36" href="$pump_8h.html" title="Pump." alt="" coords="2493,87,2631,114"/>
+<area shape="rect" id="node18" href="$receiver__session__router_8h.html" title="Receiver session router." alt="" coords="661,437,820,479"/>
+<area shape="rect" id="node8" href="$receiver__loop_8h.html" title="Receiver pipeline loop." alt="" coords="721,795,880,836"/>
+<area shape="rect" id="node9" href="$basic__control__endpoint_8h.html" title="Base class for control endpoints." alt="" coords="947,884,1102,925"/>
+<area shape="rect" id="node14" href="$receiver_8h.html" title="Receiver node." alt="" coords="675,1212,825,1239"/>
+<area shape="rect" id="node15" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="849,1212,1057,1239"/>
+<area shape="rect" id="node10" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="838,973,1017,1015"/>
+<area shape="rect" id="node11" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="1041,981,1203,1007"/>
+<area shape="rect" id="node12" href="$context_8h.html" title="Node context." alt="" coords="1026,1063,1173,1089"/>
+<area shape="rect" id="node13" href="$node_8h.html" title="Base class for nodes." alt="" coords="1007,1137,1136,1164"/>
+<area shape="rect" id="node16" href="$sender_8h.html" title="Sender node." alt="" coords="1304,1212,1444,1239"/>
+<area shape="rect" id="node17" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="1081,1212,1280,1239"/>
+<area shape="rect" id="node24" href="$sender__loop_8h.html" title="Sender pipeline loop." alt="" coords="1201,795,1350,836"/>
+<area shape="rect" id="node32" href="$feedback__monitor_8h.html" title="Feedback monitor." alt="" coords="1239,169,1389,211"/>
+<area shape="rect" id="node33" href="$roc__pipeline_2config_8h.html" title="Pipeline config." alt="" coords="1181,266,1337,293"/>
+<area shape="rect" id="node34" href="$receiver__endpoint_8h.html" title="Receiver endpoint pipeline." alt="" coords="844,437,1003,479"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="roc_core/target_posix/roc_core/thread.h" name="roc_core/target_posix/roc_core/thread.h">
+<area shape="rect" id="node1" title="Thread." alt="" coords="193,5,356,47"/>
+<area shape="rect" id="node2" href="$csv__dumper_8h.html" title="Asynchronous CSV dumper." alt="" coords="5,102,176,129"/>
+<area shape="rect" id="node3" href="$control__task__queue_8h.html" title="Control task queue." alt="" coords="200,95,349,136"/>
+<area shape="rect" id="node12" href="$network__loop_8h.html" title="Network event loop thread." alt="" coords="374,95,565,136"/>
+<area shape="rect" id="node4" href="$control__interface__map_8h.html" title="Control interface map." alt="" coords="380,184,559,225"/>
+<area shape="rect" id="node5" href="$control__loop_8h.html" title="Control loop thread." alt="" coords="194,191,355,218"/>
+<area shape="rect" id="node6" href="$context_8h.html" title="Node context." alt="" coords="503,273,649,300"/>
+<area shape="rect" id="node8" href="$receiver_8h.html" title="Receiver node." alt="" coords="200,423,349,449"/>
+<area shape="rect" id="node7" href="$node_8h.html" title="Base class for nodes." alt="" coords="511,348,641,375"/>
+<area shape="rect" id="node9" href="$receiver__decoder_8h.html" title="Receiver decoder node." alt="" coords="373,423,581,449"/>
+<area shape="rect" id="node10" href="$sender_8h.html" title="Sender node." alt="" coords="606,423,746,449"/>
+<area shape="rect" id="node11" href="$sender__encoder_8h.html" title="Sender encoder node." alt="" coords="770,423,969,449"/>
+</map>

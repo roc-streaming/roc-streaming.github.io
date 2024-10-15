@@ -1,0 +1,5 @@
+<map id="roc::pipeline::SenderParticipantMetrics" name="roc::pipeline::SenderParticipantMetrics">
+<area shape="rect" id="node1" title="Sender&#45;side metrics specific to one participant (remote receiver)." alt="" coords="94,95,318,136"/>
+<area shape="rect" id="node2" href="$structroc_1_1audio_1_1LatencyMetrics.html" title="Latency&#45;related metrics." alt="" coords="5,5,199,32"/>
+<area shape="rect" id="node3" href="$structroc_1_1packet_1_1LinkMetrics.html" title="Link metrics." alt="" coords="223,5,399,32"/>
+</map>

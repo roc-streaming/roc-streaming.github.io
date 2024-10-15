@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>roc-recv &#8212; Roc Toolkit 0.4.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/roc.css?v=37117d08" />
+    <script src="../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/analytics.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="roc-copy" href="roc_copy.html" />
+    <link rel="prev" title="roc-send" href="roc_send.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="roc_copy.html" title="roc-copy"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="roc_send.html" title="roc-send"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../manuals.html" accesskey="U">Manuals</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">roc-recv</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="roc-recv">
+<h1>roc-recv<a class="headerlink" href="#roc-recv" title="Link to this heading">¶</a></h1>
+<section id="synopsis">
+<h2>SYNOPSIS<a class="headerlink" href="#synopsis" title="Link to this heading">¶</a></h2>
+<p><strong>roc-recv</strong> <em>OPTIONS</em></p>
+</section>
+<section id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="Link to this heading">¶</a></h2>
+<p>Receive audio streams from remote senders and write them to an audio device or file.</p>
+<section id="options">
+<h3>Options<a class="headerlink" href="#options" title="Link to this heading">¶</a></h3>
+<dl class="option-list">
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>Print help and exit</p>
+</dd>
+<dt><kbd><span class="option">-V</span>, <span class="option">--version</span></kbd></dt>
+<dd><p>Print version and exit</p>
+</dd>
+<dt><kbd><span class="option">-v</span>, <span class="option">--verbose</span></kbd></dt>
+<dd><p>Increase verbosity level (may be used multiple times)</p>
+</dd>
+<dt><kbd><span class="option">-L</span>, <span class="option">--list-supported</span></kbd></dt>
+<dd><p>list supported schemes and formats</p>
+</dd>
+<dt><kbd><span class="option">-o</span>, <span class="option">--output=<var>IO_URI</var></span></kbd></dt>
+<dd><p>Output file or device URI</p>
+</dd>
+<dt><kbd><span class="option">--output-format=<var>FILE_FORMAT</var></span></kbd></dt>
+<dd><p>Force output file format</p>
+</dd>
+<dt><kbd><span class="option">--backup=<var>IO_URI</var></span></kbd></dt>
+<dd><p>Backup file or device URI (if set, used when there are no sessions)</p>
+</dd>
+<dt><kbd><span class="option">--backup-format=<var>FILE_FORMAT</var></span></kbd></dt>
+<dd><p>Force backup file format</p>
+</dd>
+<dt><kbd><span class="option">-s</span>, <span class="option">--source=<var>ENDPOINT_URI</var></span></kbd></dt>
+<dd><p>Local source endpoint</p>
+</dd>
+<dt><kbd><span class="option">-r</span>, <span class="option">--repair=<var>ENDPOINT_URI</var></span></kbd></dt>
+<dd><p>Local repair endpoint</p>
+</dd>
+<dt><kbd><span class="option">-c</span>, <span class="option">--control=<var>ENDPOINT_URI</var></span></kbd></dt>
+<dd><p>Local control endpoint</p>
+</dd>
+<dt><kbd><span class="option">--miface=<var>MIFACE</var></span></kbd></dt>
+<dd><p>IPv4 or IPv6 address of the network interface on which to join the multicast group</p>
+</dd>
+<dt><kbd><span class="option">--reuseaddr</span></kbd></dt>
+<dd><p>enable SO_REUSEADDR when binding sockets</p>
+</dd>
+<dt><kbd><span class="option">--target-latency=<var>STRING</var></span></kbd></dt>
+<dd><p>Target latency, TIME units</p>
+</dd>
+<dt><kbd><span class="option">--io-latency=<var>STRING</var></span></kbd></dt>
+<dd><p>Playback target latency, TIME units</p>
+</dd>
+<dt><kbd><span class="option">--latency-tolerance=<var>STRING</var></span></kbd></dt>
+<dd><p>Maximum deviation from target latency, TIME units</p>
+</dd>
+<dt><kbd><span class="option">--no-play-timeout=<var>STRING</var></span></kbd></dt>
+<dd><p>No playback timeout, TIME units</p>
+</dd>
+<dt><kbd><span class="option">--choppy-play-timeout=<var>STRING</var></span></kbd></dt>
+<dd><p>Choppy playback timeout, TIME units</p>
+</dd>
+<dt><kbd><span class="option">--frame-len=<var>TIME</var></span></kbd></dt>
+<dd><p>Duration of the internal frames, TIME units</p>
+</dd>
+<dt><kbd><span class="option">--max-packet-size=<var>SIZE</var></span></kbd></dt>
+<dd><p>Maximum packet size, in SIZE units</p>
+</dd>
+<dt><kbd><span class="option">--max-frame-size=<var>SIZE</var></span></kbd></dt>
+<dd><p>Maximum internal frame size, in SIZE units</p>
+</dd>
+<dt><kbd><span class="option">--rate=<var>INT</var></span></kbd></dt>
+<dd><p>Override output sample rate, Hz</p>
+</dd>
+<dt><kbd><span class="option">--latency-backend=<var>ENUM</var></span></kbd></dt>
+<dd><p>Which latency to use in latency tuner (possible values=”niq” default=`niq’)</p>
+</dd>
+<dt><kbd><span class="option">--latency-profile=<var>ENUM</var></span></kbd></dt>
+<dd><p>Latency tuning profile  (possible values=”default”, “responsive”, “gradual”, “intact” default=`default’)</p>
+</dd>
+<dt><kbd><span class="option">--resampler-backend=<var>ENUM</var></span></kbd></dt>
+<dd><p>Resampler backend  (possible values=”default”, “builtin”, “speex”, “speexdec” default=`default’)</p>
+</dd>
+<dt><kbd><span class="option">--resampler-profile=<var>ENUM</var></span></kbd></dt>
+<dd><p>Resampler profile  (possible values=”low”, “medium”, “high” default=`medium’)</p>
+</dd>
+<dt><kbd><span class="option">-1</span>, <span class="option">--oneshot</span></kbd></dt>
+<dd><p>Exit when last connected client disconnects (default=off)</p>
+</dd>
+<dt><kbd><span class="option">--profiling</span></kbd></dt>
+<dd><p>Enable self-profiling  (default=off)</p>
+</dd>
+<dt><kbd><span class="option">--beep</span></kbd></dt>
+<dd><p>Enable beeping on packet loss  (default=off)</p>
+</dd>
+<dt><kbd><span class="option">--color=<var>ENUM</var></span></kbd></dt>
+<dd><p>Set colored logging mode for stderr output (possible values=”auto”, “always”, “never” default=`auto’)</p>
+</dd>
+</dl>
+</section>
+<section id="endpoint-uri">
+<h3>Endpoint URI<a class="headerlink" href="#endpoint-uri" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">--source</span></code>, <code class="docutils literal notranslate"><span class="pre">--repair</span></code>, and <code class="docutils literal notranslate"><span class="pre">--control</span></code> options define network endpoints on which to receive the traffic.</p>
+<p><em>ENDPOINT_URI</em> should have the following form:</p>
+<p><code class="docutils literal notranslate"><span class="pre">protocol://host[:port][/path][?query]</span></code></p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">rtsp://localhost:123/path?query</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rtp+rs8m://localhost:123</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rtp://0.0.0.0:123</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rtp://[::1]:123</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rtcp://0.0.0.0:123</span></code></p></li>
+</ul>
+<p>The list of supported protocols can be retrieved using <code class="docutils literal notranslate"><span class="pre">--list-supported</span></code> option.</p>
+<p>The host field should be either FQDN (domain name), or IPv4 address, or IPv6 address in square brackets. It may be <code class="docutils literal notranslate"><span class="pre">0.0.0.0</span></code> (for IPv4) or <code class="docutils literal notranslate"><span class="pre">[::]</span></code> (for IPv6) to bind endpoint to all network interfaces.</p>
+<p>The port field can be omitted if the protocol defines standard port. Otherwise, it is mandatory. It may be set to zero to bind endpoint to a radomly chosen ephemeral port.</p>
+<p>The path and query fields are allowed only for protocols that support them, e.g. for RTSP.</p>
+<p>If FEC is enabled on sender, a pair of a source and repair endpoints should be provided. The two endpoints should use compatible protocols, e.g. <code class="docutils literal notranslate"><span class="pre">rtp+rs8m://</span></code> for source endpoint, and <code class="docutils literal notranslate"><span class="pre">rs8m://</span></code> for repair endpoint. If FEC is disabled, a single source endpoint should be provided.</p>
+<p>Supported source and repair protocols:</p>
+<ul class="simple">
+<li><p>source <code class="docutils literal notranslate"><span class="pre">rtp://</span></code>, repair none (bare RTP without FEC)</p></li>
+<li><p>source <code class="docutils literal notranslate"><span class="pre">rtp+rs8m://</span></code>, repair <code class="docutils literal notranslate"><span class="pre">rs8m://</span></code> (RTP with Reed-Solomon FEC)</p></li>
+<li><p>source <code class="docutils literal notranslate"><span class="pre">rtp+ldpc://</span></code>, repair <code class="docutils literal notranslate"><span class="pre">ldpc://</span></code> (RTP with LDPC-Staircase FEC)</p></li>
+</ul>
+<p>In addition, it is recommended to provide control endpoint. It is used to exchange non-media information used to identify session, carry feedback, etc. If no control endpoint is provided, session operates in reduced fallback mode, which may be less robust and may not support all features.</p>
+<p>Supported control protocols:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">rtcp://</span></code></p></li>
+</ul>
+</section>
+<section id="io-uri">
+<h3>IO URI<a class="headerlink" href="#io-uri" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">--output</span></code> and <code class="docutils literal notranslate"><span class="pre">--backup</span></code> options require a device or file URI in one of the following forms:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DEVICE_TYPE://DEVICE_NAME</span></code> – audio device</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DEVICE_TYPE://default</span></code> – default audio device for given device type</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:///ABS/PATH</span></code> – absolute file path</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file://localhost/ABS/PATH</span></code> – absolute file path (alternative form; only “localhost” host is supported)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:/ABS/PATH</span></code> – absolute file path (alternative form)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:REL/PATH</span></code> – relative file path</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file://-</span></code> – stdout</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:-</span></code> – stdout (alternative form)</p></li>
+</ul>
+<p>Examples:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pulse://default</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pulse://alsa_output.pci-0000_00_1f.3.analog-stereo</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">alsa://hw:1,0</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:///home/user/test.wav</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file://localhost/home/user/test.wav</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:/home/user/test.wav</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:./test.wav</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file:-</span></code></p></li>
+</ul>
+<p>The list of supported schemes and file formats can be retrieved using <code class="docutils literal notranslate"><span class="pre">--list-supported</span></code> option.</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">--output</span></code> is omitted, the default driver and device are selected.
+If the <code class="docutils literal notranslate"><span class="pre">--backup</span></code> is omitted, no backup source is used.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">--output-format</span></code> and <code class="docutils literal notranslate"><span class="pre">--backup-format</span></code> options can be used to force the output or backup file format. If the option is omitted, the file format is auto-detected. The option is always required when the output or backup is stdout or stdin.</p>
+<p>The path component of the provided URI is <a class="reference external" href="https://en.wikipedia.org/wiki/Percent-encoding">percent-decoded</a>. For convenience, unencoded characters are allowed as well, except that <code class="docutils literal notranslate"><span class="pre">%</span></code> should be always encoded as <code class="docutils literal notranslate"><span class="pre">%25</span></code>.</p>
+<p>For example, the file named <code class="docutils literal notranslate"><span class="pre">/foo/bar%/[baz]</span></code> may be specified using either of the following URIs: <code class="docutils literal notranslate"><span class="pre">file:///foo%2Fbar%25%2F%5Bbaz%5D</span></code> and <code class="docutils literal notranslate"><span class="pre">file:///foo/bar%25/[baz]</span></code>.</p>
+</section>
+<section id="multicast-interface">
+<h3>Multicast interface<a class="headerlink" href="#multicast-interface" title="Link to this heading">¶</a></h3>
+<p>If <code class="docutils literal notranslate"><span class="pre">--miface</span></code> option is present, it defines an IP address of the network interface on which to join the multicast group. If not present, no multicast group should be joined.</p>
+<p>It’s not possible to receive multicast traffic without joining a multicast group. The user should either provide multicast interface, or join the group manually using foreign tools.</p>
+<p><em>MIFACE</em> should be an IP address of the network interface on which to join the multicast group. It may be <code class="docutils literal notranslate"><span class="pre">0.0.0.0</span></code> (for IPv4) or <code class="docutils literal notranslate"><span class="pre">::</span></code> (for IPv6) to join the multicast group on all available interfaces.</p>
+</section>
+<section id="multiple-slots">
+<h3>Multiple slots<a class="headerlink" href="#multiple-slots" title="Link to this heading">¶</a></h3>
+<p>Multiple sets of endpoints can be specified to retrieve media from multiple addresses.</p>
+<p>Such endpoint sets are called slots. All slots should have the same set of endpoint types (source, repair, etc) and should use the same protocols for them. All slots should also have their own multicast interface option, if it’s used.</p>
+</section>
+<section id="so-reuseaddr">
+<h3>SO_REUSEADDR<a class="headerlink" href="#so-reuseaddr" title="Link to this heading">¶</a></h3>
+<p>If <code class="docutils literal notranslate"><span class="pre">--reuseaddr</span></code> option is provided, <code class="docutils literal notranslate"><span class="pre">SO_REUSEADDR</span></code> socket option will be enabled for all sockets (by default it’s enabled only for multicast sockets).</p>
+<p>For TCP, it allows immediately reusing recently closed socket in TIME_WAIT state, which may be useful you want to be able to restart server quickly.</p>
+<p>For UDP, it allows multiple processes to bind to the same address, which may be useful if you’re using systemd socket activation.</p>
+<p>Regardless of the option, <code class="docutils literal notranslate"><span class="pre">SO_REUSEADDR</span></code> is always disabled when binding to ephemeral port.</p>
+</section>
+<section id="backup-audio">
+<h3>Backup audio<a class="headerlink" href="#backup-audio" title="Link to this heading">¶</a></h3>
+<p>If <code class="docutils literal notranslate"><span class="pre">--backup</span></code> option is given, it defines input audio device or file which will be played when there are no connected sessions. If it’s not given, silence is played instead.</p>
+<p>Backup file is restarted from the beginning each time when the last session disconnect. The playback of of the backup file is automatically looped.</p>
+</section>
+<section id="time-units">
+<h3>Time units<a class="headerlink" href="#time-units" title="Link to this heading">¶</a></h3>
+<dl class="simple">
+<dt><em>TIME</em> should have one of the following forms:</dt><dd><p>123ns; 1.23us; 1.23ms; 1.23s; 1.23m; 1.23h;</p>
+</dd>
+</dl>
+</section>
+<section id="size-units">
+<h3>Size units<a class="headerlink" href="#size-units" title="Link to this heading">¶</a></h3>
+<dl class="simple">
+<dt><em>SIZE</em> should have one of the following forms:</dt><dd><p>123; 1.23K; 1.23M; 1.23G;</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="examples">
+<h2>EXAMPLES<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
+<section id="endpoint-examples">
+<h3>Endpoint examples<a class="headerlink" href="#endpoint-examples" title="Link to this heading">¶</a></h3>
+<p>Bind one bare RTP endpoint on all IPv4 interfaces:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001
+</pre></div>
+</div>
+<p>Bind source, repair, and control endpoints to all IPv4 interfaces (but not IPv6):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp+rs8m://0.0.0.0:10001 -r rs8m://0.0.0.0:10002 \
+    -c rtcp://0.0.0.0:10003
+</pre></div>
+</div>
+<p>Bind source, repair, and control endpoints to all IPv6 interfaces (but not IPv4):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp+rs8m://[::]:10001 -r rs8m://[::]:10002 -c rtcp://[::]:10003
+</pre></div>
+</div>
+<p>Bind source, repair, and control endpoints to a particular network interface:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp+rs8m://192.168.0.3:10001 -r rs8m://192.168.0.3:10002 \
+    -c rtcp://192.168.0.3:10003
+</pre></div>
+</div>
+<p>Bind endpoints to a particular multicast address and join to a multicast group on a particular network interface:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp+rs8m://225.1.2.3:10001 -r rs8m://225.1.2.3:10002 \
+    -c rtcp://225.1.2.3:10003 \
+    --miface 192.168.0.3
+</pre></div>
+</div>
+<p>Bind two sets of source, repair, and control endpoints (six endpoints in total):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv \
+    -s rtp+rs8m://192.168.0.3:10001 -r rs8m://192.168.0.3:10002 \
+        -c rtcp://192.168.0.3:10003 \
+    -s rtp+rs8m://198.214.0.7:10001 -r rs8m://198.214.0.7:10002 \
+        -c rtcp://198.214.0.7:10003
+</pre></div>
+</div>
+</section>
+<section id="i-o-examples">
+<h3>I/O examples<a class="headerlink" href="#i-o-examples" title="Link to this heading">¶</a></h3>
+<p>Output to the default device (omit <code class="docutils literal notranslate"><span class="pre">-o</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001
+</pre></div>
+</div>
+<p>Output to the default ALSA device:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 -o alsa://default
+</pre></div>
+</div>
+<p>Output to a specific PulseAudio device:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 -o pulse://alsa_input.pci-0000_00_1f.3.analog-stereo
+</pre></div>
+</div>
+<p>Output to a file in WAV format (guess format by extension):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 -o file:./output.wav
+</pre></div>
+</div>
+<p>Output to a file in WAV format (specify format manually):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 -o file:./output.file --output-format wav
+</pre></div>
+</div>
+<p>Output to stdout in WAV format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 -o file:- --output-format wav &gt;./output.wav
+</pre></div>
+</div>
+<p>Output to a file in WAV format (absolute path):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 -o file:///home/user/output.wav
+</pre></div>
+</div>
+<p>Specify backup file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 --backup file:./backup.wav
+</pre></div>
+</div>
+</section>
+<section id="tuning-examples">
+<h3>Tuning examples<a class="headerlink" href="#tuning-examples" title="Link to this heading">¶</a></h3>
+<p>Force a specific rate on the output device:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 --rate=44100
+</pre></div>
+</div>
+<p>Select the LDPC-Staircase FEC scheme:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp+ldpc://0.0.0.0:10001 -r ldpc://0.0.0.0:10002 \
+    -c rtcp://0.0.0.0:10003
+</pre></div>
+</div>
+<p>Select lower session latency:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 --target-latency=50ms
+</pre></div>
+</div>
+<p>Select lower I/O latency and frame length:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 \
+    --io-latency=20ms --frame-len 4ms
+</pre></div>
+</div>
+<p>Manually specify thresholds and timeouts:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 \
+    --target-latency=50ms --min-latency=40ms --max-latency 60ms \
+    --no-play-timeout=200ms --choppy-play-timeout=500ms
+</pre></div>
+</div>
+<p>Manually specify resampling parameters:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 \
+    --resampler-backend=speex --resampler-profile=high
+</pre></div>
+</div>
+<p>Manually specify latency tuning parameters:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ roc-recv -vv -s rtp://0.0.0.0:10001 \
+    --latency-backend=niq --latency-profile=gradual
+</pre></div>
+</div>
+</section>
+</section>
+<section id="environment-variables">
+<h2>ENVIRONMENT VARIABLES<a class="headerlink" href="#environment-variables" title="Link to this heading">¶</a></h2>
+<p>The following environment variables are supported:</p>
+<dl class="simple">
+<dt>NO_COLOR</dt><dd><p>By default, terminal coloring is automatically detected. This environment variable can be set to a non-empty string to disable terminal coloring. It has lower precedence than <code class="docutils literal notranslate"><span class="pre">--color</span></code> option.</p>
+</dd>
+<dt>FORCE_COLOR</dt><dd><p>By default, terminal coloring is automatically detected. This environment variable can be set to a positive integer to enable/force terminal coloring. It has lower precedence than  <code class="docutils literal notranslate"><span class="pre">NO_COLOR</span></code> variable and <code class="docutils literal notranslate"><span class="pre">--color</span></code> option.</p>
+</dd>
+</dl>
+</section>
+<section id="see-also">
+<h2>SEE ALSO<a class="headerlink" href="#see-also" title="Link to this heading">¶</a></h2>
+<p><em class="manpage">roc-send(1)</em>, and the Roc web site at <a class="reference external" href="https://roc-streaming.org/">https://roc-streaming.org/</a></p>
+</section>
+<section id="bugs">
+<h2>BUGS<a class="headerlink" href="#bugs" title="Link to this heading">¶</a></h2>
+<p>Please report any bugs found via GitHub (<a class="reference external" href="https://github.com/roc-streaming/roc-toolkit/">https://github.com/roc-streaming/roc-toolkit/</a>).</p>
+</section>
+<section id="authors">
+<h2>AUTHORS<a class="headerlink" href="#authors" title="Link to this heading">¶</a></h2>
+<p>See authors page on the website for a list of maintainers and contributors (<a class="reference external" href="https://roc-streaming.org/toolkit/docs/about_project/authors.html">https://roc-streaming.org/toolkit/docs/about_project/authors.html</a>).</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/logo80.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about_project.html">About project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../building.html">Building</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../manuals.html">Manuals</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="roc_send.html">roc-send</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">roc-recv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roc_copy.html">roc-copy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../portability.html">Portability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../internals.html">Internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="roc_copy.html" title="roc-copy"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="roc_send.html" title="roc-send"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Roc Toolkit 0.4.0</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../manuals.html" >Manuals</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">roc-recv</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Roc Streaming authors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>
