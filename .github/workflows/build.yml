@@ -20,12 +20,6 @@ jobs:
           repository: roc-streaming/roc-toolkit
           path: roc-toolkit
 
-      - name: Checkout rocd
-        uses: actions/checkout@v4
-        with:
-          repository: roc-streaming/rocd
-          path: rocd
-
       - name: Checkout roc-droid
         uses: actions/checkout@v4
         with:
@@ -37,11 +31,6 @@ jobs:
         run: |
           ./roc-toolkit/scripts/make_doc.sh
           cp -av roc-toolkit/docs/html www/toolkit
-
-      - name: Build rocd documentation
-        run: |
-          make -C rocd html
-          cp -av rocd/docs/html www/daemon
 
       - name: Build roc-droid documentation
         run: |
