@@ -1,11 +1,18 @@
-name: build
+name: "build"
 
 on:
   push:
     branches:
       - source
+
   repository_dispatch:
+    types:
+      - trigger_build
+
   workflow_dispatch:
+
+concurrency:
+  group: build-${{ github.event.pull_request.number || github.ref }}
 
 jobs:
   build:
@@ -20,6 +27,12 @@ jobs:
           repository: roc-streaming/roc-toolkit
           path: roc-toolkit
 
+      - name: Checkout rocd
+        uses: actions/checkout@v4
+        with:
+          repository: roc-streaming/rocd
+          path: rocd
+
       - name: Checkout roc-droid
         uses: actions/checkout@v4
         with:
@@ -31,6 +44,11 @@ jobs:
         run: |
           ./roc-toolkit/scripts/make_doc.sh
           cp -av roc-toolkit/docs/html www/toolkit
+
+      - name: Build rocd documentation
+        run: |
+          make -C rocd docs-docker
+          cp -av rocd/site www/daemom
 
       - name: Build roc-droid documentation
         run: |
