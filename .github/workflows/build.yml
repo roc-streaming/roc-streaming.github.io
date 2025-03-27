@@ -48,7 +48,7 @@ jobs:
       - name: Build rocd documentation
         run: |
           make -C rocd docs-docker
-          cp -av rocd/site www/daemom
+          cp -av rocd/site www/rocd
 
       - name: Build roc-droid documentation
         run: |
