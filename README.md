@@ -1,4 +1,4 @@
-# Roc website
+# Roc Streaming website
 
 [![build](https://github.com/roc-streaming/roc-streaming.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/roc-streaming/roc-streaming.github.io/actions/workflows/build.yml)
 
