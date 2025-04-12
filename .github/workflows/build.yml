@@ -16,48 +16,34 @@ concurrency:
 
 jobs:
   build:
+    outputs:
+      deployment-page-url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout www
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Checkout roc-toolkit
-        uses: actions/checkout@v4
+      - name: Build
+        run: make
+
+      - name: Upload
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
         with:
-          repository: roc-streaming/roc-toolkit
-          path: roc-toolkit
+          path: dist/
 
-      - name: Checkout rocd
-        uses: actions/checkout@v4
-        with:
-          repository: roc-streaming/rocd
-          path: rocd
+  deploy:
+    permissions:
+      pages: write
+      id-token: write
 
-      - name: Checkout roc-droid
-        uses: actions/checkout@v4
-        with:
-          repository: roc-streaming/roc-droid
-          path: roc-droid
-          ref: flutter
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ needs.build.outputs.deployment-page-url }}
 
-      - name: Build roc-toolkit documentation
-        run: |
-          ./roc-toolkit/scripts/make_doc.sh
-          cp -av roc-toolkit/docs/html www/toolkit
-
-      - name: Build rocd documentation
-        run: |
-          make -C rocd docs-docker
-          cp -av rocd/site www/rocd
-
-      - name: Build roc-droid documentation
-        run: |
-          ./roc-droid/script/generate_docs.py
-          cp -av roc-droid/site www/droid
-
-      - name: Publish web-site
-        uses: JamesIves/github-pages-deploy-action@v4.6.1
-        with:
-          branch: content
-          folder: www
-          single-commit: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        uses: actions/deploy-pages@v4
