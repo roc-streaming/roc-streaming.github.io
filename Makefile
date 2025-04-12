@@ -3,6 +3,7 @@ all: static roc_toolkit rocd roc_droid
 clean:
 	rm -rf build dist
 
+.PHONY: static
 static:
 	mkdir -p dist
 	cp -a static/. dist/
