@@ -3,7 +3,7 @@ name: "build"
 on:
   push:
     branches:
-      - source
+      - main
 
   repository_dispatch:
     types:
