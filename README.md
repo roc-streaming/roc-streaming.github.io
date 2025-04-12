@@ -1,12 +1,19 @@
 # Roc website
 
-[![Build](https://github.com/roc-streaming/roc-streaming.github.io/workflows/build/badge.svg)](https://github.com/roc-streaming/roc-streaming.github.io/actions)
+[![build](https://github.com/roc-streaming/roc-streaming.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/roc-streaming/roc-streaming.github.io/actions/workflows/build.yml)
 
 This repo contains the source code and the build script for [Roc website](https://roc-streaming.org/).
 
-It has two branches:
+To build website locally, run:
 
-* `source` — holds static content (in `www`) and GitHub Actions job to build and publish static content;
-* `content` — holds automatically published content for GitHub pages.
+```
+make
+```
 
-The job fetches and builds Roc Toolkit documentation, merges it with pre-defined static content, and deploys the result to the `content` branch, which is then used by GitHib pages to render the website.
+It will build static website + documentation from:
+
+- roc-toolkit
+- rocd
+- roc-droid
+
+When you push to the main branch, Github actions automatically build and publish website on Github pages.

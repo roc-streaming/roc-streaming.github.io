@@ -27,13 +27,17 @@ jobs:
       - name: Build
         run: make
 
-      - name: Upload
+      - if: |
+          github.repository_owner == 'roc-streaming' && github.ref == 'refs/heads/main'
+        name: Upload
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
 
   deploy:
+    if: |
+      github.repository_owner == 'roc-streaming' && github.ref == 'refs/heads/main'
     permissions:
       pages: write
       id-token: write
