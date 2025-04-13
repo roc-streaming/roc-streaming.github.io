@@ -11,6 +11,9 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 concurrency:
   group: build-${{ github.event.pull_request.number || github.ref }}
 
@@ -38,14 +41,14 @@ jobs:
   deploy:
     if: |
       github.repository_owner == 'roc-streaming' && github.ref == 'refs/heads/main'
-    permissions:
-      pages: write
-      id-token: write
 
     needs: build
     environment:
       name: github-pages
       url: ${{ needs.build.outputs.deployment-page-url }}
+    permissions:
+      pages: write
+      id-token: write
 
     runs-on: ubuntu-latest
     steps:
