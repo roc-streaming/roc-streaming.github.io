@@ -15,12 +15,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: build-${{ github.event.pull_request.number || github.ref }}
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
 
 jobs:
   build:
     outputs:
-      deployment-page-url: ${{ steps.deployment.outputs.page_url }}
+      page-url: ${{ steps.upload.outputs.page_url }}
 
     runs-on: ubuntu-latest
     steps:
@@ -33,7 +33,7 @@ jobs:
       - if: |
           github.repository_owner == 'roc-streaming' && github.ref == 'refs/heads/main'
         name: Upload
-        id: deployment
+        id: upload
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
@@ -45,7 +45,7 @@ jobs:
     needs: build
     environment:
       name: github-pages
-      url: ${{ needs.build.outputs.deployment-page-url }}
+      url: ${{ needs.build.outputs.page-url }}
     permissions:
       pages: write
       id-token: write
