@@ -19,7 +19,7 @@ rocd:
 	mkdir -p build dist
 	rm -rf build/rocd dist/rocd
 	git clone --depth 1 https://github.com/roc-streaming/rocd.git build/rocd
-	make -C build/rocd docs-docker
+	build/rocd/script/generate_docs.py
 	cp -a build/rocd/site dist/rocd
 
 roc_droid:
