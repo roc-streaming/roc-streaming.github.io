@@ -1,23 +1,29 @@
 "use client"
 
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import { Menu, X, Radio } from "lucide-react"
-import { GithubIcon } from "@/components/github-icon"
 
 const NAV = [
-  { label: "Docs", href: "#features" },
-  { label: "Toolkit", href: "#roc-toolkit" },
-  { label: "rocd", href: "#rocd" },
-  { label: "Roc Cast", href: "#roc-cast" },
+  { label: "Intro", href: "/" },
+  { label: "Ecosystem", href: "/ecosystem" },
+  { label: "Community", href: "/community" },
+  { label: "Professional Services", href: "/services" },
 ]
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+
+  function isActive(href: string) {
+    if (href === "/") return pathname === "/"
+    return pathname === href || pathname.startsWith(href + "/")
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <a href="#top" className="flex items-center gap-2.5">
+        <a href="/" className="flex items-center gap-2.5">
           <span className="grid size-8 place-items-center rounded-md border border-primary/40 bg-primary/10 text-primary">
             <Radio className="size-4.5" aria-hidden="true" />
           </span>
@@ -31,28 +37,17 @@ export function SiteHeader() {
             <a
               key={item.label}
               href={item.href}
-              className="rounded-md px-3 py-2 font-mono text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+              className={`rounded-md px-3 py-2 font-mono text-sm transition-colors ${
+                isActive(item.href)
+                  ? "bg-primary/10 text-primary"
+                  : "text-muted-foreground hover:bg-secondary hover:text-foreground"
+              }`}
+              aria-current={isActive(item.href) ? "page" : undefined}
             >
               {item.label}
             </a>
           ))}
         </nav>
-
-        <div className="hidden items-center gap-2 md:flex">
-          <a
-            href="https://github.com/roc-streaming"
-            className="flex items-center gap-2 rounded-md border border-border px-3 py-2 font-mono text-sm text-muted-foreground transition-colors hover:border-primary/50 hover:text-foreground"
-          >
-            <GithubIcon className="size-4" />
-            GitHub
-          </a>
-          <a
-            href="#get-started"
-            className="rounded-md bg-primary px-4 py-2 font-mono text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            Get started
-          </a>
-        </div>
 
         <button
           type="button"
@@ -73,27 +68,16 @@ export function SiteHeader() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2.5 font-mono text-sm text-muted-foreground hover:bg-secondary hover:text-foreground"
+                className={`rounded-md px-3 py-2.5 font-mono text-sm ${
+                  isActive(item.href)
+                    ? "bg-primary/10 text-primary"
+                    : "text-muted-foreground hover:bg-secondary hover:text-foreground"
+                }`}
+                aria-current={isActive(item.href) ? "page" : undefined}
               >
                 {item.label}
               </a>
             ))}
-            <div className="mt-2 flex flex-col gap-2 border-t border-border pt-3">
-              <a
-                href="https://github.com/roc-streaming"
-                className="flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2.5 font-mono text-sm text-foreground"
-              >
-                <GithubIcon className="size-4" />
-                GitHub
-              </a>
-              <a
-                href="#get-started"
-                onClick={() => setOpen(false)}
-                className="rounded-md bg-primary px-4 py-2.5 text-center font-mono text-sm font-semibold text-primary-foreground"
-              >
-                Get started
-              </a>
-            </div>
           </nav>
         </div>
       )}

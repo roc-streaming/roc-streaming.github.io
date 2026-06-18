@@ -1,67 +1,68 @@
+import React from "react"
 import {
-  Waves,
-  Gauge,
-  ShieldCheck,
+  Music,
   Timer,
+  ShieldCheck,
   SlidersHorizontal,
-  Network,
-  Package,
-  Boxes,
-  Server,
-  MonitorSmartphone,
+  Cpu,
+  Globe,
 } from "lucide-react"
 import { SectionLabel } from "@/components/section-label"
 
-const FEATURES = [
+const FEATURES: { icon: React.ElementType; title: string; body: React.ReactNode }[] = [
   {
-    icon: Waves,
-    title: "Real-time audio over IP",
-    body: "Audio between apps, computers, embedded devices, speakers, rooms, or locations.",
-  },
-  {
-    icon: Gauge,
-    title: "Low latency",
-    body: "Designed for real-time and near-real-time audio where delay matters.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Packet-loss recovery",
-    body: "Forward Error Correction helps survive Wi-Fi packet loss and imperfect networks.",
+    icon: Music,
+    title: "High-quality audio",
+    body: (
+      <>
+        Streaming of CD- and HD-quality audio, from uncompressed PCM to <b>lossless</b> or <b>lossy</b> codecs.
+      </>
+    ),
   },
   {
     icon: Timer,
-    title: "Clock drift handling",
-    body: "Adaptive sample-rate conversion keeps independent devices aligned over time.",
+    title: "Controlled latency",
+    body: (
+      <>
+        End-to-end latency down to <b>10 milliseconds</b>, with strict latency bounds and adaptive tuning for changing networks.
+      </>
+    ),
+  },
+  {
+    icon: ShieldCheck,
+    title: "Loss recovery",
+    body: (
+      <>
+        Recovering of lost packets without quality drop using <b>Forward Erasure Correction</b> codes or masking losses with <b>Packet Loss Concealment</b> algorithms.
+      </>
+    ),
   },
   {
     icon: SlidersHorizontal,
-    title: "Adaptive or fixed latency",
-    body: "Tune latency depending on network conditions and use-case requirements.",
+    title: "Adaptive by default",
+    body: (
+      <>
+        Uses <b>sensible defaults and adaptive algorithms</b> for typical networks, with low-level controls available when your use case needs precise tuning.
+      </>
+    ),
   },
   {
-    icon: Network,
-    title: "Multiple network types",
-    body: "Use Wi-Fi, LAN, Internet, or managed VLAN deployments.",
+    icon: Cpu,
+    title: "Portable and fast",
+    body: (
+      <>
+        Efficient lightweight core designed for real-time. Portable across OSes and CPUs, including <b>embedded, desktop, and mobile</b> platforms.
+      </>
+    ),
   },
   {
-    icon: Package,
-    title: "Embeddable library",
-    body: "Use libroc inside applications, devices, and products.",
-  },
-  {
-    icon: Boxes,
-    title: "Open ecosystem",
-    body: "Avoid vendor lock-in and interoperate with Roc-compatible components.",
-  },
-  {
-    icon: Server,
-    title: "Control layer",
-    body: "Use rocd to manage peers, endpoints, streams, devices, routes, metrics, and events.",
-  },
-  {
-    icon: MonitorSmartphone,
-    title: "User-facing layer",
-    body: "Use Roc Cast to expose speakers, devices, streams, and routes through a UI.",
+    icon: Globe,
+    title: "Open standards",
+    body: (
+      <>
+        Built on the foundation of open <b>Internet standards</b>, proven over time and validated by numerous applications.
+      </>
+    ),
   },
 ]
 
@@ -69,14 +70,14 @@ export function FeaturesSection() {
   return (
     <section id="features" className="relative border-b border-border">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24 lg:px-8">
-        <SectionLabel index="04">Features</SectionLabel>
+        <SectionLabel index="04">Audio core</SectionLabel>
         <div className="mt-6 max-w-2xl">
           <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-            Technical capabilities, at a glance
+            Built on a specialized audio core
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
-            The practical building blocks that make real-time audio work over normal
-            IP networks.
+            At the core of Roc Streaming is Roc Toolkit, the specialized transport
+            foundation behind its real-time audio capabilities.
           </p>
         </div>
 

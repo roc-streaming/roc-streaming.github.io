@@ -11,10 +11,10 @@ const ROWS = [
   { want: "Use Roc Streaming from Java / Kotlin", use: "roc-java" },
   { want: "Integrate with Linux desktop audio", use: "PipeWire integration / roc-pulse" },
   { want: "Integrate with macOS audio", use: "roc-vad" },
-  { want: "Control streams and devices through an API", use: "rocd" },
-  { want: "Build a headless audio node", use: "rocd + Roc Toolkit" },
+  { want: "Control streams and devices through an API", use: "RocD" },
+  { want: "Build a headless audio node", use: "RocD + Roc Toolkit" },
   { want: "Use a product-like audio app", use: "Roc Cast" },
-  { want: "Build a complete network audio product", use: "Roc Cast + rocd + Roc Toolkit" },
+  { want: "Build a complete network audio product", use: "Roc Cast + RocD + Roc Toolkit" },
 ]
 
 const COMPARE = [
@@ -52,8 +52,8 @@ export function IntegrationLevels() {
             Choose the right component
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
-            Pick a goal on the left to see which part of the ecosystem fits. Reduce
-            confusion between Roc Toolkit, rocd, Roc Cast, and integrations.
+            Pick a goal on the left to see which part of the ecosystem fits.             Reduce
+            confusion between Roc Toolkit, RocD, Roc Cast, and integrations.
           </p>
         </div>
 

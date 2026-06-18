@@ -1,5 +1,4 @@
-import { Layers, Server, MonitorSmartphone, ArrowDown, ExternalLink } from "lucide-react"
-import { SectionLabel } from "@/components/section-label"
+import { Layers, Server, MonitorSmartphone, ExternalLink, Construction } from "lucide-react"
 
 function StatusDot({ tone, label }: { tone: "live" | "wip" | "planned"; label: string }) {
   const color =
@@ -57,33 +56,26 @@ function ProjectButton({
 function RocToolkit() {
   const highlights = [
     "Real-time audio over IP",
-    "RTP/RTCP over UDP",
+    "RTP/RTCP/XR/FECFRAME over UDP",
     "FEC-based packet-loss recovery",
     "Adaptive clocking / ASRC",
-    "Adaptive or fixed latency",
-    "C library / libroc",
-    "Stable C ABI",
-    "Go and Java bindings",
-    "Audio format conversion",
-    "CLI tools",
-    "MPL-2.0 license",
-    "Embeddable in proprietary products",
+    "Adaptive latency with strict bounds",
+    "Audio codecs",
+    "C library",
+    "Bindings (Rust, Go, Java)",
   ]
-  const stack = ["Your application", "libroc / Roc Toolkit", "Audio I/O layer", "OS network stack / UDP"]
-
   return (
     <article id="roc-toolkit" className="border-b border-border">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:py-20 lg:px-8">
         <div>
-          <SectionLabel index="06">Roc Toolkit</SectionLabel>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <span className="grid size-11 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
               <Layers className="size-6" aria-hidden="true" />
             </span>
             <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
               Roc Toolkit
             </h2>
-            <StatusDot tone="live" label="stable / production" />
+            <StatusDot tone="live" label="used in production" />
           </div>
           <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
             The core real-time audio transport library. It handles packetization, loss
@@ -94,111 +86,75 @@ function RocToolkit() {
             <Highlights items={highlights} accent="var(--primary)" />
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ProjectButton href="#" primary>
+            <ProjectButton href="/toolkit/docs" primary>
               Toolkit docs
             </ProjectButton>
             <ProjectButton href="https://github.com/roc-streaming/roc-toolkit">GitHub</ProjectButton>
           </div>
         </div>
 
-        {/* mini visual */}
-        <div className="rounded-xl border border-border bg-card/50 bg-blueprint p-6">
-          <p className="mb-4 font-mono text-xs text-muted-foreground">// transport path</p>
-          <div className="space-y-0">
-            {stack.map((s, i) => (
-              <div key={s}>
-                <div
-                  className={`rounded-lg border px-4 py-3 font-mono text-sm ${
-                    i === 1
-                      ? "border-primary/50 bg-primary/10 text-primary"
-                      : "border-border bg-background/60 text-foreground/80"
-                  }`}
-                >
-                  {s}
-                </div>
-                {i < stack.length - 1 && (
-                  <div className="flex justify-center py-1">
-                    <ArrowDown className="size-4 text-muted-foreground" aria-hidden="true" />
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+        {/* diagram */}
+        <div className="flex items-center justify-center rounded-xl border border-border bg-card/50 bg-blueprint p-6">
+          <img
+            src="/roc-toolkit.svg"
+            alt="Roc Toolkit architecture diagram"
+            className="w-full"
+          />
         </div>
       </div>
     </article>
   )
 }
 
-/* ---- rocd ---- */
+/* ---- RocD ---- */
 function Rocd() {
   const highlights = [
     "REST API",
-    "Peer management",
-    "Endpoint management",
-    "Stream management",
-    "Device management",
-    "Route control",
+    "Ready to deploy",
+    "Auto-discovery",
+    "Distributed orchestration",
     "Virtual audio devices",
     "Metrics and events",
-    "Headless operation",
-    "Built around Roc Toolkit",
   ]
 
   return (
     <article id="rocd" className="border-b border-border bg-card/20">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.8fr_1fr] lg:py-20 lg:px-8">
-        {/* mini visual first on desktop */}
-        <div className="order-2 rounded-xl border border-border bg-background/60 p-6 lg:order-1">
-          <div className="mb-4 flex items-center justify-between font-mono text-xs text-muted-foreground">
-            <span>POST /api/v1/streams</span>
-            <span className="text-amber">200 OK</span>
-          </div>
-          <pre className="overflow-x-auto rounded-lg border border-border bg-background p-4 font-mono text-xs leading-relaxed text-foreground/80">
-{`{
-  "peer": "studio-01",
-  "endpoint": "rtp+rs8m://0.0.0.0:10001",
-  "device": "virtual-out-3",
-  "latency_ms": 60,
-  "fec": "rs8m",
-  "metrics": { "loss": 0.4, "jitter_ms": 2.1 }
-}`}
-          </pre>
-          <div className="mt-4 grid grid-cols-3 gap-2 text-center font-mono text-[11px]">
-            {["peers", "streams", "devices"].map((m) => (
-              <div key={m} className="rounded-md border border-border bg-secondary px-2 py-2 text-muted-foreground">
-                {m}
-              </div>
-            ))}
-          </div>
+        {/* diagram */}
+        <div className="order-2 overflow-hidden rounded-xl border border-border bg-background/60 lg:order-1">
+          <img
+            src="/rocd.svg"
+            alt="RocD distributed network diagram"
+            className="w-full"
+          />
         </div>
 
         <div className="order-1 lg:order-2">
-          <SectionLabel index="07">rocd</SectionLabel>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <span className="grid size-11 place-items-center rounded-lg border border-amber/40 bg-amber/10 text-amber">
               <Server className="size-6" aria-hidden="true" />
             </span>
-            <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">rocd</h2>
-            <StatusDot tone="wip" label="in progress" />
+            <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">RocD</h2>
+            <StatusDot tone="wip" label="work in progress" />
           </div>
           <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
-            The daemon and control API for managing Roc Streaming systems. rocd is
-            intended to expose peers, endpoints, streams, devices, routes, metrics, and
-            events through a higher-level interface, while Roc Toolkit handles the
-            real-time transport underneath.
+            Streaming daemon with REST API. RocD instances form a distributed network of
+            audio devices across different computers, connected with network streams. API
+            user orchestrates devices and streams uniformely no matter where in the
+            network they&apos;re located.
           </p>
-          <p className="mt-3 inline-flex rounded-md border border-amber/30 bg-amber/[0.07] px-3 py-1.5 font-mono text-xs text-amber">
-            Status: rocd is in progress and not production-ready yet.
+          <p className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-amber/30 bg-amber/[0.07] px-3 py-1.5 font-mono text-xs text-amber">
+            <Construction className="size-3.5 shrink-0" aria-hidden="true" />
+            Under development.
           </p>
           <div className="mt-7">
             <Highlights items={highlights} accent="var(--amber)" />
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ProjectButton href="#" primary>
-              rocd docs
+            <ProjectButton href="/rocd/docs" primary>
+              RocD docs
             </ProjectButton>
-            <ProjectButton href="#">API reference</ProjectButton>
+            <ProjectButton href="https://github.com/roc-streaming/rocd/">GitHub</ProjectButton>
           </div>
         </div>
       </div>
@@ -209,85 +165,49 @@ function Rocd() {
 /* ---- Roc Cast ---- */
 function RocCast() {
   const highlights = [
-    "User-facing network audio app",
-    "Device and speaker management",
-    "Stream and route control",
-    "Room-oriented audio control",
-    "Desktop / mobile UI direction",
-    "Web UI for headless devices",
-    "Built on rocd",
-    "Uses Roc Toolkit underneath",
+    "Cross-platform (desktop and mobile)",
+    "Remote control",
+    "Manage devices, speakers, and routes",
+    "Zone-oriented UI",
   ]
 
   return (
     <article id="roc-cast" className="border-b border-border">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:py-20 lg:px-8">
         <div>
-          <SectionLabel index="08">Roc Cast</SectionLabel>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <span className="grid size-11 place-items-center rounded-lg border border-signal/40 bg-signal/10 text-signal">
               <MonitorSmartphone className="size-6" aria-hidden="true" />
             </span>
             <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
               Roc Cast
             </h2>
-            <StatusDot tone="planned" label="application layer" />
+            <StatusDot tone="wip" label="work in progress" />
           </div>
           <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
-            The user-facing application layer for controlling Roc Streaming devices and
-            routes. It should expose speakers, devices, streams, rooms, and routes
-            instead of low-level transport concepts.
+            The user-facing Audio over IP solution. Roc Cast provides source selection,
+            room and zone control, and multi-device playback for multi-room, zoned audio,
+            and remote audio workflows.
           </p>
-          <p className="mt-3 inline-flex rounded-md border border-signal/30 bg-signal/[0.07] px-3 py-1.5 font-mono text-xs text-signal">
-            Status: the intended application layer built on top of rocd.
+          <p className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-signal/30 bg-signal/[0.07] px-3 py-1.5 font-mono text-xs text-signal">
+            <Construction className="size-3.5 shrink-0" aria-hidden="true" />
+            Under development.
           </p>
           <div className="mt-7">
             <Highlights items={highlights} accent="var(--signal)" />
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <ProjectButton href="#" primary>
-              Roc Cast page
-            </ProjectButton>
-            <ProjectButton href="#">Follow development</ProjectButton>
+            <ProjectButton href="https://github.com/roc-streaming/roc-droid">GitHub</ProjectButton>
           </div>
         </div>
 
-        {/* mini visual: room/device UI mock */}
-        <div className="rounded-xl border border-border bg-card/50 p-5">
-          <div className="mb-4 flex items-center justify-between">
-            <span className="font-mono text-xs text-muted-foreground">rooms</span>
-            <span className="font-mono text-[11px] text-signal">3 active</span>
-          </div>
-          <div className="space-y-2.5">
-            {[
-              { room: "Living Room", dev: "Soundbar · multi-room", on: true },
-              { room: "Studio", dev: "Audio I/O · IFB", on: true },
-              { room: "Kitchen", dev: "Speaker", on: true },
-              { room: "Office", dev: "Streamer", on: false },
-            ].map((r) => (
-              <div
-                key={r.room}
-                className="flex items-center justify-between rounded-lg border border-border bg-background/60 px-4 py-3"
-              >
-                <div>
-                  <p className="font-mono text-sm text-foreground">{r.room}</p>
-                  <p className="font-mono text-[11px] text-muted-foreground">{r.dev}</p>
-                </div>
-                <span
-                  className={`relative h-5 w-9 rounded-full transition-colors ${
-                    r.on ? "bg-signal/70" : "bg-secondary"
-                  }`}
-                  aria-hidden="true"
-                >
-                  <span
-                    className={`absolute top-0.5 size-4 rounded-full bg-background transition-all ${
-                      r.on ? "left-4" : "left-0.5"
-                    }`}
-                  />
-                </span>
-              </div>
-            ))}
-          </div>
+        {/* diagram */}
+        <div className="flex items-center justify-center rounded-xl border border-border bg-card/50 p-6">
+          <img
+            src="/roc-cast.svg"
+            alt="Roc Cast multi-room audio diagram"
+            className="w-full max-w-sm"
+          />
         </div>
       </div>
     </article>
