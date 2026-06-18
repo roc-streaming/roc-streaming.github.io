@@ -3,8 +3,6 @@ import { Hero } from "@/components/hero"
 import { AudienceSection } from "@/components/audience-section"
 import { EcosystemSection } from "@/components/ecosystem-section"
 import { FeaturesSection } from "@/components/features-section"
-import { IntegrationLevels } from "@/components/integration-levels"
-import { ProjectSections } from "@/components/project-sections"
 import { GetInTouch } from "@/components/get-in-touch"
 import { SiteFooter } from "@/components/site-footer"
 
@@ -17,7 +15,6 @@ export default function Page() {
         <AudienceSection />
         <EcosystemSection />
         <FeaturesSection />
-        <ProjectSections />
         <GetInTouch />
       </main>
       <SiteFooter />

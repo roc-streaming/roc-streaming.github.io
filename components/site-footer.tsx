@@ -1,6 +1,7 @@
 import { Radio } from "lucide-react"
 import { GithubIcon } from "@/components/github-icon"
 
+<<<<<<< HEAD
 const COLUMNS = [
   {
     title: "Pages",
@@ -18,13 +19,25 @@ const COLUMNS = [
       { label: "RocD", href: "https://github.com/roc-streaming/rocd/" },
     ],
   },
+=======
+const PAGES = [
+  { label: "Intro", href: "/" },
+  { label: "Ecosystem", href: "/ecosystem" },
+  { label: "Community", href: "/community" },
+  { label: "Commercial Services", href: "/commercial-services" },
+]
+
+const PROJECTS = [
+  { label: "Roc Toolkit", href: "https://github.com/roc-streaming/roc-toolkit/" },
+  { label: "RocD", href: "https://github.com/roc-streaming/rocd/" },
+>>>>>>> 729375c (Rework pages per spec)
 ]
 
 export function SiteFooter() {
   return (
     <footer className="bg-background">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-2.5">
               <span className="grid size-8 place-items-center rounded-md border border-primary/40 bg-primary/10 text-primary">
@@ -34,9 +47,12 @@ export function SiteFooter() {
                 Roc Streaming
               </span>
             </div>
+<<<<<<< HEAD
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Open audio backbone for real-time streaming over IP networks.
             </p>
+=======
+>>>>>>> 729375c (Rework pages per spec)
             <a
               href="https://github.com/roc-streaming"
               className="mt-5 inline-flex items-center gap-2 rounded-md border border-border px-3 py-2 font-mono text-xs text-muted-foreground transition-colors hover:border-primary/50 hover:text-foreground"
@@ -46,6 +62,7 @@ export function SiteFooter() {
             </a>
           </div>
 
+<<<<<<< HEAD
           {COLUMNS.map((col) => (
             <div key={col.title}>
               <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-foreground">
@@ -65,6 +82,43 @@ export function SiteFooter() {
               </ul>
             </div>
           ))}
+=======
+          <div>
+            <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-foreground">
+              Pages
+            </h3>
+            <ul className="mt-4 space-y-2.5">
+              {PAGES.map((p) => (
+                <li key={p.label}>
+                  <a
+                    href={p.href}
+                    className="font-mono text-sm text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {p.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-foreground">
+              Projects
+            </h3>
+            <ul className="mt-4 space-y-2.5">
+              {PROJECTS.map((p) => (
+                <li key={p.label}>
+                  <a
+                    href={p.href}
+                    className="font-mono text-sm text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {p.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+>>>>>>> 729375c (Rework pages per spec)
         </div>
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 font-mono text-xs text-muted-foreground sm:flex-row sm:items-center">

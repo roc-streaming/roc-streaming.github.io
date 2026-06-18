@@ -12,7 +12,7 @@ const LAYERS = [
   },
   {
     id: "rocd",
-    name: "rocd",
+    name: "RocD",
     role: "Daemon & control API",
     detail: "Peers, streams, devices",
     icon: Server,
@@ -47,10 +47,10 @@ export function EcosystemSection() {
         <SectionLabel index="03">Open ecosystem</SectionLabel>
         <div className="mt-6 max-w-2xl">
           <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-            A layered ecosystem, not a single project
+            Choose the layer you need
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
-            Roc Cast sits on rocd, which builds on Roc Toolkit. Around the stack, a
+            Roc Cast sits on RocD, which builds on Roc Toolkit. Around the stack, a
             growing set of bindings and OS integrations keep everything interoperable
             and free of a closed vendor-only stack.
           </p>

@@ -1,11 +1,15 @@
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+<<<<<<< HEAD
 import { SectionLabel } from "@/components/section-label"
+=======
+>>>>>>> 729375c (Rework pages per spec)
 
 export default function CommunityPage() {
   return (
     <div className="min-h-dvh bg-background">
       <SiteHeader />
+<<<<<<< HEAD
       <main>
         <section id="community" className="border-b border-border">
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24 lg:px-8">
@@ -21,6 +25,9 @@ export default function CommunityPage() {
           </div>
         </section>
       </main>
+=======
+      <main />
+>>>>>>> 729375c (Rework pages per spec)
       <SiteFooter />
     </div>
   )

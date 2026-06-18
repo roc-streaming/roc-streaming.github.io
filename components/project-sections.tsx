@@ -215,7 +215,7 @@ function RocCast() {
     "Room-oriented audio control",
     "Desktop / mobile UI direction",
     "Web UI for headless devices",
-    "Built on rocd",
+    "Built on RocD",
     "Uses Roc Toolkit underneath",
   ]
 
@@ -239,7 +239,7 @@ function RocCast() {
             instead of low-level transport concepts.
           </p>
           <p className="mt-3 inline-flex rounded-md border border-signal/30 bg-signal/[0.07] px-3 py-1.5 font-mono text-xs text-signal">
-            Status: the intended application layer built on top of rocd.
+            Status: the intended application layer built on top of RocD.
           </p>
           <div className="mt-7">
             <Highlights items={highlights} accent="var(--signal)" />

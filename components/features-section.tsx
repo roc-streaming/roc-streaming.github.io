@@ -56,7 +56,7 @@ const FEATURES = [
   {
     icon: Server,
     title: "Control layer",
-    body: "Use rocd to manage peers, endpoints, streams, devices, routes, metrics, and events.",
+    body: "Use RocD to manage peers, endpoints, streams, devices, routes, metrics, and events.",
   },
   {
     icon: MonitorSmartphone,
