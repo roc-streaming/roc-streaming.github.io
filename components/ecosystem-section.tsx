@@ -1,4 +1,4 @@
-import { MonitorSmartphone, Server, Layers, ArrowDown, Lock, ChevronsUpDown, Plug, Speaker } from "lucide-react"
+import { MonitorSmartphone, Server, Layers, ArrowDown, ChevronsUpDown, Plug, Speaker } from "lucide-react"
 import { SectionLabel } from "@/components/section-label"
 
 const LAYERS = [
@@ -27,13 +27,8 @@ const LAYERS = [
 
 const OPEN_CARDS = [
   {
-    icon: Lock,
-    title: "Open by construction",
-    body: "Built on open-source code and established IP networking standards, avoiding vendor lock-in at the transport layer.",
-  },
-  {
     icon: ChevronsUpDown,
-    title: "Go lower when needed",
+    title: "Choose the layer you need",
     body: "Choose the layer that matches your control needs: application, service, or library kit.",
   },
   {
@@ -43,7 +38,7 @@ const OPEN_CARDS = [
   },
   {
     icon: Speaker,
-    title: "OS audio integration",
+    title: "Easy connectivity",
     body: "Connect to existing audio systems through virtual devices with PipeWire, PulseAudio, and macOS Core Audio.",
   },
 ]
@@ -56,7 +51,7 @@ export function EcosystemSection() {
         <SectionLabel index="04">Open ecosystem</SectionLabel>
         <div className="mt-6 max-w-2xl">
           <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-            Choose the layer you need
+            Multi-layer ecosystem
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
             Roc Streaming lets you choose the right level of control: use Roc Cast
