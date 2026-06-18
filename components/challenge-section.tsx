@@ -7,16 +7,15 @@ const CABLE_PROPS = [
 ]
 
 const NETWORK_PROPS = [
-  { label: "Jitter" },
-  { label: "Packet loss" },
-  { label: "Clock drift" },
+  { label: "Latency drifts" },
+  { label: "Quality competes with latency" },
+  { label: "Jitter and packet loss" },
 ]
 
 const ROC_PROPS = [
-  { label: "Cable-like latency" },
-  { label: "Stable audio quality" },
-  { label: "Resilient transport" },
-  { label: "Wi-Fi · LAN · Internet" },
+  { label: "Bounded latency down to 10ms" },
+  { label: "Robust CD- and HD-quality audio" },
+  { label: "Resilient transport with loss repair" },
 ]
 
 export function ChallengeSection() {
@@ -49,17 +48,7 @@ export function ChallengeSection() {
               </p>
             </div>
 
-            <ul className="mt-8 flex flex-wrap gap-2" aria-label="Key properties">
-              {ROC_PROPS.map(({ label }) => (
-                <li
-                  key={label}
-                  className="flex items-center gap-2 rounded-md border border-border bg-card/50 px-3 py-1.5 font-mono text-xs text-foreground"
-                >
-                  <span className="size-1.5 rounded-full bg-primary" aria-hidden="true" />
-                  {label}
-                </li>
-              ))}
-            </ul>
+
           </div>
 
           {/* Right: cable vs network contrast diagram */}
@@ -84,7 +73,7 @@ export function ChallengeSection() {
             {/* Network */}
             <div className="rounded-xl border border-border bg-card/50 p-5">
               <div className="mb-3 font-mono text-[10px] uppercase tracking-widest text-muted-foreground/60">
-                Network (without Roc)
+                Network
               </div>
               <ul className="space-y-2">
                 {NETWORK_PROPS.map(({ label }) => (
