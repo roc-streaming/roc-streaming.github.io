@@ -1,18 +1,24 @@
 "use client"
 
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import { Menu, X, Radio } from "lucide-react"
-import { GithubIcon } from "@/components/github-icon"
 
 const NAV = [
   { label: "Intro", href: "/" },
   { label: "Ecosystem", href: "/ecosystem" },
   { label: "Community", href: "/community" },
-  { label: "Professional Services", href: "/professional-services" },
+  { label: "Professional Services", href: "/services" },
 ]
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+
+  function isActive(href: string) {
+    if (href === "/") return pathname === "/"
+    return pathname === href || pathname.startsWith(href + "/")
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
@@ -31,22 +37,17 @@ export function SiteHeader() {
             <a
               key={item.label}
               href={item.href}
-              className="rounded-md px-3 py-2 font-mono text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+              className={`rounded-md px-3 py-2 font-mono text-sm transition-colors ${
+                isActive(item.href)
+                  ? "bg-primary/10 text-primary"
+                  : "text-muted-foreground hover:bg-secondary hover:text-foreground"
+              }`}
+              aria-current={isActive(item.href) ? "page" : undefined}
             >
               {item.label}
             </a>
           ))}
         </nav>
-
-        <div className="hidden items-center gap-2 md:flex">
-          <a
-            href="https://github.com/roc-streaming"
-            className="flex items-center gap-2 rounded-md border border-border px-3 py-2 font-mono text-sm text-muted-foreground transition-colors hover:border-primary/50 hover:text-foreground"
-          >
-            <GithubIcon className="size-4" />
-            GitHub
-          </a>
-        </div>
 
         <button
           type="button"
@@ -67,20 +68,16 @@ export function SiteHeader() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2.5 font-mono text-sm text-muted-foreground hover:bg-secondary hover:text-foreground"
+                className={`rounded-md px-3 py-2.5 font-mono text-sm ${
+                  isActive(item.href)
+                    ? "bg-primary/10 text-primary"
+                    : "text-muted-foreground hover:bg-secondary hover:text-foreground"
+                }`}
+                aria-current={isActive(item.href) ? "page" : undefined}
               >
                 {item.label}
               </a>
             ))}
-            <div className="mt-2 flex flex-col gap-2 border-t border-border pt-3">
-              <a
-                href="https://github.com/roc-streaming"
-                className="flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2.5 font-mono text-sm text-foreground"
-              >
-                <GithubIcon className="size-4" />
-                GitHub
-              </a>
-            </div>
           </nav>
         </div>
       )}

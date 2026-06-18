@@ -75,8 +75,8 @@ export function FeaturesSection() {
             Built on a specialized audio core
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
-            The practical building blocks that make real-time audio work over normal
-            IP networks.
+            At the core of Roc Streaming is Roc Toolkit, the specialized transport
+            foundation behind its real-time audio capabilities.
           </p>
         </div>
 

@@ -73,8 +73,9 @@ export function AudienceSection() {
             For apps, devices, and audio systems
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
-            Concrete scenarios — who it is for, what they want to build, why Roc
-            Streaming fits, and which components are relevant.
+            Roc Streaming is for people who need to move audio between software,
+            devices, rooms, or locations over ordinary IP networks, without
+            relying on a proprietary transport stack.
           </p>
         </div>
 

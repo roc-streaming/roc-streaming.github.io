@@ -1,42 +1,51 @@
-import { MonitorSmartphone, Server, Layers, ArrowDown } from "lucide-react"
+import { MonitorSmartphone, Server, Layers, ArrowDown, Lock, ChevronsUpDown, Plug, Speaker } from "lucide-react"
 import { SectionLabel } from "@/components/section-label"
 
 const LAYERS = [
   {
     id: "cast",
     name: "Roc Cast",
-    role: "User-facing application",
-    detail: "Speakers, devices, routes",
+    role: "Ready-to-use application",
     icon: MonitorSmartphone,
     accent: "var(--signal)",
   },
   {
     id: "rocd",
     name: "RocD",
-    role: "Daemon & control API",
-    detail: "Peers, streams, devices",
+    role: "Deployable service integrated via REST API",
     icon: Server,
     accent: "var(--amber)",
   },
   {
     id: "toolkit",
     name: "Roc Toolkit",
-    role: "Real-time transport library",
-    detail: "RTP, FEC, latency, clocks",
+    role: "Foundation libraries for custom audio solutions",
     icon: Layers,
     accent: "var(--primary)",
   },
 ]
 
-const INTEGRATIONS = [
-  "roc-go",
-  "roc-java",
-  "Rust bindings",
-  "PipeWire",
-  "roc-pulse",
-  "roc-vad (macOS)",
-  "Android / Roc Cast",
-  "libroc (C ABI)",
+const OPEN_CARDS = [
+  {
+    icon: Lock,
+    title: "Open by construction",
+    body: "Built on open-source code and established IP networking standards, avoiding vendor lock-in at the transport layer.",
+  },
+  {
+    icon: ChevronsUpDown,
+    title: "Go lower when needed",
+    body: "Choose the layer that matches your control needs: application, service, or library kit.",
+  },
+  {
+    icon: Plug,
+    title: "Flexible integration",
+    body: "Use Roc from C, C++, Rust, Go, Java, or through RocD\u2019s HTTP API.",
+  },
+  {
+    icon: Speaker,
+    title: "OS audio integration",
+    body: "Connect to existing audio systems through virtual devices with PipeWire, PulseAudio, and macOS Core Audio.",
+  },
 ]
 
 export function EcosystemSection() {
@@ -50,19 +59,15 @@ export function EcosystemSection() {
             Choose the layer you need
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
-            Roc Cast sits on RocD, which builds on Roc Toolkit. Around the stack, a
-            growing set of bindings and OS integrations keep everything interoperable
-            and free of a closed vendor-only stack.
+            Roc Streaming lets you choose the right level of control: use Roc Cast
+            as a ready-to-use application, RocD as a deployable audio service, or
+            Roc Toolkit as the foundation for fully custom real-time audio systems.
           </p>
         </div>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
           {/* Layered stack diagram */}
           <div className="rounded-xl border border-border bg-background/60 bg-blueprint p-5 sm:p-8">
-            <div className="mb-5 flex items-center justify-between font-mono text-xs text-muted-foreground">
-              <span>// stack.layers</span>
-              <span>top → down</span>
-            </div>
             <ol className="space-y-0">
               {LAYERS.map((layer, i) => (
                 <li key={layer.id}>
@@ -85,7 +90,6 @@ export function EcosystemSection() {
                         <span className="font-mono text-base font-semibold text-foreground">{layer.name}</span>
                       </div>
                       <p className="text-sm text-muted-foreground">{layer.role}</p>
-                      <p className="font-mono text-[11px] text-muted-foreground/70">{layer.detail}</p>
                     </div>
                   </div>
                   {i < LAYERS.length - 1 && (
@@ -99,48 +103,20 @@ export function EcosystemSection() {
             </ol>
           </div>
 
-          {/* Integrations */}
-          <div className="flex flex-col gap-5">
-            <div className="rounded-xl border border-border bg-background/60 p-6">
-              <h3 className="font-mono text-sm font-semibold uppercase tracking-wider text-foreground">
-                Side integrations
-              </h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                Bindings and OS integrations branch off the stack so existing systems
-                can plug in directly.
-              </p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {INTEGRATIONS.map((item) => (
-                  <span
-                    key={item}
-                    className="inline-flex items-center gap-1.5 rounded-md border border-border bg-secondary px-2.5 py-1.5 font-mono text-xs text-foreground/80"
-                  >
-                    <span className="size-1.5 rounded-full bg-signal" aria-hidden="true" />
-                    {item}
-                  </span>
-                ))}
+          {/* Four open-ecosystem cards */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+            {OPEN_CARDS.map((card) => (
+              <div
+                key={card.title}
+                className="rounded-xl border border-border bg-background/60 p-5"
+              >
+                <span className="grid size-9 place-items-center rounded-lg border border-primary/30 bg-primary/10 text-primary">
+                  <card.icon className="size-4.5" aria-hidden="true" />
+                </span>
+                <h3 className="mt-3 font-mono text-sm font-semibold text-foreground">{card.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{card.body}</p>
               </div>
-            </div>
-
-            <div className="rounded-xl border border-primary/30 bg-primary/[0.06] p-6">
-              <h3 className="font-mono text-sm font-semibold text-primary">
-                Interoperable by design
-              </h3>
-              <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-                <li className="flex gap-2">
-                  <span className="mt-1.5 size-1 shrink-0 rounded-full bg-primary" />
-                  Open-source community and reusable integrations
-                </li>
-                <li className="flex gap-2">
-                  <span className="mt-1.5 size-1 shrink-0 rounded-full bg-primary" />
-                  Interoperability between Roc-compatible apps, devices, and products
-                </li>
-                <li className="flex gap-2">
-                  <span className="mt-1.5 size-1 shrink-0 rounded-full bg-primary" />
-                  No closed vendor-only stack
-                </li>
-              </ul>
-            </div>
+            ))}
           </div>
         </div>
       </div>
