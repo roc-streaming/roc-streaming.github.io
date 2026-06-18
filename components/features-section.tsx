@@ -72,7 +72,7 @@ export function FeaturesSection() {
         <SectionLabel index="04">Features</SectionLabel>
         <div className="mt-6 max-w-2xl">
           <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-            Technical capabilities, at a glance
+            Built on a specialized audio core
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
             The practical building blocks that make real-time audio work over normal

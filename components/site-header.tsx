@@ -5,10 +5,10 @@ import { Menu, X, Radio } from "lucide-react"
 import { GithubIcon } from "@/components/github-icon"
 
 const NAV = [
-  { label: "Docs", href: "#features" },
-  { label: "Toolkit", href: "#roc-toolkit" },
-  { label: "rocd", href: "#rocd" },
-  { label: "Roc Cast", href: "#roc-cast" },
+  { label: "Intro", href: "#top" },
+  { label: "Ecosystem", href: "#ecosystem" },
+  { label: "Community", href: "#community" },
+  { label: "Commercial Services", href: "#commercial-services" },
 ]
 
 export function SiteHeader() {
@@ -46,12 +46,6 @@ export function SiteHeader() {
             <GithubIcon className="size-4" />
             GitHub
           </a>
-          <a
-            href="#get-started"
-            className="rounded-md bg-primary px-4 py-2 font-mono text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            Get started
-          </a>
         </div>
 
         <button
@@ -85,13 +79,6 @@ export function SiteHeader() {
               >
                 <GithubIcon className="size-4" />
                 GitHub
-              </a>
-              <a
-                href="#get-started"
-                onClick={() => setOpen(false)}
-                className="rounded-md bg-primary px-4 py-2.5 text-center font-mono text-sm font-semibold text-primary-foreground"
-              >
-                Get started
               </a>
             </div>
           </nav>

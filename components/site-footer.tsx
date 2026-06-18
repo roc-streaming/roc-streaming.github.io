@@ -3,16 +3,20 @@ import { GithubIcon } from "@/components/github-icon"
 
 const COLUMNS = [
   {
+    title: "Pages",
+    links: [
+      { label: "Intro", href: "#top" },
+      { label: "Ecosystem", href: "#ecosystem" },
+      { label: "Community", href: "#community" },
+      { label: "Commercial Services", href: "#commercial-services" },
+    ],
+  },
+  {
     title: "Projects",
-    links: ["Roc Toolkit", "rocd", "Roc Cast", "libroc"],
-  },
-  {
-    title: "Bindings",
-    links: ["roc-go", "roc-java", "roc-pulse", "roc-vad"],
-  },
-  {
-    title: "Resources",
-    links: ["Documentation", "API reference", "GitHub", "Community"],
+    links: [
+      { label: "Roc Toolkit", href: "https://github.com/roc-streaming/roc-toolkit/" },
+      { label: "RocD", href: "https://github.com/roc-streaming/rocd/" },
+    ],
   },
 ]
 
@@ -27,12 +31,11 @@ export function SiteFooter() {
                 <Radio className="size-4.5" aria-hidden="true" />
               </span>
               <span className="font-mono text-sm font-semibold text-foreground">
-                roc<span className="text-primary">/</span>streaming
+                Roc Streaming
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Open-source ecosystem for real-time audio over IP networks. Wi-Fi · LAN ·
-              Internet · VLAN.
+              Open audio backbone for real-time streaming over IP networks.
             </p>
             <a
               href="https://github.com/roc-streaming"
@@ -50,12 +53,12 @@ export function SiteFooter() {
               </h3>
               <ul className="mt-4 space-y-2.5">
                 {col.links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="font-mono text-sm text-muted-foreground transition-colors hover:text-primary"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}

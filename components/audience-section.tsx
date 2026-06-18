@@ -11,7 +11,7 @@ const AUDIENCES = [
       "Provides libroc and language bindings",
       "Uses RTP/RTCP over UDP",
     ],
-    components: ["Roc Toolkit", "roc-go", "roc-java"],
+    components: ["Roc Toolkit", "RocD"],
   },
   {
     icon: Cpu,
@@ -23,7 +23,7 @@ const AUDIENCES = [
       "No per-device transport licensing",
       "Avoids building a proprietary AoIP stack",
     ],
-    components: ["Roc Toolkit", "rocd", "Roc Cast"],
+    components: ["Roc Toolkit", "RocD"],
   },
   {
     icon: Building2,
@@ -35,7 +35,7 @@ const AUDIENCES = [
       "Can use commodity endpoints",
       "Suitable for central distribution and zone playback",
     ],
-    components: ["Roc Toolkit", "rocd", "Roc Cast"],
+    components: ["Roc Toolkit", "RocD", "Roc Cast"],
   },
   {
     icon: RadioTower,
@@ -47,7 +47,7 @@ const AUDIENCES = [
       "Uses standard UDP, optionally over VPN",
       "No proprietary relay infrastructure required",
     ],
-    components: ["Roc Toolkit", "rocd"],
+    components: ["Roc Toolkit", "RocD", "Roc Cast"],
   },
   {
     icon: Boxes,
@@ -59,7 +59,7 @@ const AUDIENCES = [
       "Works with community-built devices",
       "Avoids vendor lock-in",
     ],
-    components: ["Roc Toolkit", "PipeWire", "roc-pulse", "roc-vad", "Roc Cast"],
+    components: ["Roc Toolkit", "RocD", "Roc Cast"],
   },
 ]
 
@@ -70,7 +70,7 @@ export function AudienceSection() {
         <SectionLabel index="02">Who it is for</SectionLabel>
         <div className="mt-6 max-w-2xl">
           <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-            Built for people shipping audio over networks
+            For apps, devices, and audio systems
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
             Concrete scenarios — who it is for, what they want to build, why Roc
