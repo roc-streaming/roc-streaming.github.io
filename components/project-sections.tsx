@@ -1,5 +1,4 @@
 import { Layers, Server, MonitorSmartphone, ArrowDown, ExternalLink } from "lucide-react"
-import { SectionLabel } from "@/components/section-label"
 
 function StatusDot({ tone, label }: { tone: "live" | "wip" | "planned"; label: string }) {
   const color =
@@ -75,8 +74,7 @@ function RocToolkit() {
     <article id="roc-toolkit" className="border-b border-border">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:py-20 lg:px-8">
         <div>
-          <SectionLabel index="06">Roc Toolkit</SectionLabel>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <span className="grid size-11 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
               <Layers className="size-6" aria-hidden="true" />
             </span>
@@ -174,8 +172,7 @@ function Rocd() {
         </div>
 
         <div className="order-1 lg:order-2">
-          <SectionLabel index="07">RocD</SectionLabel>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <span className="grid size-11 place-items-center rounded-lg border border-amber/40 bg-amber/10 text-amber">
               <Server className="size-6" aria-hidden="true" />
             </span>
@@ -223,8 +220,7 @@ function RocCast() {
     <article id="roc-cast" className="border-b border-border">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:py-20 lg:px-8">
         <div>
-          <SectionLabel index="08">Roc Cast</SectionLabel>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <span className="grid size-11 place-items-center rounded-lg border border-signal/40 bg-signal/10 text-signal">
               <MonitorSmartphone className="size-6" aria-hidden="true" />
             </span>

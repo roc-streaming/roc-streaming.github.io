@@ -15,9 +15,13 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-10 lg:py-24 lg:px-8">
         {/* Left: message + actions */}
         <div>
-          <h1 className="font-mono text-4xl font-bold leading-[1.08] tracking-tight text-balance text-foreground sm:text-5xl lg:text-[3.4rem]">
-            Open-source ecosystem for real-time{" "}
-            <span className="text-primary text-glow">Audio over IP</span>
+          <h1 className="font-mono font-bold tracking-tight text-balance text-foreground">
+            <span className="block text-5xl leading-[1.05] sm:text-6xl lg:text-[4rem] text-primary text-glow">
+              Roc Streaming
+            </span>
+            <span className="mt-3 block text-2xl font-semibold leading-snug text-foreground/80 sm:text-3xl lg:text-[1.75rem]">
+              Open-source ecosystem for real-time Audio over IP
+            </span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground text-pretty">
