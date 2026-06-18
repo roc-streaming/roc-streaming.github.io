@@ -22,8 +22,8 @@ export function Hero() {
           </div>
 
           <h1 className="font-mono text-4xl font-bold leading-[1.08] tracking-tight text-balance text-foreground sm:text-5xl lg:text-[3.4rem]">
-            Open audio backbone for{" "}
-            <span className="text-primary text-glow">real-time streaming</span>
+            Open-source ecosystem for real-time{" "}
+            <span className="text-primary text-glow">Audio over IP</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground text-pretty">
