@@ -37,9 +37,8 @@ export function ChallengeSection() {
               </p>
               <p>
                 A cable gives you predictable latency, stable quality, and no
-                audible dropouts. A network gives you jitter, packet loss, clock
-                drift, changing routes, and devices that all run on slightly
-                different clocks.
+                audible dropouts. A network adds jitter, packet loss, and
+                unpredictable latency.
               </p>
               <p>
                 Roc Streaming is an implementation of real-time audio transport
