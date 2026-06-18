@@ -24,7 +24,7 @@ const CARDS = [
     title: "Professional services",
     text: "Work with the Roc Streaming team on custom development, open-source improvements, product integration, technical support, or consulting.",
     cta: "Explore services",
-    href: "/commercial-services",
+    href: "/professional-services",
   },
 ]
 
@@ -40,7 +40,7 @@ export function GetInTouch() {
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
             Learn how the ecosystem fits together, join the open-source community, or
-            work with the Roc Streaming team on commercial services.
+            work with the Roc Streaming team on professional services.
           </p>
         </div>
 

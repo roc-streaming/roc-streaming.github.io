@@ -1,7 +1,7 @@
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 
-export default function CommercialServicesPage() {
+export default function ProfessionalServicesPage() {
   return (
     <div className="min-h-dvh bg-background">
       <SiteHeader />

@@ -8,7 +8,7 @@ const NAV = [
   { label: "Intro", href: "/" },
   { label: "Ecosystem", href: "/ecosystem" },
   { label: "Community", href: "/community" },
-  { label: "Commercial Services", href: "/commercial-services" },
+  { label: "Professional Services", href: "/professional-services" },
 ]
 
 export function SiteHeader() {
