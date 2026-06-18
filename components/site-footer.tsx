@@ -1,25 +1,6 @@
 import { Radio } from "lucide-react"
 import { GithubIcon } from "@/components/github-icon"
 
-<<<<<<< HEAD
-const COLUMNS = [
-  {
-    title: "Pages",
-    links: [
-      { label: "Intro", href: "#top" },
-      { label: "Ecosystem", href: "#ecosystem" },
-      { label: "Community", href: "#community" },
-      { label: "Commercial Services", href: "#commercial-services" },
-    ],
-  },
-  {
-    title: "Projects",
-    links: [
-      { label: "Roc Toolkit", href: "https://github.com/roc-streaming/roc-toolkit/" },
-      { label: "RocD", href: "https://github.com/roc-streaming/rocd/" },
-    ],
-  },
-=======
 const PAGES = [
   { label: "Intro", href: "/" },
   { label: "Ecosystem", href: "/ecosystem" },
@@ -30,7 +11,6 @@ const PAGES = [
 const PROJECTS = [
   { label: "Roc Toolkit", href: "https://github.com/roc-streaming/roc-toolkit/" },
   { label: "RocD", href: "https://github.com/roc-streaming/rocd/" },
->>>>>>> 729375c (Rework pages per spec)
 ]
 
 export function SiteFooter() {
@@ -47,12 +27,6 @@ export function SiteFooter() {
                 Roc Streaming
               </span>
             </div>
-<<<<<<< HEAD
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Open audio backbone for real-time streaming over IP networks.
-            </p>
-=======
->>>>>>> 729375c (Rework pages per spec)
             <a
               href="https://github.com/roc-streaming"
               className="mt-5 inline-flex items-center gap-2 rounded-md border border-border px-3 py-2 font-mono text-xs text-muted-foreground transition-colors hover:border-primary/50 hover:text-foreground"
@@ -62,27 +36,6 @@ export function SiteFooter() {
             </a>
           </div>
 
-<<<<<<< HEAD
-          {COLUMNS.map((col) => (
-            <div key={col.title}>
-              <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-foreground">
-                {col.title}
-              </h3>
-              <ul className="mt-4 space-y-2.5">
-                {col.links.map((link) => (
-                  <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="font-mono text-sm text-muted-foreground transition-colors hover:text-primary"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-=======
           <div>
             <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-foreground">
               Pages
@@ -118,7 +71,6 @@ export function SiteFooter() {
               ))}
             </ul>
           </div>
->>>>>>> 729375c (Rework pages per spec)
         </div>
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 font-mono text-xs text-muted-foreground sm:flex-row sm:items-center">

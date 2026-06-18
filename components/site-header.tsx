@@ -5,17 +5,10 @@ import { Menu, X, Radio } from "lucide-react"
 import { GithubIcon } from "@/components/github-icon"
 
 const NAV = [
-<<<<<<< HEAD
-  { label: "Intro", href: "#top" },
-  { label: "Ecosystem", href: "#ecosystem" },
-  { label: "Community", href: "#community" },
-  { label: "Commercial Services", href: "#commercial-services" },
-=======
   { label: "Intro", href: "/" },
   { label: "Ecosystem", href: "/ecosystem" },
   { label: "Community", href: "/community" },
   { label: "Commercial Services", href: "/commercial-services" },
->>>>>>> 729375c (Rework pages per spec)
 ]
 
 export function SiteHeader() {
