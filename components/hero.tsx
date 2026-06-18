@@ -15,11 +15,6 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-10 lg:py-24 lg:px-8">
         {/* Left: message + actions */}
         <div>
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 font-mono text-xs text-muted-foreground">
-            <span className="size-1.5 rounded-full bg-primary node-pulse" />
-            open-source ecosystem
-          </div>
-
           <h1 className="font-mono text-4xl font-bold leading-[1.08] tracking-tight text-balance text-foreground sm:text-5xl lg:text-[3.4rem]">
             Open-source ecosystem for real-time{" "}
             <span className="text-primary text-glow">Audio over IP</span>

@@ -21,7 +21,7 @@ const CARDS = [
   {
     icon: Briefcase,
     accent: "signal" as const,
-    title: "Commercial services",
+    title: "Professional services",
     text: "Work with the Roc Streaming team on custom development, open-source improvements, product integration, technical support, or consulting.",
     cta: "Explore services",
     href: "/commercial-services",
@@ -35,7 +35,7 @@ export function GetInTouch() {
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24 lg:px-8">
         <SectionLabel index="06">Start here</SectionLabel>
         <div className="mt-6 max-w-2xl">
-          <h2 className="font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
+          <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
             Start with Roc Streaming
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
