@@ -1,5 +1,6 @@
 import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
+import { ChallengeSection } from "@/components/challenge-section"
 import { AudienceSection } from "@/components/audience-section"
 import { EcosystemSection } from "@/components/ecosystem-section"
 import { FeaturesSection } from "@/components/features-section"
@@ -12,6 +13,7 @@ export default function Page() {
       <SiteHeader />
       <main>
         <Hero />
+        <ChallengeSection />
         <AudienceSection />
         <EcosystemSection />
         <FeaturesSection />
