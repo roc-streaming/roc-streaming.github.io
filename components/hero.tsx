@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react"
 import { GithubIcon } from "@/components/github-icon"
 import { IpAudioDiagram } from "@/components/ip-audio-diagram"
 
