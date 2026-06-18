@@ -5,10 +5,10 @@ import { Menu, X, Radio } from "lucide-react"
 import { GithubIcon } from "@/components/github-icon"
 
 const NAV = [
-  { label: "Docs", href: "#features" },
-  { label: "Toolkit", href: "#roc-toolkit" },
-  { label: "rocd", href: "#rocd" },
-  { label: "Roc Cast", href: "#roc-cast" },
+  { label: "Intro", href: "/" },
+  { label: "Ecosystem", href: "/ecosystem" },
+  { label: "Community", href: "/community" },
+  { label: "Professional Services", href: "/professional-services" },
 ]
 
 export function SiteHeader() {
@@ -17,7 +17,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <a href="#top" className="flex items-center gap-2.5">
+        <a href="/" className="flex items-center gap-2.5">
           <span className="grid size-8 place-items-center rounded-md border border-primary/40 bg-primary/10 text-primary">
             <Radio className="size-4.5" aria-hidden="true" />
           </span>
@@ -45,12 +45,6 @@ export function SiteHeader() {
           >
             <GithubIcon className="size-4" />
             GitHub
-          </a>
-          <a
-            href="#get-started"
-            className="rounded-md bg-primary px-4 py-2 font-mono text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            Get started
           </a>
         </div>
 
@@ -85,13 +79,6 @@ export function SiteHeader() {
               >
                 <GithubIcon className="size-4" />
                 GitHub
-              </a>
-              <a
-                href="#get-started"
-                onClick={() => setOpen(false)}
-                className="rounded-md bg-primary px-4 py-2.5 text-center font-mono text-sm font-semibold text-primary-foreground"
-              >
-                Get started
               </a>
             </div>
           </nav>

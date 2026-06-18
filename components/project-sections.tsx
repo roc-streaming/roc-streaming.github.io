@@ -130,7 +130,7 @@ function RocToolkit() {
   )
 }
 
-/* ---- rocd ---- */
+/* ---- RocD ---- */
 function Rocd() {
   const highlights = [
     "REST API",
@@ -151,7 +151,7 @@ function Rocd() {
         {/* mini visual first on desktop */}
         <div className="order-2 rounded-xl border border-border bg-background/60 p-6 lg:order-1">
           <div className="mb-4 flex items-center justify-between font-mono text-xs text-muted-foreground">
-            <span>POST /api/v1/streams</span>
+            <span>POST /api/rocd/v1/streams</span>
             <span className="text-amber">200 OK</span>
           </div>
           <pre className="overflow-x-auto rounded-lg border border-border bg-background p-4 font-mono text-xs leading-relaxed text-foreground/80">
@@ -174,31 +174,31 @@ function Rocd() {
         </div>
 
         <div className="order-1 lg:order-2">
-          <SectionLabel index="07">rocd</SectionLabel>
+          <SectionLabel index="07">RocD</SectionLabel>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <span className="grid size-11 place-items-center rounded-lg border border-amber/40 bg-amber/10 text-amber">
               <Server className="size-6" aria-hidden="true" />
             </span>
-            <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">rocd</h2>
+            <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">RocD</h2>
             <StatusDot tone="wip" label="in progress" />
           </div>
           <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
-            The daemon and control API for managing Roc Streaming systems. rocd is
+            The daemon and control API for managing Roc Streaming systems. RocD is
             intended to expose peers, endpoints, streams, devices, routes, metrics, and
             events through a higher-level interface, while Roc Toolkit handles the
             real-time transport underneath.
           </p>
           <p className="mt-3 inline-flex rounded-md border border-amber/30 bg-amber/[0.07] px-3 py-1.5 font-mono text-xs text-amber">
-            Status: rocd is in progress and not production-ready yet.
+            Status: RocD is in progress and not production-ready yet.
           </p>
           <div className="mt-7">
             <Highlights items={highlights} accent="var(--amber)" />
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <ProjectButton href="#" primary>
-              rocd docs
+              RocD docs
             </ProjectButton>
-            <ProjectButton href="#">API reference</ProjectButton>
+            <ProjectButton href="https://github.com/roc-streaming/rocd/">GitHub</ProjectButton>
           </div>
         </div>
       </div>
@@ -215,7 +215,7 @@ function RocCast() {
     "Room-oriented audio control",
     "Desktop / mobile UI direction",
     "Web UI for headless devices",
-    "Built on rocd",
+    "Built on RocD",
     "Uses Roc Toolkit underneath",
   ]
 
@@ -239,7 +239,7 @@ function RocCast() {
             instead of low-level transport concepts.
           </p>
           <p className="mt-3 inline-flex rounded-md border border-signal/30 bg-signal/[0.07] px-3 py-1.5 font-mono text-xs text-signal">
-            Status: the intended application layer built on top of rocd.
+            Status: the intended application layer built on top of RocD.
           </p>
           <div className="mt-7">
             <Highlights items={highlights} accent="var(--signal)" />

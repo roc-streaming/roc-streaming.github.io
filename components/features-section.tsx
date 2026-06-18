@@ -56,7 +56,7 @@ const FEATURES = [
   {
     icon: Server,
     title: "Control layer",
-    body: "Use rocd to manage peers, endpoints, streams, devices, routes, metrics, and events.",
+    body: "Use RocD to manage peers, endpoints, streams, devices, routes, metrics, and events.",
   },
   {
     icon: MonitorSmartphone,
@@ -69,10 +69,10 @@ export function FeaturesSection() {
   return (
     <section id="features" className="relative border-b border-border">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24 lg:px-8">
-        <SectionLabel index="04">Features</SectionLabel>
+        <SectionLabel index="05">Features</SectionLabel>
         <div className="mt-6 max-w-2xl">
           <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-            Technical capabilities, at a glance
+            Built on a specialized audio core
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
             The practical building blocks that make real-time audio work over normal

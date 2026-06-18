@@ -10,9 +10,9 @@ const jetBrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Roc Streaming — Open IP audio backbone for apps, devices, and products',
+  title: 'Roc Streaming — Open audio backbone for real-time streaming',
   description:
-    'Roc Streaming is an open-source ecosystem for real-time audio over IP networks. Controlled latency, packet-loss recovery, and clock drift handling across Wi-Fi, LAN, Internet, and VLAN.',
+    'Roc Streaming is an open audio backbone for real-time streaming over IP networks, built for controlled latency and resilience across wired, wireless, and wide-area networks.',
   generator: 'v0.app',
   icons: {
     icon: [
