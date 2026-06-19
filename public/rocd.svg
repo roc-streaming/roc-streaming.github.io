@@ -1,75 +1,140 @@
-<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="shadow" x="40" y="40" width="1520" height="820" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#B7C7D8" flood-opacity="0.18"/>
+    <filter id="shadow" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="28" flood-color="#B7C7D8" flood-opacity="0.22"/>
     </filter>
   </defs>
 
-
+  <!-- Card -->
   <g filter="url(#shadow)">
-    <rect x="90" y="80" width="1420" height="700" rx="30" fill="white" stroke="#D8E1EB" stroke-width="2"/>
+    <rect x="80" y="60" width="1440" height="860" rx="14" fill="#F8FAFB" stroke="#D4DDE8" stroke-width="1.5"/>
   </g>
 
-  <!-- Header -->
-  <text x="150" y="170" fill="#5C93BA" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700">GET</text>
-  <text x="285" y="170" fill="#1F2937" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="500">/rocd/streams</text>
-  <text x="1320" y="170" fill="#5C93BA" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="500">200 OK</text>
-  <line x1="90" y1="215" x2="1510" y2="215" stroke="#E3EAF1" stroke-width="2"/>
+  <!-- Title bar -->
+  <rect x="80" y="60" width="1440" height="62" rx="14" fill="#EDF1F5" stroke="#D4DDE8" stroke-width="1.5"/>
+  <rect x="80" y="92" width="1440" height="30" fill="#EDF1F5"/>
 
-  <!-- Code block -->
+  <!-- Traffic lights -->
+  <circle cx="136" cy="91" r="11" fill="#FF6058"/>
+  <circle cx="172" cy="91" r="11" fill="#FFBD2E"/>
+  <circle cx="208" cy="91" r="11" fill="#28C840"/>
+
+  <!-- Title bar label -->
+  <text x="800" y="97" text-anchor="middle" fill="#8A9BAD" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="26" font-weight="500">rocd — REST API</text>
+
+  <!-- Divider under title bar -->
+  <line x1="80" y1="122" x2="1520" y2="122" stroke="#D4DDE8" stroke-width="1.5"/>
+
+  <!-- URL bar area -->
+  <rect x="120" y="140" width="1360" height="64" rx="8" fill="#FFFFFF" stroke="#D4DDE8" stroke-width="1.5"/>
+
+  <!-- Prompt $ -->
+  <text x="152" y="182" fill="#28A060" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700">$</text>
+  <!-- curl -->
+  <text x="192" y="182" fill="#5C93BA" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="600">curl</text>
+  <!-- -X flag -->
+  <text x="296" y="182" fill="#9AAFC4" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="34">-X</text>
+  <!-- GET method -->
+  <text x="370" y="182" fill="#5C93BA" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="600">GET</text>
+  <!-- URL -->
+  <text x="480" y="182" fill="#374151" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="34">http://localhost:3000/rocd/streams</text>
+  <!-- Status -->
+  <text x="1355" y="182" fill="#28A060" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="30" font-weight="600">200 OK</text>
+
+  <!-- Divider under URL bar -->
+  <line x1="80" y1="224" x2="1520" y2="224" stroke="#D4DDE8" stroke-width="1.5"/>
+
+  <!-- Line number gutter -->
+  <rect x="80" y="224" width="80" height="560" fill="#F1F4F7"/>
+  <line x1="160" y1="224" x2="160" y2="784" stroke="#D4DDE8" stroke-width="1.5"/>
+
+  <!-- Line numbers -->
+  <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="28" fill="#C2CEDB" text-anchor="middle">
+    <text x="120" y="296">1</text>
+    <text x="120" y="360">2</text>
+    <text x="120" y="424">3</text>
+    <text x="120" y="488">4</text>
+    <text x="120" y="552">5</text>
+    <text x="120" y="616">6</text>
+    <text x="120" y="680">7</text>
+    <text x="120" y="744">8</text>
+  </g>
+
+  <!-- Highlight on active line 3 (endpoint) -->
+  <rect x="160" y="403" width="1360" height="48" fill="#EAF2FA"/>
+
+  <!-- JSON body -->
   <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="34">
-    <text x="150" y="300" fill="#111827">{</text>
+    <!-- line 1 -->
+    <text x="192" y="296" fill="#374151">{</text>
 
-    <text x="260" y="365" fill="#555555">"peer"</text>
-    <text x="555" y="365" fill="#111827">:</text>
-    <text x="620" y="365" fill="#5C93BA">"studio-01"</text>
-    <text x="895" y="365" fill="#111827">,</text>
+    <!-- line 2 -->
+    <text x="284" y="360" fill="#7C8FA2">"peer"</text>
+    <text x="530" y="360" fill="#374151">:</text>
+    <text x="582" y="360" fill="#5C93BA">"studio-01"</text>
+    <text x="882" y="360" fill="#374151">,</text>
 
-    <text x="260" y="430" fill="#555555">"endpoint"</text>
-    <text x="555" y="430" fill="#111827">:</text>
-    <text x="620" y="430" fill="#5C93BA">"rtp+rs8m://0.0.0.0:10001"</text>
-    <text x="1125" y="430" fill="#111827">,</text>
+    <!-- line 3 – active row -->
+    <text x="284" y="424" fill="#5C93BA">"endpoint"</text>
+    <text x="596" y="424" fill="#374151">:</text>
+    <text x="648" y="424" fill="#2C6EA0">"rtp+rs8m://0.0.0.0:10001"</text>
+    <text x="1356" y="424" fill="#374151">,</text>
 
-    <text x="260" y="495" fill="#555555">"device"</text>
-    <text x="555" y="495" fill="#111827">:</text>
-    <text x="620" y="495" fill="#5C93BA">"virtual-out-3"</text>
-    <text x="942" y="495" fill="#111827">,</text>
+    <!-- line 4 -->
+    <text x="284" y="488" fill="#7C8FA2">"device"</text>
+    <text x="530" y="488" fill="#374151">:</text>
+    <text x="582" y="488" fill="#5C93BA">"virtual-out-3"</text>
+    <text x="962" y="488" fill="#374151">,</text>
 
-    <text x="260" y="560" fill="#555555">"latency_ms"</text>
-    <text x="555" y="560" fill="#111827">:</text>
-    <text x="620" y="560" fill="#5C93BA">60</text>
-    <text x="688" y="560" fill="#111827">,</text>
+    <!-- line 5 -->
+    <text x="284" y="552" fill="#7C8FA2">"latency_ms"</text>
+    <text x="596" y="552" fill="#374151">:</text>
+    <text x="648" y="552" fill="#5C93BA">60</text>
+    <text x="720" y="552" fill="#374151">,</text>
 
-    <text x="260" y="625" fill="#555555">"fec"</text>
-    <text x="555" y="625" fill="#111827">:</text>
-    <text x="620" y="625" fill="#5C93BA">"rs8m"</text>
-    <text x="780" y="625" fill="#111827">,</text>
+    <!-- line 6 -->
+    <text x="284" y="616" fill="#7C8FA2">"fec"</text>
+    <text x="530" y="616" fill="#374151">:</text>
+    <text x="582" y="616" fill="#5C93BA">"rs8m"</text>
+    <text x="746" y="616" fill="#374151">,</text>
 
-    <text x="260" y="690" fill="#555555">"metrics"</text>
-    <text x="555" y="690" fill="#111827">:</text>
-    <text x="620" y="690" fill="#111827">{</text>
-    <text x="675" y="690" fill="#555555">"loss"</text>
-    <text x="785" y="690" fill="#111827">:</text>
-    <text x="835" y="690" fill="#5C93BA">0.4</text>
-    <text x="920" y="690" fill="#111827">,</text>
-    <text x="965" y="690" fill="#555555">"jitter_ms"</text>
-    <text x="1188" y="690" fill="#111827">:</text>
-    <text x="1238" y="690" fill="#5C93BA">2.1</text>
-    <text x="1310" y="690" fill="#111827">}</text>
+    <!-- line 7 -->
+    <text x="284" y="680" fill="#7C8FA2">"metrics"</text>
+    <text x="530" y="680" fill="#374151">:</text>
+    <text x="582" y="680" fill="#374151">{</text>
+    <text x="634" y="680" fill="#7C8FA2">"loss"</text>
+    <text x="770" y="680" fill="#374151">:</text>
+    <text x="822" y="680" fill="#5C93BA">0.4</text>
+    <text x="910" y="680" fill="#374151">,</text>
+    <text x="958" y="680" fill="#7C8FA2">"jitter_ms"</text>
+    <text x="1196" y="680" fill="#374151">:</text>
+    <text x="1248" y="680" fill="#5C93BA">2.1</text>
+    <text x="1322" y="680" fill="#374151">}</text>
 
-    <text x="150" y="745" fill="#111827">}</text>
+    <!-- line 8 -->
+    <text x="192" y="744" fill="#374151">}</text>
   </g>
 
-  <!-- Tabs area integrated in same card -->
-  <line x1="90" y1="780" x2="1510" y2="780" stroke="#E3EAF1" stroke-width="2"/>
-  <g font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500" fill="#5C93BA">
-    <text x="355" y="835">peers</text>
-    <text x="758" y="835">streams</text>
-    <text x="1140" y="835">devices</text>
+  <!-- Cursor blink after closing brace -->
+  <rect x="230" y="758" width="18" height="32" rx="2" fill="#5C93BA" opacity="0.5"/>
+
+  <!-- Divider above tabs -->
+  <line x1="80" y1="784" x2="1520" y2="784" stroke="#D4DDE8" stroke-width="1.5"/>
+
+  <!-- Tabs background strip -->
+  <rect x="80" y="784" width="1440" height="136" fill="#EDF1F5"/>
+  <rect x="80" y="870" width="1440" height="50" rx="14" fill="#EDF1F5"/>
+
+  <!-- Active tab pill: streams -->
+  <rect x="688" y="806" width="224" height="64" rx="8" fill="#FFFFFF" stroke="#C8D8E8" stroke-width="1.5"/>
+
+  <!-- Tab labels -->
+  <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="32" font-weight="500">
+    <text x="346" y="851" fill="#9AAFC4">peers</text>
+    <text x="726" y="851" fill="#2C6EA0">streams</text>
+    <text x="1100" y="851" fill="#9AAFC4">devices</text>
   </g>
 
-  <!-- tab guide line -->
-  <line x1="260" y1="855" x2="1340" y2="855" stroke="#D7E3EE" stroke-width="2"/>
-  <!-- active tab underline -->
-  <line x1="720" y1="855" x2="920" y2="855" stroke="#5C93BA" stroke-width="4" stroke-linecap="round"/>
+  <!-- Active tab underline accent -->
+  <rect x="704" y="866" width="192" height="4" rx="2" fill="#5C93BA"/>
 </svg>
