@@ -202,7 +202,7 @@ function RocCast() {
         </div>
 
         {/* diagram */}
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-start lg:justify-center">
           <img
             src="/roc-cast.svg"
             alt="Roc Cast multi-room audio diagram"
