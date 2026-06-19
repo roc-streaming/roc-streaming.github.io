@@ -256,7 +256,7 @@ function Contribute() {
                   {repo.name}
                 </h3>
               </div>
-              <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
                 {repo.description}
               </p>
               <div className="mt-3">
@@ -378,7 +378,7 @@ function CommunityHero() {
 
 /* ══════════════════════════════════
    Export
-═══════════���══���═���══════════════════ */
+═══════════�����══���═���══════════════════ */
 export function CommunitySections() {
   return (
     <>
