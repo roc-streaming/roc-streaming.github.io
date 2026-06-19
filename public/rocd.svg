@@ -15,7 +15,7 @@
   <!-- GET method -->
   <text x="152" y="122" fill="#5C93BA" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700">GET</text>
   <!-- URL -->
-  <text x="266" y="122" fill="#374151" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="34">http://localhost:3000/rocd/streams</text>
+  <text x="266" y="122" fill="#374151" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="34">http://192.168.0.10:3000/rocd/streams</text>
   <!-- Status -->
   <text x="1355" y="122" fill="#28A060" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="30" font-weight="600">200 OK</text>
 
