@@ -63,7 +63,7 @@
   /* Deep green terminal primary (readable on light) */
   --primary: oklch(0.51 0.16 253.51);
   --primary-foreground: oklch(0.99 0.005 150);
-  --secondary: oklch(0.965 0.005 235);
+  --secondary: lab(86, 5, 52);
   --secondary-foreground: oklch(0.3 0.02 245);
   --muted: oklch(0.97 0.004 235);
   --muted-foreground: oklch(0.5 0.02 240);
