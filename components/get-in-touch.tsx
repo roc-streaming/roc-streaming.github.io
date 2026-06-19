@@ -48,15 +48,15 @@ export function GetInTouch() {
           {CARDS.map(({ icon: Icon, accent, title, text, cta, href }) => (
             <article
               key={title}
-              className={`group flex flex-col rounded-xl border p-6 transition-colors ${accent === "signal"
-                  ? "border-signal/30 bg-signal/[0.05] hover:border-signal/50"
-                  : "border-primary/30 bg-primary/[0.05] hover:border-primary/50"
+              className={`group flex flex-col rounded-xl border p-6 transition-colors ${accent === "primary"
+                  ? "border-primary/30 bg-primary/[0.05] hover:border-primary/50"
+                  : "border-border bg-card/50 hover:border-primary/40"
                 }`}
             >
               <span
-                className={`grid size-10 place-items-center rounded-lg border transition-transform group-hover:scale-110 ${accent === "signal"
-                    ? "border-signal/40 bg-signal/10 text-signal"
-                    : "border-primary/40 bg-primary/10 text-primary"
+                className={`grid size-10 place-items-center rounded-lg border transition-transform group-hover:scale-110 ${accent === "primary"
+                    ? "border-primary/40 bg-primary/10 text-primary"
+                    : "border-primary/30 bg-primary/10 text-primary"
                   }`}
               >
                 <Icon className="size-5" aria-hidden="true" />
@@ -66,9 +66,9 @@ export function GetInTouch() {
               <div className="mt-6">
                 <a
                   href={href}
-                  className={`inline-flex items-center gap-1.5 rounded-md px-4 py-2.5 font-mono text-sm font-semibold transition-opacity hover:opacity-90 ${accent === "signal"
-                      ? "bg-signal text-signal-foreground"
-                      : "bg-primary text-primary-foreground"
+                  className={`inline-flex items-center gap-1.5 rounded-md px-4 py-2.5 font-mono text-sm font-semibold transition-opacity hover:opacity-90 ${accent === "primary"
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-secondary text-secondary-foreground"
                     }`}
                 >
                   {cta}
