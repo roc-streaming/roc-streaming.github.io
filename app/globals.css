@@ -61,16 +61,16 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.24 0.022 245);
   /* Deep green terminal primary (readable on light) */
-  --primary: oklch(0.66 0.15 237.83);
+  --primary: oklch(0.51 0.16 253.51);
   --primary-foreground: oklch(0.99 0.005 150);
-  --secondary: oklch(0.965 0.005 235);
+  --secondary: lab(86, 5, 52);
   --secondary-foreground: oklch(0.3 0.02 245);
   --muted: oklch(0.97 0.004 235);
   --muted-foreground: oklch(0.5 0.02 240);
   /* Blueprint blue signal accent */
-  --accent: oklch(0.66 0.15 237.83);
+  --accent: oklch(0.51 0.16 253.51);
   --accent-foreground: oklch(0.99 0.004 250);
-  --signal: oklch(0.66 0.15 237.83);
+  --signal: oklch(0.51 0.16 253.51);
   --signal-foreground: oklch(0.99 0.004 250);
   --amber: oklch(0.75 0.14 74.77);
   --destructive: oklch(0.58 0.22 25);
@@ -85,12 +85,12 @@
   --radius: 0.5rem;
   --sidebar: oklch(0.99 0.004 230);
   --sidebar-foreground: oklch(0.26 0.022 245);
-  --sidebar-primary: oklch(0.66 0.15 237.83);
+  --sidebar-primary: oklch(0.51 0.16 253.51);
   --sidebar-primary-foreground: oklch(0.99 0.005 150);
   --sidebar-accent: oklch(0.94 0.008 235);
   --sidebar-accent-foreground: oklch(0.3 0.02 245);
   --sidebar-border: oklch(0.55 0.03 240 / 22%);
-  --sidebar-ring: oklch(0.66 0.15 237.83);
+  --sidebar-ring: oklch(0.51 0.16 253.51);
 }
 
 @layer base {

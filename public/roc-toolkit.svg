@@ -4,37 +4,37 @@
 
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
-      <path d="M0,0 L10,5 L0,10 Z" fill="#555555"/>
+      <path d="M0,0 L10,5 L0,10 Z" fill="oklch(0.24 0.022 245)"/>
     </marker>
 
     <style>
       text {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        fill: #555555;
+        fill: oklch(0.24 0.022 245);
       }
 
       .host-title {
         font-size: 22px;
         font-weight: 600;
-        fill: #555555;
+        fill: oklch(0.24 0.022 245);
       }
 
       .host-subtitle {
         font-size: 14px;
         font-weight: 400;
-        fill: #555555;
+        fill: oklch(0.24 0.022 245);
       }
 
       .label {
         font-size: 17px;
         font-weight: 500;
-        fill: #555555;
+        fill: oklch(0.24 0.022 245);
       }
 
       .note {
         font-size: 13px;
         font-weight: 400;
-        fill: #555555;
+        fill: oklch(0.24 0.022 245);
       }
 
       .host {
@@ -45,7 +45,7 @@
 
       .app {
         fill: #ffffff;
-        stroke: #555555;
+        stroke: oklch(0.24 0.022 245);
         stroke-width: 2;
       }
 
@@ -57,24 +57,24 @@
 
       .os {
         fill: #ffffff;
-        stroke: #555555;
+        stroke: oklch(0.24 0.022 245);
         stroke-width: 2;
       }
 
       .device {
         fill: #fefce8;
-        stroke: #d39b00;
+        stroke: lab(86 5 52);
         stroke-width: 2.5;
       }
 
       .network {
         fill: #eff6ff;
-        stroke: #2563eb;
+        stroke: oklch(0.51 0.16 253.51);
         stroke-width: 2.5;
       }
 
       .line {
-        stroke: #555555;
+        stroke: oklch(0.24 0.022 245);
         stroke-width: 2.5;
         fill: none;
         marker-end: url(#arrow);
