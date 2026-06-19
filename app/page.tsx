@@ -15,7 +15,7 @@ export default function Page() {
         <Hero />
         <ChallengeSection />
         <AudienceSection />
-        <EcosystemSection layerAccentOverrides={{ toolkit: "var(--amber)" }} />
+        <EcosystemSection layerAccentOverrides={{ cast: "var(--amber)", rocd: "var(--amber)" }} />
         <FeaturesSection />
         <GetInTouch />
       </main>
