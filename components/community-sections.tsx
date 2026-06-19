@@ -62,13 +62,16 @@ function Tags({ items }: { items: string[] }) {
 }
 
 /* ══════════════════════════════════
-   01  Join discussion
+   01  Community channels
 ═══════════════════════════════════ */
 function JoinDiscussion() {
   return (
     <section id="join-discussion" className="border-b border-border">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
-        <SectionLabel index="01">Join discussion</SectionLabel>
+        <SectionLabel index="01">Community channels</SectionLabel>
+        <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
+          Join discussion
+        </h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {/* Forum */}
@@ -78,8 +81,7 @@ function JoinDiscussion() {
             </span>
             <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Forum</h3>
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-              For questions, ideas, and longer discussions. Available on the web and
-              usable directly from a browser.
+              A web forum for questions, ideas, and longer discussions. It works directly in the browser.
             </p>
             <div className="mt-6">
               <LinkButton href="https://github.com/roc-streaming/roc-toolkit/discussions" primary>
@@ -94,11 +96,8 @@ function JoinDiscussion() {
               <Mail className="size-5" aria-hidden="true" />
             </span>
             <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Mailing list</h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              For questions, ideas, technical discussions, and announcements. Subscribe
-              first via the list page or by sending an email to{" "}
-              <Code>roc-request@freelists.org</Code> with <Code>subscribe</Code> in the
-              subject.
+            <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+              A classic mailing list for technical discussions and announcements.
             </p>
             <p className="mt-2 text-sm text-muted-foreground">
               Address: <Code>roc@freelists.org</Code>
@@ -108,10 +107,10 @@ function JoinDiscussion() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <LinkButton href="https://www.freelists.org/list/roc" primary>
-                List page
+                Subscribe list
               </LinkButton>
-              <LinkButton href="mailto:roc-request@freelists.org?subject=subscribe">
-                Subscribe by email
+              <LinkButton href="https://www.freelists.org/archive/roc/">
+                List archive
               </LinkButton>
             </div>
           </article>
@@ -123,8 +122,7 @@ function JoinDiscussion() {
             </span>
             <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Chat</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              For interactive discussion, quick questions, setup help, and general Roc
-              Streaming topics. Hosted on Matrix — open in a browser or install a client.
+              For interactive discussion and quick questions. Hosted on Matrix — open in a browser or install a client.
             </p>
             <div className="mt-4 flex flex-col gap-2">
               <div>
@@ -143,7 +141,6 @@ function JoinDiscussion() {
               <LinkButton href="https://matrix.to/#/#roc-streaming-dev:matrix.org">
                 Dev chat
               </LinkButton>
-              <LinkButton href="https://app.element.io/">Web client</LinkButton>
             </div>
           </article>
         </div>
@@ -244,6 +241,9 @@ function Contribute() {
     <section id="contribute" className="border-b border-border bg-card/20">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
         <SectionLabel index="02">Contribute</SectionLabel>
+        <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
+          Contribute to Roc Streaming
+        </h2>
         <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty">
           Roc Streaming welcomes contributions to core development, integrations,
           documentation, tests, examples, packaging, and infrastructure. Help-wanted
@@ -319,7 +319,7 @@ function SupportProject() {
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
         <div className="absolute inset-0 bg-blueprint-fine opacity-40" aria-hidden="true" />
         <div className="relative">
-          <SectionLabel index="03">Support the project</SectionLabel>
+          <SectionLabel index="03">Donations</SectionLabel>
           <div className="mt-6 max-w-2xl">
             <h2 className="font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
               Help keep Roc Streaming growing
