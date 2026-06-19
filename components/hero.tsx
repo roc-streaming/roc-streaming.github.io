@@ -14,7 +14,7 @@ export function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-10 lg:py-24 lg:px-8">
         {/* Left: message + actions */}
-        <div>
+        <div className="order-2 lg:order-1">
           <h1 className="font-mono font-bold tracking-tight text-balance text-foreground">
             <span className="block text-5xl leading-[1.05] sm:text-6xl lg:text-[4rem] text-primary text-glow">
               Roc Streaming
@@ -42,7 +42,7 @@ export function Hero() {
         </div>
 
         {/* Right: logo */}
-        <div className="flex justify-center lg:pl-4">
+        <div className="order-1 flex justify-center lg:order-2 lg:pl-4">
           <Image
             src="/images/big_logo.png"
             alt="Roc Streaming logo"
