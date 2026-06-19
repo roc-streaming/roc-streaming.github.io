@@ -1,33 +1,6 @@
 import Image from "next/image"
-import { ExternalLink, ArrowUpRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import { SectionLabel } from "@/components/section-label"
-
-/* ─── Shared external-link button ─── */
-function LinkButton({
-  href,
-  children,
-  primary,
-}: {
-  href: string
-  children: React.ReactNode
-  primary?: boolean
-}) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`inline-flex items-center gap-2 rounded-md px-4 py-2.5 font-mono text-sm font-semibold transition-opacity hover:opacity-90 ${
-        primary
-          ? "bg-primary text-primary-foreground"
-          : "border border-border bg-card/50 text-foreground hover:border-primary/50"
-      }`}
-    >
-      {children}
-      <ExternalLink className="size-3.5 shrink-0" aria-hidden="true" />
-    </a>
-  )
-}
 
 /* ══════════════════════════════════
    Page hero
@@ -40,12 +13,11 @@ function SponsorsHero() {
           Sponsors
         </p>
         <h1 className="mt-3 font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-          Supporting Roc Streaming
+          Sponsor Roc Streaming development
         </h1>
         <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
-          Roc Streaming development has been supported by companies, individual donors, and
-          sponsored feature work. This page lists public sponsors and publicly documented
-          sponsored features.
+          Companies and individuals fund the Roc Streaming work that matters most to
+          them, helping prioritize features, platform support, maintenance, and testing.
         </p>
       </div>
     </section>
@@ -53,7 +25,7 @@ function SponsorsHero() {
 }
 
 /* ══════════════════════════════════
-   01  Corporate sponsors
+   01  Companies
 ═══════════════════════════════════ */
 
 const CORPORATE_SPONSORS = [
@@ -70,13 +42,13 @@ function CorporateSponsors() {
   return (
     <section id="corporate-sponsors" className="border-b border-border">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
-        <SectionLabel index="01">Corporate sponsors</SectionLabel>
+        <SectionLabel index="01">Companies</SectionLabel>
         <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
-          Organizations supporting Roc Streaming
+          Corporate sponsors
         </h2>
         <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty">
-          Companies that sponsor Roc Streaming help fund development work, testing,
-          maintenance, and project infrastructure.
+          We thank these organizations for sponsoring Roc Streaming development and
+          choosing to be listed publicly.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-6">
@@ -112,6 +84,7 @@ const SPONSORED_FEATURES: {
   date: string
   release: string
   source: string
+  sourceHref?: string
   feature: string
 }[] = [
   {
@@ -130,6 +103,7 @@ const SPONSORED_FEATURES: {
     date: "May 2024",
     release: "",
     source: "Donation by Sean McNamara",
+    sourceHref: "https://github.com/allquixotic",
     feature: "Complete first release of macOS virtual audio device (roc-vad).",
   },
   {
@@ -206,7 +180,7 @@ function SponsoredFeatures() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
         <SectionLabel index="02">Sponsored features</SectionLabel>
         <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
-          Publicly documented sponsored work
+          Documented sponsored work
         </h2>
         <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty">
           Some Roc Streaming features were developed through direct sponsorship or
@@ -252,7 +226,18 @@ function SponsoredFeatures() {
                     )}
                   </td>
                   <td className="px-4 py-3 font-mono text-xs text-foreground">
-                    {row.source}
+                    {row.sourceHref ? (
+                      <a
+                        href={row.sourceHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline"
+                      >
+                        {row.source}
+                      </a>
+                    ) : (
+                      row.source
+                    )}
                   </td>
                   <td className="px-4 py-3 text-xs leading-relaxed text-muted-foreground">
                     {row.feature}
@@ -268,58 +253,66 @@ function SponsoredFeatures() {
 }
 
 /* ══════════════════════════════════
-   03  Become a sponsor
+   03  Fund development
 ═══════════════════════════════════ */
 
 const SPONSOR_CARDS = [
   {
-    title: "Corporate sponsorship",
-    description:
-      "Companies can sponsor Roc Streaming development, custom work, or specific features through Professional Services.",
-    linkLabel: "Professional Services",
-    href: "https://roc-streaming.org/professional-services",
-  },
-  {
     title: "Community support",
     description:
       "Individual donors and community members can support ongoing development through the Community page.",
-    linkLabel: "Community",
-    href: "https://roc-streaming.org/community",
+    cta: "Community",
+    href: "/community",
+    accent: "signal" as const,
+  },
+  {
+    title: "Corporate sponsorship",
+    description:
+      "Companies can sponsor Roc Streaming development, custom work, or specific features through Professional Services.",
+    cta: "Services",
+    href: "/services",
+    accent: "primary" as const,
   },
 ]
 
-function BecomeASponsor() {
+function FundDevelopment() {
   return (
-    <section id="become-a-sponsor" className="border-b border-border">
+    <section id="fund-development" className="border-b border-border">
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
         <div className="absolute inset-0 bg-blueprint-fine opacity-40" aria-hidden="true" />
         <div className="relative">
           <SectionLabel index="03">Become a sponsor</SectionLabel>
           <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
-            Support Roc Streaming development
+            Fund Roc Streaming development
           </h2>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {SPONSOR_CARDS.map((card) => (
+            {SPONSOR_CARDS.map(({ title, description, cta, href, accent }) => (
               <article
-                key={card.title}
-                className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md"
+                key={title}
+                className={`group flex flex-col rounded-xl border p-6 transition-colors ${
+                  accent === "primary"
+                    ? "border-primary/30 bg-primary/[0.05] hover:border-primary/50"
+                    : "border-border bg-card/50 hover:border-primary/40"
+                }`}
               >
                 <h3 className="font-mono text-base font-semibold text-foreground">
-                  {card.title}
+                  {title}
                 </h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
-                  {card.description}
+                  {description}
                 </p>
                 <div className="mt-6">
                   <a
-                    href={card.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 font-mono text-sm font-semibold text-primary hover:underline"
+                    href={href}
+                    className={`inline-flex items-center gap-1.5 rounded-md px-4 py-2.5 font-mono text-sm font-semibold transition-opacity hover:opacity-90 ${
+                      accent === "primary"
+                        ? "bg-primary text-primary-foreground"
+                        : "border border-border bg-card/50 text-foreground hover:border-primary/50"
+                    }`}
                   >
-                    <ArrowUpRight className="size-4 shrink-0" aria-hidden="true" />
-                    {card.linkLabel}
+                    {cta}
+                    <ArrowUpRight className="size-3.5" aria-hidden="true" />
                   </a>
                 </div>
               </article>
@@ -340,7 +333,7 @@ export function SponsorsSections() {
       <SponsorsHero />
       <CorporateSponsors />
       <SponsoredFeatures />
-      <BecomeASponsor />
+      <FundDevelopment />
     </>
   )
 }
