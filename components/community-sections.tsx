@@ -1,3 +1,5 @@
+"use client"
+
 import {
   MessageSquare,
   Mail,
@@ -9,7 +11,7 @@ import {
 } from "lucide-react"
 import { SectionLabel } from "@/components/section-label"
 
-/* ─── Shared link button ─── */
+/* ─── Shared external-link button ─── */
 function LinkButton({
   href,
   children,
@@ -75,15 +77,15 @@ function JoinDiscussion() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {/* Forum */}
-          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6">
-            <span className="grid size-10 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
-              <MessageSquare className="size-5" aria-hidden="true" />
+          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
+            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
+              <MessageSquare className="size-5 node-pulse" aria-hidden="true" />
             </span>
             <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Forum</h3>
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
               A web forum for questions, ideas, and longer discussions. It works directly in the browser.
             </p>
-            <div className="mt-6">
+            <div className="mt-6 flex flex-wrap items-end gap-3">
               <LinkButton href="https://github.com/roc-streaming/roc-toolkit/discussions" primary>
                 Open forum
               </LinkButton>
@@ -91,22 +93,19 @@ function JoinDiscussion() {
           </article>
 
           {/* Mailing list */}
-          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6">
-            <span className="grid size-10 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
-              <Mail className="size-5" aria-hidden="true" />
+          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
+            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
+              <Mail className="size-5 node-pulse" aria-hidden="true" />
             </span>
             <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Mailing list</h3>
-            <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               A classic mailing list for technical discussions and announcements.
             </p>
-            <div className="mt-2">
+            <div className="mt-3">
               <p className="font-mono text-xs font-semibold text-foreground">Address</p>
               <Code>roc@freelists.org</Code>
             </div>
-            <p className="mt-1 text-xs text-muted-foreground">
-              Please use bottom-posting when replying.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-auto pt-6 flex flex-wrap items-end gap-3">
               <LinkButton href="https://www.freelists.org/list/roc" primary>
                 Subscribe list
               </LinkButton>
@@ -117,15 +116,15 @@ function JoinDiscussion() {
           </article>
 
           {/* Chat */}
-          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6">
-            <span className="grid size-10 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
-              <Hash className="size-5" aria-hidden="true" />
+          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
+            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
+              <Hash className="size-5 node-pulse" aria-hidden="true" />
             </span>
             <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Chat</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               For interactive discussion and quick questions. Hosted on Matrix — open in a browser or install a client.
             </p>
-            <div className="mt-4 flex flex-col gap-2">
+            <div className="mt-3 flex flex-col gap-2">
               <div>
                 <p className="font-mono text-xs font-semibold text-foreground">User chat</p>
                 <Code>#roc-streaming:matrix.org</Code>
@@ -135,7 +134,7 @@ function JoinDiscussion() {
                 <Code>#roc-streaming-dev:matrix.org</Code>
               </div>
             </div>
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-auto pt-6 flex flex-wrap items-end gap-3">
               <LinkButton href="https://matrix.to/#/#roc-streaming:matrix.org" primary>
                 User chat
               </LinkButton>
@@ -247,11 +246,11 @@ function Contribute() {
           {REPOS.map((repo) => (
             <article
               key={repo.id}
-              className="flex flex-col rounded-xl border border-border bg-card/50 p-6"
+              className="flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md"
             >
-              <div className="flex items-start gap-3">
-                <span className="grid size-9 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
-                  <GitPullRequest className="size-4" aria-hidden="true" />
+              <div className="flex items-center gap-3">
+                <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
+                  <GitPullRequest className="size-5 node-pulse" aria-hidden="true" />
                 </span>
                 <h3 className="font-mono text-base font-semibold text-foreground leading-snug">
                   {repo.name}
@@ -287,7 +286,7 @@ function Contribute() {
 }
 
 /* ══════════════════════════════════
-   03  Support the project
+   03  Donations
 ═══════════════════════════════════ */
 
 const DONATION_PLATFORMS = [
@@ -339,7 +338,7 @@ function SupportProject() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl border border-primary/30 bg-primary/[0.05] px-6 py-4 font-mono text-sm font-semibold text-foreground transition-colors hover:border-primary/60 hover:bg-primary/10"
               >
-                <Heart className="size-4 text-primary" aria-hidden="true" />
+                <Heart className="size-4 text-primary node-pulse" aria-hidden="true" />
                 {platform.name}
                 <ExternalLink className="size-3.5 text-muted-foreground" aria-hidden="true" />
               </a>
@@ -373,7 +372,7 @@ function CommunityHero() {
   )
 }
 
-/* ═════════════════════════���════════
+/* ══════════════════════════════════
    Export
 ═══════════════════════════════════ */
 export function CommunitySections() {
