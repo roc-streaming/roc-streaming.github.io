@@ -1,5 +1,5 @@
+import Image from "next/image"
 import { GithubIcon } from "@/components/github-icon"
-import { IpAudioDiagram } from "@/components/ip-audio-diagram"
 
 
 
@@ -41,9 +41,16 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right: diagram */}
-        <div className="lg:pl-4">
-          <IpAudioDiagram />
+        {/* Right: logo */}
+        <div className="flex justify-center lg:pl-4">
+          <Image
+            src="/images/big_logo.png"
+            alt="Roc Streaming logo"
+            width={728}
+            height={540}
+            priority
+            className="h-auto w-full max-w-md"
+          />
         </div>
       </div>
     </section>
