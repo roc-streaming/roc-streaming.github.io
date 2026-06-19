@@ -3,7 +3,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { SponsorsSections } from "@/components/sponsors-sections"
 
 export const metadata = {
-  title: "Sponsors — Roc Streaming",
+  title: "Sponsorship — Roc Streaming",
   description:
     "Companies, individual donors, and sponsored feature work supporting Roc Streaming development.",
 }

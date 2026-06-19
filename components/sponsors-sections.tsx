@@ -10,10 +10,10 @@ function SponsorsHero() {
     <section className="border-b border-border bg-card/20">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20 lg:px-8">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          Sponsors
+          Sponsorship
         </p>
-        <h1 className="mt-3 font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-          Sponsor Roc Streaming development
+        <h1 className="mt-3 max-w-lg font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
+          Sponsoring Roc Streaming development
         </h1>
         <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
           Companies and individuals fund the Roc Streaming work that matters most to
@@ -48,7 +48,7 @@ function CorporateSponsors() {
         </h2>
         <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty">
           We thank these organizations for sponsoring Roc Streaming development and
-          choosing to be listed publicly.
+          choosing to be listed publicly!
         </p>
 
         <div className="mt-10 flex flex-wrap gap-6">
@@ -269,7 +269,7 @@ const SPONSOR_CARDS = [
     title: "Corporate sponsorship",
     description:
       "Companies can sponsor Roc Streaming development, custom work, or specific features through Professional Services.",
-    cta: "Services",
+    cta: "Professional Services",
     href: "/services",
     accent: "primary" as const,
   },
