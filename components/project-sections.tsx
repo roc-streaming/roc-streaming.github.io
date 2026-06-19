@@ -129,7 +129,7 @@ function Rocd() {
     <article id="rocd" className="border-b border-border bg-card/20">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.8fr_1fr] lg:py-20 lg:px-8">
         {/* diagram */}
-        <div className="order-2 flex items-center justify-center rounded-xl border border-border bg-background/60 p-6 lg:order-1">
+        <div className="order-2 overflow-hidden rounded-xl border border-border bg-background/60 lg:order-1">
           <img
             src="/rocd.svg"
             alt="RocD distributed network diagram"
