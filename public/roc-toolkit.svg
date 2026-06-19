@@ -1,0 +1,124 @@
+<svg width="780" height="590" viewBox="0 0 780 590" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Roc Toolkit application diagram</title>
+  <desc id="desc">A PC or device containing an application, Roc Toolkit, OS audio, and OS network. OS audio connects to a sound card. OS network connects to an IP network.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#555555"/>
+    </marker>
+
+    <style>
+      text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        fill: #555555;
+      }
+
+      .host-title {
+        font-size: 22px;
+        font-weight: 600;
+        fill: #555555;
+      }
+
+      .host-subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        fill: #555555;
+      }
+
+      .label {
+        font-size: 17px;
+        font-weight: 500;
+        fill: #555555;
+      }
+
+      .note {
+        font-size: 13px;
+        font-weight: 400;
+        fill: #555555;
+      }
+
+      .host {
+        fill: #f8fafc;
+        stroke: #d1d5db;
+        stroke-width: 2;
+      }
+
+      .app {
+        fill: #ffffff;
+        stroke: #555555;
+        stroke-width: 2;
+      }
+
+      .roc {
+        fill: #ecfeff;
+        stroke: #06b6d4;
+        stroke-width: 2.5;
+      }
+
+      .os {
+        fill: #ffffff;
+        stroke: #555555;
+        stroke-width: 2;
+      }
+
+      .device {
+        fill: #fefce8;
+        stroke: #d39b00;
+        stroke-width: 2.5;
+      }
+
+      .network {
+        fill: #eff6ff;
+        stroke: #2563eb;
+        stroke-width: 2.5;
+      }
+
+      .line {
+        stroke: #555555;
+        stroke-width: 2.5;
+        fill: none;
+        marker-end: url(#arrow);
+      }
+    </style>
+  </defs>
+
+  <rect width="780" height="590" fill="#ffffff"/>
+
+  <!-- PC / Device boundary -->
+  <rect x="40" y="40" width="500" height="480" rx="28" class="host"/>
+
+  <text x="290" y="82" text-anchor="middle" class="host-title">PC / Device</text>
+  <text x="290" y="108" text-anchor="middle" class="host-subtitle">Computer with sound card and network connection</text>
+
+  <!-- Application -->
+  <rect x="150" y="150" width="280" height="62" rx="14" class="app"/>
+  <text x="290" y="181" text-anchor="middle" dominant-baseline="middle" class="label">Your application</text>
+
+  <line x1="290" y1="212" x2="290" y2="245" class="line"/>
+
+  <!-- Roc Toolkit -->
+  <rect x="150" y="245" width="280" height="72" rx="14" class="roc"/>
+  <text x="290" y="274" text-anchor="middle" class="label">Roc Toolkit</text>
+  <text x="290" y="299" text-anchor="middle" class="note">libroc transport engine</text>
+
+  <!-- Branches -->
+  <line x1="245" y1="317" x2="180" y2="385" class="line"/>
+  <line x1="335" y1="317" x2="400" y2="385" class="line"/>
+
+  <!-- OS layer -->
+  <rect x="100" y="385" width="160" height="62" rx="12" class="os"/>
+  <text x="180" y="416" text-anchor="middle" dominant-baseline="middle" class="label">OS audio</text>
+
+  <rect x="320" y="385" width="160" height="62" rx="12" class="os"/>
+  <text x="400" y="416" text-anchor="middle" dominant-baseline="middle" class="label">OS network</text>
+
+  <!-- Sound card boundary endpoint -->
+  <line x1="180" y1="447" x2="180" y2="488" class="line"/>
+  <rect x="100" y="488" width="160" height="62" rx="12" class="device"/>
+  <text x="180" y="519" text-anchor="middle" dominant-baseline="middle" class="label">Sound card</text>
+
+  <!-- IP network boundary endpoint -->
+  <line x1="480" y1="416" x2="550" y2="416" class="line"/>
+  <rect x="550" y="385" width="170" height="62" rx="12" class="network"/>
+  <text x="635" y="416" text-anchor="middle" dominant-baseline="middle" class="label">IP network</text>
+</svg>
