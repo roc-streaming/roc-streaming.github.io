@@ -12,7 +12,7 @@ const PAGES = [
 const PROJECTS = [
   { label: "Roc Toolkit", href: "https://github.com/roc-streaming/roc-toolkit/" },
   { label: "RocD", href: "https://github.com/roc-streaming/rocd/" },
-  { label: "Roc Cast", href: "/roc-droid" },
+  { label: "Roc Cast", href: "https://github.com/roc-streaming/roc-droid/" },
 ]
 
 export function SiteFooter() {
