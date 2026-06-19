@@ -70,7 +70,7 @@ export function FeaturesSection() {
   return (
     <section id="features" className="relative border-b border-border">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24 lg:px-8">
-        <SectionLabel index="05">Audio core</SectionLabel>
+        <SectionLabel index="04">Audio core</SectionLabel>
         <div className="mt-6 max-w-2xl">
           <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
             Built on a specialized audio core

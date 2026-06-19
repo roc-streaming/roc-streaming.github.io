@@ -33,7 +33,7 @@ export function GetInTouch() {
     <section id="get-in-touch" className="relative border-b border-border bg-card/20">
       <div className="absolute inset-0 bg-blueprint-fine opacity-50" aria-hidden="true" />
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24 lg:px-8">
-        <SectionLabel index="06">Start here</SectionLabel>
+        <SectionLabel index="05">Start here</SectionLabel>
         <div className="mt-6 max-w-2xl">
           <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
             Start with Roc Streaming
