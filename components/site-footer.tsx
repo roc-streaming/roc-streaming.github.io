@@ -5,12 +5,14 @@ const PAGES = [
   { label: "Intro", href: "/" },
   { label: "Ecosystem", href: "/ecosystem" },
   { label: "Community", href: "/community" },
-  { label: "Professional Services", href: "/professional-services" },
+  { label: "Sponsorship", href: "/sponsors" },
+  { label: "Services", href: "/professional-services" },
 ]
 
 const PROJECTS = [
   { label: "Roc Toolkit", href: "https://github.com/roc-streaming/roc-toolkit/" },
   { label: "RocD", href: "https://github.com/roc-streaming/rocd/" },
+  { label: "Roc Cast", href: "https://github.com/roc-streaming/roc-droid/" },
 ]
 
 export function SiteFooter() {
@@ -77,12 +79,8 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 font-mono text-xs text-muted-foreground sm:flex-row sm:items-center">
+        <div className="mt-10 border-t border-border pt-6 font-mono text-xs text-muted-foreground text-center">
           <p>© {new Date().getFullYear()} Roc Streaming · MPL-2.0</p>
-          <p className="flex items-center gap-2">
-            <span className="size-1.5 rounded-full bg-primary node-pulse" aria-hidden="true" />
-            real-time audio over IP
-          </p>
         </div>
       </div>
     </footer>

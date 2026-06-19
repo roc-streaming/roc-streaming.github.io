@@ -96,7 +96,7 @@ function RocToolkit() {
         {/* diagram */}
         <div className="flex items-center justify-start lg:justify-center">
           <img
-            src="/roc-toolkit.svg"
+            src="/images/roc_toolkit.svg"
             alt="Roc Toolkit architecture diagram"
             className="w-full max-w-[520px]"
           />
@@ -123,7 +123,7 @@ function Rocd() {
         {/* diagram */}
         <div className="order-2 flex items-center justify-start overflow-hidden lg:order-1 lg:justify-center">
           <img
-            src="/rocd.svg"
+            src="/images/rocd.svg"
             alt="RocD distributed network diagram"
             className="w-full max-w-[520px]"
           />
@@ -131,7 +131,7 @@ function Rocd() {
 
         <div className="order-1 lg:order-2">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="grid size-11 place-items-center rounded-lg border border-amber/40 bg-amber/10 text-amber">
+            <span className="grid size-11 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
               <Server className="size-6" aria-hidden="true" />
             </span>
             <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">RocD</h2>
@@ -148,7 +148,7 @@ function Rocd() {
             Under development.
           </p>
           <div className="mt-7">
-            <Highlights items={highlights} accent="var(--amber)" />
+            <Highlights items={highlights} accent="var(--primary)" />
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <ProjectButton href="/rocd/docs" primary>
@@ -189,7 +189,7 @@ function RocCast() {
             room and zone control, and multi-device playback for multi-room, zoned audio,
             and remote audio workflows.
           </p>
-          <p className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-signal/30 bg-signal/[0.07] px-3 py-1.5 font-mono text-xs text-signal">
+          <p className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-amber/30 bg-amber/[0.07] px-3 py-1.5 font-mono text-xs text-amber">
             <Construction className="size-3.5 shrink-0" aria-hidden="true" />
             Under development.
           </p>
@@ -204,7 +204,7 @@ function RocCast() {
         {/* diagram */}
         <div className="flex items-center justify-start lg:justify-center">
           <img
-            src="/roc-cast.svg"
+            src="/images/roc_cast.svg"
             alt="Roc Cast multi-room audio diagram"
             className="w-full max-w-sm"
           />
@@ -214,9 +214,29 @@ function RocCast() {
   )
 }
 
+function EcosystemHero() {
+  return (
+    <section className="border-b border-border bg-card/20">
+      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20 lg:px-8">
+        <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+          Ecosystem
+        </p>
+        <h1 className="mt-3 font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
+          Projects &amp; components
+        </h1>
+        <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
+          Roc Streaming is an open ecosystem of libraries, services, and applications.
+          Each layer is independently usable — pick the one that fits your use case.
+        </p>
+      </div>
+    </section>
+  )
+}
+
 export function ProjectSections() {
   return (
     <>
+      <EcosystemHero />
       <RocToolkit />
       <Rocd />
       <RocCast />

@@ -1,0 +1,58 @@
+<svg width="702" height="712" viewBox="0 0 702 712" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Roc Streaming layers: Roc Cast, RocD, Roc Toolkit</title>
+  <desc id="desc">Three stacked cards showing Roc Cast as a ready-to-use application, RocD as a deployable REST API service, and Roc Toolkit as foundation libraries. Roc Cast and RocD are marked as in development.</desc>
+
+  <defs>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#111827" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Roc Cast card -->
+  <rect x="28" y="27" width="646" height="154" rx="14" fill="#F8FAFC" fill-opacity="0.58" stroke="#E1B66C" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <rect x="62" y="61" width="86" height="86" rx="14" fill="#F8FAFC" fill-opacity="0.5" stroke="#E1B66C" stroke-width="1.5"/>
+  <g stroke="#D9941E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="88" y="91" width="27" height="18" rx="3"/>
+    <path d="M98 117H105"/>
+    <path d="M101.5 109V117"/>
+    <rect x="113" y="104" width="10" height="18" rx="3"/>
+  </g>
+  <text x="181" y="96" fill="#111827" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="32" font-weight="700" letter-spacing="0.4">Roc Cast</text>
+  <text x="181" y="138" fill="#4B5563" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="400">Ready-to-use application</text>
+
+  <!-- RocD card -->
+  <rect x="28" y="239" width="646" height="194" rx="14" fill="#F8FAFC" fill-opacity="0.58" stroke="#E1B66C" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <rect x="62" y="293" width="86" height="86" rx="14" fill="#F8FAFC" fill-opacity="0.5" stroke="#E1B66C" stroke-width="1.5"/>
+  <g stroke="#D9941E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="88" y="318" width="34" height="14" rx="3"/>
+    <path d="M94 325H99"/>
+    <rect x="88" y="340" width="34" height="14" rx="3"/>
+    <path d="M94 347H99"/>
+  </g>
+  <text x="181" y="308" fill="#111827" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="32" font-weight="700" letter-spacing="0.4">RocD</text>
+  <text x="181" y="350" fill="#4B5563" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="400">Deployable service integrated via</text>
+  <text x="181" y="390" fill="#4B5563" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="400">REST API</text>
+
+  <!-- Roc Toolkit card -->
+  <rect x="28" y="491" width="646" height="194" rx="14" fill="#F8FAFC" fill-opacity="0.58" stroke="#6DA8DC" stroke-width="1.5" filter="url(#soft-shadow)"/>
+  <rect x="62" y="545" width="86" height="86" rx="14" fill="#E8F2FB" fill-opacity="0.65" stroke="#6DA8DC" stroke-width="1.5"/>
+  <g stroke="#0072BD" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M88 579L105 571L122 579L105 587L88 579Z"/>
+    <path d="M88 589L105 597L122 589"/>
+    <path d="M88 599L105 607L122 599"/>
+  </g>
+  <text x="181" y="560" fill="#111827" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="32" font-weight="700" letter-spacing="0.4">Roc Toolkit</text>
+  <text x="181" y="602" fill="#4B5563" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="400">Foundation libraries for custom</text>
+  <text x="181" y="642" fill="#4B5563" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="400">audio solutions</text>
+
+  <!-- centered wide arrows, drawn last so they are not clipped by card shadows -->
+  <path d="M340 199H362V217H384L351 235L318 217H340V199Z" fill="#2B80C9"/>
+  <path d="M340 451H362V469H384L351 487L318 469H340V451Z" fill="#2B80C9"/>
+
+  <!-- status badges, drawn last -->
+  <rect x="456" y="50" width="192" height="40" rx="12" fill="#F8FAFC" fill-opacity="0.82" stroke="#E1B66C" stroke-width="1.5"/>
+  <text x="552" y="70" text-anchor="middle" dominant-baseline="middle" fill="#D9941E" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="500">In development</text>
+
+  <rect x="456" y="260" width="192" height="40" rx="12" fill="#F8FAFC" fill-opacity="0.82" stroke="#E1B66C" stroke-width="1.5"/>
+  <text x="552" y="280" text-anchor="middle" dominant-baseline="middle" fill="#D9941E" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="500">In development</text>
+</svg>

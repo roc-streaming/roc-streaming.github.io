@@ -68,7 +68,7 @@ export function GetInTouch() {
                   href={href}
                   className={`inline-flex items-center gap-1.5 rounded-md px-4 py-2.5 font-mono text-sm font-semibold transition-opacity hover:opacity-90 ${accent === "primary"
                       ? "bg-primary text-primary-foreground"
-                      : "bg-secondary text-secondary-foreground"
+                      : "border border-border bg-card/50 text-foreground hover:border-primary/50"
                     }`}
                 >
                   {cta}

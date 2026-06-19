@@ -1,29 +1,5 @@
-import { MonitorSmartphone, Server, Layers, ArrowDown, ChevronsUpDown, Plug, Speaker, Unlock } from "lucide-react"
+import { ChevronsUpDown, Plug, Speaker, Unlock } from "lucide-react"
 import { SectionLabel } from "@/components/section-label"
-
-const LAYERS = [
-  {
-    id: "cast",
-    name: "Roc Cast",
-    role: "Ready-to-use application",
-    icon: MonitorSmartphone,
-    accent: "var(--signal)",
-  },
-  {
-    id: "rocd",
-    name: "RocD",
-    role: "Deployable service integrated via REST API",
-    icon: Server,
-    accent: "var(--amber)",
-  },
-  {
-    id: "toolkit",
-    name: "Roc Toolkit",
-    role: "Foundation libraries for custom audio solutions",
-    icon: Layers,
-    accent: "var(--primary)",
-  },
-]
 
 const OPEN_CARDS = [
   {
@@ -56,7 +32,7 @@ export function EcosystemSection() {
         <SectionLabel index="03">Open ecosystem</SectionLabel>
         <div className="mt-6 max-w-2xl">
           <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-            Layered, open ecosystem
+            Layered, fully open ecosystem
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
             Roc Streaming lets you choose the right level of control: use Roc Cast
@@ -83,40 +59,12 @@ export function EcosystemSection() {
           </div>
 
           {/* Layered stack diagram */}
-          <div className="rounded-xl border border-border bg-background/60 bg-blueprint p-5 sm:p-8">
-            <ol className="space-y-0">
-              {LAYERS.map((layer, i) => (
-                <li key={layer.id}>
-                  <div
-                    className="flex items-center gap-4 rounded-lg border bg-card/70 p-4 transition-transform hover:translate-x-1"
-                    style={{ borderColor: `color-mix(in oklch, ${layer.accent} 40%, transparent)` }}
-                  >
-                    <span
-                      className="grid size-11 shrink-0 place-items-center rounded-lg border"
-                      style={{
-                        borderColor: `color-mix(in oklch, ${layer.accent} 45%, transparent)`,
-                        backgroundColor: `color-mix(in oklch, ${layer.accent} 12%, transparent)`,
-                        color: layer.accent,
-                      }}
-                    >
-                      <layer.icon className="size-5" aria-hidden="true" />
-                    </span>
-                    <div className="min-w-0">
-                      <div className="flex items-baseline gap-2">
-                        <span className="font-mono text-base font-semibold text-foreground">{layer.name}</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground">{layer.role}</p>
-                    </div>
-                  </div>
-                  {i < LAYERS.length - 1 && (
-                    <div className="flex items-center gap-2 py-1.5 pl-9">
-                      <ArrowDown className="size-4 text-primary" aria-hidden="true" />
-                      <span className="h-4 w-px bg-gradient-to-b from-primary/60 to-transparent" />
-                    </div>
-                  )}
-                </li>
-              ))}
-            </ol>
+          <div className="flex items-center justify-center rounded-xl border border-border bg-background/60 bg-blueprint p-3">
+            <img
+              src="/images/ecosystem_layers.svg"
+              alt="Ecosystem layers diagram showing Roc Cast, RocD, and Roc Toolkit stacked from top to bottom"
+              className="h-auto w-full"
+            />
           </div>
         </div>
       </div>
