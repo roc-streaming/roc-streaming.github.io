@@ -6,7 +6,7 @@ const PAGES = [
   { label: "Ecosystem", href: "/ecosystem" },
   { label: "Community", href: "/community" },
   { label: "Sponsorship", href: "/sponsors" },
-  { label: "Professional Services", href: "/professional-services" },
+  { label: "Services", href: "/professional-services" },
 ]
 
 const PROJECTS = [
