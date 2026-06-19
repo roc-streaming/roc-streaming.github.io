@@ -242,27 +242,27 @@ function Contribute() {
           to contribute but do not yet know where to begin.
         </p>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {REPOS.map((repo) => (
             <article
               key={repo.id}
-              className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md"
+              className="group flex flex-col rounded-xl border border-border bg-card/50 p-4 transition-shadow hover:shadow-md"
             >
               <div className="flex items-center gap-3">
-                <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary transition-transform group-hover:scale-110">
-                  <GitPullRequest className="size-5" aria-hidden="true" />
+                <span className="grid size-9 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary transition-transform group-hover:scale-110">
+                  <GitPullRequest className="size-4" aria-hidden="true" />
                 </span>
-                <h3 className="font-mono text-base font-semibold text-foreground leading-snug">
+                <h3 className="font-mono text-sm font-semibold text-foreground leading-snug">
                   {repo.name}
                 </h3>
               </div>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">
                 {repo.description}
               </p>
-              <div className="mt-4">
+              <div className="mt-3">
                 <Tags items={repo.tags} />
               </div>
-              <ul className="mt-5 flex flex-col gap-2">
+              <ul className="mt-4 flex flex-col gap-1.5">
                 {repo.links.map((link) => (
                   <li key={link.label}>
                     <a
@@ -378,7 +378,7 @@ function CommunityHero() {
 
 /* ══════════════════════════════════
    Export
-═══════════════════════════════════ */
+════════════════���══════════════════ */
 export function CommunitySections() {
   return (
     <>
