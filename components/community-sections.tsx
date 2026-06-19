@@ -99,9 +99,10 @@ function JoinDiscussion() {
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
               A classic mailing list for technical discussions and announcements.
             </p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Address: <Code>roc@freelists.org</Code>
-            </p>
+            <div className="mt-2">
+              <p className="font-mono text-xs font-semibold text-foreground">Address</p>
+              <Code>roc@freelists.org</Code>
+            </div>
             <p className="mt-1 text-xs text-muted-foreground">
               Please use bottom-posting when replying.
             </p>
@@ -153,13 +154,21 @@ function JoinDiscussion() {
    02  Contribute
 ═══════════════════════════════════ */
 
-const REPOS = [
+type RepoLink = { label: string; href: string; bold?: boolean }
+
+const REPOS: Array<{
+  id: string
+  name: string
+  description: string
+  tags: string[]
+  links: RepoLink[]
+}> = [
   {
     id: "roc-toolkit",
     name: "Roc Toolkit",
     description:
       "Core real-time audio transport library and command-line tools.",
-    tags: ["C++", "C", "Networking", "Audio", "Tests", "Documentation", "Packaging", "CI"],
+    tags: ["C++", "Rust", "Go", "Java", "Real-time", "Networking", "Audio"],
     links: [
       { label: "Repository", href: "https://github.com/roc-streaming/roc-toolkit" },
       {
@@ -167,22 +176,19 @@ const REPOS = [
         href: "https://github.com/roc-streaming/roc-toolkit/issues?q=is%3Aissue+state%3Aopen+label%3A%22help+wanted%22",
       },
       {
-        label: "Easy hacks",
-        href: "https://github.com/roc-streaming/roc-toolkit/issues?q=is%3Aissue+state%3Aopen+label%3A%22easy+hacks%22",
-      },
-      {
         label: "Contributor guide",
         href: "https://roc-streaming.org/toolkit/docs/development/contribution_guidelines.html",
+        bold: true,
       },
       { label: "Documentation", href: "https://roc-streaming.org/toolkit/docs/" },
     ],
   },
   {
     id: "rocd",
-    name: "rocd",
+    name: "RocD",
     description:
       "Streaming daemon and control API for managing audio endpoints, streams, devices, and routes.",
-    tags: ["Rust", "REST API", "Daemon", "Control plane", "Networking", "Documentation"],
+    tags: ["Rust", "REST API", "Distributed systems", "Orchestration"],
     links: [
       { label: "Repository", href: "https://github.com/roc-streaming/rocd" },
       {
@@ -194,9 +200,9 @@ const REPOS = [
   },
   {
     id: "roc-droid",
-    name: "roc-droid",
-    description: "Android application for streaming audio with Roc Toolkit.",
-    tags: ["Kotlin", "Android", "Mobile audio", "UI", "Documentation"],
+    name: "Roc Cast",
+    description: "Cross-platform application for streaming audio with Roc Toolkit.",
+    tags: ["Flutter", "Kotlin", "Swift", "Desktop", "Mobile"],
     links: [
       { label: "Repository", href: "https://github.com/roc-streaming/roc-droid" },
       {
@@ -208,9 +214,9 @@ const REPOS = [
   },
   {
     id: "roc-vad",
-    name: "roc-vad",
+    name: "Roc VAD",
     description: "Roc Toolkit Virtual Audio Device for macOS.",
-    tags: ["C++", "macOS", "Core Audio", "Virtual audio device", "Documentation"],
+    tags: ["C++", "macOS", "Virtual audio device"],
     links: [
       { label: "Repository", href: "https://github.com/roc-streaming/roc-vad" },
       {
@@ -218,20 +224,6 @@ const REPOS = [
         href: "https://github.com/roc-streaming/roc-vad/issues?q=is%3Aissue+state%3Aopen+label%3A%22help+wanted%22",
       },
       { label: "Documentation", href: "https://github.com/roc-streaming/roc-vad#readme" },
-    ],
-  },
-  {
-    id: "roc-pulse",
-    name: "roc-pulse",
-    description: "Roc Toolkit modules for PulseAudio.",
-    tags: ["C", "PulseAudio", "Linux audio", "Modules", "Packaging"],
-    links: [
-      { label: "Repository", href: "https://github.com/roc-streaming/roc-pulse" },
-      {
-        label: "Help-wanted",
-        href: "https://github.com/roc-streaming/roc-pulse/issues?q=is%3Aissue+state%3Aopen+label%3A%22help+wanted%22",
-      },
-      { label: "Documentation", href: "https://github.com/roc-streaming/roc-pulse#readme" },
     ],
   },
 ]
@@ -278,7 +270,7 @@ function Contribute() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 font-mono text-xs text-primary hover:underline"
+                      className={`inline-flex items-center gap-1.5 font-mono text-xs text-primary hover:underline${link.bold ? " font-bold" : ""}`}
                     >
                       <ArrowUpRight className="size-3 shrink-0" aria-hidden="true" />
                       {link.label}
@@ -381,7 +373,7 @@ function CommunityHero() {
   )
 }
 
-/* ══════════════════════════════════
+/* ═════════════════════════���════════
    Export
 ═══════════════════════════════════ */
 export function CommunitySections() {
