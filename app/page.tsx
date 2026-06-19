@@ -15,7 +15,7 @@ export default function Page() {
         <Hero />
         <ChallengeSection />
         <AudienceSection />
-        <EcosystemSection />
+        <EcosystemSection layerAccentOverrides={{ toolkit: "var(--amber)" }} />
         <FeaturesSection />
         <GetInTouch />
       </main>
