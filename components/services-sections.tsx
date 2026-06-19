@@ -61,7 +61,7 @@ function Positioning() {
     <section id="positioning" className="border-b border-border bg-card/20">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
         <SectionLabel index="01">Approach</SectionLabel>
-        <h2 className="mt-4 max-w-xl font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
+        <h2 className="mt-4 max-w-2xl font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
           Open-source foundation. Professional software delivery.
         </h2>
         <div className="mt-6 max-w-3xl space-y-4 text-muted-foreground leading-relaxed text-pretty">
@@ -225,7 +225,7 @@ function FinalCTA() {
         <div className="absolute inset-0 bg-blueprint-fine opacity-40" aria-hidden="true" />
         <div className="relative">
           <SectionLabel index="04">Contact</SectionLabel>
-          <h2 className="mt-4 max-w-xl font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
+          <h2 className="mt-4 max-w-2xl font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
             Have a network-audio project in mind?
           </h2>
           <div className="mt-5 max-w-3xl space-y-4 text-muted-foreground leading-relaxed text-pretty">
