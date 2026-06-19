@@ -81,23 +81,17 @@ export function FeaturesSection() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3 bg-card">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((f) => (
             <article
               key={f.title}
-              className="group relative bg-card p-6 transition-colors hover:bg-secondary"
+              className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-colors hover:border-primary/40"
             >
-              <span
-                className="absolute right-4 top-4 font-mono text-[10px] text-muted-foreground/40"
-                aria-hidden="true"
-              >
-                {"//"}
-              </span>
               <span className="grid size-10 place-items-center rounded-lg border border-primary/30 bg-primary/10 text-primary transition-transform group-hover:scale-110">
                 <f.icon className="size-5" aria-hidden="true" />
               </span>
-              <h3 className="mt-4 font-mono text-base font-semibold text-foreground">{f.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{f.body}</p>
+              <h3 className="mt-4 font-mono text-base font-semibold text-foreground text-balance">{f.title}</h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{f.body}</p>
             </article>
           ))}
         </div>

@@ -94,11 +94,11 @@ function RocToolkit() {
         </div>
 
         {/* diagram */}
-        <div className="flex items-center justify-center rounded-xl border border-border bg-card/50 bg-blueprint p-6">
+        <div className="flex items-center justify-start lg:justify-center">
           <img
             src="/roc-toolkit.svg"
             alt="Roc Toolkit architecture diagram"
-            className="w-full"
+            className="w-full max-w-[520px]"
           />
         </div>
       </div>
@@ -121,11 +121,11 @@ function Rocd() {
     <article id="rocd" className="border-b border-border bg-card/20">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.8fr_1fr] lg:py-20 lg:px-8">
         {/* diagram */}
-        <div className="order-2 overflow-hidden rounded-xl border border-border bg-background/60 lg:order-1">
+        <div className="order-2 flex items-center justify-start overflow-hidden lg:order-1 lg:justify-center">
           <img
             src="/rocd.svg"
             alt="RocD distributed network diagram"
-            className="w-full"
+            className="w-full max-w-[520px]"
           />
         </div>
 
@@ -202,7 +202,7 @@ function RocCast() {
         </div>
 
         {/* diagram */}
-        <div className="flex items-center justify-center rounded-xl border border-border bg-card/50 p-6">
+        <div className="flex items-center justify-start lg:justify-center">
           <img
             src="/roc-cast.svg"
             alt="Roc Cast multi-room audio diagram"
