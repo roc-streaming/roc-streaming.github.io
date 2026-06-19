@@ -230,15 +230,12 @@ function FinalCTA() {
           </h2>
           <div className="mt-5 max-w-3xl space-y-4 text-muted-foreground leading-relaxed text-pretty">
             <p>
-              You do not need a complete technical specification to start. A project
-              can begin with a product idea, an integration problem, a latency target,
-              a deployment scenario, or a missing Roc Streaming feature.
+              You do not need a complete specification to start. Bring a product idea,
+              integration problem, deployment scenario, or missing Roc Streaming feature.
             </p>
             <p>
-              Tell us what you are building and what constraints you have. We can help
-              shape the architecture, choose the right Roc components, and suggest a
-              practical path: integration, feature development, consulting, or a custom
-              implementation.
+              Tell us what you are building. We can help shape the architecture, choose
+              the right Roc components, and suggest a practical path forward.
             </p>
           </div>
           <div className="mt-8">
