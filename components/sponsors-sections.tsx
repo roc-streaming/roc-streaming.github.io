@@ -13,7 +13,7 @@ function SponsorsHero() {
           Sponsorship
         </p>
         <h1 className="mt-3 max-w-lg font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-          Sponsoring Roc Streaming development
+          Sponsoring project development
         </h1>
         <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
           Companies and individuals fund the Roc Streaming work that matters most to
