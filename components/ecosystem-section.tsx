@@ -73,7 +73,9 @@ export function EcosystemSection() {
                 key={card.title}
                 className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-colors hover:border-primary/40"
               >
-                <card.icon className="size-6 text-primary transition-transform group-hover:scale-110" aria-hidden="true" />
+                <span className="grid size-10 place-items-center rounded-lg border border-primary/30 bg-primary/10 text-primary transition-transform group-hover:scale-110">
+                  <card.icon className="size-5" aria-hidden="true" />
+                </span>
                 <h3 className="mt-4 font-mono text-base font-semibold text-foreground text-balance">{card.title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{card.body}</p>
               </article>
@@ -89,11 +91,16 @@ export function EcosystemSection() {
                     className="flex items-center gap-4 rounded-lg border bg-card/70 p-4 transition-transform hover:translate-x-1"
                     style={{ borderColor: `color-mix(in oklch, ${layer.accent} 40%, transparent)` }}
                   >
-                    <layer.icon
-                      className="size-6 shrink-0"
-                      style={{ color: layer.accent }}
-                      aria-hidden="true"
-                    />
+                    <span
+                      className="grid size-11 shrink-0 place-items-center rounded-lg border"
+                      style={{
+                        borderColor: `color-mix(in oklch, ${layer.accent} 45%, transparent)`,
+                        backgroundColor: `color-mix(in oklch, ${layer.accent} 12%, transparent)`,
+                        color: layer.accent,
+                      }}
+                    >
+                      <layer.icon className="size-5" aria-hidden="true" />
+                    </span>
                     <div className="min-w-0">
                       <div className="flex items-baseline gap-2">
                         <span className="font-mono text-base font-semibold text-foreground">{layer.name}</span>
