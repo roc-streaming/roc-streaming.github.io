@@ -30,13 +30,13 @@ function ServicesHero() {
         </h1>
         <p className="mt-5 max-w-2xl text-muted-foreground leading-relaxed text-pretty">
           We design and build commercial network-audio solutions using Roc Toolkit,
-          rocd, Roc Cast, and custom engineering. From product integration to full
+          RocD, Roc Cast, and custom engineering. From product integration to full
           turn-key systems, we help teams build Audio over IP capabilities that are
           difficult to achieve from scratch.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <a
-            href="mailto:gavv537@gmail.com"
+            href="mailto:contact@roc-streaming.org"
             className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 font-mono text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
           >
             Discuss a project
@@ -63,7 +63,7 @@ function Positioning() {
     <section id="positioning" className="border-b border-border bg-card/20">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
         <SectionLabel index="01">Approach</SectionLabel>
-        <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
+        <h2 className="mt-4 max-w-xl font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
           Open-source foundation. Professional software delivery.
         </h2>
         <div className="mt-6 max-w-3xl space-y-4 text-muted-foreground leading-relaxed text-pretty">
@@ -71,7 +71,7 @@ function Positioning() {
             Roc Streaming provides the open-source building blocks for real-time Audio
             over IP. Commercial projects often need more than a library integration:
             product-specific behavior, platform support, custom control flows,
-            synchronization, deployment tooling, testing, and long-term maintenance.
+            integration, and long-term maintenance.
           </p>
           <p>
             We help companies build those systems using the Roc Streaming ecosystem as
@@ -91,13 +91,13 @@ const SERVICES = [
   {
     icon: Blocks,
     title: "Turn-key and custom Roc-based solutions",
-    text: "Complete Audio over IP systems built around Roc Toolkit, rocd, Roc Cast, or custom components. Suitable for product prototypes, commercial deployments, specialized workflows, and systems that need more than a library integration.",
+    text: "Complete Audio over IP systems built around Roc Toolkit, RocD, Roc Cast, or custom components.",
     accent: "primary" as const,
   },
   {
     icon: GitBranch,
     title: "Feature development",
-    text: "Fund new Roc Streaming features needed by your product: platform support, APIs, codecs, discovery, control flows, integration points, deployment tooling, or performance work.",
+    text: "Fund new Roc Streaming features or improvements needed by your product.",
     accent: "signal" as const,
   },
   {
@@ -115,7 +115,7 @@ const SERVICES = [
   {
     icon: MessageSquare,
     title: "Technical consulting",
-    text: "Get expert guidance on Audio over IP architecture, latency targets, synchronization, network behavior, deployment models, and Roc Streaming integration strategy.",
+    text: "Get expert guidance on Audio over IP architecture and Roc Streaming ecosystem.",
     accent: "signal" as const,
   },
 ]
@@ -125,14 +125,12 @@ function ServicesGrid() {
     <section id="services" className="border-b border-border">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
         <SectionLabel index="02">Services</SectionLabel>
-        <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-          <h2 className="font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
-            Services
-          </h2>
-          <p className="text-sm text-muted-foreground text-pretty sm:max-w-xs sm:text-right">
-            Choose a ready engagement model, or bring a custom Audio over IP problem.
-          </p>
-        </div>
+        <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
+          Our services
+        </h2>
+        <p className="mt-4 max-w-2xl text-muted-foreground leading-relaxed text-pretty">
+          Choose a ready engagement model, or bring a custom Audio over IP problem.
+        </p>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {SERVICES.map(({ icon: Icon, accent, title, text }) => (
@@ -156,7 +154,7 @@ function ServicesGrid() {
               <h3 className="mt-4 font-mono text-base font-semibold text-balance text-foreground">
                 {title}
               </h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-2 flex-1 text-base leading-relaxed text-muted-foreground">
                 {text}
               </p>
             </article>
@@ -173,19 +171,16 @@ function ServicesGrid() {
 
 const EXAMPLE_PROJECTS = [
   {
+    title: "Zoned commercial audio",
+    text: "Centralized audio distribution for offices, retail, hospitality, gyms, venues, or public spaces using standard IP infrastructure and commodity endpoints.",
+  },
+  {
     title: "Online jamming platform",
     text: "A low-latency real-time collaboration platform for musicians, using Roc-based transport as part of a custom commercial system.",
-    tags: ["Low latency", "Real-time", "Custom system"],
   },
   {
     title: "Distributed playback synchronization",
     text: "A custom solution for synchronized playback across multiple independent network receivers, tuned for precise timing and resilience to network jitter.",
-    tags: ["Synchronization", "Multi-receiver", "Network jitter"],
-  },
-  {
-    title: "Zoned commercial audio",
-    text: "Centralized audio distribution for offices, retail, hospitality, gyms, venues, or public spaces using standard IP infrastructure and commodity endpoints.",
-    tags: ["Commercial audio", "IP infrastructure", "Multi-zone"],
   },
 ]
 
@@ -197,13 +192,13 @@ function ExampleProjects() {
         <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
           Example projects
         </h2>
-        <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty">
+        <p className="mt-5 max-w-2xl text-muted-foreground leading-relaxed text-pretty">
           Roc Streaming has been used as a foundation for custom commercial systems,
           not only as a library dependency.
         </p>
 
         <div className="mt-10 grid gap-5 md:grid-cols-3">
-          {EXAMPLE_PROJECTS.map(({ title, text, tags }) => (
+          {EXAMPLE_PROJECTS.map(({ title, text }) => (
             <article
               key={title}
               className="flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md"
@@ -211,19 +206,9 @@ function ExampleProjects() {
               <h3 className="font-mono text-base font-semibold text-balance text-foreground">
                 {title}
               </h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-2 flex-1 text-base leading-relaxed text-muted-foreground">
                 {text}
               </p>
-              <div className="mt-5 flex flex-wrap gap-1.5">
-                {tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded border border-border bg-secondary px-2 py-0.5 font-mono text-[11px] text-muted-foreground"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
             </article>
           ))}
         </div>
@@ -233,35 +218,7 @@ function ExampleProjects() {
 }
 
 /* ══════════════════════════════════
-   04  How projects start
-═══════════════════════════════════ */
-function HowProjectsStart() {
-  return (
-    <section id="how-projects-start" className="border-b border-border">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
-        <SectionLabel index="04">Process</SectionLabel>
-        <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
-          How projects start
-        </h2>
-        <div className="mt-6 max-w-3xl space-y-4 text-muted-foreground leading-relaxed text-pretty">
-          <p>
-            You do not need to arrive with a complete technical specification. A project
-            can start from a product idea, an integration problem, a latency target, a
-            deployment scenario, or a missing Roc Streaming feature.
-          </p>
-          <p>
-            We can help shape the architecture, identify the right Roc components, and
-            decide whether the best path is integration, feature development,
-            consulting, or a custom implementation.
-          </p>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-/* ══════════════════════════════════
-   05  Final CTA
+   04  Final CTA
 ═══════════════════════════════════ */
 function FinalCTA() {
   return (
@@ -269,18 +226,30 @@ function FinalCTA() {
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24 lg:px-8">
         <div className="absolute inset-0 bg-blueprint-fine opacity-40" aria-hidden="true" />
         <div className="relative">
-          <SectionLabel index="05">Contact</SectionLabel>
-          <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
+          <SectionLabel index="04">Contact</SectionLabel>
+          <h2 className="mt-4 max-w-xl font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
             Have a network-audio project in mind?
           </h2>
-          <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty">
-            Tell us what you are building, what constraints you have, and where Roc
-            Streaming may fit. We can help evaluate the technical path and propose a
-            practical engagement model.
-          </p>
+          <div className="mt-5 max-w-3xl space-y-4 text-muted-foreground leading-relaxed text-pretty">
+            <p>
+              You do not need to arrive with a complete technical specification. A
+              project can start from a product idea, an integration problem, a latency
+              target, a deployment scenario, or a missing Roc Streaming feature.
+            </p>
+            <p>
+              We can help shape the architecture, identify the right Roc components,
+              and decide whether the best path is integration, feature development,
+              consulting, or a custom implementation.
+            </p>
+            <p>
+              Tell us what you are building, what constraints you have, and where Roc
+              Streaming may fit. We can help evaluate the technical path and propose a
+              practical engagement model.
+            </p>
+          </div>
           <div className="mt-8">
             <a
-              href="mailto:gavv537@gmail.com"
+              href="mailto:contact@roc-streaming.org"
               className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 font-mono text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
             >
               Contact us
@@ -303,7 +272,6 @@ export function ServicesSections() {
       <Positioning />
       <ServicesGrid />
       <ExampleProjects />
-      <HowProjectsStart />
       <FinalCTA />
     </>
   )
