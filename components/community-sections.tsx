@@ -76,22 +76,6 @@ function JoinDiscussion() {
         </h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {/* Forum */}
-          <article className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
-            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary transition-transform group-hover:scale-110">
-              <MessageSquare className="size-5" aria-hidden="true" />
-            </span>
-            <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Forum</h3>
-            <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-              A web forum for questions, ideas, and longer discussions. It works directly in the browser.
-            </p>
-            <div className="mt-6 flex flex-wrap items-end gap-3">
-              <LinkButton href="https://github.com/roc-streaming/roc-toolkit/discussions" primary>
-                Open forum
-              </LinkButton>
-            </div>
-          </article>
-
           {/* Mailing list */}
           <article className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
             <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary transition-transform group-hover:scale-110">
@@ -111,6 +95,22 @@ function JoinDiscussion() {
               </LinkButton>
               <LinkButton href="https://www.freelists.org/archive/roc/">
                 List archive
+              </LinkButton>
+            </div>
+          </article>
+
+          {/* Forum */}
+          <article className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
+            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary transition-transform group-hover:scale-110">
+              <MessageSquare className="size-5" aria-hidden="true" />
+            </span>
+            <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Forum</h3>
+            <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+              A web forum for questions, ideas, and longer discussions. It works directly in the browser.
+            </p>
+            <div className="mt-6 flex flex-wrap items-end gap-3">
+              <LinkButton href="https://github.com/roc-streaming/roc-toolkit/discussions" primary>
+                Open forum
               </LinkButton>
             </div>
           </article>
@@ -378,7 +378,7 @@ function CommunityHero() {
 
 /* ══════════════════════════════════
    Export
-══════════════���═���══════════════════ */
+═══════════���══���═���══════════════════ */
 export function CommunitySections() {
   return (
     <>
