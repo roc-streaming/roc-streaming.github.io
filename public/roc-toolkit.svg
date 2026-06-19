@@ -82,7 +82,6 @@
     </style>
   </defs>
 
-  <rect width="780" height="590" fill="#ffffff"/>
 
   <!-- PC / Device boundary -->
   <rect x="40" y="40" width="500" height="480" rx="28" class="host"/>

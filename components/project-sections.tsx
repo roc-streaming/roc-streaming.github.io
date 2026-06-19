@@ -102,7 +102,7 @@ function RocToolkit() {
           <img
             src="/roc-toolkit.svg"
             alt="Roc Toolkit architecture diagram"
-            className="w-full max-w-sm"
+            className="w-full"
           />
         </div>
       </div>
@@ -133,7 +133,7 @@ function Rocd() {
           <img
             src="/rocd.svg"
             alt="RocD distributed network diagram"
-            className="w-full max-w-sm"
+            className="w-full"
           />
         </div>
 

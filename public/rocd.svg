@@ -5,7 +5,6 @@
     </filter>
   </defs>
 
-  <rect width="1600" height="900" fill="#F8FAFC"/>
 
   <g filter="url(#shadow)">
     <rect x="90" y="80" width="1420" height="700" rx="30" fill="white" stroke="#D8E1EB" stroke-width="2"/>
