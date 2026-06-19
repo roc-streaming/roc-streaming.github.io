@@ -5,7 +5,6 @@ import {
   Puzzle,
   Clock,
   MessageSquare,
-  ChevronDown,
   Mail,
 } from "lucide-react"
 import { SectionLabel } from "@/components/section-label"
@@ -44,10 +43,9 @@ function ServicesHero() {
           </a>
           <a
             href="#services"
-            className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-card/50 px-5 py-3 font-mono text-sm font-semibold text-foreground transition-colors hover:border-primary/50"
+            className="inline-flex items-center justify-center rounded-md border border-border bg-card/50 px-5 py-3 font-mono text-sm font-semibold text-foreground transition-colors hover:border-primary/50"
           >
             Explore services
-            <ChevronDown className="size-4" aria-hidden="true" />
           </a>
         </div>
       </div>
@@ -232,19 +230,15 @@ function FinalCTA() {
           </h2>
           <div className="mt-5 max-w-3xl space-y-4 text-muted-foreground leading-relaxed text-pretty">
             <p>
-              You do not need to arrive with a complete technical specification. A
-              project can start from a product idea, an integration problem, a latency
-              target, a deployment scenario, or a missing Roc Streaming feature.
+              You do not need a complete technical specification to start. A project
+              can begin with a product idea, an integration problem, a latency target,
+              a deployment scenario, or a missing Roc Streaming feature.
             </p>
             <p>
-              We can help shape the architecture, identify the right Roc components,
-              and decide whether the best path is integration, feature development,
-              consulting, or a custom implementation.
-            </p>
-            <p>
-              Tell us what you are building, what constraints you have, and where Roc
-              Streaming may fit. We can help evaluate the technical path and propose a
-              practical engagement model.
+              Tell us what you are building and what constraints you have. We can help
+              shape the architecture, choose the right Roc components, and suggest a
+              practical path: integration, feature development, consulting, or a custom
+              implementation.
             </p>
           </div>
           <div className="mt-8">
