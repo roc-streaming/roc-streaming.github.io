@@ -4,7 +4,7 @@ import { SectionLabel } from "@/components/section-label"
 const CARDS = [
   {
     icon: Layers,
-    accent: "primary" as const,
+    accent: "signal" as const,
     title: "Explore the ecosystem",
     text: "Learn how Roc Toolkit, RocD, Roc Cast, bindings, and OS integrations fit together, and choose the right entry point for your use case.",
     cta: "Ecosystem",
@@ -12,7 +12,7 @@ const CARDS = [
   },
   {
     icon: Users,
-    accent: "primary" as const,
+    accent: "signal" as const,
     title: "Join the community",
     text: "Read the docs, explore the code, ask questions, report issues, and contribute to the open-source projects.",
     cta: "Community",
@@ -20,7 +20,7 @@ const CARDS = [
   },
   {
     icon: Briefcase,
-    accent: "signal" as const,
+    accent: "primary" as const,
     title: "Professional services",
     text: "Work with the Roc Streaming team on custom solutions, product integration, consulting, and feature development on request.",
     cta: "Services",
@@ -48,31 +48,25 @@ export function GetInTouch() {
           {CARDS.map(({ icon: Icon, accent, title, text, cta, href }) => (
             <article
               key={title}
-              className={`group relative overflow-hidden rounded-xl border p-8 ${
-                accent === "signal"
-                  ? "border-border bg-card/60"
-                  : "border-primary/30 bg-primary/[0.05]"
-              }`}
+              className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-colors hover:border-primary/40"
             >
               <span
-                className={`grid size-12 place-items-center rounded-lg border ${
-                  accent === "signal"
+                className={`grid size-10 place-items-center rounded-lg border transition-transform group-hover:scale-110 ${accent === "signal"
                     ? "border-signal/40 bg-signal/10 text-signal"
                     : "border-primary/40 bg-primary/10 text-primary"
-                }`}
+                  }`}
               >
-                <Icon className="size-6" aria-hidden="true" />
+                <Icon className="size-5" aria-hidden="true" />
               </span>
-              <h3 className="mt-5 font-mono text-xl font-bold text-foreground">{title}</h3>
-              <p className="mt-3 text-muted-foreground leading-relaxed">{text}</p>
-              <div className="mt-7">
+              <h3 className="mt-4 font-mono text-base font-semibold text-foreground text-balance">{title}</h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{text}</p>
+              <div className="mt-6">
                 <a
                   href={href}
-                  className={`inline-flex items-center gap-1.5 rounded-md px-4 py-2.5 font-mono text-sm font-semibold transition-opacity hover:opacity-90 ${
-                    accent === "signal"
+                  className={`inline-flex items-center gap-1.5 rounded-md px-4 py-2.5 font-mono text-sm font-semibold transition-opacity hover:opacity-90 ${accent === "signal"
                       ? "bg-signal text-signal-foreground"
                       : "bg-primary text-primary-foreground"
-                  }`}
+                    }`}
                 >
                   {cta}
                   <ArrowUpRight className="size-3.5" aria-hidden="true" />
