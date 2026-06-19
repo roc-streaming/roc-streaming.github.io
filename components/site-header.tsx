@@ -1,8 +1,9 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { Menu, X, Radio } from "lucide-react"
+import { Menu, X } from "lucide-react"
 
 const NAV = [
   { label: "Intro", href: "/" },
@@ -24,9 +25,14 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <a href="/" className="flex items-center gap-2.5">
-          <span className="grid size-8 place-items-center rounded-md border border-primary/40 bg-primary/10 text-primary">
-            <Radio className="size-4.5" aria-hidden="true" />
-          </span>
+          <Image
+            src="/images/square_icon.png"
+            alt="Roc Streaming logo"
+            width={32}
+            height={32}
+            className="size-8"
+            priority
+          />
           <span className="font-mono text-sm font-semibold tracking-tight text-foreground">
             Roc Streaming
           </span>

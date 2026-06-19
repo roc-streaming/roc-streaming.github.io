@@ -1,4 +1,4 @@
-import { Radio } from "lucide-react"
+import Image from "next/image"
 import { GithubIcon } from "@/components/github-icon"
 
 const PAGES = [
@@ -20,9 +20,13 @@ export function SiteFooter() {
         <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="grid size-8 place-items-center rounded-md border border-primary/40 bg-primary/10 text-primary">
-                <Radio className="size-4.5" aria-hidden="true" />
-              </span>
+              <Image
+                src="/images/square_icon.png"
+                alt="Roc Streaming logo"
+                width={32}
+                height={32}
+                className="size-8"
+              />
               <span className="font-mono text-sm font-semibold text-foreground">
                 Roc Streaming
               </span>
