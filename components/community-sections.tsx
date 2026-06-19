@@ -329,11 +329,11 @@ function SupportProject() {
             </p>
           </div>
 
-          <p className="mt-8 font-mono text-base font-semibold text-primary text-pretty">
-            Help keep open-source audio moving forward!
+          <p className="mt-8 mb-8 font-mono text-base font-semibold text-amber text-pretty">
+            {"Let's keep open-source audio moving forward!"}
           </p>
 
-          <div className="mt-4 flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4">
             {DONATION_PLATFORMS.map((platform) => (
               <a
                 key={platform.name}
