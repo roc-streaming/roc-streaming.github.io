@@ -131,7 +131,7 @@ function Rocd() {
 
         <div className="order-1 lg:order-2">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="grid size-11 place-items-center rounded-lg border border-amber/40 bg-amber/10 text-amber">
+            <span className="grid size-11 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
               <Server className="size-6" aria-hidden="true" />
             </span>
             <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">RocD</h2>
@@ -148,7 +148,7 @@ function Rocd() {
             Under development.
           </p>
           <div className="mt-7">
-            <Highlights items={highlights} accent="var(--amber)" />
+            <Highlights items={highlights} accent="var(--primary)" />
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <ProjectButton href="/rocd/docs" primary>
@@ -189,7 +189,7 @@ function RocCast() {
             room and zone control, and multi-device playback for multi-room, zoned audio,
             and remote audio workflows.
           </p>
-          <p className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-signal/30 bg-signal/[0.07] px-3 py-1.5 font-mono text-xs text-signal">
+          <p className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-amber/30 bg-amber/[0.07] px-3 py-1.5 font-mono text-xs text-amber">
             <Construction className="size-3.5 shrink-0" aria-hidden="true" />
             Under development.
           </p>

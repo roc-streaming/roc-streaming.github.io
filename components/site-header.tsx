@@ -10,7 +10,8 @@ const NAV = [
   { label: "Intro", href: "/" },
   { label: "Ecosystem", href: "/ecosystem" },
   { label: "Community", href: "/community" },
-  { label: "Professional Services", href: "/services" },
+  { label: "Sponsorship", href: "/sponsors" },
+  { label: "Services", href: "/services" },
 ]
 
 export function SiteHeader() {
@@ -66,7 +67,7 @@ export function SiteHeader() {
           className="hidden items-center gap-2 rounded-md border border-border bg-card/50 px-4 py-2 font-mono text-sm font-semibold text-foreground transition-colors hover:border-primary/50 md:inline-flex"
         >
           <GithubIcon className="size-4" />
-          View GitHub
+          GitHub
         </a>
 
         <button
