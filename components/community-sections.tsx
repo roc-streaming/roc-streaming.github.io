@@ -77,9 +77,9 @@ function JoinDiscussion() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {/* Forum */}
-          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
-            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
-              <MessageSquare className="size-5 node-pulse" aria-hidden="true" />
+          <article className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
+            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary transition-transform group-hover:scale-110">
+              <MessageSquare className="size-5" aria-hidden="true" />
             </span>
             <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Forum</h3>
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
@@ -93,9 +93,9 @@ function JoinDiscussion() {
           </article>
 
           {/* Mailing list */}
-          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
-            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
-              <Mail className="size-5 node-pulse" aria-hidden="true" />
+          <article className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
+            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary transition-transform group-hover:scale-110">
+              <Mail className="size-5" aria-hidden="true" />
             </span>
             <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Mailing list</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
@@ -107,7 +107,7 @@ function JoinDiscussion() {
             </div>
             <div className="mt-auto pt-6 flex flex-wrap items-end gap-3">
               <LinkButton href="https://www.freelists.org/list/roc" primary>
-                Subscribe list
+                Subscribe
               </LinkButton>
               <LinkButton href="https://www.freelists.org/archive/roc/">
                 List archive
@@ -116,9 +116,9 @@ function JoinDiscussion() {
           </article>
 
           {/* Chat */}
-          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
-            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
-              <Hash className="size-5 node-pulse" aria-hidden="true" />
+          <article className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md">
+            <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary transition-transform group-hover:scale-110">
+              <Hash className="size-5" aria-hidden="true" />
             </span>
             <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Chat</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
@@ -246,11 +246,11 @@ function Contribute() {
           {REPOS.map((repo) => (
             <article
               key={repo.id}
-              className="flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md"
+              className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-shadow hover:shadow-md"
             >
               <div className="flex items-center gap-3">
-                <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
-                  <GitPullRequest className="size-5 node-pulse" aria-hidden="true" />
+                <span className="grid size-11 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary transition-transform group-hover:scale-110">
+                  <GitPullRequest className="size-5" aria-hidden="true" />
                 </span>
                 <h3 className="font-mono text-base font-semibold text-foreground leading-snug">
                   {repo.name}
@@ -329,7 +329,11 @@ function SupportProject() {
             </p>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <p className="mt-8 font-mono text-base font-semibold text-primary text-pretty">
+            Help keep open-source audio moving forward!
+          </p>
+
+          <div className="mt-4 flex flex-wrap gap-4">
             {DONATION_PLATFORMS.map((platform) => (
               <a
                 key={platform.name}
@@ -338,7 +342,7 @@ function SupportProject() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl border border-primary/30 bg-primary/[0.05] px-6 py-4 font-mono text-sm font-semibold text-foreground transition-colors hover:border-primary/60 hover:bg-primary/10"
               >
-                <Heart className="size-4 text-primary node-pulse" aria-hidden="true" />
+                <Heart className="size-4 text-primary" aria-hidden="true" />
                 {platform.name}
                 <ExternalLink className="size-3.5 text-muted-foreground" aria-hidden="true" />
               </a>
