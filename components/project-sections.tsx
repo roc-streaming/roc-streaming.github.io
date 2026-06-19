@@ -1,4 +1,4 @@
-import { Layers, Server, MonitorSmartphone, ExternalLink } from "lucide-react"
+import { Layers, Server, MonitorSmartphone, ExternalLink, Construction } from "lucide-react"
 
 function StatusDot({ tone, label }: { tone: "live" | "wip" | "planned"; label: string }) {
   const color =
@@ -56,17 +56,13 @@ function ProjectButton({
 function RocToolkit() {
   const highlights = [
     "Real-time audio over IP",
-    "RTP/RTCP over UDP",
+    "RTP/RTCP/XR/FECFRAME over UDP",
     "FEC-based packet-loss recovery",
     "Adaptive clocking / ASRC",
-    "Adaptive or fixed latency",
-    "C library / libroc",
-    "Stable C ABI",
-    "Go and Java bindings",
-    "Audio format conversion",
-    "CLI tools",
-    "MPL-2.0 license",
-    "Embeddable in proprietary products",
+    "Adaptive latency with strict bounds",
+    "Audio codecs",
+    "C library",
+    "Bindings (Rust, Go, Java)",
   ]
   return (
     <article id="roc-toolkit" className="border-b border-border">
@@ -79,7 +75,7 @@ function RocToolkit() {
             <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
               Roc Toolkit
             </h2>
-            <StatusDot tone="live" label="stable / production" />
+            <StatusDot tone="live" label="used in production" />
           </div>
           <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
             The core real-time audio transport library. It handles packetization, loss
@@ -114,15 +110,11 @@ function RocToolkit() {
 function Rocd() {
   const highlights = [
     "REST API",
-    "Peer management",
-    "Endpoint management",
-    "Stream management",
-    "Device management",
-    "Route control",
+    "Ready to deploy",
+    "Auto-discovery",
+    "Distributed orchestration",
     "Virtual audio devices",
     "Metrics and events",
-    "Headless operation",
-    "Built around Roc Toolkit",
   ]
 
   return (
@@ -143,7 +135,7 @@ function Rocd() {
               <Server className="size-6" aria-hidden="true" />
             </span>
             <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">RocD</h2>
-            <StatusDot tone="wip" label="in progress" />
+            <StatusDot tone="wip" label="work in progress" />
           </div>
           <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
             Streaming daemon with REST API. RocD instances form a distributed network of
@@ -151,8 +143,9 @@ function Rocd() {
             user orchestrates devices and streams uniformely no matter where in the
             network they&apos;re located.
           </p>
-          <p className="mt-3 inline-flex rounded-md border border-amber/30 bg-amber/[0.07] px-3 py-1.5 font-mono text-xs text-amber">
-            Status: RocD is in progress and not production-ready yet.
+          <p className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-amber/30 bg-amber/[0.07] px-3 py-1.5 font-mono text-xs text-amber">
+            <Construction className="size-3.5 shrink-0" aria-hidden="true" />
+            Not production-ready yet.
           </p>
           <div className="mt-7">
             <Highlights items={highlights} accent="var(--amber)" />
@@ -172,14 +165,10 @@ function Rocd() {
 /* ---- Roc Cast ---- */
 function RocCast() {
   const highlights = [
-    "User-facing network audio app",
-    "Device and speaker management",
-    "Stream and route control",
-    "Room-oriented audio control",
-    "Desktop / mobile UI direction",
-    "Web UI for headless devices",
-    "Built on RocD",
-    "Uses Roc Toolkit underneath",
+    "Cross-platform (desktop and mobile)",
+    "Remote control",
+    "Manage devices, speakers, and routes",
+    "Zone-oriented UI",
   ]
 
   return (
@@ -193,15 +182,16 @@ function RocCast() {
             <h2 className="font-mono text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
               Roc Cast
             </h2>
-            <StatusDot tone="wip" label="in progress" />
+            <StatusDot tone="wip" label="work in progress" />
           </div>
           <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
             The user-facing Audio over IP solution. Roc Cast provides source selection,
             room and zone control, and multi-device playback for multi-room, zoned audio,
             and remote audio workflows.
           </p>
-          <p className="mt-3 inline-flex rounded-md border border-signal/30 bg-signal/[0.07] px-3 py-1.5 font-mono text-xs text-signal">
-            Status: Roc Cast is in progress and not production-ready yet.
+          <p className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-signal/30 bg-signal/[0.07] px-3 py-1.5 font-mono text-xs text-signal">
+            <Construction className="size-3.5 shrink-0" aria-hidden="true" />
+            Not production-ready yet.
           </p>
           <div className="mt-7">
             <Highlights items={highlights} accent="var(--signal)" />
