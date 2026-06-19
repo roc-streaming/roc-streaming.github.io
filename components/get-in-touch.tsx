@@ -48,7 +48,10 @@ export function GetInTouch() {
           {CARDS.map(({ icon: Icon, accent, title, text, cta, href }) => (
             <article
               key={title}
-              className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-colors hover:border-primary/40"
+              className={`group flex flex-col rounded-xl border p-6 transition-colors ${accent === "signal"
+                  ? "border-signal/30 bg-signal/[0.05] hover:border-signal/50"
+                  : "border-primary/30 bg-primary/[0.05] hover:border-primary/50"
+                }`}
             >
               <span
                 className={`grid size-10 place-items-center rounded-lg border transition-transform group-hover:scale-110 ${accent === "signal"
