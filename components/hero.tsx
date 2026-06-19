@@ -1,6 +1,4 @@
 import Image from "next/image"
-import { GithubIcon } from "@/components/github-icon"
-
 
 
 export function Hero() {
@@ -36,13 +34,6 @@ export function Hero() {
               className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 font-mono text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
             >
               Get started
-            </a>
-            <a
-              href="https://github.com/roc-streaming"
-              className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-card/50 px-5 py-3 font-mono text-sm font-semibold text-foreground transition-colors hover:border-primary/50"
-            >
-              <GithubIcon className="size-4" />
-              View GitHub
             </a>
           </div>
         </div>
