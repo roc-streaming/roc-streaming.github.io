@@ -5,6 +5,7 @@ const PAGES = [
   { label: "Intro", href: "/" },
   { label: "Ecosystem", href: "/ecosystem" },
   { label: "Community", href: "/community" },
+  { label: "Sponsors", href: "/sponsors" },
   { label: "Professional Services", href: "/professional-services" },
 ]
 
