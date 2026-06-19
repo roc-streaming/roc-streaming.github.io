@@ -11,7 +11,7 @@ const NAV = [
   { label: "Ecosystem", href: "/ecosystem" },
   { label: "Community", href: "/community" },
   { label: "Sponsorship", href: "/sponsors" },
-  { label: "Professional Services", href: "/services" },
+  { label: "Services", href: "/services" },
 ]
 
 export function SiteHeader() {

@@ -14,7 +14,7 @@ const LAYERS = [
     name: "RocD",
     role: "Deployable service integrated via REST API",
     icon: Server,
-    accent: "var(--amber)",
+    accent: "var(--primary)",
   },
   {
     id: "toolkit",
