@@ -79,12 +79,8 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 font-mono text-xs text-muted-foreground sm:flex-row sm:items-center">
+        <div className="mt-10 border-t border-border pt-6 font-mono text-xs text-muted-foreground text-center">
           <p>© {new Date().getFullYear()} Roc Streaming · MPL-2.0</p>
-          <p className="flex items-center gap-2">
-            <span className="size-1.5 rounded-full bg-primary node-pulse" aria-hidden="true" />
-            real-time audio over IP
-          </p>
         </div>
       </div>
     </footer>
