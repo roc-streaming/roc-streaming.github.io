@@ -15,21 +15,8 @@ export const metadata: Metadata = {
     'Roc Streaming is an open audio backbone for real-time streaming over IP networks, built for controlled latency and resilience across wired, wireless, and wide-area networks.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/images/square_icon.png',
+    apple: '/images/square_icon.png',
   },
 }
 

@@ -65,7 +65,23 @@ export function EcosystemSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
+        <div className="mt-12 grid gap-8 lg:grid-cols-[2fr_1fr] lg:gap-12">
+          {/* Four open-ecosystem cards */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {OPEN_CARDS.map((card) => (
+              <article
+                key={card.title}
+                className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-colors hover:border-primary/40"
+              >
+                <span className="grid size-10 place-items-center rounded-lg border border-primary/30 bg-primary/10 text-primary transition-transform group-hover:scale-110">
+                  <card.icon className="size-5" aria-hidden="true" />
+                </span>
+                <h3 className="mt-4 font-mono text-base font-semibold text-foreground text-balance">{card.title}</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{card.body}</p>
+              </article>
+            ))}
+          </div>
+
           {/* Layered stack diagram */}
           <div className="rounded-xl border border-border bg-background/60 bg-blueprint p-5 sm:p-8">
             <ol className="space-y-0">
@@ -101,22 +117,6 @@ export function EcosystemSection() {
                 </li>
               ))}
             </ol>
-          </div>
-
-          {/* Four open-ecosystem cards */}
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-            {OPEN_CARDS.map((card) => (
-              <div
-                key={card.title}
-                className="rounded-xl border border-border bg-background/60 p-5"
-              >
-                <span className="grid size-9 place-items-center rounded-lg border border-primary/30 bg-primary/10 text-primary">
-                  <card.icon className="size-4.5" aria-hidden="true" />
-                </span>
-                <h3 className="mt-3 font-mono text-sm font-semibold text-foreground">{card.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{card.body}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>

@@ -49,9 +49,9 @@ export function AudienceSection() {
           {AUDIENCES.map((a) => (
             <article
               key={a.title}
-              className="flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-colors hover:border-primary/40"
+              className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 transition-colors hover:border-primary/40"
             >
-              <span className="grid size-10 place-items-center rounded-lg border border-primary/30 bg-primary/10 text-primary">
+              <span className="grid size-10 place-items-center rounded-lg border border-primary/30 bg-primary/10 text-primary transition-transform group-hover:scale-110">
                 <a.icon className="size-5" aria-hidden="true" />
               </span>
               <h3 className="mt-4 font-mono text-base font-semibold text-foreground text-balance">

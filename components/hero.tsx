@@ -1,6 +1,4 @@
-import { GithubIcon } from "@/components/github-icon"
-import { IpAudioDiagram } from "@/components/ip-audio-diagram"
-
+import Image from "next/image"
 
 
 export function Hero() {
@@ -14,7 +12,7 @@ export function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-10 lg:py-24 lg:px-8">
         {/* Left: message + actions */}
-        <div>
+        <div className="order-2 lg:order-1">
           <h1 className="font-mono font-bold tracking-tight text-balance text-foreground">
             <span className="block text-5xl leading-[1.05] sm:text-6xl lg:text-[4rem] text-primary text-glow">
               Roc Streaming
@@ -32,18 +30,24 @@ export function Hero() {
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
-              href="https://github.com/roc-streaming"
-              className="inline-flex items-center justify-center gap-2 rounded-md border border-border bg-card/50 px-5 py-3 font-mono text-sm font-semibold text-foreground transition-colors hover:border-primary/50"
+              href="#get-in-touch"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 font-mono text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
             >
-              <GithubIcon className="size-4" />
-              View GitHub
+              Get started
             </a>
           </div>
         </div>
 
-        {/* Right: diagram */}
-        <div className="lg:pl-4">
-          <IpAudioDiagram />
+        {/* Right: logo */}
+        <div className="order-1 flex justify-center lg:order-2 lg:pl-4">
+          <Image
+            src="/images/big_logo.png"
+            alt="Roc Streaming logo"
+            width={728}
+            height={540}
+            priority
+            className="h-auto w-full max-w-md"
+          />
         </div>
       </div>
     </section>
