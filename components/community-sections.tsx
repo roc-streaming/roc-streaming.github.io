@@ -1,0 +1,396 @@
+import {
+  MessageSquare,
+  Mail,
+  Hash,
+  GitPullRequest,
+  Heart,
+  ExternalLink,
+  ArrowUpRight,
+} from "lucide-react"
+import { SectionLabel } from "@/components/section-label"
+
+/* ─── Shared link button ─── */
+function LinkButton({
+  href,
+  children,
+  primary,
+}: {
+  href: string
+  children: React.ReactNode
+  primary?: boolean
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-flex items-center gap-2 rounded-md px-4 py-2.5 font-mono text-sm font-semibold transition-opacity hover:opacity-90 ${
+        primary
+          ? "bg-primary text-primary-foreground"
+          : "border border-border bg-card/50 text-foreground hover:border-primary/50"
+      }`}
+    >
+      {children}
+      <ExternalLink className="size-3.5 shrink-0" aria-hidden="true" />
+    </a>
+  )
+}
+
+/* ─── Inline code chip ─── */
+function Code({ children }: { children: React.ReactNode }) {
+  return (
+    <code className="rounded bg-secondary px-1.5 py-0.5 font-mono text-xs text-foreground">
+      {children}
+    </code>
+  )
+}
+
+/* ─── Tag list ─── */
+function Tags({ items }: { items: string[] }) {
+  return (
+    <div className="flex flex-wrap gap-1.5">
+      {items.map((t) => (
+        <span
+          key={t}
+          className="rounded border border-border bg-secondary px-2 py-0.5 font-mono text-[11px] text-muted-foreground"
+        >
+          {t}
+        </span>
+      ))}
+    </div>
+  )
+}
+
+/* ══════════════════════════════════
+   01  Join discussion
+═══════════════════════════════════ */
+function JoinDiscussion() {
+  return (
+    <section id="join-discussion" className="border-b border-border">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
+        <SectionLabel index="01">Join discussion</SectionLabel>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {/* Forum */}
+          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6">
+            <span className="grid size-10 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
+              <MessageSquare className="size-5" aria-hidden="true" />
+            </span>
+            <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Forum</h3>
+            <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+              For questions, ideas, and longer discussions. Available on the web and
+              usable directly from a browser.
+            </p>
+            <div className="mt-6">
+              <LinkButton href="https://github.com/roc-streaming/roc-toolkit/discussions" primary>
+                Open forum
+              </LinkButton>
+            </div>
+          </article>
+
+          {/* Mailing list */}
+          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6">
+            <span className="grid size-10 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
+              <Mail className="size-5" aria-hidden="true" />
+            </span>
+            <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Mailing list</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              For questions, ideas, technical discussions, and announcements. Subscribe
+              first via the list page or by sending an email to{" "}
+              <Code>roc-request@freelists.org</Code> with <Code>subscribe</Code> in the
+              subject.
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Address: <Code>roc@freelists.org</Code>
+            </p>
+            <p className="mt-1 text-xs text-muted-foreground">
+              Please use bottom-posting when replying.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <LinkButton href="https://www.freelists.org/list/roc" primary>
+                List page
+              </LinkButton>
+              <LinkButton href="mailto:roc-request@freelists.org?subject=subscribe">
+                Subscribe by email
+              </LinkButton>
+            </div>
+          </article>
+
+          {/* Chat */}
+          <article className="flex flex-col rounded-xl border border-border bg-card/50 p-6">
+            <span className="grid size-10 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
+              <Hash className="size-5" aria-hidden="true" />
+            </span>
+            <h3 className="mt-4 font-mono text-base font-semibold text-foreground">Chat</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              For interactive discussion, quick questions, setup help, and general Roc
+              Streaming topics. Hosted on Matrix — open in a browser or install a client.
+            </p>
+            <div className="mt-4 flex flex-col gap-2">
+              <div>
+                <p className="font-mono text-xs font-semibold text-foreground">User chat</p>
+                <Code>#roc-streaming:matrix.org</Code>
+              </div>
+              <div>
+                <p className="font-mono text-xs font-semibold text-foreground">Developer chat</p>
+                <Code>#roc-streaming-dev:matrix.org</Code>
+              </div>
+            </div>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <LinkButton href="https://matrix.to/#/#roc-streaming:matrix.org" primary>
+                User chat
+              </LinkButton>
+              <LinkButton href="https://matrix.to/#/#roc-streaming-dev:matrix.org">
+                Dev chat
+              </LinkButton>
+              <LinkButton href="https://app.element.io/">Web client</LinkButton>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ══════════════════════════════════
+   02  Contribute
+═══════════════════════════════════ */
+
+const REPOS = [
+  {
+    id: "roc-toolkit",
+    name: "Roc Toolkit",
+    description:
+      "Core real-time audio transport library and command-line tools.",
+    tags: ["C++", "C", "Networking", "Audio", "Tests", "Documentation", "Packaging", "CI"],
+    links: [
+      { label: "Repository", href: "https://github.com/roc-streaming/roc-toolkit" },
+      {
+        label: "Help-wanted",
+        href: "https://github.com/roc-streaming/roc-toolkit/issues?q=is%3Aissue+state%3Aopen+label%3A%22help+wanted%22",
+      },
+      {
+        label: "Easy hacks",
+        href: "https://github.com/roc-streaming/roc-toolkit/issues?q=is%3Aissue+state%3Aopen+label%3A%22easy+hacks%22",
+      },
+      {
+        label: "Contributor guide",
+        href: "https://roc-streaming.org/toolkit/docs/development/contribution_guidelines.html",
+      },
+      { label: "Documentation", href: "https://roc-streaming.org/toolkit/docs/" },
+    ],
+  },
+  {
+    id: "rocd",
+    name: "rocd",
+    description:
+      "Streaming daemon and control API for managing audio endpoints, streams, devices, and routes.",
+    tags: ["Rust", "REST API", "Daemon", "Control plane", "Networking", "Documentation"],
+    links: [
+      { label: "Repository", href: "https://github.com/roc-streaming/rocd" },
+      {
+        label: "Help-wanted",
+        href: "https://github.com/roc-streaming/rocd/issues?q=is%3Aissue+state%3Aopen+label%3A%22help+wanted%22",
+      },
+      { label: "Documentation", href: "https://roc-streaming.org/rocd/docs/" },
+    ],
+  },
+  {
+    id: "roc-droid",
+    name: "roc-droid",
+    description: "Android application for streaming audio with Roc Toolkit.",
+    tags: ["Kotlin", "Android", "Mobile audio", "UI", "Documentation"],
+    links: [
+      { label: "Repository", href: "https://github.com/roc-streaming/roc-droid" },
+      {
+        label: "Help-wanted",
+        href: "https://github.com/roc-streaming/roc-droid/issues?q=is%3Aissue+state%3Aopen+label%3A%22help+wanted%22",
+      },
+      { label: "Documentation", href: "https://github.com/roc-streaming/roc-droid#readme" },
+    ],
+  },
+  {
+    id: "roc-vad",
+    name: "roc-vad",
+    description: "Roc Toolkit Virtual Audio Device for macOS.",
+    tags: ["C++", "macOS", "Core Audio", "Virtual audio device", "Documentation"],
+    links: [
+      { label: "Repository", href: "https://github.com/roc-streaming/roc-vad" },
+      {
+        label: "Help-wanted",
+        href: "https://github.com/roc-streaming/roc-vad/issues?q=is%3Aissue+state%3Aopen+label%3A%22help+wanted%22",
+      },
+      { label: "Documentation", href: "https://github.com/roc-streaming/roc-vad#readme" },
+    ],
+  },
+  {
+    id: "roc-pulse",
+    name: "roc-pulse",
+    description: "Roc Toolkit modules for PulseAudio.",
+    tags: ["C", "PulseAudio", "Linux audio", "Modules", "Packaging"],
+    links: [
+      { label: "Repository", href: "https://github.com/roc-streaming/roc-pulse" },
+      {
+        label: "Help-wanted",
+        href: "https://github.com/roc-streaming/roc-pulse/issues?q=is%3Aissue+state%3Aopen+label%3A%22help+wanted%22",
+      },
+      { label: "Documentation", href: "https://github.com/roc-streaming/roc-pulse#readme" },
+    ],
+  },
+]
+
+function Contribute() {
+  return (
+    <section id="contribute" className="border-b border-border bg-card/20">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
+        <SectionLabel index="02">Contribute</SectionLabel>
+        <p className="mt-5 max-w-2xl text-sm leading-relaxed text-muted-foreground text-pretty">
+          Roc Streaming welcomes contributions to core development, integrations,
+          documentation, tests, examples, packaging, and infrastructure. Help-wanted
+          tasks are marked in project repositories — a good place to start if you want
+          to contribute but do not yet know where to begin.
+        </p>
+
+        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {REPOS.map((repo) => (
+            <article
+              key={repo.id}
+              className="flex flex-col rounded-xl border border-border bg-card/50 p-6"
+            >
+              <div className="flex items-start gap-3">
+                <span className="grid size-9 shrink-0 place-items-center rounded-lg border border-primary/40 bg-primary/10 text-primary">
+                  <GitPullRequest className="size-4" aria-hidden="true" />
+                </span>
+                <h3 className="font-mono text-base font-semibold text-foreground leading-snug">
+                  {repo.name}
+                </h3>
+              </div>
+              <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                {repo.description}
+              </p>
+              <div className="mt-4">
+                <Tags items={repo.tags} />
+              </div>
+              <ul className="mt-5 flex flex-col gap-2">
+                {repo.links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 font-mono text-xs text-primary hover:underline"
+                    >
+                      <ArrowUpRight className="size-3 shrink-0" aria-hidden="true" />
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ══════════════════════════════════
+   03  Support the project
+═══════════════════════════════════ */
+
+const DONATION_PLATFORMS = [
+  {
+    name: "GitHub Sponsors",
+    href: "https://github.com/sponsors/roc-streaming",
+  },
+  {
+    name: "Open Collective",
+    href: "https://opencollective.com/roc-streaming",
+  },
+  {
+    name: "Liberapay",
+    href: "https://liberapay.com/roc-streaming",
+  },
+]
+
+function SupportProject() {
+  return (
+    <section id="support" className="border-b border-border">
+      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
+        <div className="absolute inset-0 bg-blueprint-fine opacity-40" aria-hidden="true" />
+        <div className="relative">
+          <SectionLabel index="03">Support the project</SectionLabel>
+          <div className="mt-6 max-w-2xl">
+            <h2 className="font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
+              Help keep Roc Streaming growing
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground text-pretty">
+              A big part of Roc Streaming development is done by maintainers in their
+              free time. Donations help us spend more time on the project, keep it
+              growing, and buy hardware for testing.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground text-pretty">
+              Donations are primarily used to sponsor development time and may be
+              accumulated until there is a meaningful amount suitable for funding
+              development for a few weeks or more. Companies and individuals can also
+              sponsor development of a specific feature — sponsored work is documented
+              publicly.
+            </p>
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            {DONATION_PLATFORMS.map((platform) => (
+              <a
+                key={platform.name}
+                href={platform.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl border border-primary/30 bg-primary/[0.05] px-6 py-4 font-mono text-sm font-semibold text-foreground transition-colors hover:border-primary/60 hover:bg-primary/10"
+              >
+                <Heart className="size-4 text-primary" aria-hidden="true" />
+                {platform.name}
+                <ExternalLink className="size-3.5 text-muted-foreground" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ══════════════════════════════════
+   Page hero
+═══════════════════════════════════ */
+function CommunityHero() {
+  return (
+    <section className="border-b border-border bg-card/20">
+      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20 lg:px-8">
+        <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+          Community
+        </p>
+        <h1 className="mt-3 font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
+          Open development,<br className="hidden sm:block" /> together
+        </h1>
+        <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
+          Roc Streaming is an open-source project maintained through public development,
+          community discussion, and user contributions.
+        </p>
+      </div>
+    </section>
+  )
+}
+
+/* ══════════════════════════════════
+   Export
+═══════════════════════════════════ */
+export function CommunitySections() {
+  return (
+    <>
+      <CommunityHero />
+      <JoinDiscussion />
+      <Contribute />
+      <SupportProject />
+    </>
+  )
+}
