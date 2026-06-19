@@ -10,9 +10,8 @@
     .tiny { font-size: 15px; font-weight: 500; letter-spacing: .08em; fill: #7c8791; }
   </style>
 
-  <rect width="760" height="900" fill="#F4F6F7"/>
 
-  <rect x="28" y="64" width="704" height="772" rx="28" fill="#F4F6F7" stroke="#CCD4DA" stroke-width="2"/>
+  <rect x="28" y="64" width="704" height="772" rx="28" fill="none" stroke="#CCD4DA" stroke-width="2"/>
 
   <g class="mono">
     <text x="68" y="126" class="label">Roc Cast</text>
@@ -29,7 +28,7 @@
   </g>
 
   <g>
-    <rect x="68" y="259" width="624" height="124" rx="18" fill="#F7F8F9" stroke="#CED6DC" stroke-width="2"/>
+    <rect x="68" y="259" width="624" height="124" rx="18" fill="#E8F3FA" stroke="#B8D4E6" stroke-width="2"/>
     <text x="102" y="315" class="mono room">Living Room</text>
     <text x="102" y="348" class="mono meta">Soundbar · multi-room</text>
     <rect x="458" y="301" width="126" height="34" rx="17" fill="#EAF4F8"/>
@@ -38,19 +37,19 @@
     <rect x="494" y="306" width="4" height="24" rx="2" fill="#40B2DF"/>
     <text x="511" y="324" class="mono tiny blue">PLAYING</text>
     <rect x="600" y="298" width="74" height="40" rx="20" fill="#40B2DF"/>
-    <circle cx="654" cy="318" r="16" fill="#F7F8F9"/>
+    <circle cx="654" cy="318" r="16" fill="#E8F3FA"/>
   </g>
 
   <g>
-    <rect x="68" y="405" width="624" height="124" rx="18" fill="#F7F8F9" stroke="#CED6DC" stroke-width="2"/>
+    <rect x="68" y="405" width="624" height="124" rx="18" fill="#E8F3FA" stroke="#B8D4E6" stroke-width="2"/>
     <text x="102" y="461" class="mono room">Studio</text>
     <text x="102" y="494" class="mono meta">Audio I/O · IFB</text>
     <rect x="590" y="444" width="74" height="40" rx="20" fill="#40B2DF"/>
-    <circle cx="644" cy="464" r="16" fill="#F7F8F9"/>
+    <circle cx="644" cy="464" r="16" fill="#E8F3FA"/>
   </g>
 
   <g>
-    <rect x="68" y="551" width="624" height="124" rx="18" fill="#F7F8F9" stroke="#CED6DC" stroke-width="2"/>
+    <rect x="68" y="551" width="624" height="124" rx="18" fill="#E8F3FA" stroke="#B8D4E6" stroke-width="2"/>
     <text x="102" y="607" class="mono room">Kitchen</text>
     <text x="102" y="640" class="mono meta">Speaker · group A</text>
     <rect x="458" y="593" width="126" height="34" rx="17" fill="#EAF4F8"/>
@@ -59,14 +58,14 @@
     <rect x="494" y="598" width="4" height="24" rx="2" fill="#40B2DF"/>
     <text x="511" y="616" class="mono tiny blue">PLAYING</text>
     <rect x="600" y="590" width="74" height="40" rx="20" fill="#40B2DF"/>
-    <circle cx="654" cy="610" r="16" fill="#F7F8F9"/>
+    <circle cx="654" cy="610" r="16" fill="#E8F3FA"/>
   </g>
 
   <g>
-    <rect x="68" y="697" width="624" height="104" rx="18" fill="#F7F8F9" stroke="#CED6DC" stroke-width="2"/>
+    <rect x="68" y="697" width="624" height="104" rx="18" fill="#E8F3FA" stroke="#B8D4E6" stroke-width="2"/>
     <text x="102" y="748" class="mono room">Office</text>
     <text x="102" y="781" class="mono meta">Streamer</text>
     <rect x="590" y="729" width="74" height="40" rx="20" fill="#E6EBEE"/>
-    <circle cx="610" cy="749" r="16" fill="#F7F8F9" stroke="#DDE4E8" stroke-width="4"/>
+    <circle cx="610" cy="749" r="16" fill="#E8F3FA" stroke="#B8D4E6" stroke-width="4"/>
   </g>
 </svg>
