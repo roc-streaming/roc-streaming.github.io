@@ -33,18 +33,18 @@ const OPEN_CARDS = [
   },
   {
     icon: ChevronsUpDown,
-    title: "Choose the layer you need",
-    body: "Choose the layer that matches your control needs: application, service, or library kit.",
+    title: "Choose your layer",
+    body: "Choose the layer that matches your needs: application, service, or library.",
   },
   {
     icon: Plug,
-    title: "Flexible integration",
+    title: "Works with your stack",
     body: "Use Roc from C, C++, Rust, Go, Java, or through RocD\u2019s HTTP API.",
   },
   {
     icon: Speaker,
-    title: "Easy connectivity",
-    body: "Connect to existing audio systems through virtual devices with PipeWire, PulseAudio, and macOS Core Audio.",
+    title: "OS audio integration",
+    body: "Connect Roc to existing audio systems through OS audio stacks or virtual devices.",
   },
 ]
 

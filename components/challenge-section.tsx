@@ -3,18 +3,17 @@ import { SectionLabel } from "@/components/section-label"
 const CABLE_PROPS = [
   { label: "Predictable latency" },
   { label: "Stable signal" },
-  { label: "Direct connection" },
 ]
 
 const NETWORK_PROPS = [
-  { label: "Latency drifts" },
-  { label: "Quality competes with latency" },
   { label: "Jitter and packet loss" },
+  { label: "Quality competes with latency" },
+  { label: "Latency drift" },
 ]
 
 const ROC_PROPS = [
   { label: "Bounded latency down to 10ms" },
-  { label: "Robust CD- and HD-quality audio" },
+  { label: "Robust HD-quality audio" },
   { label: "Resilient transport with loss repair" },
 ]
 
@@ -33,7 +32,7 @@ export function ChallengeSection() {
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed text-pretty">
               <p>
                 Sending audio over Wi-Fi, LAN, or the Internet is easy.
-                Making it feel like a direct cable between audio devices is not.
+                Making it feel like a direct cable between audio devices is a challenging task.
               </p>
               <p>
                 A cable gives you predictable latency, stable quality, and no
