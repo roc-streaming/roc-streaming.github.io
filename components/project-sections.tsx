@@ -214,9 +214,29 @@ function RocCast() {
   )
 }
 
+function EcosystemHero() {
+  return (
+    <section className="border-b border-border bg-card/20">
+      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:py-20 lg:px-8">
+        <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+          Ecosystem
+        </p>
+        <h1 className="mt-3 font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
+          Projects &amp; components
+        </h1>
+        <p className="mt-5 max-w-xl text-muted-foreground leading-relaxed text-pretty">
+          Roc Streaming is an open ecosystem of libraries, services, and applications.
+          Each layer is independently usable — pick the one that fits your use case.
+        </p>
+      </div>
+    </section>
+  )
+}
+
 export function ProjectSections() {
   return (
     <>
+      <EcosystemHero />
       <RocToolkit />
       <Rocd />
       <RocCast />
