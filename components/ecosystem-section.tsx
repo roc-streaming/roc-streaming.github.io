@@ -56,7 +56,7 @@ export function EcosystemSection() {
         <SectionLabel index="03">Open ecosystem</SectionLabel>
         <div className="mt-6 max-w-2xl">
           <h2 className="font-mono text-4xl font-bold tracking-tight text-balance text-foreground sm:text-5xl">
-            Layered, open ecosystem
+            Layered, fully open ecosystem
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed text-pretty">
             Roc Streaming lets you choose the right level of control: use Roc Cast
