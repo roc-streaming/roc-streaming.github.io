@@ -44,47 +44,22 @@
     <text x="192" y="236" fill="#374151">{</text>
 
     <!-- line 2 -->
-    <text x="284" y="300" fill="#7C8FA2">"peer"</text>
-    <text x="530" y="300" fill="#374151">:</text>
-    <text x="582" y="300" fill="#5C93BA">"studio-01"</text>
-    <text x="882" y="300" fill="#374151">,</text>
+    <text x="284" y="300"><tspan fill="#7C8FA2">"peer"</tspan><tspan fill="#374151">: </tspan><tspan fill="#5C93BA">"studio-01"</tspan><tspan fill="#374151">,</tspan></text>
 
     <!-- line 3 -->
-    <text x="284" y="364" fill="#7C8FA2">"endpoint"</text>
-    <text x="596" y="364" fill="#374151">:</text>
-    <text x="648" y="364" fill="#2C6EA0">"rtp+rs8m://0.0.0.0:10001"</text>
-    <text x="1356" y="364" fill="#374151">,</text>
+    <text x="284" y="364"><tspan fill="#7C8FA2">"endpoint"</tspan><tspan fill="#374151">: </tspan><tspan fill="#2C6EA0">"rtp+rs8m://0.0.0.0:10001"</tspan><tspan fill="#374151">,</tspan></text>
 
     <!-- line 4 -->
-    <text x="284" y="428" fill="#7C8FA2">"device"</text>
-    <text x="530" y="428" fill="#374151">:</text>
-    <text x="582" y="428" fill="#5C93BA">"virtual-out-3"</text>
-    <text x="962" y="428" fill="#374151">,</text>
+    <text x="284" y="428"><tspan fill="#7C8FA2">"device"</tspan><tspan fill="#374151">: </tspan><tspan fill="#5C93BA">"virtual-out-3"</tspan><tspan fill="#374151">,</tspan></text>
 
     <!-- line 5 -->
-    <text x="284" y="492" fill="#7C8FA2">"latency_ms"</text>
-    <text x="596" y="492" fill="#374151">:</text>
-    <text x="648" y="492" fill="#5C93BA">60</text>
-    <text x="720" y="492" fill="#374151">,</text>
+    <text x="284" y="492"><tspan fill="#7C8FA2">"latency_ms"</tspan><tspan fill="#374151">: </tspan><tspan fill="#5C93BA">60</tspan><tspan fill="#374151">,</tspan></text>
 
     <!-- line 6 -->
-    <text x="284" y="556" fill="#7C8FA2">"fec"</text>
-    <text x="530" y="556" fill="#374151">:</text>
-    <text x="582" y="556" fill="#5C93BA">"rs8m"</text>
-    <text x="746" y="556" fill="#374151">,</text>
+    <text x="284" y="556"><tspan fill="#7C8FA2">"fec"</tspan><tspan fill="#374151">: </tspan><tspan fill="#5C93BA">"rs8m"</tspan><tspan fill="#374151">,</tspan></text>
 
     <!-- line 7 -->
-    <text x="284" y="620" fill="#7C8FA2">"metrics"</text>
-    <text x="530" y="620" fill="#374151">:</text>
-    <text x="582" y="620" fill="#374151">{</text>
-    <text x="634" y="620" fill="#7C8FA2">"loss"</text>
-    <text x="770" y="620" fill="#374151">:</text>
-    <text x="822" y="620" fill="#5C93BA">0.4</text>
-    <text x="910" y="620" fill="#374151">,</text>
-    <text x="958" y="620" fill="#7C8FA2">"jitter_ms"</text>
-    <text x="1196" y="620" fill="#374151">:</text>
-    <text x="1248" y="620" fill="#5C93BA">2.1</text>
-    <text x="1322" y="620" fill="#374151">}</text>
+    <text x="284" y="620"><tspan fill="#7C8FA2">"metrics"</tspan><tspan fill="#374151">: {</tspan><tspan fill="#7C8FA2"> "loss"</tspan><tspan fill="#374151">: </tspan><tspan fill="#5C93BA">0.4</tspan><tspan fill="#374151">, </tspan><tspan fill="#7C8FA2">"jitter_ms"</tspan><tspan fill="#374151">: </tspan><tspan fill="#5C93BA">2.1</tspan><tspan fill="#374151"> }</tspan></text>
 
     <!-- line 8 -->
     <text x="192" y="684" fill="#374151">}</text>

@@ -145,7 +145,7 @@ function Rocd() {
           </p>
           <p className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-amber/30 bg-amber/[0.07] px-3 py-1.5 font-mono text-xs text-amber">
             <Construction className="size-3.5 shrink-0" aria-hidden="true" />
-            Not production-ready yet.
+            Under development.
           </p>
           <div className="mt-7">
             <Highlights items={highlights} accent="var(--amber)" />
@@ -191,7 +191,7 @@ function RocCast() {
           </p>
           <p className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-signal/30 bg-signal/[0.07] px-3 py-1.5 font-mono text-xs text-signal">
             <Construction className="size-3.5 shrink-0" aria-hidden="true" />
-            Not production-ready yet.
+            Under development.
           </p>
           <div className="mt-7">
             <Highlights items={highlights} accent="var(--signal)" />
