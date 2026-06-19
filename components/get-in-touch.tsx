@@ -50,13 +50,13 @@ export function GetInTouch() {
               key={title}
               className={`group flex flex-col rounded-xl border p-6 transition-colors ${accent === "primary"
                   ? "border-primary/30 bg-primary/[0.05] hover:border-primary/50"
-                  : "border-secondary/40 bg-secondary/[0.08] hover:border-secondary/60"
+                  : "border-border bg-card/50 hover:border-primary/40"
                 }`}
             >
               <span
                 className={`grid size-10 place-items-center rounded-lg border transition-transform group-hover:scale-110 ${accent === "primary"
                     ? "border-primary/40 bg-primary/10 text-primary"
-                    : "border-secondary/50 bg-secondary/15 text-secondary"
+                    : "border-primary/30 bg-primary/10 text-primary"
                   }`}
               >
                 <Icon className="size-5" aria-hidden="true" />
