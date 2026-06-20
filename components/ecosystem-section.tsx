@@ -59,7 +59,7 @@ export function EcosystemSection() {
           </div>
 
           {/* Layered stack diagram */}
-          <div className="flex items-center justify-center rounded-xl border border-border bg-background/60 bg-blueprint p-5 sm:p-8">
+          <div className="flex items-center justify-center rounded-xl border border-border bg-background/60 bg-blueprint p-3">
             <img
               src="/images/ecosystem_layers.svg"
               alt="Ecosystem layers diagram showing Roc Cast, RocD, and Roc Toolkit stacked from top to bottom"
