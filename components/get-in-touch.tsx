@@ -24,7 +24,7 @@ const CARDS = [
     title: "Professional services",
     text: "Work with the Roc Streaming team on custom solutions, product integration, consulting, and feature development on request.",
     cta: "Services",
-    href: "/professional-services",
+    href: "/services",
   },
 ]
 

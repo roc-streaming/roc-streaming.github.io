@@ -1,0 +1,15 @@
+[workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[dependencies]
+git = "*"
+go-task = "*"
+nodejs = "24.*"
+pnpm = "10.*"
+python = "3.*"
+
+[tasks]
+build = "task build"
+clean = "task clean"
+serve = "task serve"

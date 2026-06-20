@@ -25,16 +25,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+
+      - name: Install pixi
+        uses: roc-streaming/ci/actions/install-pixi@main
 
       - name: Build
-        run: make
+        run: pixi run build
 
       - if: |
           github.repository_owner == 'roc-streaming' && github.ref == 'refs/heads/main'
         name: Upload
         id: upload
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist/
 
@@ -53,4 +56,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

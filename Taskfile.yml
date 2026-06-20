@@ -1,0 +1,58 @@
+version: "3"
+
+tasks:
+  clean:
+    desc: Remove generated build artifacts
+    cmds:
+      - rm -rf build dist out
+      - rm -rf node_modules tsconfig.tsbuildinfo .next
+
+  serve:
+    desc: Run the website locally
+    cmds:
+      - pnpm dev
+
+  build:
+    desc: Build static website and generated project docs into dist/
+    cmds:
+      - task: clean
+      - task: build:website
+      - task: build:roc-toolkit
+      - task: build:rocd
+      - task: build:roc-cast
+
+  build:website:
+    desc: Build static website
+    cmds:
+      - pnpm install
+      - pnpm build
+      - mkdir -p dist
+      - cp -a out/. dist/
+
+  build:roc-toolkit:
+    desc: Build Roc Toolkit documentation
+    cmds:
+      - rm -rf build/roc-toolkit dist/toolkit
+      - mkdir -p build dist
+      - git clone --depth 1 https://github.com/roc-streaming/roc-toolkit.git build/roc-toolkit
+      - build/roc-toolkit/scripts/make_doc.sh
+      - cp -a build/roc-toolkit/docs/html dist/toolkit
+
+  build:rocd:
+    desc: Build RocD documentation
+    cmds:
+      - rm -rf build/rocd dist/rocd
+      - mkdir -p build dist/rocd
+      - git clone --depth 1 https://github.com/roc-streaming/rocd.git build/rocd
+      - build/rocd/script/generate_docs.py
+      - cp -a build/rocd/site dist/rocd/docs
+      - cp -a build/rocd/openapi dist/rocd/oapi
+
+  build:roc-cast:
+    desc: Build Roc Cast documentation
+    cmds:
+      - rm -rf build/roc-cast dist/cast
+      - mkdir -p build dist/cast
+      - git clone --depth 1 -b flutter https://github.com/roc-streaming/roc-droid.git build/roc-cast
+      - build/roc-cast/script/generate_docs.py
+      - cp -a build/roc-cast/site dist/cast/docs
