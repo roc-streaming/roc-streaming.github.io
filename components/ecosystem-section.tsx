@@ -1,29 +1,5 @@
-import { MonitorSmartphone, Server, Layers, ArrowDown, ChevronsUpDown, Plug, Speaker, Unlock } from "lucide-react"
+import { ChevronsUpDown, Plug, Speaker, Unlock } from "lucide-react"
 import { SectionLabel } from "@/components/section-label"
-
-const LAYERS = [
-  {
-    id: "cast",
-    name: "Roc Cast",
-    role: "Ready-to-use application",
-    icon: MonitorSmartphone,
-    accent: "var(--signal)",
-  },
-  {
-    id: "rocd",
-    name: "RocD",
-    role: "Deployable service integrated via REST API",
-    icon: Server,
-    accent: "var(--primary)",
-  },
-  {
-    id: "toolkit",
-    name: "Roc Toolkit",
-    role: "Foundation libraries for custom audio solutions",
-    icon: Layers,
-    accent: "var(--primary)",
-  },
-]
 
 const OPEN_CARDS = [
   {
@@ -48,11 +24,7 @@ const OPEN_CARDS = [
   },
 ]
 
-interface EcosystemSectionProps {
-  layerAccentOverrides?: Partial<Record<string, string>>
-}
-
-export function EcosystemSection({ layerAccentOverrides }: EcosystemSectionProps = {}) {
+export function EcosystemSection() {
   return (
     <section id="ecosystem" className="relative border-b border-border bg-card/20">
       <div className="absolute inset-0 bg-dots opacity-40" aria-hidden="true" />
@@ -87,43 +59,12 @@ export function EcosystemSection({ layerAccentOverrides }: EcosystemSectionProps
           </div>
 
           {/* Layered stack diagram */}
-          <div className="rounded-xl border border-border bg-background/60 bg-blueprint p-5 sm:p-8">
-            <ol className="space-y-0">
-              {LAYERS.map((layer, i) => {
-                const accent = (layerAccentOverrides && layerAccentOverrides[layer.id]) ?? layer.accent
-                return (
-                  <li key={layer.id}>
-                    <div
-                      className="flex items-center gap-4 rounded-lg border bg-card/70 p-4 transition-transform hover:translate-x-1"
-                      style={{ borderColor: `color-mix(in oklch, ${accent} 40%, transparent)` }}
-                    >
-                      <span
-                        className="grid size-11 shrink-0 place-items-center rounded-lg border"
-                        style={{
-                          borderColor: `color-mix(in oklch, ${accent} 45%, transparent)`,
-                          backgroundColor: `color-mix(in oklch, ${accent} 12%, transparent)`,
-                          color: accent,
-                        }}
-                      >
-                        <layer.icon className="size-5" aria-hidden="true" />
-                      </span>
-                      <div className="min-w-0">
-                        <div className="flex items-baseline gap-2">
-                          <span className="font-mono text-base font-semibold text-foreground">{layer.name}</span>
-                        </div>
-                        <p className="text-sm text-muted-foreground">{layer.role}</p>
-                      </div>
-                    </div>
-                    {i < LAYERS.length - 1 && (
-                      <div className="flex items-center gap-2 py-1.5 pl-9">
-                        <ArrowDown className="size-4 text-primary" aria-hidden="true" />
-                        <span className="h-4 w-px bg-gradient-to-b from-primary/60 to-transparent" />
-                      </div>
-                    )}
-                  </li>
-                )
-              })}
-            </ol>
+          <div className="flex items-center justify-center rounded-xl border border-border bg-background/60 bg-blueprint p-5 sm:p-8">
+            <img
+              src="/images/ecosystem_layers.svg"
+              alt="Ecosystem layers diagram showing Roc Cast, RocD, and Roc Toolkit stacked from top to bottom"
+              className="h-auto w-full"
+            />
           </div>
         </div>
       </div>

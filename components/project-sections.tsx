@@ -96,7 +96,7 @@ function RocToolkit() {
         {/* diagram */}
         <div className="flex items-center justify-start lg:justify-center">
           <img
-            src="/roc-toolkit.svg"
+            src="/images/roc_toolkit.svg"
             alt="Roc Toolkit architecture diagram"
             className="w-full max-w-[520px]"
           />
@@ -123,7 +123,7 @@ function Rocd() {
         {/* diagram */}
         <div className="order-2 flex items-center justify-start overflow-hidden lg:order-1 lg:justify-center">
           <img
-            src="/rocd.svg"
+            src="/images/rocd.svg"
             alt="RocD distributed network diagram"
             className="w-full max-w-[520px]"
           />
@@ -204,7 +204,7 @@ function RocCast() {
         {/* diagram */}
         <div className="flex items-center justify-start lg:justify-center">
           <img
-            src="/roc-cast.svg"
+            src="/images/roc_cast.svg"
             alt="Roc Cast multi-room audio diagram"
             className="w-full max-w-sm"
           />
