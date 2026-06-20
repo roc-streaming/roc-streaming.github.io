@@ -80,7 +80,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 border-t border-border pt-6 font-mono text-xs text-muted-foreground text-center">
-          <p>© {new Date().getFullYear()} Roc Streaming · MPL-2.0</p>
+          <p>© Roc Streaming · CC BY-SA 4.0</p>
         </div>
       </div>
     </footer>
