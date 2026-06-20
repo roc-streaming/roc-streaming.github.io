@@ -58,7 +58,7 @@ function ServicesHero() {
 ═══════════════════════════════════ */
 function Positioning() {
   return (
-    <section id="positioning" className="border-b border-border bg-card/20">
+    <section id="approach" className="border-b border-border bg-card/20">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
         <SectionLabel index="01">Approach</SectionLabel>
         <h2 className="mt-4 max-w-xl font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">

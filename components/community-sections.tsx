@@ -68,7 +68,7 @@ function Tags({ items }: { items: string[] }) {
 ═══════════════════════════════════ */
 function JoinDiscussion() {
   return (
-    <section id="join-discussion" className="border-b border-border">
+    <section id="community-channels" className="border-b border-border">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
         <SectionLabel index="01">Community channels</SectionLabel>
         <h2 className="mt-4 font-mono text-3xl font-bold tracking-tight text-balance text-foreground sm:text-4xl">
@@ -306,7 +306,7 @@ const DONATION_PLATFORMS = [
 
 function SupportProject() {
   return (
-    <section id="support" className="border-b border-border">
+    <section id="donations" className="border-b border-border">
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-20 lg:px-8">
         <div className="absolute inset-0 bg-blueprint-fine opacity-40" aria-hidden="true" />
         <div className="relative">

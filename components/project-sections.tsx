@@ -197,6 +197,9 @@ function RocCast() {
             <Highlights items={highlights} accent="var(--signal)" />
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
+            <ProjectButton href="/cast/docs" primary>
+              Cast docs
+            </ProjectButton>
             <ProjectButton href="https://github.com/roc-streaming/roc-droid">GitHub</ProjectButton>
           </div>
         </div>

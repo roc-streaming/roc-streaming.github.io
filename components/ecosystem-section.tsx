@@ -26,7 +26,7 @@ const OPEN_CARDS = [
 
 export function EcosystemSection() {
   return (
-    <section id="ecosystem" className="relative border-b border-border bg-card/20">
+    <section id="open-ecosystem" className="relative border-b border-border bg-card/20">
       <div className="absolute inset-0 bg-dots opacity-40" aria-hidden="true" />
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24 lg:px-8">
         <SectionLabel index="03">Open ecosystem</SectionLabel>

@@ -68,7 +68,7 @@ const FEATURES: { icon: React.ElementType; title: string; body: React.ReactNode 
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="relative border-b border-border">
+    <section id="audio-core" className="relative border-b border-border">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:py-24 lg:px-8">
         <SectionLabel index="04">Audio core</SectionLabel>
         <div className="mt-6 max-w-2xl">
