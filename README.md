@@ -31,3 +31,11 @@ pixi run clean
 ```
 
 When you push to the main branch, Github actions automatically build and publish website on Github pages.
+
+## License
+
+Website content is licensed under [CC BY-SA 4.0](LICENSE.md).
+
+Third-party font and icon notices are [listed here](NOTICE.md).
+
+Projects-specific docs (Roc Toolkit, RocD, Roc cast) are licensed under MPL-2.0.
