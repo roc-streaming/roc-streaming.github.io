@@ -44,7 +44,7 @@ tasks:
       - rm -rf build/rocd dist/rocd
       - mkdir -p build dist/rocd
       - git clone --depth 1 https://github.com/roc-streaming/rocd.git build/rocd
-      - build/rocd/script/generate_docs.py
+      - build/rocd/scripts/generate_docs.sh
       - cp -a build/rocd/site dist/rocd/docs
       - cp -a build/rocd/openapi dist/rocd/oapi
 
