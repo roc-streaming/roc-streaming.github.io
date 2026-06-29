@@ -94,7 +94,7 @@ function JoinDiscussion() {
                 Subscribe
               </LinkButton>
               <LinkButton href="https://www.freelists.org/archive/roc/">
-                List archive
+                Archive
               </LinkButton>
             </div>
           </article>
@@ -110,7 +110,7 @@ function JoinDiscussion() {
             </p>
             <div className="mt-6 flex flex-wrap items-end gap-3">
               <LinkButton href="https://github.com/roc-streaming/roc-toolkit/discussions" primary>
-                Open forum
+                Web forum
               </LinkButton>
             </div>
           </article>
