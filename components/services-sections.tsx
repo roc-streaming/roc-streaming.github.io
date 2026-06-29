@@ -191,8 +191,8 @@ function ExampleProjects() {
           Example projects
         </h2>
         <p className="mt-5 max-w-2xl text-muted-foreground leading-relaxed text-pretty">
-          Roc Streaming has been used as a foundation for custom commercial systems,
-          not only as a library dependency.
+          We help companies build commercial audio products and custom deployments on top of Roc Streaming. 
+          The projects below are examples of commercial work built on this foundation.
         </p>
 
         <div className="mt-10 grid gap-5 md:grid-cols-3">
